@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'paper_state.json'
 
 permissions:
   contents: write
@@ -12,11 +16,10 @@ concurrency:
   group: paper-trading
   cancel-in-progress: false
 
-timeout-minutes: 10
-
 jobs:
   paper:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
