@@ -4,7 +4,7 @@
 (indicators.py + strategy.py), симулирует сделки с реальными комиссиями
 (maker 0.02% на вход/TP, taker 0.055% на SL и market-выходы),
 безубыток и дневной стоп — как в бою. Состояние: paper_state.json.
-Запуск: python paper.py
+Запуск: python paper.py (вечно) | PAPER_MAX_RUNTIME=300 python paper.py (слайс — для cron)
 """
 import asyncio
 import datetime as dt
@@ -18,6 +18,7 @@ from strategy import check_signal
 
 PAPER_STATE_FILE = os.getenv("PAPER_STATE_FILE", "paper_state.json")
 POLL_SEC = float(os.getenv("PAPER_POLL_SEC", "5"))
+PAPER_MAX_RUNTIME = float(os.getenv("PAPER_MAX_RUNTIME", "0"))
 MAKER_FEE = 0.0002
 TAKER_FEE = 0.00055
 TIME_STOP_MIN = C.TIME_STOP_MIN
@@ -110,6 +111,11 @@ class PaperBot:
             self.day_paused = self.day
             await self._flatten("day_stop")
         return sigs
+
+    @staticmethod
+    def _sig_note_exit(t, mid, reason):
+        pnl = (mid - t["entry"]) * t["qty"] * (1 if t["side"] == "long" else -1)
+        return pnl > 0
 
     def _maybe_open(self, sym, side, atr1, close, ob):
         if sym in self.open or not ob or len(self.open) >= C.MAX_POSITIONS:
@@ -207,19 +213,30 @@ async def run_forever():
     s = bot.stats()
     print(f"[PAPER] старт: equity={s['equity']} closed={s['trades']} "
           f"WR={s['winrate']}% PF={s['profit_factor']}")
-    while True:
-        try:
-            sigs = await bot.scan()
-            if sigs:
-                print("[SIG]", ", ".join(f"{k} {v[0]} (ATR%={100*atr_pct(v[1], v[2]):.3f})"
-                                         for k, v in sigs.items()))
-            s = bot.stats()
-            print(f"[PAPER] {dt.datetime.now(dt.timezone.utc):%H:%M:%S} "
-                  f"eq={s['equity']} open={s['open']} closed={s['trades']} "
-                  f"WR={s['winrate']}% PF={s['profit_factor']} pnl={s['pnl']:+.2f}")
-        except Exception as e:
-            print("[ERR]", type(e).__name__, e)
-        await asyncio.sleep(max(POLL_SEC, 2.0))
+    t_start = time.time()
+    try:
+        while True:
+            try:
+                if PAPER_MAX_RUNTIME > 0 and time.time() - t_start > PAPER_MAX_RUNTIME:
+                    print("[PAPER] слайс завершён, состояние сохранено")
+                    break
+                sigs = await bot.scan()
+                if sigs:
+                    print("[SIG]", ", ".join(f"{k} {v[0]} (ATR%={100*atr_pct(v[1], v[2]):.3f})"
+                                             for k, v in sigs.items()))
+                s = bot.stats()
+                print(f"[PAPER] {dt.datetime.now(dt.timezone.utc):%H:%M:%S} "
+                      f"eq={s['equity']} open={s['open']} closed={s['trades']} "
+                      f"WR={s['winrate']}% PF={s['profit_factor']} pnl={s['pnl']:+.2f}")
+            except Exception as e:
+                print("[ERR]", type(e).__name__, e)
+            await asyncio.sleep(max(POLL_SEC, 2.0))
+    finally:
+        bot._save()
+        s = bot.stats()
+        print(f"[FINAL] equity={s['equity']} closed={s['trades']} WR={s['winrate']}% "
+              f"PF={s['profit_factor']} pnl={s['pnl']:+.2f} open={s['open']}")
+    await ex.close()
 
 
 if __name__ == "__main__":
