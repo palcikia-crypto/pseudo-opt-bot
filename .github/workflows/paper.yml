@@ -1,0 +1,48 @@
+name: Paper Trading
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: paper-trading
+  cancel-in-progress: false
+
+timeout-minutes: 10
+
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run paper slice (6 min on live Bybit data, no keys)
+        env:
+          PAPER_MAX_RUNTIME: '330'
+          PAPER_POLL_SEC: '4'
+          PAPER_STATE_FILE: 'paper_state.json'
+        run: python paper.py
+
+      - name: Commit state
+        run: |
+          git config user.name "paper-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add paper_state.json || true
+          if git diff --cached --quiet; then
+            echo "state unchanged"
+          else
+            git commit -m "paper: state update ($(date -u +%FT%TZ))"
+            git push
+          fi
