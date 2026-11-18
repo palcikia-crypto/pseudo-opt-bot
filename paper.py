@@ -205,11 +205,32 @@ class PaperBot:
                 "equity": round(self.equity, 2)}
 
 
+async def _load_with_retry(ex, attempts=3):
+    for i in range(1, attempts + 1):
+        try:
+            await ex.load()
+            return
+        except Exception as e:
+            print(f"[LOAD] попытка {i}/{attempts} не удалась: {type(e).__name__}: {e}")
+            await asyncio.sleep(5.0 * i)
+    raise RuntimeError("bybit load_markets не удался на всех хостах/попытках")
+
+
 async def run_forever():
     from exchange import PaperExchange
     ex = PaperExchange()
-    await ex.load()
-    bot = PaperBot(ex)
+    try:
+        await _load_with_retry(ex)
+        bot = PaperBot(ex)
+        await _run_loop(ex, bot)
+    finally:
+        try:
+            await ex.close()
+        except Exception:
+            pass
+
+
+async def _run_loop(ex, bot):
     s = bot.stats()
     print(f"[PAPER] старт: equity={s['equity']} closed={s['trades']} "
           f"WR={s['winrate']}% PF={s['profit_factor']}")
@@ -236,7 +257,6 @@ async def run_forever():
         s = bot.stats()
         print(f"[FINAL] equity={s['equity']} closed={s['trades']} WR={s['winrate']}% "
               f"PF={s['profit_factor']} pnl={s['pnl']:+.2f} open={s['open']}")
-    await ex.close()
 
 
 if __name__ == "__main__":

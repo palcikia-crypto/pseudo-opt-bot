@@ -1,6 +1,7 @@
 """exchange.py — асинхронная обертка Bybit API v5 (ccxt.async_support)."""
 import asyncio
 import logging
+import os
 
 import ccxt.async_support as accxt
 
@@ -9,23 +10,43 @@ from config import BYBIT_API_KEY, BYBIT_SECRET, LEVERAGE, TESTNET
 log = logging.getLogger('exchange')
 
 LINEAR_SYMBOLS_TTL = 3600
+DEFAULT_HOSTS = 'bybit.com,bytick.com,bybit.nl'
+BYBIT_HOSTS = [h.strip() for h in os.getenv('BYBIT_HOSTS', DEFAULT_HOSTS).split(',') if h.strip()]
 
 
 class Exchange:
     def __init__(self):
+        self.ex = self._new_instance(BYBIT_HOSTS[0])
+        self._margin_done = set()
+
+    def _new_instance(self, host):
         params = {
             'apiKey': BYBIT_API_KEY,
             'secret': BYBIT_SECRET,
             'enableRateLimit': True,
-            'options': {'defaultType': 'swap'},
+            'options': {'defaultType': 'swap', 'fetchMarkets': {'types': ['linear']}},
         }
-        self.ex = accxt.bybit(params)
+        ex = accxt.bybit(params)
+        ex.hostname = host
         if TESTNET:
-            self.ex.set_sandbox_mode(True)
-        self._margin_done = set()
+            ex.set_sandbox_mode(True)
+        return ex
 
     async def load(self):
-        await self.ex.load_markets()
+        last = None
+        for host in BYBIT_HOSTS:
+            self.ex.hostname = host
+            self.ex.markets = None
+            self.ex.markets_by_id = None
+            try:
+                await self.ex.load_markets()
+                log.info('load_markets OK (host=%s)', host)
+                break
+            except Exception as e:
+                last = e
+                log.warning('load_markets через %s не удался: %s', host, e)
+        else:
+            raise last
         self._filter_symbols()
         return self.ex.markets
 

@@ -33,6 +33,8 @@ jobs:
 
       - name: Run paper slice (6 min on live Bybit data, no keys)
         env:
+          PYTHONUNBUFFERED: '1'
+          TESTNET: 'false'
           PAPER_MAX_RUNTIME: '330'
           PAPER_POLL_SEC: '4'
           PAPER_STATE_FILE: 'paper_state.json'
