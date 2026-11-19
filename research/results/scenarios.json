@@ -1,0 +1,5631 @@
+{
+ "raw_is_oos_positive": [
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 2114,
+   "is_sum_R": 31.83,
+   "oos_n": 1237,
+   "oos_raw_sumR": 73.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": -291.09,
+    "maker-maker 4bp": -68.14,
+    "vip maker-t 5bp": -188.52
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "loose",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 2700,
+   "is_sum_R": 48.65,
+   "oos_n": 1504,
+   "oos_raw_sumR": 69.24,
+   "oos_net": {
+    "full(m+t 7.5bp)": -393.4,
+    "maker-maker 4bp": -108.5,
+    "vip maker-t 5bp": -263.83
+   }
+  },
+  {
+   "symbol": "SOLUSDT",
+   "mask": "loose",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 1552,
+   "is_sum_R": 2.38,
+   "oos_n": 805,
+   "oos_raw_sumR": 56.23,
+   "oos_net": {
+    "full(m+t 7.5bp)": -140.17,
+    "maker-maker 4bp": -22.04,
+    "vip maker-t 5bp": -84.17
+   }
+  },
+  {
+   "symbol": "SOLUSDT",
+   "mask": "loose",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1361,
+   "is_sum_R": 31.33,
+   "oos_n": 712,
+   "oos_raw_sumR": 52.84,
+   "oos_net": {
+    "full(m+t 7.5bp)": -63.75,
+    "maker-maker 4bp": 7.61,
+    "vip maker-t 5bp": -30.94
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 1187,
+   "is_sum_R": 35.31,
+   "oos_n": 644,
+   "oos_raw_sumR": 45.34,
+   "oos_net": {
+    "full(m+t 7.5bp)": -105.23,
+    "maker-maker 4bp": -13.68,
+    "vip maker-t 5bp": -62.64
+   }
+  },
+  {
+   "symbol": "SOLUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1256,
+   "is_sum_R": 42.74,
+   "oos_n": 687,
+   "oos_raw_sumR": 44.14,
+   "oos_net": {
+    "full(m+t 7.5bp)": -61.85,
+    "maker-maker 4bp": 3.16,
+    "vip maker-t 5bp": -32.07
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1331,
+   "is_sum_R": 29.13,
+   "oos_n": 745,
+   "oos_raw_sumR": 34.76,
+   "oos_net": {
+    "full(m+t 7.5bp)": -170.19,
+    "maker-maker 4bp": -48.32,
+    "vip maker-t 5bp": -111.24
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1298,
+   "is_sum_R": 2.26,
+   "oos_n": 660,
+   "oos_raw_sumR": 32.53,
+   "oos_net": {
+    "full(m+t 7.5bp)": -96.76,
+    "maker-maker 4bp": -20.67,
+    "vip maker-t 5bp": -59.29
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1507,
+   "is_sum_R": 34.17,
+   "oos_n": 789,
+   "oos_raw_sumR": 27.39,
+   "oos_net": {
+    "full(m+t 7.5bp)": -186.15,
+    "maker-maker 4bp": -59.31,
+    "vip maker-t 5bp": -124.68
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 1161,
+   "is_sum_R": 49.86,
+   "oos_n": 645,
+   "oos_raw_sumR": 24.59,
+   "oos_net": {
+    "full(m+t 7.5bp)": -141.0,
+    "maker-maker 4bp": -48.24,
+    "vip maker-t 5bp": -91.33
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1497,
+   "is_sum_R": 63.1,
+   "oos_n": 746,
+   "oos_raw_sumR": 22.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": -192.38,
+    "maker-maker 4bp": -63.05,
+    "vip maker-t 5bp": -130.97
+   }
+  },
+  {
+   "symbol": "SOLUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 872,
+   "is_sum_R": 54.86,
+   "oos_n": 513,
+   "oos_raw_sumR": 22.21,
+   "oos_net": {
+    "full(m+t 7.5bp)": -42.12,
+    "maker-maker 4bp": -2.44,
+    "vip maker-t 5bp": -24.12
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "loose",
+   "idea": "pullback",
+   "exit": "rr:1.5x2.5",
+   "is_n": 3068,
+   "is_sum_R": 25.0,
+   "oos_n": 1639,
+   "oos_raw_sumR": 18.74,
+   "oos_net": {
+    "full(m+t 7.5bp)": -505.94,
+    "maker-maker 4bp": -187.77,
+    "vip maker-t 5bp": -357.23
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "wide:3.5x3.0",
+   "is_n": 902,
+   "is_sum_R": 53.76,
+   "oos_n": 493,
+   "oos_raw_sumR": 18.73,
+   "oos_net": {
+    "full(m+t 7.5bp)": -49.87,
+    "maker-maker 4bp": -7.29,
+    "vip maker-t 5bp": -30.78
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 948,
+   "is_sum_R": 31.01,
+   "oos_n": 552,
+   "oos_raw_sumR": 18.71,
+   "oos_net": {
+    "full(m+t 7.5bp)": -117.49,
+    "maker-maker 4bp": -41.5,
+    "vip maker-t 5bp": -76.53
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "rr:1.5x2.5",
+   "is_n": 713,
+   "is_sum_R": 46.19,
+   "oos_n": 378,
+   "oos_raw_sumR": 17.35,
+   "oos_net": {
+    "full(m+t 7.5bp)": -88.32,
+    "maker-maker 4bp": -25.54,
+    "vip maker-t 5bp": -57.9
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "squeeze",
+   "exit": "wide:3.5x3.0",
+   "is_n": 362,
+   "is_sum_R": 11.26,
+   "oos_n": 155,
+   "oos_raw_sumR": 16.93,
+   "oos_net": {
+    "full(m+t 7.5bp)": -4.27,
+    "maker-maker 4bp": 8.5,
+    "vip maker-t 5bp": 1.77
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb15",
+   "exit": "wide:3.5x3.0",
+   "is_n": 383,
+   "is_sum_R": 12.72,
+   "oos_n": 165,
+   "oos_raw_sumR": 15.29,
+   "oos_net": {
+    "full(m+t 7.5bp)": -7.09,
+    "maker-maker 4bp": 6.43,
+    "vip maker-t 5bp": -0.73
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1062,
+   "is_sum_R": 64.71,
+   "oos_n": 640,
+   "oos_raw_sumR": 14.79,
+   "oos_net": {
+    "full(m+t 7.5bp)": -85.28,
+    "maker-maker 4bp": -24.56,
+    "vip maker-t 5bp": -56.93
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_rsi5",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1233,
+   "is_sum_R": 13.64,
+   "oos_n": 681,
+   "oos_raw_sumR": 13.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -197.06,
+    "maker-maker 4bp": -70.15,
+    "vip maker-t 5bp": -136.91
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "rr:1.5x2.5",
+   "is_n": 2038,
+   "is_sum_R": 14.46,
+   "oos_n": 1188,
+   "oos_raw_sumR": 12.39,
+   "oos_net": {
+    "full(m+t 7.5bp)": -315.05,
+    "maker-maker 4bp": -118.94,
+    "vip maker-t 5bp": -221.36
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "time:45m",
+   "is_n": 640,
+   "is_sum_R": 38.71,
+   "oos_n": 352,
+   "oos_raw_sumR": 12.38,
+   "oos_net": {
+    "full(m+t 7.5bp)": -80.24,
+    "maker-maker 4bp": -27.43,
+    "vip maker-t 5bp": -52.79
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "impulse",
+   "exit": "wide:3.5x3.0",
+   "is_n": 177,
+   "is_sum_R": 11.35,
+   "oos_n": 92,
+   "oos_raw_sumR": 12.15,
+   "oos_net": {
+    "full(m+t 7.5bp)": -0.21,
+    "maker-maker 4bp": 7.18,
+    "vip maker-t 5bp": 3.33
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "loose",
+   "idea": "mr_rsi5",
+   "exit": "trail:2.0",
+   "is_n": 2083,
+   "is_sum_R": 6.03,
+   "oos_n": 1229,
+   "oos_raw_sumR": 11.41,
+   "oos_net": {
+    "full(m+t 7.5bp)": -239.55,
+    "maker-maker 4bp": -87.05,
+    "vip maker-t 5bp": -168.53
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 1511,
+   "is_sum_R": 4.9,
+   "oos_n": 866,
+   "oos_raw_sumR": 10.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": -169.08,
+    "maker-maker 4bp": -61.06,
+    "vip maker-t 5bp": -118.02
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "time:45m",
+   "is_n": 1725,
+   "is_sum_R": 27.51,
+   "oos_n": 1193,
+   "oos_raw_sumR": 9.97,
+   "oos_net": {
+    "full(m+t 7.5bp)": -275.54,
+    "maker-maker 4bp": -114.39,
+    "vip maker-t 5bp": -190.34
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1200,
+   "is_sum_R": 44.28,
+   "oos_n": 661,
+   "oos_raw_sumR": 9.74,
+   "oos_net": {
+    "full(m+t 7.5bp)": -165.23,
+    "maker-maker 4bp": -61.33,
+    "vip maker-t 5bp": -114.85
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "pullback",
+   "exit": "rr:1.5x2.5",
+   "is_n": 2419,
+   "is_sum_R": 52.74,
+   "oos_n": 1336,
+   "oos_raw_sumR": 9.66,
+   "oos_net": {
+    "full(m+t 7.5bp)": -408.03,
+    "maker-maker 4bp": -155.99,
+    "vip maker-t 5bp": -289.2
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 1222,
+   "is_sum_R": 19.5,
+   "oos_n": 645,
+   "oos_raw_sumR": 8.71,
+   "oos_net": {
+    "full(m+t 7.5bp)": -110.24,
+    "maker-maker 4bp": -44.38,
+    "vip maker-t 5bp": -74.29
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_rsi5",
+   "exit": "trail:2.0",
+   "is_n": 1141,
+   "is_sum_R": 4.93,
+   "oos_n": 622,
+   "oos_raw_sumR": 7.88,
+   "oos_net": {
+    "full(m+t 7.5bp)": -173.0,
+    "maker-maker 4bp": -62.12,
+    "vip maker-t 5bp": -122.17
+   }
+  },
+  {
+   "symbol": "SUIUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1012,
+   "is_sum_R": 6.78,
+   "oos_n": 601,
+   "oos_raw_sumR": 7.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -97.26,
+    "maker-maker 4bp": -33.28,
+    "vip maker-t 5bp": -67.68
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "loose",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 1513,
+   "is_sum_R": 2.81,
+   "oos_n": 870,
+   "oos_raw_sumR": 7.49,
+   "oos_net": {
+    "full(m+t 7.5bp)": -173.45,
+    "maker-maker 4bp": -64.37,
+    "vip maker-t 5bp": -121.94
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "trail:2.0",
+   "is_n": 636,
+   "is_sum_R": 36.82,
+   "oos_n": 353,
+   "oos_raw_sumR": 7.39,
+   "oos_net": {
+    "full(m+t 7.5bp)": -73.99,
+    "maker-maker 4bp": -24.68,
+    "vip maker-t 5bp": -50.91
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "time:45m",
+   "is_n": 1142,
+   "is_sum_R": 31.06,
+   "oos_n": 572,
+   "oos_raw_sumR": 6.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -144.75,
+    "maker-maker 4bp": -58.16,
+    "vip maker-t 5bp": -99.85
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_rsi5",
+   "exit": "trail:2.0",
+   "is_n": 2068,
+   "is_sum_R": 7.02,
+   "oos_n": 1228,
+   "oos_raw_sumR": 6.71,
+   "oos_net": {
+    "full(m+t 7.5bp)": -243.14,
+    "maker-maker 4bp": -91.34,
+    "vip maker-t 5bp": -172.43
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "time:45m",
+   "is_n": 1607,
+   "is_sum_R": 14.26,
+   "oos_n": 816,
+   "oos_raw_sumR": 5.96,
+   "oos_net": {
+    "full(m+t 7.5bp)": -203.67,
+    "maker-maker 4bp": -83.56,
+    "vip maker-t 5bp": -141.74
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 625,
+   "is_sum_R": 10.27,
+   "oos_n": 353,
+   "oos_raw_sumR": 5.59,
+   "oos_net": {
+    "full(m+t 7.5bp)": -80.25,
+    "maker-maker 4bp": -31.98,
+    "vip maker-t 5bp": -54.57
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "impulse",
+   "exit": "wide:3.5x3.0",
+   "is_n": 397,
+   "is_sum_R": 6.07,
+   "oos_n": 186,
+   "oos_raw_sumR": 5.28,
+   "oos_net": {
+    "full(m+t 7.5bp)": -29.58,
+    "maker-maker 4bp": -8.58,
+    "vip maker-t 5bp": -19.65
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 655,
+   "is_sum_R": 49.07,
+   "oos_n": 368,
+   "oos_raw_sumR": 4.47,
+   "oos_net": {
+    "full(m+t 7.5bp)": -73.63,
+    "maker-maker 4bp": -26.47,
+    "vip maker-t 5bp": -51.42
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 704,
+   "is_sum_R": 10.42,
+   "oos_n": 378,
+   "oos_raw_sumR": 3.96,
+   "oos_net": {
+    "full(m+t 7.5bp)": -94.57,
+    "maker-maker 4bp": -36.1,
+    "vip maker-t 5bp": -66.18
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 331,
+   "is_sum_R": 1.38,
+   "oos_n": 157,
+   "oos_raw_sumR": 3.81,
+   "oos_net": {
+    "full(m+t 7.5bp)": -17.9,
+    "maker-maker 4bp": -4.68,
+    "vip maker-t 5bp": -11.77
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1003,
+   "is_sum_R": 5.41,
+   "oos_n": 563,
+   "oos_raw_sumR": 3.28,
+   "oos_net": {
+    "full(m+t 7.5bp)": -66.2,
+    "maker-maker 4bp": -23.92,
+    "vip maker-t 5bp": -46.56
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.5",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 2684,
+   "is_sum_R": 39.88,
+   "oos_n": 1482,
+   "oos_raw_sumR": 3.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -401.81,
+    "maker-maker 4bp": -155.14,
+    "vip maker-t 5bp": -287.45
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 1250,
+   "is_sum_R": 37.65,
+   "oos_n": 788,
+   "oos_raw_sumR": 2.72,
+   "oos_net": {
+    "full(m+t 7.5bp)": -189.41,
+    "maker-maker 4bp": -72.53,
+    "vip maker-t 5bp": -135.09
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 766,
+   "is_sum_R": 3.74,
+   "oos_n": 479,
+   "oos_raw_sumR": 1.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -136.58,
+    "maker-maker 4bp": -51.79,
+    "vip maker-t 5bp": -97.62
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 364,
+   "is_sum_R": 7.7,
+   "oos_n": 179,
+   "oos_raw_sumR": 1.67,
+   "oos_net": {
+    "full(m+t 7.5bp)": -39.08,
+    "maker-maker 4bp": -14.8,
+    "vip maker-t 5bp": -27.38
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 688,
+   "is_sum_R": 17.0,
+   "oos_n": 399,
+   "oos_raw_sumR": 1.11,
+   "oos_net": {
+    "full(m+t 7.5bp)": -46.46,
+    "maker-maker 4bp": -17.47,
+    "vip maker-t 5bp": -33.03
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "squeeze",
+   "exit": "wide:3.5x3.0",
+   "is_n": 705,
+   "is_sum_R": 1.77,
+   "oos_n": 318,
+   "oos_raw_sumR": 0.97,
+   "oos_net": {
+    "full(m+t 7.5bp)": -59.27,
+    "maker-maker 4bp": -22.61,
+    "vip maker-t 5bp": -42.25
+   }
+  },
+  {
+   "symbol": "SUIUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1063,
+   "is_sum_R": 15.65,
+   "oos_n": 624,
+   "oos_raw_sumR": 0.79,
+   "oos_net": {
+    "full(m+t 7.5bp)": -133.67,
+    "maker-maker 4bp": -53.61,
+    "vip maker-t 5bp": -95.03
+   }
+  }
+ ],
+ "all_raw_is_positive": [
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 2114,
+   "is_sum_R": 31.83,
+   "oos_n": 1237,
+   "oos_raw_sumR": 73.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": -291.09,
+    "maker-maker 4bp": -68.14,
+    "vip maker-t 5bp": -188.52
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "loose",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 2700,
+   "is_sum_R": 48.65,
+   "oos_n": 1504,
+   "oos_raw_sumR": 69.24,
+   "oos_net": {
+    "full(m+t 7.5bp)": -393.4,
+    "maker-maker 4bp": -108.5,
+    "vip maker-t 5bp": -263.83
+   }
+  },
+  {
+   "symbol": "SOLUSDT",
+   "mask": "loose",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 1552,
+   "is_sum_R": 2.38,
+   "oos_n": 805,
+   "oos_raw_sumR": 56.23,
+   "oos_net": {
+    "full(m+t 7.5bp)": -140.17,
+    "maker-maker 4bp": -22.04,
+    "vip maker-t 5bp": -84.17
+   }
+  },
+  {
+   "symbol": "SOLUSDT",
+   "mask": "loose",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1361,
+   "is_sum_R": 31.33,
+   "oos_n": 712,
+   "oos_raw_sumR": 52.84,
+   "oos_net": {
+    "full(m+t 7.5bp)": -63.75,
+    "maker-maker 4bp": 7.61,
+    "vip maker-t 5bp": -30.94
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 1187,
+   "is_sum_R": 35.31,
+   "oos_n": 644,
+   "oos_raw_sumR": 45.34,
+   "oos_net": {
+    "full(m+t 7.5bp)": -105.23,
+    "maker-maker 4bp": -13.68,
+    "vip maker-t 5bp": -62.64
+   }
+  },
+  {
+   "symbol": "SOLUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1256,
+   "is_sum_R": 42.74,
+   "oos_n": 687,
+   "oos_raw_sumR": 44.14,
+   "oos_net": {
+    "full(m+t 7.5bp)": -61.85,
+    "maker-maker 4bp": 3.16,
+    "vip maker-t 5bp": -32.07
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1331,
+   "is_sum_R": 29.13,
+   "oos_n": 745,
+   "oos_raw_sumR": 34.76,
+   "oos_net": {
+    "full(m+t 7.5bp)": -170.19,
+    "maker-maker 4bp": -48.32,
+    "vip maker-t 5bp": -111.24
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1298,
+   "is_sum_R": 2.26,
+   "oos_n": 660,
+   "oos_raw_sumR": 32.53,
+   "oos_net": {
+    "full(m+t 7.5bp)": -96.76,
+    "maker-maker 4bp": -20.67,
+    "vip maker-t 5bp": -59.29
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1507,
+   "is_sum_R": 34.17,
+   "oos_n": 789,
+   "oos_raw_sumR": 27.39,
+   "oos_net": {
+    "full(m+t 7.5bp)": -186.15,
+    "maker-maker 4bp": -59.31,
+    "vip maker-t 5bp": -124.68
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 1161,
+   "is_sum_R": 49.86,
+   "oos_n": 645,
+   "oos_raw_sumR": 24.59,
+   "oos_net": {
+    "full(m+t 7.5bp)": -141.0,
+    "maker-maker 4bp": -48.24,
+    "vip maker-t 5bp": -91.33
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1497,
+   "is_sum_R": 63.1,
+   "oos_n": 746,
+   "oos_raw_sumR": 22.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": -192.38,
+    "maker-maker 4bp": -63.05,
+    "vip maker-t 5bp": -130.97
+   }
+  },
+  {
+   "symbol": "SOLUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 872,
+   "is_sum_R": 54.86,
+   "oos_n": 513,
+   "oos_raw_sumR": 22.21,
+   "oos_net": {
+    "full(m+t 7.5bp)": -42.12,
+    "maker-maker 4bp": -2.44,
+    "vip maker-t 5bp": -24.12
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "loose",
+   "idea": "pullback",
+   "exit": "rr:1.5x2.5",
+   "is_n": 3068,
+   "is_sum_R": 25.0,
+   "oos_n": 1639,
+   "oos_raw_sumR": 18.74,
+   "oos_net": {
+    "full(m+t 7.5bp)": -505.94,
+    "maker-maker 4bp": -187.77,
+    "vip maker-t 5bp": -357.23
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "wide:3.5x3.0",
+   "is_n": 902,
+   "is_sum_R": 53.76,
+   "oos_n": 493,
+   "oos_raw_sumR": 18.73,
+   "oos_net": {
+    "full(m+t 7.5bp)": -49.87,
+    "maker-maker 4bp": -7.29,
+    "vip maker-t 5bp": -30.78
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 948,
+   "is_sum_R": 31.01,
+   "oos_n": 552,
+   "oos_raw_sumR": 18.71,
+   "oos_net": {
+    "full(m+t 7.5bp)": -117.49,
+    "maker-maker 4bp": -41.5,
+    "vip maker-t 5bp": -76.53
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "rr:1.5x2.5",
+   "is_n": 713,
+   "is_sum_R": 46.19,
+   "oos_n": 378,
+   "oos_raw_sumR": 17.35,
+   "oos_net": {
+    "full(m+t 7.5bp)": -88.32,
+    "maker-maker 4bp": -25.54,
+    "vip maker-t 5bp": -57.9
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "squeeze",
+   "exit": "wide:3.5x3.0",
+   "is_n": 362,
+   "is_sum_R": 11.26,
+   "oos_n": 155,
+   "oos_raw_sumR": 16.93,
+   "oos_net": {
+    "full(m+t 7.5bp)": -4.27,
+    "maker-maker 4bp": 8.5,
+    "vip maker-t 5bp": 1.77
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb15",
+   "exit": "wide:3.5x3.0",
+   "is_n": 383,
+   "is_sum_R": 12.72,
+   "oos_n": 165,
+   "oos_raw_sumR": 15.29,
+   "oos_net": {
+    "full(m+t 7.5bp)": -7.09,
+    "maker-maker 4bp": 6.43,
+    "vip maker-t 5bp": -0.73
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1062,
+   "is_sum_R": 64.71,
+   "oos_n": 640,
+   "oos_raw_sumR": 14.79,
+   "oos_net": {
+    "full(m+t 7.5bp)": -85.28,
+    "maker-maker 4bp": -24.56,
+    "vip maker-t 5bp": -56.93
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_rsi5",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1233,
+   "is_sum_R": 13.64,
+   "oos_n": 681,
+   "oos_raw_sumR": 13.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -197.06,
+    "maker-maker 4bp": -70.15,
+    "vip maker-t 5bp": -136.91
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "rr:1.5x2.5",
+   "is_n": 2038,
+   "is_sum_R": 14.46,
+   "oos_n": 1188,
+   "oos_raw_sumR": 12.39,
+   "oos_net": {
+    "full(m+t 7.5bp)": -315.05,
+    "maker-maker 4bp": -118.94,
+    "vip maker-t 5bp": -221.36
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "time:45m",
+   "is_n": 640,
+   "is_sum_R": 38.71,
+   "oos_n": 352,
+   "oos_raw_sumR": 12.38,
+   "oos_net": {
+    "full(m+t 7.5bp)": -80.24,
+    "maker-maker 4bp": -27.43,
+    "vip maker-t 5bp": -52.79
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "impulse",
+   "exit": "wide:3.5x3.0",
+   "is_n": 177,
+   "is_sum_R": 11.35,
+   "oos_n": 92,
+   "oos_raw_sumR": 12.15,
+   "oos_net": {
+    "full(m+t 7.5bp)": -0.21,
+    "maker-maker 4bp": 7.18,
+    "vip maker-t 5bp": 3.33
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "loose",
+   "idea": "mr_rsi5",
+   "exit": "trail:2.0",
+   "is_n": 2083,
+   "is_sum_R": 6.03,
+   "oos_n": 1229,
+   "oos_raw_sumR": 11.41,
+   "oos_net": {
+    "full(m+t 7.5bp)": -239.55,
+    "maker-maker 4bp": -87.05,
+    "vip maker-t 5bp": -168.53
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 1511,
+   "is_sum_R": 4.9,
+   "oos_n": 866,
+   "oos_raw_sumR": 10.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": -169.08,
+    "maker-maker 4bp": -61.06,
+    "vip maker-t 5bp": -118.02
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "time:45m",
+   "is_n": 1725,
+   "is_sum_R": 27.51,
+   "oos_n": 1193,
+   "oos_raw_sumR": 9.97,
+   "oos_net": {
+    "full(m+t 7.5bp)": -275.54,
+    "maker-maker 4bp": -114.39,
+    "vip maker-t 5bp": -190.34
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1200,
+   "is_sum_R": 44.28,
+   "oos_n": 661,
+   "oos_raw_sumR": 9.74,
+   "oos_net": {
+    "full(m+t 7.5bp)": -165.23,
+    "maker-maker 4bp": -61.33,
+    "vip maker-t 5bp": -114.85
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "pullback",
+   "exit": "rr:1.5x2.5",
+   "is_n": 2419,
+   "is_sum_R": 52.74,
+   "oos_n": 1336,
+   "oos_raw_sumR": 9.66,
+   "oos_net": {
+    "full(m+t 7.5bp)": -408.03,
+    "maker-maker 4bp": -155.99,
+    "vip maker-t 5bp": -289.2
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 1222,
+   "is_sum_R": 19.5,
+   "oos_n": 645,
+   "oos_raw_sumR": 8.71,
+   "oos_net": {
+    "full(m+t 7.5bp)": -110.24,
+    "maker-maker 4bp": -44.38,
+    "vip maker-t 5bp": -74.29
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_rsi5",
+   "exit": "trail:2.0",
+   "is_n": 1141,
+   "is_sum_R": 4.93,
+   "oos_n": 622,
+   "oos_raw_sumR": 7.88,
+   "oos_net": {
+    "full(m+t 7.5bp)": -173.0,
+    "maker-maker 4bp": -62.12,
+    "vip maker-t 5bp": -122.17
+   }
+  },
+  {
+   "symbol": "SUIUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1012,
+   "is_sum_R": 6.78,
+   "oos_n": 601,
+   "oos_raw_sumR": 7.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -97.26,
+    "maker-maker 4bp": -33.28,
+    "vip maker-t 5bp": -67.68
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "loose",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 1513,
+   "is_sum_R": 2.81,
+   "oos_n": 870,
+   "oos_raw_sumR": 7.49,
+   "oos_net": {
+    "full(m+t 7.5bp)": -173.45,
+    "maker-maker 4bp": -64.37,
+    "vip maker-t 5bp": -121.94
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "trail:2.0",
+   "is_n": 636,
+   "is_sum_R": 36.82,
+   "oos_n": 353,
+   "oos_raw_sumR": 7.39,
+   "oos_net": {
+    "full(m+t 7.5bp)": -73.99,
+    "maker-maker 4bp": -24.68,
+    "vip maker-t 5bp": -50.91
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "time:45m",
+   "is_n": 1142,
+   "is_sum_R": 31.06,
+   "oos_n": 572,
+   "oos_raw_sumR": 6.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -144.75,
+    "maker-maker 4bp": -58.16,
+    "vip maker-t 5bp": -99.85
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_rsi5",
+   "exit": "trail:2.0",
+   "is_n": 2068,
+   "is_sum_R": 7.02,
+   "oos_n": 1228,
+   "oos_raw_sumR": 6.71,
+   "oos_net": {
+    "full(m+t 7.5bp)": -243.14,
+    "maker-maker 4bp": -91.34,
+    "vip maker-t 5bp": -172.43
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "time:45m",
+   "is_n": 1607,
+   "is_sum_R": 14.26,
+   "oos_n": 816,
+   "oos_raw_sumR": 5.96,
+   "oos_net": {
+    "full(m+t 7.5bp)": -203.67,
+    "maker-maker 4bp": -83.56,
+    "vip maker-t 5bp": -141.74
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 625,
+   "is_sum_R": 10.27,
+   "oos_n": 353,
+   "oos_raw_sumR": 5.59,
+   "oos_net": {
+    "full(m+t 7.5bp)": -80.25,
+    "maker-maker 4bp": -31.98,
+    "vip maker-t 5bp": -54.57
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "impulse",
+   "exit": "wide:3.5x3.0",
+   "is_n": 397,
+   "is_sum_R": 6.07,
+   "oos_n": 186,
+   "oos_raw_sumR": 5.28,
+   "oos_net": {
+    "full(m+t 7.5bp)": -29.58,
+    "maker-maker 4bp": -8.58,
+    "vip maker-t 5bp": -19.65
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 655,
+   "is_sum_R": 49.07,
+   "oos_n": 368,
+   "oos_raw_sumR": 4.47,
+   "oos_net": {
+    "full(m+t 7.5bp)": -73.63,
+    "maker-maker 4bp": -26.47,
+    "vip maker-t 5bp": -51.42
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 704,
+   "is_sum_R": 10.42,
+   "oos_n": 378,
+   "oos_raw_sumR": 3.96,
+   "oos_net": {
+    "full(m+t 7.5bp)": -94.57,
+    "maker-maker 4bp": -36.1,
+    "vip maker-t 5bp": -66.18
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 331,
+   "is_sum_R": 1.38,
+   "oos_n": 157,
+   "oos_raw_sumR": 3.81,
+   "oos_net": {
+    "full(m+t 7.5bp)": -17.9,
+    "maker-maker 4bp": -4.68,
+    "vip maker-t 5bp": -11.77
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1003,
+   "is_sum_R": 5.41,
+   "oos_n": 563,
+   "oos_raw_sumR": 3.28,
+   "oos_net": {
+    "full(m+t 7.5bp)": -66.2,
+    "maker-maker 4bp": -23.92,
+    "vip maker-t 5bp": -46.56
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.5",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 2684,
+   "is_sum_R": 39.88,
+   "oos_n": 1482,
+   "oos_raw_sumR": 3.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -401.81,
+    "maker-maker 4bp": -155.14,
+    "vip maker-t 5bp": -287.45
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 1250,
+   "is_sum_R": 37.65,
+   "oos_n": 788,
+   "oos_raw_sumR": 2.72,
+   "oos_net": {
+    "full(m+t 7.5bp)": -189.41,
+    "maker-maker 4bp": -72.53,
+    "vip maker-t 5bp": -135.09
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 766,
+   "is_sum_R": 3.74,
+   "oos_n": 479,
+   "oos_raw_sumR": 1.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -136.58,
+    "maker-maker 4bp": -51.79,
+    "vip maker-t 5bp": -97.62
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 364,
+   "is_sum_R": 7.7,
+   "oos_n": 179,
+   "oos_raw_sumR": 1.67,
+   "oos_net": {
+    "full(m+t 7.5bp)": -39.08,
+    "maker-maker 4bp": -14.8,
+    "vip maker-t 5bp": -27.38
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 688,
+   "is_sum_R": 17.0,
+   "oos_n": 399,
+   "oos_raw_sumR": 1.11,
+   "oos_net": {
+    "full(m+t 7.5bp)": -46.46,
+    "maker-maker 4bp": -17.47,
+    "vip maker-t 5bp": -33.03
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "squeeze",
+   "exit": "wide:3.5x3.0",
+   "is_n": 705,
+   "is_sum_R": 1.77,
+   "oos_n": 318,
+   "oos_raw_sumR": 0.97,
+   "oos_net": {
+    "full(m+t 7.5bp)": -59.27,
+    "maker-maker 4bp": -22.61,
+    "vip maker-t 5bp": -42.25
+   }
+  },
+  {
+   "symbol": "SUIUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1063,
+   "is_sum_R": 15.65,
+   "oos_n": 624,
+   "oos_raw_sumR": 0.79,
+   "oos_net": {
+    "full(m+t 7.5bp)": -133.67,
+    "maker-maker 4bp": -53.61,
+    "vip maker-t 5bp": -95.03
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 609,
+   "is_sum_R": 25.69,
+   "oos_n": 351,
+   "oos_raw_sumR": -0.28,
+   "oos_net": {
+    "full(m+t 7.5bp)": -41.56,
+    "maker-maker 4bp": -16.41,
+    "vip maker-t 5bp": -29.9
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "trail:2.0",
+   "is_n": 1840,
+   "is_sum_R": 8.37,
+   "oos_n": 1114,
+   "oos_raw_sumR": -0.65,
+   "oos_net": {
+    "full(m+t 7.5bp)": -210.12,
+    "maker-maker 4bp": -82.6,
+    "vip maker-t 5bp": -150.93
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "impulse",
+   "exit": "wide:3.5x3.0",
+   "is_n": 636,
+   "is_sum_R": 4.99,
+   "oos_n": 281,
+   "oos_raw_sumR": -0.92,
+   "oos_net": {
+    "full(m+t 7.5bp)": -69.29,
+    "maker-maker 4bp": -27.46,
+    "vip maker-t 5bp": -50.04
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 694,
+   "is_sum_R": 14.66,
+   "oos_n": 438,
+   "oos_raw_sumR": -1.48,
+   "oos_net": {
+    "full(m+t 7.5bp)": -87.32,
+    "maker-maker 4bp": -34.33,
+    "vip maker-t 5bp": -63.32
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1017,
+   "is_sum_R": 48.62,
+   "oos_n": 601,
+   "oos_raw_sumR": -1.62,
+   "oos_net": {
+    "full(m+t 7.5bp)": -141.08,
+    "maker-maker 4bp": -56.5,
+    "vip maker-t 5bp": -101.56
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "impulse",
+   "exit": "time:45m",
+   "is_n": 194,
+   "is_sum_R": 7.21,
+   "oos_n": 99,
+   "oos_raw_sumR": -2.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": -28.76,
+    "maker-maker 4bp": -13.84,
+    "vip maker-t 5bp": -20.96
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 1384,
+   "is_sum_R": 36.3,
+   "oos_n": 828,
+   "oos_raw_sumR": -2.58,
+   "oos_net": {
+    "full(m+t 7.5bp)": -210.04,
+    "maker-maker 4bp": -83.15,
+    "vip maker-t 5bp": -151.64
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 1150,
+   "is_sum_R": 17.63,
+   "oos_n": 576,
+   "oos_raw_sumR": -3.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": -107.44,
+    "maker-maker 4bp": -49.29,
+    "vip maker-t 5bp": -76.09
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 1068,
+   "is_sum_R": 67.69,
+   "oos_n": 602,
+   "oos_raw_sumR": -3.27,
+   "oos_net": {
+    "full(m+t 7.5bp)": -151.46,
+    "maker-maker 4bp": -68.59,
+    "vip maker-t 5bp": -106.96
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 981,
+   "is_sum_R": 25.94,
+   "oos_n": 568,
+   "oos_raw_sumR": -3.36,
+   "oos_net": {
+    "full(m+t 7.5bp)": -105.0,
+    "maker-maker 4bp": -48.45,
+    "vip maker-t 5bp": -74.37
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "time:45m",
+   "is_n": 1059,
+   "is_sum_R": 2.43,
+   "oos_n": 534,
+   "oos_raw_sumR": -3.71,
+   "oos_net": {
+    "full(m+t 7.5bp)": -138.82,
+    "maker-maker 4bp": -61.48,
+    "vip maker-t 5bp": -98.89
+   }
+  },
+  {
+   "symbol": "SUIUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1333,
+   "is_sum_R": 1.26,
+   "oos_n": 744,
+   "oos_raw_sumR": -3.83,
+   "oos_net": {
+    "full(m+t 7.5bp)": -170.23,
+    "maker-maker 4bp": -71.0,
+    "vip maker-t 5bp": -122.47
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "time:45m",
+   "is_n": 1019,
+   "is_sum_R": 8.53,
+   "oos_n": 621,
+   "oos_raw_sumR": -4.34,
+   "oos_net": {
+    "full(m+t 7.5bp)": -161.47,
+    "maker-maker 4bp": -71.97,
+    "vip maker-t 5bp": -114.87
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb15",
+   "exit": "wide:3.5x3.0",
+   "is_n": 733,
+   "is_sum_R": 4.08,
+   "oos_n": 327,
+   "oos_raw_sumR": -4.48,
+   "oos_net": {
+    "full(m+t 7.5bp)": -65.92,
+    "maker-maker 4bp": -28.5,
+    "vip maker-t 5bp": -48.57
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.5",
+   "idea": "impulse",
+   "exit": "wide:3.5x3.0",
+   "is_n": 474,
+   "is_sum_R": 3.03,
+   "oos_n": 195,
+   "oos_raw_sumR": -4.55,
+   "oos_net": {
+    "full(m+t 7.5bp)": -33.58,
+    "maker-maker 4bp": -15.81,
+    "vip maker-t 5bp": -25.41
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 350,
+   "is_sum_R": 18.75,
+   "oos_n": 184,
+   "oos_raw_sumR": -4.64,
+   "oos_net": {
+    "full(m+t 7.5bp)": -50.85,
+    "maker-maker 4bp": -24.96,
+    "vip maker-t 5bp": -36.99
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "impulse",
+   "exit": "rr:1.5x2.5",
+   "is_n": 196,
+   "is_sum_R": 12.23,
+   "oos_n": 99,
+   "oos_raw_sumR": -4.69,
+   "oos_net": {
+    "full(m+t 7.5bp)": -33.2,
+    "maker-maker 4bp": -16.03,
+    "vip maker-t 5bp": -25.07
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "loose",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 928,
+   "is_sum_R": 7.34,
+   "oos_n": 541,
+   "oos_raw_sumR": -4.72,
+   "oos_net": {
+    "full(m+t 7.5bp)": -127.08,
+    "maker-maker 4bp": -51.8,
+    "vip maker-t 5bp": -92.78
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1232,
+   "is_sum_R": 65.07,
+   "oos_n": 696,
+   "oos_raw_sumR": -4.94,
+   "oos_net": {
+    "full(m+t 7.5bp)": -172.35,
+    "maker-maker 4bp": -70.36,
+    "vip maker-t 5bp": -125.07
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "wide:3.5x3.0",
+   "is_n": 542,
+   "is_sum_R": 34.19,
+   "oos_n": 278,
+   "oos_raw_sumR": -5.14,
+   "oos_net": {
+    "full(m+t 7.5bp)": -43.14,
+    "maker-maker 4bp": -19.49,
+    "vip maker-t 5bp": -32.59
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1019,
+   "is_sum_R": 16.06,
+   "oos_n": 470,
+   "oos_raw_sumR": -5.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": -110.55,
+    "maker-maker 4bp": -46.54,
+    "vip maker-t 5bp": -80.98
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "time:45m",
+   "is_n": 682,
+   "is_sum_R": 9.46,
+   "oos_n": 380,
+   "oos_raw_sumR": -5.85,
+   "oos_net": {
+    "full(m+t 7.5bp)": -119.44,
+    "maker-maker 4bp": -52.67,
+    "vip maker-t 5bp": -86.5
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1294,
+   "is_sum_R": 3.48,
+   "oos_n": 697,
+   "oos_raw_sumR": -5.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -118.4,
+    "maker-maker 4bp": -50.72,
+    "vip maker-t 5bp": -86.32
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 343,
+   "is_sum_R": 31.08,
+   "oos_n": 182,
+   "oos_raw_sumR": -6.19,
+   "oos_net": {
+    "full(m+t 7.5bp)": -47.13,
+    "maker-maker 4bp": -22.43,
+    "vip maker-t 5bp": -35.48
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 1440,
+   "is_sum_R": 41.8,
+   "oos_n": 736,
+   "oos_raw_sumR": -6.22,
+   "oos_net": {
+    "full(m+t 7.5bp)": -142.73,
+    "maker-maker 4bp": -66.76,
+    "vip maker-t 5bp": -101.6
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "loose",
+   "idea": "mr_vwap",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1160,
+   "is_sum_R": 18.82,
+   "oos_n": 623,
+   "oos_raw_sumR": -6.68,
+   "oos_net": {
+    "full(m+t 7.5bp)": -203.75,
+    "maker-maker 4bp": -85.0,
+    "vip maker-t 5bp": -147.63
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.8",
+   "idea": "impulse",
+   "exit": "trail:2.0",
+   "is_n": 410,
+   "is_sum_R": 30.5,
+   "oos_n": 209,
+   "oos_raw_sumR": -7.67,
+   "oos_net": {
+    "full(m+t 7.5bp)": -48.72,
+    "maker-maker 4bp": -23.97,
+    "vip maker-t 5bp": -37.03
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "impulse",
+   "exit": "wide:3.5x3.0",
+   "is_n": 642,
+   "is_sum_R": 44.98,
+   "oos_n": 271,
+   "oos_raw_sumR": -7.77,
+   "oos_net": {
+    "full(m+t 7.5bp)": -42.01,
+    "maker-maker 4bp": -21.29,
+    "vip maker-t 5bp": -32.29
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 810,
+   "is_sum_R": 14.5,
+   "oos_n": 426,
+   "oos_raw_sumR": -7.94,
+   "oos_net": {
+    "full(m+t 7.5bp)": -119.21,
+    "maker-maker 4bp": -52.83,
+    "vip maker-t 5bp": -87.29
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 867,
+   "is_sum_R": 29.58,
+   "oos_n": 545,
+   "oos_raw_sumR": -8.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -86.24,
+    "maker-maker 4bp": -38.55,
+    "vip maker-t 5bp": -64.2
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1130,
+   "is_sum_R": 12.48,
+   "oos_n": 639,
+   "oos_raw_sumR": -8.68,
+   "oos_net": {
+    "full(m+t 7.5bp)": -71.76,
+    "maker-maker 4bp": -33.41,
+    "vip maker-t 5bp": -53.91
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 364,
+   "is_sum_R": 24.51,
+   "oos_n": 197,
+   "oos_raw_sumR": -8.83,
+   "oos_net": {
+    "full(m+t 7.5bp)": -61.75,
+    "maker-maker 4bp": -30.36,
+    "vip maker-t 5bp": -46.5
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "btc_led",
+   "exit": "rr:1.5x2.5",
+   "is_n": 2295,
+   "is_sum_R": 51.61,
+   "oos_n": 1062,
+   "oos_raw_sumR": -9.17,
+   "oos_net": {
+    "full(m+t 7.5bp)": -301.19,
+    "maker-maker 4bp": -126.63,
+    "vip maker-t 5bp": -217.52
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1610,
+   "is_sum_R": 24.94,
+   "oos_n": 823,
+   "oos_raw_sumR": -9.22,
+   "oos_net": {
+    "full(m+t 7.5bp)": -169.91,
+    "maker-maker 4bp": -75.13,
+    "vip maker-t 5bp": -123.41
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "rr:1.5x2.5",
+   "is_n": 903,
+   "is_sum_R": 2.98,
+   "oos_n": 494,
+   "oos_raw_sumR": -9.28,
+   "oos_net": {
+    "full(m+t 7.5bp)": -163.41,
+    "maker-maker 4bp": -70.49,
+    "vip maker-t 5bp": -119.54
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 292,
+   "is_sum_R": 7.95,
+   "oos_n": 157,
+   "oos_raw_sumR": -9.45,
+   "oos_net": {
+    "full(m+t 7.5bp)": -30.88,
+    "maker-maker 4bp": -17.79,
+    "vip maker-t 5bp": -24.84
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "loose",
+   "idea": "impulse",
+   "exit": "wide:3.5x3.0",
+   "is_n": 705,
+   "is_sum_R": 50.28,
+   "oos_n": 279,
+   "oos_raw_sumR": -9.77,
+   "oos_net": {
+    "full(m+t 7.5bp)": -46.79,
+    "maker-maker 4bp": -24.3,
+    "vip maker-t 5bp": -36.31
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "impulse",
+   "exit": "wide:3.5x3.0",
+   "is_n": 311,
+   "is_sum_R": 14.16,
+   "oos_n": 146,
+   "oos_raw_sumR": -9.84,
+   "oos_net": {
+    "full(m+t 7.5bp)": -27.14,
+    "maker-maker 4bp": -16.52,
+    "vip maker-t 5bp": -22.29
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "squeeze",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1152,
+   "is_sum_R": 13.76,
+   "oos_n": 503,
+   "oos_raw_sumR": -10.87,
+   "oos_net": {
+    "full(m+t 7.5bp)": -129.94,
+    "maker-maker 4bp": -56.85,
+    "vip maker-t 5bp": -96.51
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 376,
+   "is_sum_R": 9.58,
+   "oos_n": 186,
+   "oos_raw_sumR": -11.18,
+   "oos_net": {
+    "full(m+t 7.5bp)": -62.71,
+    "maker-maker 4bp": -32.1,
+    "vip maker-t 5bp": -47.87
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "squeeze",
+   "exit": "trail:2.0",
+   "is_n": 1192,
+   "is_sum_R": 0.19,
+   "oos_n": 508,
+   "oos_raw_sumR": -11.65,
+   "oos_net": {
+    "full(m+t 7.5bp)": -164.84,
+    "maker-maker 4bp": -71.02,
+    "vip maker-t 5bp": -121.75
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "time:45m",
+   "is_n": 583,
+   "is_sum_R": 26.54,
+   "oos_n": 278,
+   "oos_raw_sumR": -11.89,
+   "oos_net": {
+    "full(m+t 7.5bp)": -87.31,
+    "maker-maker 4bp": -43.8,
+    "vip maker-t 5bp": -65.14
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 1352,
+   "is_sum_R": 70.09,
+   "oos_n": 713,
+   "oos_raw_sumR": -12.47,
+   "oos_net": {
+    "full(m+t 7.5bp)": -192.76,
+    "maker-maker 4bp": -91.13,
+    "vip maker-t 5bp": -138.91
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "mr_vwap",
+   "exit": "time:45m",
+   "is_n": 1117,
+   "is_sum_R": 10.5,
+   "oos_n": 668,
+   "oos_raw_sumR": -13.28,
+   "oos_net": {
+    "full(m+t 7.5bp)": -186.94,
+    "maker-maker 4bp": -87.17,
+    "vip maker-t 5bp": -135.75
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "impulse",
+   "exit": "wide:3.5x3.0",
+   "is_n": 433,
+   "is_sum_R": 26.95,
+   "oos_n": 222,
+   "oos_raw_sumR": -13.92,
+   "oos_net": {
+    "full(m+t 7.5bp)": -37.32,
+    "maker-maker 4bp": -23.12,
+    "vip maker-t 5bp": -30.7
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1339,
+   "is_sum_R": 34.66,
+   "oos_n": 741,
+   "oos_raw_sumR": -14.06,
+   "oos_net": {
+    "full(m+t 7.5bp)": -161.16,
+    "maker-maker 4bp": -74.98,
+    "vip maker-t 5bp": -118.39
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 341,
+   "is_sum_R": 11.36,
+   "oos_n": 157,
+   "oos_raw_sumR": -14.27,
+   "oos_net": {
+    "full(m+t 7.5bp)": -36.75,
+    "maker-maker 4bp": -22.71,
+    "vip maker-t 5bp": -30.52
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "trend_bb15",
+   "exit": "trail:2.0",
+   "is_n": 1212,
+   "is_sum_R": 2.15,
+   "oos_n": 535,
+   "oos_raw_sumR": -14.41,
+   "oos_net": {
+    "full(m+t 7.5bp)": -172.86,
+    "maker-maker 4bp": -75.85,
+    "vip maker-t 5bp": -128.28
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 883,
+   "is_sum_R": 33.41,
+   "oos_n": 435,
+   "oos_raw_sumR": -14.57,
+   "oos_net": {
+    "full(m+t 7.5bp)": -113.15,
+    "maker-maker 4bp": -52.68,
+    "vip maker-t 5bp": -85.45
+   }
+  },
+  {
+   "symbol": "SOLUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb15",
+   "exit": "wide:3.5x3.0",
+   "is_n": 937,
+   "is_sum_R": 3.31,
+   "oos_n": 472,
+   "oos_raw_sumR": -14.67,
+   "oos_net": {
+    "full(m+t 7.5bp)": -72.73,
+    "maker-maker 4bp": -37.02,
+    "vip maker-t 5bp": -56.46
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "impulse",
+   "exit": "rr:1.5x2.5",
+   "is_n": 425,
+   "is_sum_R": 12.37,
+   "oos_n": 200,
+   "oos_raw_sumR": -14.69,
+   "oos_net": {
+    "full(m+t 7.5bp)": -76.97,
+    "maker-maker 4bp": -39.5,
+    "vip maker-t 5bp": -59.22
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 948,
+   "is_sum_R": 1.49,
+   "oos_n": 549,
+   "oos_raw_sumR": -14.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": -112.74,
+    "maker-maker 4bp": -57.95,
+    "vip maker-t 5bp": -83.29
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 561,
+   "is_sum_R": 24.29,
+   "oos_n": 290,
+   "oos_raw_sumR": -14.91,
+   "oos_net": {
+    "full(m+t 7.5bp)": -67.58,
+    "maker-maker 4bp": -35.53,
+    "vip maker-t 5bp": -52.69
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 465,
+   "is_sum_R": 0.04,
+   "oos_n": 251,
+   "oos_raw_sumR": -14.98,
+   "oos_net": {
+    "full(m+t 7.5bp)": -86.93,
+    "maker-maker 4bp": -43.28,
+    "vip maker-t 5bp": -66.54
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 991,
+   "is_sum_R": 17.18,
+   "oos_n": 614,
+   "oos_raw_sumR": -15.01,
+   "oos_net": {
+    "full(m+t 7.5bp)": -107.5,
+    "maker-maker 4bp": -51.66,
+    "vip maker-t 5bp": -81.19
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1037,
+   "is_sum_R": 14.06,
+   "oos_n": 642,
+   "oos_raw_sumR": -15.11,
+   "oos_net": {
+    "full(m+t 7.5bp)": -138.39,
+    "maker-maker 4bp": -65.95,
+    "vip maker-t 5bp": -102.62
+   }
+  },
+  {
+   "symbol": "SUIUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 939,
+   "is_sum_R": 4.16,
+   "oos_n": 518,
+   "oos_raw_sumR": -15.25,
+   "oos_net": {
+    "full(m+t 7.5bp)": -121.36,
+    "maker-maker 4bp": -61.57,
+    "vip maker-t 5bp": -89.66
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 935,
+   "is_sum_R": 4.45,
+   "oos_n": 497,
+   "oos_raw_sumR": -15.27,
+   "oos_net": {
+    "full(m+t 7.5bp)": -149.12,
+    "maker-maker 4bp": -72.71,
+    "vip maker-t 5bp": -109.48
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.8",
+   "idea": "squeeze",
+   "exit": "trail:2.0",
+   "is_n": 827,
+   "is_sum_R": 13.84,
+   "oos_n": 490,
+   "oos_raw_sumR": -15.32,
+   "oos_net": {
+    "full(m+t 7.5bp)": -110.03,
+    "maker-maker 4bp": -52.51,
+    "vip maker-t 5bp": -83.22
+   }
+  },
+  {
+   "symbol": "SOLUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 868,
+   "is_sum_R": 13.74,
+   "oos_n": 440,
+   "oos_raw_sumR": -15.41,
+   "oos_net": {
+    "full(m+t 7.5bp)": -70.43,
+    "maker-maker 4bp": -36.52,
+    "vip maker-t 5bp": -55.03
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.8",
+   "idea": "squeeze",
+   "exit": "wide:3.5x3.0",
+   "is_n": 744,
+   "is_sum_R": 2.73,
+   "oos_n": 408,
+   "oos_raw_sumR": -15.48,
+   "oos_net": {
+    "full(m+t 7.5bp)": -63.65,
+    "maker-maker 4bp": -34.14,
+    "vip maker-t 5bp": -50.11
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 845,
+   "is_sum_R": 31.56,
+   "oos_n": 440,
+   "oos_raw_sumR": -15.53,
+   "oos_net": {
+    "full(m+t 7.5bp)": -115.39,
+    "maker-maker 4bp": -54.34,
+    "vip maker-t 5bp": -87.26
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 362,
+   "is_sum_R": 10.39,
+   "oos_n": 223,
+   "oos_raw_sumR": -15.75,
+   "oos_net": {
+    "full(m+t 7.5bp)": -47.18,
+    "maker-maker 4bp": -27.48,
+    "vip maker-t 5bp": -38.5
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "vol1.8",
+   "idea": "squeeze",
+   "exit": "wide:3.5x3.0",
+   "is_n": 757,
+   "is_sum_R": 16.4,
+   "oos_n": 476,
+   "oos_raw_sumR": -15.79,
+   "oos_net": {
+    "full(m+t 7.5bp)": -71.37,
+    "maker-maker 4bp": -37.3,
+    "vip maker-t 5bp": -55.75
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "loose",
+   "idea": "impulse",
+   "exit": "time:45m",
+   "is_n": 716,
+   "is_sum_R": 41.81,
+   "oos_n": 294,
+   "oos_raw_sumR": -15.96,
+   "oos_net": {
+    "full(m+t 7.5bp)": -84.08,
+    "maker-maker 4bp": -45.3,
+    "vip maker-t 5bp": -63.87
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "trail:2.0",
+   "is_n": 623,
+   "is_sum_R": 30.65,
+   "oos_n": 307,
+   "oos_raw_sumR": -16.07,
+   "oos_net": {
+    "full(m+t 7.5bp)": -90.48,
+    "maker-maker 4bp": -45.07,
+    "vip maker-t 5bp": -69.49
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1377,
+   "is_sum_R": 4.86,
+   "oos_n": 688,
+   "oos_raw_sumR": -16.34,
+   "oos_net": {
+    "full(m+t 7.5bp)": -128.13,
+    "maker-maker 4bp": -60.49,
+    "vip maker-t 5bp": -96.4
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 849,
+   "is_sum_R": 7.26,
+   "oos_n": 478,
+   "oos_raw_sumR": -16.49,
+   "oos_net": {
+    "full(m+t 7.5bp)": -59.84,
+    "maker-maker 4bp": -33.3,
+    "vip maker-t 5bp": -47.64
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb15",
+   "exit": "trail:2.0",
+   "is_n": 847,
+   "is_sum_R": 5.53,
+   "oos_n": 512,
+   "oos_raw_sumR": -16.56,
+   "oos_net": {
+    "full(m+t 7.5bp)": -116.33,
+    "maker-maker 4bp": -55.78,
+    "vip maker-t 5bp": -88.07
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "wide:3.5x3.0",
+   "is_n": 511,
+   "is_sum_R": 56.24,
+   "oos_n": 243,
+   "oos_raw_sumR": -16.73,
+   "oos_net": {
+    "full(m+t 7.5bp)": -51.5,
+    "maker-maker 4bp": -29.9,
+    "vip maker-t 5bp": -41.83
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "trend_bb15",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1179,
+   "is_sum_R": 13.19,
+   "oos_n": 515,
+   "oos_raw_sumR": -16.86,
+   "oos_net": {
+    "full(m+t 7.5bp)": -138.04,
+    "maker-maker 4bp": -63.6,
+    "vip maker-t 5bp": -104.04
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1073,
+   "is_sum_R": 48.54,
+   "oos_n": 497,
+   "oos_raw_sumR": -16.93,
+   "oos_net": {
+    "full(m+t 7.5bp)": -160.24,
+    "maker-maker 4bp": -73.03,
+    "vip maker-t 5bp": -119.73
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "squeeze",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1296,
+   "is_sum_R": 9.47,
+   "oos_n": 758,
+   "oos_raw_sumR": -17.02,
+   "oos_net": {
+    "full(m+t 7.5bp)": -220.21,
+    "maker-maker 4bp": -98.95,
+    "vip maker-t 5bp": -161.93
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1069,
+   "is_sum_R": 9.04,
+   "oos_n": 570,
+   "oos_raw_sumR": -17.04,
+   "oos_net": {
+    "full(m+t 7.5bp)": -183.06,
+    "maker-maker 4bp": -83.11,
+    "vip maker-t 5bp": -135.74
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 692,
+   "is_sum_R": 51.32,
+   "oos_n": 413,
+   "oos_raw_sumR": -17.12,
+   "oos_net": {
+    "full(m+t 7.5bp)": -98.71,
+    "maker-maker 4bp": -49.19,
+    "vip maker-t 5bp": -75.6
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 631,
+   "is_sum_R": 7.07,
+   "oos_n": 302,
+   "oos_raw_sumR": -17.14,
+   "oos_net": {
+    "full(m+t 7.5bp)": -72.93,
+    "maker-maker 4bp": -38.79,
+    "vip maker-t 5bp": -57.23
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1055,
+   "is_sum_R": 23.69,
+   "oos_n": 521,
+   "oos_raw_sumR": -17.15,
+   "oos_net": {
+    "full(m+t 7.5bp)": -66.69,
+    "maker-maker 4bp": -36.29,
+    "vip maker-t 5bp": -52.78
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1312,
+   "is_sum_R": 31.97,
+   "oos_n": 788,
+   "oos_raw_sumR": -17.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -234.61,
+    "maker-maker 4bp": -104.44,
+    "vip maker-t 5bp": -172.49
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 768,
+   "is_sum_R": 39.89,
+   "oos_n": 460,
+   "oos_raw_sumR": -17.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": -109.38,
+    "maker-maker 4bp": -53.47,
+    "vip maker-t 5bp": -83.41
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 736,
+   "is_sum_R": 17.67,
+   "oos_n": 469,
+   "oos_raw_sumR": -17.76,
+   "oos_net": {
+    "full(m+t 7.5bp)": -114.64,
+    "maker-maker 4bp": -55.24,
+    "vip maker-t 5bp": -87.42
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 674,
+   "is_sum_R": 45.95,
+   "oos_n": 440,
+   "oos_raw_sumR": -17.88,
+   "oos_net": {
+    "full(m+t 7.5bp)": -107.96,
+    "maker-maker 4bp": -52.8,
+    "vip maker-t 5bp": -82.61
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1190,
+   "is_sum_R": 13.86,
+   "oos_n": 612,
+   "oos_raw_sumR": -18.28,
+   "oos_net": {
+    "full(m+t 7.5bp)": -77.3,
+    "maker-maker 4bp": -41.09,
+    "vip maker-t 5bp": -60.72
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "rr:1.5x2.5",
+   "is_n": 512,
+   "is_sum_R": 0.87,
+   "oos_n": 263,
+   "oos_raw_sumR": -18.54,
+   "oos_net": {
+    "full(m+t 7.5bp)": -94.25,
+    "maker-maker 4bp": -48.6,
+    "vip maker-t 5bp": -72.7
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 1101,
+   "is_sum_R": 11.24,
+   "oos_n": 732,
+   "oos_raw_sumR": -18.85,
+   "oos_net": {
+    "full(m+t 7.5bp)": -159.25,
+    "maker-maker 4bp": -74.34,
+    "vip maker-t 5bp": -119.38
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "impulse",
+   "exit": "time:45m",
+   "is_n": 659,
+   "is_sum_R": 32.59,
+   "oos_n": 289,
+   "oos_raw_sumR": -18.86,
+   "oos_net": {
+    "full(m+t 7.5bp)": -85.57,
+    "maker-maker 4bp": -47.52,
+    "vip maker-t 5bp": -65.8
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb15",
+   "exit": "wide:3.5x3.0",
+   "is_n": 784,
+   "is_sum_R": 14.65,
+   "oos_n": 483,
+   "oos_raw_sumR": -18.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -75.07,
+    "maker-maker 4bp": -40.63,
+    "vip maker-t 5bp": -59.29
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1043,
+   "is_sum_R": 6.4,
+   "oos_n": 495,
+   "oos_raw_sumR": -19.13,
+   "oos_net": {
+    "full(m+t 7.5bp)": -142.93,
+    "maker-maker 4bp": -66.51,
+    "vip maker-t 5bp": -108.32
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "pullback",
+   "exit": "wide:3.5x3.0",
+   "is_n": 2420,
+   "is_sum_R": 41.12,
+   "oos_n": 1282,
+   "oos_raw_sumR": -19.44,
+   "oos_net": {
+    "full(m+t 7.5bp)": -222.47,
+    "maker-maker 4bp": -97.42,
+    "vip maker-t 5bp": -165.61
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "impulse",
+   "exit": "rr:1.5x2.5",
+   "is_n": 698,
+   "is_sum_R": 42.55,
+   "oos_n": 291,
+   "oos_raw_sumR": -19.46,
+   "oos_net": {
+    "full(m+t 7.5bp)": -90.64,
+    "maker-maker 4bp": -48.22,
+    "vip maker-t 5bp": -70.2
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 724,
+   "is_sum_R": 6.83,
+   "oos_n": 464,
+   "oos_raw_sumR": -19.47,
+   "oos_net": {
+    "full(m+t 7.5bp)": -137.09,
+    "maker-maker 4bp": -66.52,
+    "vip maker-t 5bp": -103.49
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "loose",
+   "idea": "impulse",
+   "exit": "trail:2.0",
+   "is_n": 675,
+   "is_sum_R": 16.78,
+   "oos_n": 324,
+   "oos_raw_sumR": -19.54,
+   "oos_net": {
+    "full(m+t 7.5bp)": -100.0,
+    "maker-maker 4bp": -51.2,
+    "vip maker-t 5bp": -77.2
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "btc_led",
+   "exit": "rr:1.5x2.5",
+   "is_n": 2590,
+   "is_sum_R": 65.29,
+   "oos_n": 1114,
+   "oos_raw_sumR": -19.64,
+   "oos_net": {
+    "full(m+t 7.5bp)": -329.4,
+    "maker-maker 4bp": -144.18,
+    "vip maker-t 5bp": -240.68
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 725,
+   "is_sum_R": 2.97,
+   "oos_n": 438,
+   "oos_raw_sumR": -19.98,
+   "oos_net": {
+    "full(m+t 7.5bp)": -126.69,
+    "maker-maker 4bp": -63.0,
+    "vip maker-t 5bp": -96.08
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 724,
+   "is_sum_R": 12.19,
+   "oos_n": 397,
+   "oos_raw_sumR": -20.42,
+   "oos_net": {
+    "full(m+t 7.5bp)": -117.96,
+    "maker-maker 4bp": -62.74,
+    "vip maker-t 5bp": -88.92
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "mr_vwap",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1448,
+   "is_sum_R": 12.96,
+   "oos_n": 857,
+   "oos_raw_sumR": -20.57,
+   "oos_net": {
+    "full(m+t 7.5bp)": -261.9,
+    "maker-maker 4bp": -116.81,
+    "vip maker-t 5bp": -193.06
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1126,
+   "is_sum_R": 79.14,
+   "oos_n": 607,
+   "oos_raw_sumR": -20.58,
+   "oos_net": {
+    "full(m+t 7.5bp)": -161.58,
+    "maker-maker 4bp": -75.77,
+    "vip maker-t 5bp": -121.74
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "impulse",
+   "exit": "rr:1.5x2.5",
+   "is_n": 485,
+   "is_sum_R": 23.4,
+   "oos_n": 244,
+   "oos_raw_sumR": -20.73,
+   "oos_net": {
+    "full(m+t 7.5bp)": -76.59,
+    "maker-maker 4bp": -43.15,
+    "vip maker-t 5bp": -60.6
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "loose",
+   "idea": "impulse",
+   "exit": "rr:1.5x2.5",
+   "is_n": 767,
+   "is_sum_R": 50.89,
+   "oos_n": 299,
+   "oos_raw_sumR": -21.35,
+   "oos_net": {
+    "full(m+t 7.5bp)": -95.47,
+    "maker-maker 4bp": -51.18,
+    "vip maker-t 5bp": -74.23
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "btc_led",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1032,
+   "is_sum_R": 22.15,
+   "oos_n": 593,
+   "oos_raw_sumR": -21.39,
+   "oos_net": {
+    "full(m+t 7.5bp)": -188.01,
+    "maker-maker 4bp": -87.85,
+    "vip maker-t 5bp": -140.48
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1015,
+   "is_sum_R": 68.56,
+   "oos_n": 590,
+   "oos_raw_sumR": -21.47,
+   "oos_net": {
+    "full(m+t 7.5bp)": -106.1,
+    "maker-maker 4bp": -54.16,
+    "vip maker-t 5bp": -82.34
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "loose",
+   "idea": "mr_rsi5",
+   "exit": "rr:1.5x2.5",
+   "is_n": 2272,
+   "is_sum_R": 24.49,
+   "oos_n": 1279,
+   "oos_raw_sumR": -21.77,
+   "oos_net": {
+    "full(m+t 7.5bp)": -338.45,
+    "maker-maker 4bp": -149.51,
+    "vip maker-t 5bp": -247.59
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "impulse",
+   "exit": "trail:2.0",
+   "is_n": 473,
+   "is_sum_R": 52.58,
+   "oos_n": 241,
+   "oos_raw_sumR": -21.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": -65.63,
+    "maker-maker 4bp": -38.96,
+    "vip maker-t 5bp": -53.24
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "impulse",
+   "exit": "time:45m",
+   "is_n": 466,
+   "is_sum_R": 27.38,
+   "oos_n": 240,
+   "oos_raw_sumR": -21.87,
+   "oos_net": {
+    "full(m+t 7.5bp)": -73.53,
+    "maker-maker 4bp": -43.95,
+    "vip maker-t 5bp": -58.26
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1328,
+   "is_sum_R": 25.42,
+   "oos_n": 701,
+   "oos_raw_sumR": -21.92,
+   "oos_net": {
+    "full(m+t 7.5bp)": -92.22,
+    "maker-maker 4bp": -49.33,
+    "vip maker-t 5bp": -72.39
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_rsi5",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1014,
+   "is_sum_R": 8.7,
+   "oos_n": 548,
+   "oos_raw_sumR": -22.21,
+   "oos_net": {
+    "full(m+t 7.5bp)": -130.33,
+    "maker-maker 4bp": -62.96,
+    "vip maker-t 5bp": -100.33
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 687,
+   "is_sum_R": 19.43,
+   "oos_n": 341,
+   "oos_raw_sumR": -22.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -115.27,
+    "maker-maker 4bp": -59.14,
+    "vip maker-t 5bp": -88.89
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.5",
+   "idea": "impulse",
+   "exit": "trail:2.0",
+   "is_n": 611,
+   "is_sum_R": 19.18,
+   "oos_n": 288,
+   "oos_raw_sumR": -23.13,
+   "oos_net": {
+    "full(m+t 7.5bp)": -91.83,
+    "maker-maker 4bp": -50.18,
+    "vip maker-t 5bp": -72.36
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 602,
+   "is_sum_R": 15.39,
+   "oos_n": 395,
+   "oos_raw_sumR": -23.25,
+   "oos_net": {
+    "full(m+t 7.5bp)": -70.61,
+    "maker-maker 4bp": -41.54,
+    "vip maker-t 5bp": -57.31
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 385,
+   "is_sum_R": 1.07,
+   "oos_n": 256,
+   "oos_raw_sumR": -23.27,
+   "oos_net": {
+    "full(m+t 7.5bp)": -84.16,
+    "maker-maker 4bp": -46.82,
+    "vip maker-t 5bp": -67.05
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 757,
+   "is_sum_R": 30.43,
+   "oos_n": 403,
+   "oos_raw_sumR": -23.83,
+   "oos_net": {
+    "full(m+t 7.5bp)": -109.79,
+    "maker-maker 4bp": -57.64,
+    "vip maker-t 5bp": -85.44
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb15",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1346,
+   "is_sum_R": 21.93,
+   "oos_n": 777,
+   "oos_raw_sumR": -23.97,
+   "oos_net": {
+    "full(m+t 7.5bp)": -232.6,
+    "maker-maker 4bp": -107.83,
+    "vip maker-t 5bp": -172.85
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "btc_led",
+   "exit": "trail:2.0",
+   "is_n": 2227,
+   "is_sum_R": 69.03,
+   "oos_n": 1040,
+   "oos_raw_sumR": -24.18,
+   "oos_net": {
+    "full(m+t 7.5bp)": -273.45,
+    "maker-maker 4bp": -121.38,
+    "vip maker-t 5bp": -203.12
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 669,
+   "is_sum_R": 10.91,
+   "oos_n": 436,
+   "oos_raw_sumR": -24.28,
+   "oos_net": {
+    "full(m+t 7.5bp)": -77.25,
+    "maker-maker 4bp": -44.63,
+    "vip maker-t 5bp": -62.42
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 663,
+   "is_sum_R": 51.02,
+   "oos_n": 343,
+   "oos_raw_sumR": -24.29,
+   "oos_net": {
+    "full(m+t 7.5bp)": -126.59,
+    "maker-maker 4bp": -65.22,
+    "vip maker-t 5bp": -97.36
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1112,
+   "is_sum_R": 15.25,
+   "oos_n": 486,
+   "oos_raw_sumR": -24.31,
+   "oos_net": {
+    "full(m+t 7.5bp)": -174.83,
+    "maker-maker 4bp": -84.38,
+    "vip maker-t 5bp": -131.87
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb15",
+   "exit": "trail:2.0",
+   "is_n": 508,
+   "is_sum_R": 0.15,
+   "oos_n": 285,
+   "oos_raw_sumR": -24.38,
+   "oos_net": {
+    "full(m+t 7.5bp)": -91.65,
+    "maker-maker 4bp": -50.38,
+    "vip maker-t 5bp": -72.76
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "loose",
+   "idea": "btc_led",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1469,
+   "is_sum_R": 4.34,
+   "oos_n": 595,
+   "oos_raw_sumR": -24.52,
+   "oos_net": {
+    "full(m+t 7.5bp)": -96.69,
+    "maker-maker 4bp": -52.33,
+    "vip maker-t 5bp": -76.45
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "loose",
+   "idea": "impulse",
+   "exit": "trail:2.0",
+   "is_n": 745,
+   "is_sum_R": 67.0,
+   "oos_n": 298,
+   "oos_raw_sumR": -24.53,
+   "oos_net": {
+    "full(m+t 7.5bp)": -88.27,
+    "maker-maker 4bp": -49.37,
+    "vip maker-t 5bp": -70.3
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 720,
+   "is_sum_R": 9.61,
+   "oos_n": 348,
+   "oos_raw_sumR": -24.65,
+   "oos_net": {
+    "full(m+t 7.5bp)": -128.08,
+    "maker-maker 4bp": -66.12,
+    "vip maker-t 5bp": -98.5
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 668,
+   "is_sum_R": 10.97,
+   "oos_n": 333,
+   "oos_raw_sumR": -24.65,
+   "oos_net": {
+    "full(m+t 7.5bp)": -92.99,
+    "maker-maker 4bp": -50.72,
+    "vip maker-t 5bp": -73.92
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "impulse",
+   "exit": "trail:2.0",
+   "is_n": 682,
+   "is_sum_R": 53.8,
+   "oos_n": 292,
+   "oos_raw_sumR": -24.69,
+   "oos_net": {
+    "full(m+t 7.5bp)": -86.22,
+    "maker-maker 4bp": -48.73,
+    "vip maker-t 5bp": -68.85
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.8",
+   "idea": "impulse",
+   "exit": "trail:2.0",
+   "is_n": 333,
+   "is_sum_R": 6.23,
+   "oos_n": 159,
+   "oos_raw_sumR": -24.87,
+   "oos_net": {
+    "full(m+t 7.5bp)": -56.84,
+    "maker-maker 4bp": -37.13,
+    "vip maker-t 5bp": -47.89
+   }
+  },
+  {
+   "symbol": "OPUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1329,
+   "is_sum_R": 2.4,
+   "oos_n": 707,
+   "oos_raw_sumR": -24.93,
+   "oos_net": {
+    "full(m+t 7.5bp)": -92.73,
+    "maker-maker 4bp": -51.39,
+    "vip maker-t 5bp": -73.59
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 773,
+   "is_sum_R": 9.46,
+   "oos_n": 478,
+   "oos_raw_sumR": -25.05,
+   "oos_net": {
+    "full(m+t 7.5bp)": -142.95,
+    "maker-maker 4bp": -72.84,
+    "vip maker-t 5bp": -109.04
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1008,
+   "is_sum_R": 46.63,
+   "oos_n": 551,
+   "oos_raw_sumR": -25.08,
+   "oos_net": {
+    "full(m+t 7.5bp)": -170.24,
+    "maker-maker 4bp": -81.37,
+    "vip maker-t 5bp": -129.39
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "squeeze",
+   "exit": "trail:2.0",
+   "is_n": 471,
+   "is_sum_R": 4.04,
+   "oos_n": 275,
+   "oos_raw_sumR": -25.17,
+   "oos_net": {
+    "full(m+t 7.5bp)": -90.81,
+    "maker-maker 4bp": -50.51,
+    "vip maker-t 5bp": -72.38
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 1053,
+   "is_sum_R": 16.7,
+   "oos_n": 534,
+   "oos_raw_sumR": -25.35,
+   "oos_net": {
+    "full(m+t 7.5bp)": -186.34,
+    "maker-maker 4bp": -92.77,
+    "vip maker-t 5bp": -139.27
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1417,
+   "is_sum_R": 52.88,
+   "oos_n": 752,
+   "oos_raw_sumR": -25.84,
+   "oos_net": {
+    "full(m+t 7.5bp)": -206.97,
+    "maker-maker 4bp": -96.48,
+    "vip maker-t 5bp": -155.87
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 954,
+   "is_sum_R": 77.78,
+   "oos_n": 461,
+   "oos_raw_sumR": -26.18,
+   "oos_net": {
+    "full(m+t 7.5bp)": -161.96,
+    "maker-maker 4bp": -78.82,
+    "vip maker-t 5bp": -123.76
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 1660,
+   "is_sum_R": 14.43,
+   "oos_n": 880,
+   "oos_raw_sumR": -26.29,
+   "oos_net": {
+    "full(m+t 7.5bp)": -175.35,
+    "maker-maker 4bp": -85.9,
+    "vip maker-t 5bp": -132.77
+   }
+  },
+  {
+   "symbol": "SOLUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 755,
+   "is_sum_R": 15.02,
+   "oos_n": 398,
+   "oos_raw_sumR": -26.42,
+   "oos_net": {
+    "full(m+t 7.5bp)": -76.97,
+    "maker-maker 4bp": -45.7,
+    "vip maker-t 5bp": -62.86
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.5",
+   "idea": "btc_led",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1466,
+   "is_sum_R": 0.66,
+   "oos_n": 593,
+   "oos_raw_sumR": -26.61,
+   "oos_net": {
+    "full(m+t 7.5bp)": -97.96,
+    "maker-maker 4bp": -54.12,
+    "vip maker-t 5bp": -77.94
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 667,
+   "is_sum_R": 18.17,
+   "oos_n": 435,
+   "oos_raw_sumR": -26.63,
+   "oos_net": {
+    "full(m+t 7.5bp)": -118.88,
+    "maker-maker 4bp": -66.98,
+    "vip maker-t 5bp": -91.29
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "loose",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 1711,
+   "is_sum_R": 17.85,
+   "oos_n": 880,
+   "oos_raw_sumR": -26.69,
+   "oos_net": {
+    "full(m+t 7.5bp)": -175.75,
+    "maker-maker 4bp": -86.3,
+    "vip maker-t 5bp": -133.16
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1036,
+   "is_sum_R": 1.99,
+   "oos_n": 599,
+   "oos_raw_sumR": -27.07,
+   "oos_net": {
+    "full(m+t 7.5bp)": -123.49,
+    "maker-maker 4bp": -64.65,
+    "vip maker-t 5bp": -96.29
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb15",
+   "exit": "time:45m",
+   "is_n": 895,
+   "is_sum_R": 30.63,
+   "oos_n": 530,
+   "oos_raw_sumR": -27.11,
+   "oos_net": {
+    "full(m+t 7.5bp)": -135.99,
+    "maker-maker 4bp": -74.29,
+    "vip maker-t 5bp": -103.59
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1112,
+   "is_sum_R": 12.82,
+   "oos_n": 619,
+   "oos_raw_sumR": -27.14,
+   "oos_net": {
+    "full(m+t 7.5bp)": -89.91,
+    "maker-maker 4bp": -51.52,
+    "vip maker-t 5bp": -72.24
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1141,
+   "is_sum_R": 0.14,
+   "oos_n": 705,
+   "oos_raw_sumR": -27.18,
+   "oos_net": {
+    "full(m+t 7.5bp)": -108.24,
+    "maker-maker 4bp": -58.02,
+    "vip maker-t 5bp": -85.65
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1240,
+   "is_sum_R": 23.65,
+   "oos_n": 693,
+   "oos_raw_sumR": -27.22,
+   "oos_net": {
+    "full(m+t 7.5bp)": -211.25,
+    "maker-maker 4bp": -101.76,
+    "vip maker-t 5bp": -158.34
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "rr:1.5x2.5",
+   "is_n": 634,
+   "is_sum_R": 10.62,
+   "oos_n": 299,
+   "oos_raw_sumR": -27.23,
+   "oos_net": {
+    "full(m+t 7.5bp)": -115.07,
+    "maker-maker 4bp": -61.73,
+    "vip maker-t 5bp": -90.2
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "time:45m",
+   "is_n": 375,
+   "is_sum_R": 10.65,
+   "oos_n": 195,
+   "oos_raw_sumR": -27.49,
+   "oos_net": {
+    "full(m+t 7.5bp)": -80.96,
+    "maker-maker 4bp": -49.63,
+    "vip maker-t 5bp": -65.42
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 645,
+   "is_sum_R": 66.93,
+   "oos_n": 335,
+   "oos_raw_sumR": -27.65,
+   "oos_net": {
+    "full(m+t 7.5bp)": -119.64,
+    "maker-maker 4bp": -63.78,
+    "vip maker-t 5bp": -93.59
+   }
+  },
+  {
+   "symbol": "SUIUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "time:45m",
+   "is_n": 2060,
+   "is_sum_R": 6.16,
+   "oos_n": 1246,
+   "oos_raw_sumR": -28.07,
+   "oos_net": {
+    "full(m+t 7.5bp)": -295.53,
+    "maker-maker 4bp": -144.81,
+    "vip maker-t 5bp": -215.64
+   }
+  },
+  {
+   "symbol": "OPUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1141,
+   "is_sum_R": 4.75,
+   "oos_n": 628,
+   "oos_raw_sumR": -28.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": -88.79,
+    "maker-maker 4bp": -52.01,
+    "vip maker-t 5bp": -71.89
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 988,
+   "is_sum_R": 70.85,
+   "oos_n": 550,
+   "oos_raw_sumR": -29.37,
+   "oos_net": {
+    "full(m+t 7.5bp)": -154.53,
+    "maker-maker 4bp": -78.45,
+    "vip maker-t 5bp": -119.13
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_rsi5",
+   "exit": "rr:1.5x2.5",
+   "is_n": 2255,
+   "is_sum_R": 26.18,
+   "oos_n": 1276,
+   "oos_raw_sumR": -29.54,
+   "oos_net": {
+    "full(m+t 7.5bp)": -344.72,
+    "maker-maker 4bp": -156.57,
+    "vip maker-t 5bp": -254.33
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1309,
+   "is_sum_R": 47.11,
+   "oos_n": 699,
+   "oos_raw_sumR": -29.97,
+   "oos_net": {
+    "full(m+t 7.5bp)": -139.88,
+    "maker-maker 4bp": -72.66,
+    "vip maker-t 5bp": -108.93
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1192,
+   "is_sum_R": 40.21,
+   "oos_n": 597,
+   "oos_raw_sumR": -30.12,
+   "oos_net": {
+    "full(m+t 7.5bp)": -84.4,
+    "maker-maker 4bp": -51.24,
+    "vip maker-t 5bp": -69.11
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1339,
+   "is_sum_R": 28.09,
+   "oos_n": 693,
+   "oos_raw_sumR": -30.14,
+   "oos_net": {
+    "full(m+t 7.5bp)": -94.82,
+    "maker-maker 4bp": -55.25,
+    "vip maker-t 5bp": -76.61
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 674,
+   "is_sum_R": 22.03,
+   "oos_n": 454,
+   "oos_raw_sumR": -30.43,
+   "oos_net": {
+    "full(m+t 7.5bp)": -113.67,
+    "maker-maker 4bp": -62.92,
+    "vip maker-t 5bp": -90.17
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 721,
+   "is_sum_R": 48.31,
+   "oos_n": 436,
+   "oos_raw_sumR": -30.65,
+   "oos_net": {
+    "full(m+t 7.5bp)": -133.69,
+    "maker-maker 4bp": -75.64,
+    "vip maker-t 5bp": -102.9
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "trail:2.0",
+   "is_n": 866,
+   "is_sum_R": 50.1,
+   "oos_n": 587,
+   "oos_raw_sumR": -30.88,
+   "oos_net": {
+    "full(m+t 7.5bp)": -154.65,
+    "maker-maker 4bp": -79.15,
+    "vip maker-t 5bp": -119.73
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb15",
+   "exit": "rr:1.5x2.5",
+   "is_n": 976,
+   "is_sum_R": 70.93,
+   "oos_n": 579,
+   "oos_raw_sumR": -31.06,
+   "oos_net": {
+    "full(m+t 7.5bp)": -160.88,
+    "maker-maker 4bp": -82.72,
+    "vip maker-t 5bp": -123.88
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 674,
+   "is_sum_R": 17.76,
+   "oos_n": 412,
+   "oos_raw_sumR": -31.08,
+   "oos_net": {
+    "full(m+t 7.5bp)": -128.89,
+    "maker-maker 4bp": -73.41,
+    "vip maker-t 5bp": -99.8
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "time:45m",
+   "is_n": 1004,
+   "is_sum_R": 30.0,
+   "oos_n": 687,
+   "oos_raw_sumR": -31.83,
+   "oos_net": {
+    "full(m+t 7.5bp)": -185.62,
+    "maker-maker 4bp": -99.4,
+    "vip maker-t 5bp": -139.51
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "btc_led",
+   "exit": "trail:2.0",
+   "is_n": 970,
+   "is_sum_R": 11.63,
+   "oos_n": 499,
+   "oos_raw_sumR": -31.83,
+   "oos_net": {
+    "full(m+t 7.5bp)": -146.99,
+    "maker-maker 4bp": -76.69,
+    "vip maker-t 5bp": -114.52
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1533,
+   "is_sum_R": 20.31,
+   "oos_n": 817,
+   "oos_raw_sumR": -31.92,
+   "oos_net": {
+    "full(m+t 7.5bp)": -193.92,
+    "maker-maker 4bp": -98.88,
+    "vip maker-t 5bp": -146.86
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "squeeze",
+   "exit": "rr:1.5x2.5",
+   "is_n": 925,
+   "is_sum_R": 43.38,
+   "oos_n": 559,
+   "oos_raw_sumR": -32.29,
+   "oos_net": {
+    "full(m+t 7.5bp)": -158.98,
+    "maker-maker 4bp": -82.7,
+    "vip maker-t 5bp": -122.88
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 961,
+   "is_sum_R": 20.52,
+   "oos_n": 539,
+   "oos_raw_sumR": -32.95,
+   "oos_net": {
+    "full(m+t 7.5bp)": -80.43,
+    "maker-maker 4bp": -51.31,
+    "vip maker-t 5bp": -67.09
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1470,
+   "is_sum_R": 12.98,
+   "oos_n": 741,
+   "oos_raw_sumR": -32.99,
+   "oos_net": {
+    "full(m+t 7.5bp)": -249.7,
+    "maker-maker 4bp": -119.21,
+    "vip maker-t 5bp": -187.95
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "impulse",
+   "exit": "time:45m",
+   "is_n": 540,
+   "is_sum_R": 4.82,
+   "oos_n": 258,
+   "oos_raw_sumR": -33.31,
+   "oos_net": {
+    "full(m+t 7.5bp)": -100.09,
+    "maker-maker 4bp": -61.71,
+    "vip maker-t 5bp": -80.41
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 1031,
+   "is_sum_R": 14.43,
+   "oos_n": 447,
+   "oos_raw_sumR": -33.73,
+   "oos_net": {
+    "full(m+t 7.5bp)": -165.61,
+    "maker-maker 4bp": -89.19,
+    "vip maker-t 5bp": -126.96
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1119,
+   "is_sum_R": 28.67,
+   "oos_n": 656,
+   "oos_raw_sumR": -33.88,
+   "oos_net": {
+    "full(m+t 7.5bp)": -180.97,
+    "maker-maker 4bp": -91.66,
+    "vip maker-t 5bp": -139.32
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 2793,
+   "is_sum_R": 36.41,
+   "oos_n": 1705,
+   "oos_raw_sumR": -34.94,
+   "oos_net": {
+    "full(m+t 7.5bp)": -450.43,
+    "maker-maker 4bp": -196.75,
+    "vip maker-t 5bp": -333.29
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "squeeze",
+   "exit": "time:45m",
+   "is_n": 1153,
+   "is_sum_R": 0.66,
+   "oos_n": 471,
+   "oos_raw_sumR": -35.03,
+   "oos_net": {
+    "full(m+t 7.5bp)": -176.95,
+    "maker-maker 4bp": -94.08,
+    "vip maker-t 5bp": -135.58
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 1872,
+   "is_sum_R": 30.38,
+   "oos_n": 1318,
+   "oos_raw_sumR": -35.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": -314.44,
+    "maker-maker 4bp": -144.25,
+    "vip maker-t 5bp": -235.75
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1598,
+   "is_sum_R": 77.19,
+   "oos_n": 1014,
+   "oos_raw_sumR": -35.97,
+   "oos_net": {
+    "full(m+t 7.5bp)": -163.06,
+    "maker-maker 4bp": -84.34,
+    "vip maker-t 5bp": -127.63
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 994,
+   "is_sum_R": 43.99,
+   "oos_n": 480,
+   "oos_raw_sumR": -36.22,
+   "oos_net": {
+    "full(m+t 7.5bp)": -185.36,
+    "maker-maker 4bp": -95.03,
+    "vip maker-t 5bp": -143.05
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1515,
+   "is_sum_R": 50.02,
+   "oos_n": 791,
+   "oos_raw_sumR": -36.46,
+   "oos_net": {
+    "full(m+t 7.5bp)": -164.1,
+    "maker-maker 4bp": -87.13,
+    "vip maker-t 5bp": -127.77
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_rsi5",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1989,
+   "is_sum_R": 6.85,
+   "oos_n": 1147,
+   "oos_raw_sumR": -36.47,
+   "oos_net": {
+    "full(m+t 7.5bp)": -309.99,
+    "maker-maker 4bp": -146.58,
+    "vip maker-t 5bp": -231.59
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "loose",
+   "idea": "btc_led",
+   "exit": "trail:2.0",
+   "is_n": 1870,
+   "is_sum_R": 1.33,
+   "oos_n": 458,
+   "oos_raw_sumR": -36.58,
+   "oos_net": {
+    "full(m+t 7.5bp)": -120.47,
+    "maker-maker 4bp": -69.63,
+    "vip maker-t 5bp": -96.68
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "btc_led",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1631,
+   "is_sum_R": 49.75,
+   "oos_n": 824,
+   "oos_raw_sumR": -37.16,
+   "oos_net": {
+    "full(m+t 7.5bp)": -250.49,
+    "maker-maker 4bp": -122.76,
+    "vip maker-t 5bp": -189.44
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 724,
+   "is_sum_R": 17.98,
+   "oos_n": 442,
+   "oos_raw_sumR": -37.68,
+   "oos_net": {
+    "full(m+t 7.5bp)": -139.55,
+    "maker-maker 4bp": -81.6,
+    "vip maker-t 5bp": -109.31
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 720,
+   "is_sum_R": 58.69,
+   "oos_n": 484,
+   "oos_raw_sumR": -37.97,
+   "oos_net": {
+    "full(m+t 7.5bp)": -148.75,
+    "maker-maker 4bp": -82.49,
+    "vip maker-t 5bp": -117.02
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "vol1.8",
+   "idea": "btc_led",
+   "exit": "trail:2.0",
+   "is_n": 1430,
+   "is_sum_R": 4.04,
+   "oos_n": 425,
+   "oos_raw_sumR": -38.51,
+   "oos_net": {
+    "full(m+t 7.5bp)": -110.44,
+    "maker-maker 4bp": -66.78,
+    "vip maker-t 5bp": -90.07
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "loose",
+   "idea": "btc_led",
+   "exit": "trail:2.0",
+   "is_n": 2345,
+   "is_sum_R": 45.04,
+   "oos_n": 1072,
+   "oos_raw_sumR": -38.63,
+   "oos_net": {
+    "full(m+t 7.5bp)": -301.24,
+    "maker-maker 4bp": -140.64,
+    "vip maker-t 5bp": -227.29
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_rsi5",
+   "exit": "time:45m",
+   "is_n": 1088,
+   "is_sum_R": 41.37,
+   "oos_n": 452,
+   "oos_raw_sumR": -39.52,
+   "oos_net": {
+    "full(m+t 7.5bp)": -173.75,
+    "maker-maker 4bp": -95.69,
+    "vip maker-t 5bp": -134.52
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1094,
+   "is_sum_R": 31.12,
+   "oos_n": 584,
+   "oos_raw_sumR": -39.57,
+   "oos_net": {
+    "full(m+t 7.5bp)": -216.14,
+    "maker-maker 4bp": -107.76,
+    "vip maker-t 5bp": -166.56
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1021,
+   "is_sum_R": 31.75,
+   "oos_n": 559,
+   "oos_raw_sumR": -39.58,
+   "oos_net": {
+    "full(m+t 7.5bp)": -187.58,
+    "maker-maker 4bp": -98.6,
+    "vip maker-t 5bp": -145.35
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "vol1.5",
+   "idea": "btc_led",
+   "exit": "trail:2.0",
+   "is_n": 1810,
+   "is_sum_R": 10.51,
+   "oos_n": 454,
+   "oos_raw_sumR": -39.59,
+   "oos_net": {
+    "full(m+t 7.5bp)": -122.25,
+    "maker-maker 4bp": -72.11,
+    "vip maker-t 5bp": -98.83
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb15",
+   "exit": "trail:2.0",
+   "is_n": 924,
+   "is_sum_R": 65.74,
+   "oos_n": 588,
+   "oos_raw_sumR": -39.97,
+   "oos_net": {
+    "full(m+t 7.5bp)": -145.31,
+    "maker-maker 4bp": -81.02,
+    "vip maker-t 5bp": -115.6
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1060,
+   "is_sum_R": 22.94,
+   "oos_n": 591,
+   "oos_raw_sumR": -40.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -196.32,
+    "maker-maker 4bp": -103.11,
+    "vip maker-t 5bp": -151.5
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 602,
+   "is_sum_R": 12.5,
+   "oos_n": 316,
+   "oos_raw_sumR": -41.09,
+   "oos_net": {
+    "full(m+t 7.5bp)": -130.39,
+    "maker-maker 4bp": -79.07,
+    "vip maker-t 5bp": -104.07
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1223,
+   "is_sum_R": 35.11,
+   "oos_n": 688,
+   "oos_raw_sumR": -41.33,
+   "oos_net": {
+    "full(m+t 7.5bp)": -227.64,
+    "maker-maker 4bp": -116.07,
+    "vip maker-t 5bp": -174.33
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 809,
+   "is_sum_R": 46.09,
+   "oos_n": 488,
+   "oos_raw_sumR": -41.78,
+   "oos_net": {
+    "full(m+t 7.5bp)": -152.13,
+    "maker-maker 4bp": -86.0,
+    "vip maker-t 5bp": -120.57
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "squeeze",
+   "exit": "trail:2.0",
+   "is_n": 876,
+   "is_sum_R": 40.46,
+   "oos_n": 575,
+   "oos_raw_sumR": -42.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -145.75,
+    "maker-maker 4bp": -82.44,
+    "vip maker-t 5bp": -116.48
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "rr:1.5x2.5",
+   "is_n": 922,
+   "is_sum_R": 26.98,
+   "oos_n": 623,
+   "oos_raw_sumR": -42.94,
+   "oos_net": {
+    "full(m+t 7.5bp)": -204.4,
+    "maker-maker 4bp": -107.58,
+    "vip maker-t 5bp": -158.25
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1285,
+   "is_sum_R": 26.26,
+   "oos_n": 617,
+   "oos_raw_sumR": -43.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -231.43,
+    "maker-maker 4bp": -115.82,
+    "vip maker-t 5bp": -178.8
+   }
+  },
+  {
+   "symbol": "SOLUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1164,
+   "is_sum_R": 13.23,
+   "oos_n": 586,
+   "oos_raw_sumR": -43.94,
+   "oos_net": {
+    "full(m+t 7.5bp)": -184.55,
+    "maker-maker 4bp": -97.91,
+    "vip maker-t 5bp": -145.18
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 2716,
+   "is_sum_R": 32.22,
+   "oos_n": 1325,
+   "oos_raw_sumR": -44.19,
+   "oos_net": {
+    "full(m+t 7.5bp)": -297.93,
+    "maker-maker 4bp": -143.64,
+    "vip maker-t 5bp": -226.17
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "btc_led",
+   "exit": "trail:2.0",
+   "is_n": 1443,
+   "is_sum_R": 20.53,
+   "oos_n": 775,
+   "oos_raw_sumR": -44.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": -203.58,
+    "maker-maker 4bp": -106.02,
+    "vip maker-t 5bp": -158.73
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 773,
+   "is_sum_R": 34.83,
+   "oos_n": 502,
+   "oos_raw_sumR": -45.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -135.65,
+    "maker-maker 4bp": -80.4,
+    "vip maker-t 5bp": -110.06
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 1111,
+   "is_sum_R": 13.09,
+   "oos_n": 613,
+   "oos_raw_sumR": -45.14,
+   "oos_net": {
+    "full(m+t 7.5bp)": -201.87,
+    "maker-maker 4bp": -112.14,
+    "vip maker-t 5bp": -155.54
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1025,
+   "is_sum_R": 9.67,
+   "oos_n": 567,
+   "oos_raw_sumR": -45.14,
+   "oos_net": {
+    "full(m+t 7.5bp)": -124.76,
+    "maker-maker 4bp": -75.65,
+    "vip maker-t 5bp": -102.48
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb15",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1338,
+   "is_sum_R": 34.41,
+   "oos_n": 712,
+   "oos_raw_sumR": -45.26,
+   "oos_net": {
+    "full(m+t 7.5bp)": -213.24,
+    "maker-maker 4bp": -112.08,
+    "vip maker-t 5bp": -165.38
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "squeeze",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1131,
+   "is_sum_R": 0.81,
+   "oos_n": 638,
+   "oos_raw_sumR": -45.29,
+   "oos_net": {
+    "full(m+t 7.5bp)": -141.08,
+    "maker-maker 4bp": -81.91,
+    "vip maker-t 5bp": -114.31
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1167,
+   "is_sum_R": 59.49,
+   "oos_n": 661,
+   "oos_raw_sumR": -45.42,
+   "oos_net": {
+    "full(m+t 7.5bp)": -203.88,
+    "maker-maker 4bp": -107.1,
+    "vip maker-t 5bp": -159.22
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "squeeze",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1292,
+   "is_sum_R": 15.05,
+   "oos_n": 689,
+   "oos_raw_sumR": -47.94,
+   "oos_net": {
+    "full(m+t 7.5bp)": -212.11,
+    "maker-maker 4bp": -113.23,
+    "vip maker-t 5bp": -165.34
+   }
+  },
+  {
+   "symbol": "OPUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 840,
+   "is_sum_R": 0.38,
+   "oos_n": 546,
+   "oos_raw_sumR": -48.06,
+   "oos_net": {
+    "full(m+t 7.5bp)": -97.78,
+    "maker-maker 4bp": -67.2,
+    "vip maker-t 5bp": -83.84
+   }
+  },
+  {
+   "symbol": "BTCUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1181,
+   "is_sum_R": 4.97,
+   "oos_n": 618,
+   "oos_raw_sumR": -48.29,
+   "oos_net": {
+    "full(m+t 7.5bp)": -246.28,
+    "maker-maker 4bp": -125.62,
+    "vip maker-t 5bp": -190.38
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb15",
+   "exit": "trail:2.0",
+   "is_n": 1305,
+   "is_sum_R": 57.29,
+   "oos_n": 703,
+   "oos_raw_sumR": -48.37,
+   "oos_net": {
+    "full(m+t 7.5bp)": -189.64,
+    "maker-maker 4bp": -103.15,
+    "vip maker-t 5bp": -149.89
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "time:45m",
+   "is_n": 751,
+   "is_sum_R": 31.01,
+   "oos_n": 492,
+   "oos_raw_sumR": -48.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -166.6,
+    "maker-maker 4bp": -99.04,
+    "vip maker-t 5bp": -131.73
+   }
+  },
+  {
+   "symbol": "OPUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 2866,
+   "is_sum_R": 12.33,
+   "oos_n": 1452,
+   "oos_raw_sumR": -48.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -287.55,
+    "maker-maker 4bp": -142.79,
+    "vip maker-t 5bp": -219.77
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 716,
+   "is_sum_R": 2.86,
+   "oos_n": 438,
+   "oos_raw_sumR": -48.86,
+   "oos_net": {
+    "full(m+t 7.5bp)": -136.84,
+    "maker-maker 4bp": -83.4,
+    "vip maker-t 5bp": -111.93
+   }
+  },
+  {
+   "symbol": "SOLUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1350,
+   "is_sum_R": 12.12,
+   "oos_n": 667,
+   "oos_raw_sumR": -49.05,
+   "oos_net": {
+    "full(m+t 7.5bp)": -213.96,
+    "maker-maker 4bp": -112.66,
+    "vip maker-t 5bp": -167.68
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 1295,
+   "is_sum_R": 14.52,
+   "oos_n": 668,
+   "oos_raw_sumR": -49.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -175.78,
+    "maker-maker 4bp": -104.4,
+    "vip maker-t 5bp": -137.94
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 926,
+   "is_sum_R": 18.86,
+   "oos_n": 519,
+   "oos_raw_sumR": -49.51,
+   "oos_net": {
+    "full(m+t 7.5bp)": -122.13,
+    "maker-maker 4bp": -77.48,
+    "vip maker-t 5bp": -101.77
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 752,
+   "is_sum_R": 14.54,
+   "oos_n": 441,
+   "oos_raw_sumR": -50.21,
+   "oos_net": {
+    "full(m+t 7.5bp)": -143.66,
+    "maker-maker 4bp": -90.32,
+    "vip maker-t 5bp": -115.98
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.8",
+   "idea": "btc_led",
+   "exit": "time:45m",
+   "is_n": 887,
+   "is_sum_R": 25.31,
+   "oos_n": 477,
+   "oos_raw_sumR": -50.46,
+   "oos_net": {
+    "full(m+t 7.5bp)": -177.14,
+    "maker-maker 4bp": -103.76,
+    "vip maker-t 5bp": -140.01
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1160,
+   "is_sum_R": 49.73,
+   "oos_n": 601,
+   "oos_raw_sumR": -52.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -197.5,
+    "maker-maker 4bp": -110.73,
+    "vip maker-t 5bp": -156.19
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "wide:3.5x3.0",
+   "is_n": 2303,
+   "is_sum_R": 32.87,
+   "oos_n": 1221,
+   "oos_raw_sumR": -52.91,
+   "oos_net": {
+    "full(m+t 7.5bp)": -193.85,
+    "maker-maker 4bp": -106.61,
+    "vip maker-t 5bp": -154.53
+   }
+  },
+  {
+   "symbol": "OPUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1041,
+   "is_sum_R": 2.81,
+   "oos_n": 587,
+   "oos_raw_sumR": -53.24,
+   "oos_net": {
+    "full(m+t 7.5bp)": -109.58,
+    "maker-maker 4bp": -74.93,
+    "vip maker-t 5bp": -93.78
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 947,
+   "is_sum_R": 18.41,
+   "oos_n": 496,
+   "oos_raw_sumR": -53.87,
+   "oos_net": {
+    "full(m+t 7.5bp)": -166.14,
+    "maker-maker 4bp": -102.41,
+    "vip maker-t 5bp": -132.77
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1283,
+   "is_sum_R": 13.53,
+   "oos_n": 625,
+   "oos_raw_sumR": -53.88,
+   "oos_net": {
+    "full(m+t 7.5bp)": -146.47,
+    "maker-maker 4bp": -89.33,
+    "vip maker-t 5bp": -120.58
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "squeeze",
+   "exit": "trail:2.0",
+   "is_n": 1251,
+   "is_sum_R": 30.12,
+   "oos_n": 692,
+   "oos_raw_sumR": -54.03,
+   "oos_net": {
+    "full(m+t 7.5bp)": -194.2,
+    "maker-maker 4bp": -108.35,
+    "vip maker-t 5bp": -154.77
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 1218,
+   "is_sum_R": 24.39,
+   "oos_n": 672,
+   "oos_raw_sumR": -54.03,
+   "oos_net": {
+    "full(m+t 7.5bp)": -184.08,
+    "maker-maker 4bp": -110.66,
+    "vip maker-t 5bp": -145.28
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb15",
+   "exit": "time:45m",
+   "is_n": 1225,
+   "is_sum_R": 11.22,
+   "oos_n": 644,
+   "oos_raw_sumR": -54.64,
+   "oos_net": {
+    "full(m+t 7.5bp)": -195.98,
+    "maker-maker 4bp": -115.39,
+    "vip maker-t 5bp": -154.1
+   }
+  },
+  {
+   "symbol": "NEARUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1076,
+   "is_sum_R": 16.64,
+   "oos_n": 629,
+   "oos_raw_sumR": -54.94,
+   "oos_net": {
+    "full(m+t 7.5bp)": -131.19,
+    "maker-maker 4bp": -84.59,
+    "vip maker-t 5bp": -109.71
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 921,
+   "is_sum_R": 0.36,
+   "oos_n": 510,
+   "oos_raw_sumR": -55.05,
+   "oos_net": {
+    "full(m+t 7.5bp)": -182.12,
+    "maker-maker 4bp": -109.16,
+    "vip maker-t 5bp": -144.64
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1118,
+   "is_sum_R": 1.02,
+   "oos_n": 593,
+   "oos_raw_sumR": -55.79,
+   "oos_net": {
+    "full(m+t 7.5bp)": -209.35,
+    "maker-maker 4bp": -115.47,
+    "vip maker-t 5bp": -166.09
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "squeeze",
+   "exit": "time:45m",
+   "is_n": 1184,
+   "is_sum_R": 1.58,
+   "oos_n": 625,
+   "oos_raw_sumR": -56.64,
+   "oos_net": {
+    "full(m+t 7.5bp)": -194.78,
+    "maker-maker 4bp": -115.96,
+    "vip maker-t 5bp": -153.87
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 990,
+   "is_sum_R": 11.13,
+   "oos_n": 552,
+   "oos_raw_sumR": -56.74,
+   "oos_net": {
+    "full(m+t 7.5bp)": -182.71,
+    "maker-maker 4bp": -106.4,
+    "vip maker-t 5bp": -146.97
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.5",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 3185,
+   "is_sum_R": 67.58,
+   "oos_n": 1433,
+   "oos_raw_sumR": -57.14,
+   "oos_net": {
+    "full(m+t 7.5bp)": -352.73,
+    "maker-maker 4bp": -172.75,
+    "vip maker-t 5bp": -269.21
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 920,
+   "is_sum_R": 28.26,
+   "oos_n": 440,
+   "oos_raw_sumR": -57.19,
+   "oos_net": {
+    "full(m+t 7.5bp)": -187.59,
+    "maker-maker 4bp": -111.39,
+    "vip maker-t 5bp": -149.6
+   }
+  },
+  {
+   "symbol": "OPUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1186,
+   "is_sum_R": 1.63,
+   "oos_n": 632,
+   "oos_raw_sumR": -57.65,
+   "oos_net": {
+    "full(m+t 7.5bp)": -159.11,
+    "maker-maker 4bp": -97.56,
+    "vip maker-t 5bp": -130.37
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.5",
+   "idea": "pullback",
+   "exit": "wide:3.5x3.0",
+   "is_n": 2758,
+   "is_sum_R": 81.9,
+   "oos_n": 1355,
+   "oos_raw_sumR": -57.82,
+   "oos_net": {
+    "full(m+t 7.5bp)": -234.23,
+    "maker-maker 4bp": -125.31,
+    "vip maker-t 5bp": -184.93
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1187,
+   "is_sum_R": 21.07,
+   "oos_n": 631,
+   "oos_raw_sumR": -58.07,
+   "oos_net": {
+    "full(m+t 7.5bp)": -231.71,
+    "maker-maker 4bp": -125.02,
+    "vip maker-t 5bp": -182.99
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "vol1.8",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1170,
+   "is_sum_R": 3.73,
+   "oos_n": 701,
+   "oos_raw_sumR": -58.21,
+   "oos_net": {
+    "full(m+t 7.5bp)": -123.55,
+    "maker-maker 4bp": -83.06,
+    "vip maker-t 5bp": -105.34
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1557,
+   "is_sum_R": 6.25,
+   "oos_n": 738,
+   "oos_raw_sumR": -58.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -176.78,
+    "maker-maker 4bp": -104.89,
+    "vip maker-t 5bp": -143.37
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "mr_rsi5",
+   "exit": "time:45m",
+   "is_n": 1538,
+   "is_sum_R": 32.86,
+   "oos_n": 670,
+   "oos_raw_sumR": -59.32,
+   "oos_net": {
+    "full(m+t 7.5bp)": -268.53,
+    "maker-maker 4bp": -144.51,
+    "vip maker-t 5bp": -208.22
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "loose",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 3196,
+   "is_sum_R": 77.12,
+   "oos_n": 1420,
+   "oos_raw_sumR": -59.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -353.22,
+    "maker-maker 4bp": -174.58,
+    "vip maker-t 5bp": -270.35
+   }
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1293,
+   "is_sum_R": 5.0,
+   "oos_n": 763,
+   "oos_raw_sumR": -60.25,
+   "oos_net": {
+    "full(m+t 7.5bp)": -238.22,
+    "maker-maker 4bp": -129.68,
+    "vip maker-t 5bp": -188.0
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb15",
+   "exit": "time:45m",
+   "is_n": 789,
+   "is_sum_R": 27.59,
+   "oos_n": 518,
+   "oos_raw_sumR": -60.41,
+   "oos_net": {
+    "full(m+t 7.5bp)": -182.38,
+    "maker-maker 4bp": -112.94,
+    "vip maker-t 5bp": -146.2
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "loose",
+   "idea": "trend_bb15",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1582,
+   "is_sum_R": 4.56,
+   "oos_n": 841,
+   "oos_raw_sumR": -60.88,
+   "oos_net": {
+    "full(m+t 7.5bp)": -263.75,
+    "maker-maker 4bp": -141.32,
+    "vip maker-t 5bp": -206.04
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb15",
+   "exit": "trail:2.0",
+   "is_n": 1278,
+   "is_sum_R": 2.14,
+   "oos_n": 711,
+   "oos_raw_sumR": -61.17,
+   "oos_net": {
+    "full(m+t 7.5bp)": -230.71,
+    "maker-maker 4bp": -126.48,
+    "vip maker-t 5bp": -183.17
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_rsi5",
+   "exit": "wide:3.5x3.0",
+   "is_n": 998,
+   "is_sum_R": 39.1,
+   "oos_n": 477,
+   "oos_raw_sumR": -61.55,
+   "oos_net": {
+    "full(m+t 7.5bp)": -157.18,
+    "maker-maker 4bp": -97.64,
+    "vip maker-t 5bp": -130.63
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1178,
+   "is_sum_R": 47.24,
+   "oos_n": 622,
+   "oos_raw_sumR": -61.96,
+   "oos_net": {
+    "full(m+t 7.5bp)": -194.61,
+    "maker-maker 4bp": -113.4,
+    "vip maker-t 5bp": -157.29
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1113,
+   "is_sum_R": 27.81,
+   "oos_n": 619,
+   "oos_raw_sumR": -62.11,
+   "oos_net": {
+    "full(m+t 7.5bp)": -187.39,
+    "maker-maker 4bp": -111.0,
+    "vip maker-t 5bp": -152.04
+   }
+  },
+  {
+   "symbol": "NEARUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1226,
+   "is_sum_R": 19.11,
+   "oos_n": 652,
+   "oos_raw_sumR": -63.65,
+   "oos_net": {
+    "full(m+t 7.5bp)": -142.22,
+    "maker-maker 4bp": -94.3,
+    "vip maker-t 5bp": -120.05
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "loose",
+   "idea": "pullback",
+   "exit": "wide:3.5x3.0",
+   "is_n": 2775,
+   "is_sum_R": 85.57,
+   "oos_n": 1332,
+   "oos_raw_sumR": -66.01,
+   "oos_net": {
+    "full(m+t 7.5bp)": -239.06,
+    "maker-maker 4bp": -132.0,
+    "vip maker-t 5bp": -190.77
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.5",
+   "idea": "pullback",
+   "exit": "time:45m",
+   "is_n": 2613,
+   "is_sum_R": 14.17,
+   "oos_n": 1285,
+   "oos_raw_sumR": -66.05,
+   "oos_net": {
+    "full(m+t 7.5bp)": -361.91,
+    "maker-maker 4bp": -194.0,
+    "vip maker-t 5bp": -273.95
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 1958,
+   "is_sum_R": 6.62,
+   "oos_n": 1224,
+   "oos_raw_sumR": -66.22,
+   "oos_net": {
+    "full(m+t 7.5bp)": -335.64,
+    "maker-maker 4bp": -172.08,
+    "vip maker-t 5bp": -259.35
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1001,
+   "is_sum_R": 40.82,
+   "oos_n": 539,
+   "oos_raw_sumR": -66.25,
+   "oos_net": {
+    "full(m+t 7.5bp)": -198.32,
+    "maker-maker 4bp": -118.61,
+    "vip maker-t 5bp": -160.76
+   }
+  },
+  {
+   "symbol": "NEARUSDT",
+   "mask": "vol1.5",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 1134,
+   "is_sum_R": 15.55,
+   "oos_n": 648,
+   "oos_raw_sumR": -68.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": -161.78,
+    "maker-maker 4bp": -108.77,
+    "vip maker-t 5bp": -134.07
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1185,
+   "is_sum_R": 15.03,
+   "oos_n": 639,
+   "oos_raw_sumR": -69.17,
+   "oos_net": {
+    "full(m+t 7.5bp)": -233.24,
+    "maker-maker 4bp": -135.41,
+    "vip maker-t 5bp": -186.14
+   }
+  },
+  {
+   "symbol": "NEARUSDT",
+   "mask": "vol1.8",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 1039,
+   "is_sum_R": 27.84,
+   "oos_n": 585,
+   "oos_raw_sumR": -69.59,
+   "oos_net": {
+    "full(m+t 7.5bp)": -154.15,
+    "maker-maker 4bp": -105.94,
+    "vip maker-t 5bp": -129.09
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "rr:1.5x2.5",
+   "is_n": 3015,
+   "is_sum_R": 15.85,
+   "oos_n": 1388,
+   "oos_raw_sumR": -69.62,
+   "oos_net": {
+    "full(m+t 7.5bp)": -411.91,
+    "maker-maker 4bp": -207.28,
+    "vip maker-t 5bp": -313.86
+   }
+  },
+  {
+   "symbol": "ETHUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1337,
+   "is_sum_R": 6.28,
+   "oos_n": 712,
+   "oos_raw_sumR": -70.18,
+   "oos_net": {
+    "full(m+t 7.5bp)": -264.8,
+    "maker-maker 4bp": -145.69,
+    "vip maker-t 5bp": -210.02
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "btc_led",
+   "exit": "trail:2.0",
+   "is_n": 2437,
+   "is_sum_R": 8.51,
+   "oos_n": 1091,
+   "oos_raw_sumR": -70.25,
+   "oos_net": {
+    "full(m+t 7.5bp)": -407.51,
+    "maker-maker 4bp": -199.38,
+    "vip maker-t 5bp": -313.22
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_rsi5",
+   "exit": "trail:2.0",
+   "is_n": 1169,
+   "is_sum_R": 44.65,
+   "oos_n": 511,
+   "oos_raw_sumR": -70.87,
+   "oos_net": {
+    "full(m+t 7.5bp)": -224.31,
+    "maker-maker 4bp": -130.35,
+    "vip maker-t 5bp": -181.15
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 1081,
+   "is_sum_R": 40.81,
+   "oos_n": 544,
+   "oos_raw_sumR": -72.38,
+   "oos_net": {
+    "full(m+t 7.5bp)": -194.67,
+    "maker-maker 4bp": -124.72,
+    "vip maker-t 5bp": -158.51
+   }
+  },
+  {
+   "symbol": "NEARUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1375,
+   "is_sum_R": 16.94,
+   "oos_n": 696,
+   "oos_raw_sumR": -73.12,
+   "oos_net": {
+    "full(m+t 7.5bp)": -157.52,
+    "maker-maker 4bp": -106.06,
+    "vip maker-t 5bp": -133.7
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "mr_rsi5",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1155,
+   "is_sum_R": 6.58,
+   "oos_n": 508,
+   "oos_raw_sumR": -74.24,
+   "oos_net": {
+    "full(m+t 7.5bp)": -237.26,
+    "maker-maker 4bp": -138.12,
+    "vip maker-t 5bp": -191.16
+   }
+  },
+  {
+   "symbol": "OPUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 1254,
+   "is_sum_R": 13.85,
+   "oos_n": 638,
+   "oos_raw_sumR": -75.57,
+   "oos_net": {
+    "full(m+t 7.5bp)": -195.35,
+    "maker-maker 4bp": -127.6,
+    "vip maker-t 5bp": -159.65
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1128,
+   "is_sum_R": 8.94,
+   "oos_n": 590,
+   "oos_raw_sumR": -76.12,
+   "oos_net": {
+    "full(m+t 7.5bp)": -208.85,
+    "maker-maker 4bp": -128.28,
+    "vip maker-t 5bp": -171.26
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "loose",
+   "idea": "trend_bb15",
+   "exit": "trail:2.0",
+   "is_n": 1513,
+   "is_sum_R": 46.37,
+   "oos_n": 818,
+   "oos_raw_sumR": -79.37,
+   "oos_net": {
+    "full(m+t 7.5bp)": -247.35,
+    "maker-maker 4bp": -144.14,
+    "vip maker-t 5bp": -200.22
+   }
+  },
+  {
+   "symbol": "LINKUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "trail:2.0",
+   "is_n": 1190,
+   "is_sum_R": 7.44,
+   "oos_n": 621,
+   "oos_raw_sumR": -80.12,
+   "oos_net": {
+    "full(m+t 7.5bp)": -225.0,
+    "maker-maker 4bp": -136.43,
+    "vip maker-t 5bp": -184.19
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "loose",
+   "idea": "pullback",
+   "exit": "time:45m",
+   "is_n": 2643,
+   "is_sum_R": 23.65,
+   "oos_n": 1272,
+   "oos_raw_sumR": -81.92,
+   "oos_net": {
+    "full(m+t 7.5bp)": -375.8,
+    "maker-maker 4bp": -208.65,
+    "vip maker-t 5bp": -288.56
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "loose",
+   "idea": "squeeze",
+   "exit": "trail:2.0",
+   "is_n": 1470,
+   "is_sum_R": 24.16,
+   "oos_n": 798,
+   "oos_raw_sumR": -82.35,
+   "oos_net": {
+    "full(m+t 7.5bp)": -247.45,
+    "maker-maker 4bp": -145.99,
+    "vip maker-t 5bp": -201.13
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1222,
+   "is_sum_R": 53.67,
+   "oos_n": 634,
+   "oos_raw_sumR": -83.51,
+   "oos_net": {
+    "full(m+t 7.5bp)": -242.93,
+    "maker-maker 4bp": -146.51,
+    "vip maker-t 5bp": -197.65
+   }
+  },
+  {
+   "symbol": "XRPUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb15",
+   "exit": "time:45m",
+   "is_n": 1220,
+   "is_sum_R": 4.15,
+   "oos_n": 678,
+   "oos_raw_sumR": -85.67,
+   "oos_net": {
+    "full(m+t 7.5bp)": -255.87,
+    "maker-maker 4bp": -158.12,
+    "vip maker-t 5bp": -205.68
+   }
+  },
+  {
+   "symbol": "NEARUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 1297,
+   "is_sum_R": 26.98,
+   "oos_n": 689,
+   "oos_raw_sumR": -86.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": -186.5,
+    "maker-maker 4bp": -129.69,
+    "vip maker-t 5bp": -156.79
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1436,
+   "is_sum_R": 28.38,
+   "oos_n": 684,
+   "oos_raw_sumR": -88.21,
+   "oos_net": {
+    "full(m+t 7.5bp)": -258.83,
+    "maker-maker 4bp": -155.66,
+    "vip maker-t 5bp": -210.37
+   }
+  },
+  {
+   "symbol": "APTUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1372,
+   "is_sum_R": 16.24,
+   "oos_n": 713,
+   "oos_raw_sumR": -89.31,
+   "oos_net": {
+    "full(m+t 7.5bp)": -237.5,
+    "maker-maker 4bp": -148.66,
+    "vip maker-t 5bp": -195.13
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "vol1.5",
+   "idea": "btc_led",
+   "exit": "trail:2.0",
+   "is_n": 1858,
+   "is_sum_R": 1.4,
+   "oos_n": 847,
+   "oos_raw_sumR": -89.64,
+   "oos_net": {
+    "full(m+t 7.5bp)": -338.64,
+    "maker-maker 4bp": -185.53,
+    "vip maker-t 5bp": -268.83
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "mr_rsi5",
+   "exit": "wide:3.5x3.0",
+   "is_n": 1521,
+   "is_sum_R": 22.47,
+   "oos_n": 692,
+   "oos_raw_sumR": -93.16,
+   "oos_net": {
+    "full(m+t 7.5bp)": -268.69,
+    "maker-maker 4bp": -159.35,
+    "vip maker-t 5bp": -219.98
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "mr_rsi5",
+   "exit": "trail:2.0",
+   "is_n": 1659,
+   "is_sum_R": 32.1,
+   "oos_n": 722,
+   "oos_raw_sumR": -94.86,
+   "oos_net": {
+    "full(m+t 7.5bp)": -325.1,
+    "maker-maker 4bp": -182.79,
+    "vip maker-t 5bp": -260.81
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 1309,
+   "is_sum_R": 17.7,
+   "oos_n": 637,
+   "oos_raw_sumR": -101.98,
+   "oos_net": {
+    "full(m+t 7.5bp)": -247.26,
+    "maker-maker 4bp": -163.42,
+    "vip maker-t 5bp": -204.57
+   }
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "mask": "loose",
+   "idea": "donchian",
+   "exit": "time:45m",
+   "is_n": 1089,
+   "is_sum_R": 25.65,
+   "oos_n": 538,
+   "oos_raw_sumR": -105.49,
+   "oos_net": {
+    "full(m+t 7.5bp)": -233.85,
+    "maker-maker 4bp": -159.64,
+    "vip maker-t 5bp": -196.18
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "vol1.5",
+   "idea": "pullback",
+   "exit": "rr:1.5x2.5",
+   "is_n": 3534,
+   "is_sum_R": 45.89,
+   "oos_n": 1566,
+   "oos_raw_sumR": -106.83,
+   "oos_net": {
+    "full(m+t 7.5bp)": -510.03,
+    "maker-maker 4bp": -268.16,
+    "vip maker-t 5bp": -394.81
+   }
+  },
+  {
+   "symbol": "ARBUSDT",
+   "mask": "vol1.8",
+   "idea": "pullback",
+   "exit": "trail:2.0",
+   "is_n": 2580,
+   "is_sum_R": 9.02,
+   "oos_n": 1344,
+   "oos_raw_sumR": -107.77,
+   "oos_net": {
+    "full(m+t 7.5bp)": -334.03,
+    "maker-maker 4bp": -197.13,
+    "vip maker-t 5bp": -269.79
+   }
+  },
+  {
+   "symbol": "NEARUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "trail:2.0",
+   "is_n": 1644,
+   "is_sum_R": 3.87,
+   "oos_n": 772,
+   "oos_raw_sumR": -111.39,
+   "oos_net": {
+    "full(m+t 7.5bp)": -205.61,
+    "maker-maker 4bp": -147.76,
+    "vip maker-t 5bp": -179.16
+   }
+  },
+  {
+   "symbol": "NEARUSDT",
+   "mask": "loose",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 1563,
+   "is_sum_R": 35.33,
+   "oos_n": 736,
+   "oos_raw_sumR": -112.35,
+   "oos_net": {
+    "full(m+t 7.5bp)": -219.87,
+    "maker-maker 4bp": -158.09,
+    "vip maker-t 5bp": -188.18
+   }
+  },
+  {
+   "symbol": "NEARUSDT",
+   "mask": "vol1.8",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 1223,
+   "is_sum_R": 41.15,
+   "oos_n": 586,
+   "oos_raw_sumR": -117.38,
+   "oos_net": {
+    "full(m+t 7.5bp)": -202.56,
+    "maker-maker 4bp": -153.31,
+    "vip maker-t 5bp": -177.57
+   }
+  },
+  {
+   "symbol": "NEARUSDT",
+   "mask": "vol1.5",
+   "idea": "trend_bb1h",
+   "exit": "time:45m",
+   "is_n": 1306,
+   "is_sum_R": 28.5,
+   "oos_n": 653,
+   "oos_raw_sumR": -118.87,
+   "oos_net": {
+    "full(m+t 7.5bp)": -213.85,
+    "maker-maker 4bp": -159.05,
+    "vip maker-t 5bp": -185.93
+   }
+  },
+  {
+   "symbol": "BNBUSDT",
+   "mask": "loose",
+   "idea": "mr_rsi5",
+   "exit": "rr:1.5x2.5",
+   "is_n": 1686,
+   "is_sum_R": 20.26,
+   "oos_n": 739,
+   "oos_raw_sumR": -121.05,
+   "oos_net": {
+    "full(m+t 7.5bp)": -366.32,
+    "maker-maker 4bp": -215.88,
+    "vip maker-t 5bp": -297.41
+   }
+  },
+  {
+   "symbol": "ADAUSDT",
+   "mask": "loose",
+   "idea": "pullback",
+   "exit": "rr:1.5x2.5",
+   "is_n": 3523,
+   "is_sum_R": 34.88,
+   "oos_n": 1534,
+   "oos_raw_sumR": -121.45,
+   "oos_net": {
+    "full(m+t 7.5bp)": -515.57,
+    "maker-maker 4bp": -278.95,
+    "vip maker-t 5bp": -403.02
+   }
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "BTCUSDT": {
+  "n": 200,
+  "mean": 4.8e-05,
+  "std": 3.5e-05
+ },
+ "ETHUSDT": {
+  "n": 200,
+  "mean": 3.2e-05,
+  "std": 4.6e-05
+ },
+ "SOLUSDT": {
+  "n": 200,
+  "mean": 2.3e-05,
+  "std": 6.5e-05
+ },
+ "XRPUSDT": {
+  "n": 200,
+  "mean": 2.8e-05,
+  "std": 6.4e-05
+ },
+ "DOGEUSDT": {
+  "n": 200,
+  "mean": 2e-05,
+  "std": 5.6e-05
+ },
+ "SUIUSDT": {
+  "n": 200,
+  "mean": 2.4e-05,
+  "std": 7.6e-05
+ },
+ "AVAXUSDT": {
+  "n": 200,
+  "mean": 1.6e-05,
+  "std": 8.3e-05
+ },
+ "LINKUSDT": {
+  "n": 200,
+  "mean": 3.5e-05,
+  "std": 6e-05
+ },
+ "ADAUSDT": {
+  "n": 200,
+  "mean": 2.6e-05,
+  "std": 8.4e-05
+ },
+ "BNBUSDT": {
+  "n": 200,
+  "mean": 6e-06,
+  "std": 0.000107
+ },
+ "NEARUSDT": {
+  "n": 200,
+  "mean": 3.1e-05,
+  "std": 9.1e-05
+ },
+ "APTUSDT": {
+  "n": 200,
+  "mean": 4.1e-05,
+  "std": 7.5e-05
+ },
+ "ARBUSDT": {
+  "n": 200,
+  "mean": 2.7e-05,
+  "std": 7.4e-05
+ },
+ "OPUSDT": {
+  "n": 200,
+  "mean": 3.2e-05,
+  "std": 8.9e-05
+ },
+ "SEIUSDT": {
+  "n": 200,
+  "mean": 3.5e-05,
+  "std": 8.5e-05
+ }
+}
