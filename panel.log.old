@@ -1,0 +1,390 @@
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + fb42698...0703073 panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T08:40:47Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + 0703073...edba1b7 panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T08:50:49Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + edba1b7...1abd700 panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T09:00:52Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + 1abd700...e4bfc32 panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T09:10:54Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + e4bfc32...bc7baf3 panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T09:20:56Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + bc7baf3...0942f9c panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T09:30:59Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + 0942f9c...5316c17 panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T09:41:02Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + 5316c17...5be35f8 panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T09:51:05Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + 5be35f8...35c05eb panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T10:01:08Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + 35c05eb...aaa86d2 panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T10:11:11Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + aaa86d2...a155605 panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T10:21:14Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + a155605...3468664 panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T10:31:17Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + 3468664...59f316d panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T10:41:19Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + 59f316d...5bdba37 panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T10:51:22Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + 5bdba37...2d25aa7 panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T11:01:24Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + 2d25aa7...b01c3ed panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T11:11:27Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + b01c3ed...795689b panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T11:21:30Z)
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + 795689b...8c22ffe panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T11:31:33Z)
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+fatal: unable to access 'https://github.com/palcikia-crypto/pseudo-opt-bot.git/': CONNECT tunnel failed, response 403
+Traceback (most recent call last):
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 110, in <module>
+    publish(snapshot())
+  File "/workspace/github__palcikia-crypto__pseudo-opt-bot/panel/snapshot.py", line 102, in publish
+    subprocess.check_call(['git', '-C', REPO, 'push', 'origin',
+  File "/usr/local/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['git', '-C', '/workspace/github__palcikia-crypto__pseudo-opt-bot', 'push', 'origin', 'refs/heads/panel-site:refs/heads/panel-site', '--force']' returned non-zero exit status 128.
+To https://github.com/palcikia-crypto/pseudo-opt-bot.git
+ + fd76f8f...3a8fa9f panel-site -> panel-site (forced update)
+[SNAPSHOT] опубликовано: panel-site (2026-11-19T17:51:50Z)
