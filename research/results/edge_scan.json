@@ -1,0 +1,258 @@
+{
+ "n_trades": 136,
+ "cv": [
+  {
+   "fold": 0,
+   "n_test": 46,
+   "auc": 0.298,
+   "acc": 0.652,
+   "wr_base": 0.283,
+   "wr_p05": 0.2,
+   "R_base": -0.0,
+   "R_p05": -0.11,
+   "n_p05": 5
+  },
+  {
+   "fold": 1,
+   "n_test": 45,
+   "auc": 0.304,
+   "acc": 0.422,
+   "wr_base": 0.178,
+   "wr_p05": 0.091,
+   "R_base": -0.394,
+   "R_p05": -0.743,
+   "n_p05": 22
+  },
+  {
+   "fold": 2,
+   "n_test": 45,
+   "auc": 0.355,
+   "acc": 0.644,
+   "wr_base": 0.133,
+   "wr_p05": 0.083,
+   "R_base": -0.617,
+   "R_p05": -0.678,
+   "n_p05": 12
+  }
+ ],
+ "by_hour": [
+  {
+   "bucket": 0,
+   "n": 43,
+   "win_rate": 23.3,
+   "avg_R": -0.103,
+   "sum_R": -4.42
+  },
+  {
+   "bucket": 1,
+   "n": 38,
+   "win_rate": 13.2,
+   "avg_R": -0.667,
+   "sum_R": -25.36
+  },
+  {
+   "bucket": 2,
+   "n": 25,
+   "win_rate": 36.0,
+   "avg_R": 0.169,
+   "sum_R": 4.24
+  },
+  {
+   "bucket": 3,
+   "n": 13,
+   "win_rate": 23.1,
+   "avg_R": -0.136,
+   "sum_R": -1.77
+  },
+  {
+   "bucket": 4,
+   "n": 13,
+   "win_rate": 0.0,
+   "avg_R": -1.072,
+   "sum_R": -13.94
+  },
+  {
+   "bucket": 20,
+   "n": 3,
+   "win_rate": 0.0,
+   "avg_R": -0.959,
+   "sum_R": -2.88
+  },
+  {
+   "bucket": 21,
+   "n": 1,
+   "win_rate": 0.0,
+   "avg_R": -1.394,
+   "sum_R": -1.39
+  }
+ ],
+ "by_atr": [
+  {
+   "bucket": "atr_0.10-0.20",
+   "n": 97,
+   "win_rate": 20.6,
+   "avg_R": -0.292,
+   "sum_R": -28.35
+  },
+  {
+   "bucket": "atr_0.20-0.35",
+   "n": 37,
+   "win_rate": 18.9,
+   "avg_R": -0.403,
+   "sum_R": -14.92
+  },
+  {
+   "bucket": "atr_>=0.35",
+   "n": 2,
+   "win_rate": 0.0,
+   "avg_R": -1.126,
+   "sum_R": -2.25
+  }
+ ],
+ "by_vol": [
+  {
+   "bucket": "vol_2-4",
+   "n": 62,
+   "win_rate": 21.0,
+   "avg_R": -0.276,
+   "sum_R": -17.11
+  },
+  {
+   "bucket": "vol_<2",
+   "n": 29,
+   "win_rate": 17.2,
+   "avg_R": -0.395,
+   "sum_R": -11.44
+  },
+  {
+   "bucket": "vol_>=4",
+   "n": 45,
+   "win_rate": 20.0,
+   "avg_R": -0.377,
+   "sum_R": -16.97
+  }
+ ],
+ "by_side": [
+  {
+   "bucket": "long",
+   "n": 31,
+   "win_rate": 12.9,
+   "avg_R": -0.766,
+   "sum_R": -23.74
+  },
+  {
+   "bucket": "short",
+   "n": 105,
+   "win_rate": 21.9,
+   "avg_R": -0.207,
+   "sum_R": -21.78
+  }
+ ],
+ "by_symbol": [
+  {
+   "bucket": "ADA",
+   "n": 4,
+   "win_rate": 25.0,
+   "avg_R": -0.42,
+   "sum_R": -1.68
+  },
+  {
+   "bucket": "APT",
+   "n": 7,
+   "win_rate": 0.0,
+   "avg_R": -1.341,
+   "sum_R": -9.39
+  },
+  {
+   "bucket": "ARB",
+   "n": 13,
+   "win_rate": 15.4,
+   "avg_R": -0.435,
+   "sum_R": -5.65
+  },
+  {
+   "bucket": "AVAX",
+   "n": 8,
+   "win_rate": 25.0,
+   "avg_R": -0.322,
+   "sum_R": -2.58
+  },
+  {
+   "bucket": "BNB",
+   "n": 4,
+   "win_rate": 0.0,
+   "avg_R": -0.833,
+   "sum_R": -3.33
+  },
+  {
+   "bucket": "BTC",
+   "n": 8,
+   "win_rate": 12.5,
+   "avg_R": -0.458,
+   "sum_R": -3.66
+  },
+  {
+   "bucket": "DOGE",
+   "n": 8,
+   "win_rate": 37.5,
+   "avg_R": -0.003,
+   "sum_R": -0.02
+  },
+  {
+   "bucket": "ETH",
+   "n": 9,
+   "win_rate": 22.2,
+   "avg_R": -0.23,
+   "sum_R": -2.07
+  },
+  {
+   "bucket": "LINK",
+   "n": 5,
+   "win_rate": 20.0,
+   "avg_R": -0.29,
+   "sum_R": -1.45
+  },
+  {
+   "bucket": "NEAR",
+   "n": 19,
+   "win_rate": 26.3,
+   "avg_R": -0.069,
+   "sum_R": -1.31
+  },
+  {
+   "bucket": "OP",
+   "n": 15,
+   "win_rate": 20.0,
+   "avg_R": -0.475,
+   "sum_R": -7.13
+  },
+  {
+   "bucket": "SEI",
+   "n": 3,
+   "win_rate": 33.3,
+   "avg_R": 0.72,
+   "sum_R": 2.16
+  },
+  {
+   "bucket": "SOL",
+   "n": 14,
+   "win_rate": 21.4,
+   "avg_R": -0.141,
+   "sum_R": -1.97
+  },
+  {
+   "bucket": "SUI",
+   "n": 8,
+   "win_rate": 25.0,
+   "avg_R": -0.061,
+   "sum_R": -0.49
+  },
+  {
+   "bucket": "XRP",
+   "n": 11,
+   "win_rate": 9.1,
+   "avg_R": -0.631,
+   "sum_R": -6.94
+  }
+ ]
+}

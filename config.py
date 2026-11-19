@@ -32,10 +32,10 @@ BREAK_N = 5
 OB_DEPTH = 5
 OB_IMB = float(os.getenv('OB_IMB', '1.2'))
 
-SL_ATR_MULT = 1.5
+SL_ATR_MULT = float(os.getenv('SL_ATR_MULT', '1.5'))
 SL_MIN_PCT = 0.0015
 SL_MAX_PCT = 0.0060
-RR = 2.5
+RR = float(os.getenv('RR', '2.5'))
 
 RISK_PER_TRADE_PCT = float(os.getenv('RISK_PER_TRADE_PCT', '1.0')) / 100.0
 LEVERAGE = int(os.getenv('LEVERAGE', '10'))

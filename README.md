@@ -30,6 +30,12 @@ python tests/local_check.py
 python main.py
 ```
 
+## Бэктесты и поиск эджа (research/)
+
+Конвейер проверки стратегии на истории: `./venv/bin/python research/run_all.py`
+(бэктест + walk-forward + edge-scan → `research/results/report.md`).
+Подробности — `research/README.md`; свежие результаты — в самом отчёте.
+
 ## Веб-панель
 Онлайн: **https://palcikia-crypto.github.io/pseudo-opt-bot/** (GitHub Pages, деплой через
 .github/workflows/panel-pages.yml) — показывает снапшот из ветки `panel-site` +
