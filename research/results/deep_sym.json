@@ -1,0 +1,6159 @@
+{
+ "rows": [
+  {
+   "view": "15m",
+   "symbol": "BTCUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 163,
+   "is_sum_R": 5.52,
+   "oos_n": 76,
+   "oos_sum_R": -1.95,
+   "oos_wr": 55.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.95,
+    "maker-maker 4bp": 1.26,
+    "vip maker-t 5bp": -0.52
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 9,
+     "sum_R": 4.4
+    },
+    "2026-10": {
+     "n": 45,
+     "sum_R": -13.2
+    },
+    "2026-11": {
+     "n": 22,
+     "sum_R": 6.85
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "BTCUSDT",
+   "idea": "impulse",
+   "exit": "tf_trail",
+   "is_n": 59,
+   "is_sum_R": 2.76,
+   "oos_n": 29,
+   "oos_sum_R": -4.64,
+   "oos_wr": 51.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": -4.64,
+    "maker-maker 4bp": -3.18,
+    "vip maker-t 5bp": -4.0
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": -0.98
+    },
+    "2026-10": {
+     "n": 14,
+     "sum_R": -5.79
+    },
+    "2026-11": {
+     "n": 10,
+     "sum_R": 2.13
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "BTCUSDT",
+   "idea": "impulse",
+   "exit": "tf_wide",
+   "is_n": 50,
+   "is_sum_R": 4.24,
+   "oos_n": 24,
+   "oos_sum_R": 6.85,
+   "oos_wr": 25.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 6.85,
+    "maker-maker 4bp": 7.56,
+    "vip maker-t 5bp": 7.23
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": 1.71
+    },
+    "2026-10": {
+     "n": 11,
+     "sum_R": -2.03
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": 7.16
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "BTCUSDT",
+   "idea": "pullback",
+   "exit": "tf_trail",
+   "is_n": 180,
+   "is_sum_R": 5.97,
+   "oos_n": 95,
+   "oos_sum_R": -4.77,
+   "oos_wr": 51.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -4.77,
+    "maker-maker 4bp": -0.89,
+    "vip maker-t 5bp": -2.97
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 18,
+     "sum_R": -5.07
+    },
+    "2026-10": {
+     "n": 52,
+     "sum_R": -7.86
+    },
+    "2026-11": {
+     "n": 25,
+     "sum_R": 8.16
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "BTCUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 109,
+   "is_sum_R": 5.98,
+   "oos_n": 71,
+   "oos_sum_R": 3.42,
+   "oos_wr": 26.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.42,
+    "maker-maker 4bp": 5.99,
+    "vip maker-t 5bp": 4.64
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": -2.97
+    },
+    "2026-10": {
+     "n": 36,
+     "sum_R": -0.21
+    },
+    "2026-11": {
+     "n": 21,
+     "sum_R": 6.59
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ETHUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_trail",
+   "is_n": 127,
+   "is_sum_R": 3.89,
+   "oos_n": 60,
+   "oos_sum_R": -13.86,
+   "oos_wr": 40.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -13.86,
+    "maker-maker 4bp": -12.17,
+    "vip maker-t 5bp": -13.09
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 9,
+     "sum_R": -3.77
+    },
+    "2026-10": {
+     "n": 32,
+     "sum_R": -14.02
+    },
+    "2026-11": {
+     "n": 19,
+     "sum_R": 3.93
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ETHUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 163,
+   "is_sum_R": 1.62,
+   "oos_n": 76,
+   "oos_sum_R": -19.88,
+   "oos_wr": 36.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": -19.88,
+    "maker-maker 4bp": -17.66,
+    "vip maker-t 5bp": -18.88
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 13,
+     "sum_R": -7.26
+    },
+    "2026-10": {
+     "n": 43,
+     "sum_R": -21.16
+    },
+    "2026-11": {
+     "n": 20,
+     "sum_R": 8.54
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "trend_bb15",
+   "exit": "m1_trail",
+   "is_n": 262,
+   "is_sum_R": 22.32,
+   "oos_n": 135,
+   "oos_sum_R": -10.82,
+   "oos_wr": 43.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -10.82,
+    "maker-maker 4bp": -5.76,
+    "vip maker-t 5bp": -8.46
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 24,
+     "sum_R": -1.22
+    },
+    "2026-10": {
+     "n": 66,
+     "sum_R": -3.7
+    },
+    "2026-11": {
+     "n": 45,
+     "sum_R": -5.89
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "trend_bb15",
+   "exit": "tf_trail",
+   "is_n": 192,
+   "is_sum_R": 10.55,
+   "oos_n": 104,
+   "oos_sum_R": -8.67,
+   "oos_wr": 49.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -8.67,
+    "maker-maker 4bp": -6.02,
+    "vip maker-t 5bp": -7.47
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 19,
+     "sum_R": -4.01
+    },
+    "2026-10": {
+     "n": 51,
+     "sum_R": 0.93
+    },
+    "2026-11": {
+     "n": 34,
+     "sum_R": -5.59
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "trend_bb15",
+   "exit": "tf_wide",
+   "is_n": 132,
+   "is_sum_R": 6.01,
+   "oos_n": 61,
+   "oos_sum_R": -6.84,
+   "oos_wr": 23.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -6.84,
+    "maker-maker 4bp": -5.65,
+    "vip maker-t 5bp": -6.3
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 11,
+     "sum_R": -3.9
+    },
+    "2026-10": {
+     "n": 34,
+     "sum_R": -7.96
+    },
+    "2026-11": {
+     "n": 16,
+     "sum_R": 5.02
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "trend_bb1h",
+   "exit": "m1_trail",
+   "is_n": 211,
+   "is_sum_R": 7.6,
+   "oos_n": 107,
+   "oos_sum_R": -12.04,
+   "oos_wr": 41.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -12.04,
+    "maker-maker 4bp": -7.9,
+    "vip maker-t 5bp": -10.11
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 18,
+     "sum_R": -3.39
+    },
+    "2026-10": {
+     "n": 54,
+     "sum_R": -3.18
+    },
+    "2026-11": {
+     "n": 35,
+     "sum_R": -5.47
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_trail",
+   "is_n": 154,
+   "is_sum_R": 8.73,
+   "oos_n": 81,
+   "oos_sum_R": -5.65,
+   "oos_wr": 53.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -5.65,
+    "maker-maker 4bp": -3.43,
+    "vip maker-t 5bp": -4.68
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": -4.53
+    },
+    "2026-10": {
+     "n": 39,
+     "sum_R": 3.38
+    },
+    "2026-11": {
+     "n": 28,
+     "sum_R": -4.5
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_wide",
+   "is_n": 106,
+   "is_sum_R": 2.15,
+   "oos_n": 47,
+   "oos_sum_R": -2.89,
+   "oos_wr": 25.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": -2.89,
+    "maker-maker 4bp": -1.91,
+    "vip maker-t 5bp": -2.45
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": -0.79
+    },
+    "2026-10": {
+     "n": 26,
+     "sum_R": -6.74
+    },
+    "2026-11": {
+     "n": 14,
+     "sum_R": 4.64
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "squeeze",
+   "exit": "m1_trail",
+   "is_n": 252,
+   "is_sum_R": 25.83,
+   "oos_n": 131,
+   "oos_sum_R": -12.92,
+   "oos_wr": 42.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -12.92,
+    "maker-maker 4bp": -7.94,
+    "vip maker-t 5bp": -10.61
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 24,
+     "sum_R": -1.22
+    },
+    "2026-10": {
+     "n": 63,
+     "sum_R": -5.69
+    },
+    "2026-11": {
+     "n": 44,
+     "sum_R": -6.01
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "squeeze",
+   "exit": "tf_trail",
+   "is_n": 191,
+   "is_sum_R": 9.32,
+   "oos_n": 101,
+   "oos_sum_R": -9.07,
+   "oos_wr": 49.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": -9.07,
+    "maker-maker 4bp": -6.45,
+    "vip maker-t 5bp": -7.89
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 19,
+     "sum_R": -4.01
+    },
+    "2026-10": {
+     "n": 49,
+     "sum_R": -0.51
+    },
+    "2026-11": {
+     "n": 33,
+     "sum_R": -4.55
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "squeeze",
+   "exit": "tf_wide",
+   "is_n": 126,
+   "is_sum_R": 8.45,
+   "oos_n": 61,
+   "oos_sum_R": -11.52,
+   "oos_wr": 21.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": -11.52,
+    "maker-maker 4bp": -10.3,
+    "vip maker-t 5bp": -10.97
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 11,
+     "sum_R": -3.9
+    },
+    "2026-10": {
+     "n": 33,
+     "sum_R": -10.91
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": 3.3
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 182,
+   "is_sum_R": 7.71,
+   "oos_n": 87,
+   "oos_sum_R": 0.14,
+   "oos_wr": 50.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": 0.13,
+    "maker-maker 4bp": 2.26,
+    "vip maker-t 5bp": 1.09
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 16,
+     "sum_R": -0.11
+    },
+    "2026-10": {
+     "n": 47,
+     "sum_R": -2.29
+    },
+    "2026-11": {
+     "n": 24,
+     "sum_R": 2.54
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 104,
+   "is_sum_R": 7.88,
+   "oos_n": 54,
+   "oos_sum_R": 2.25,
+   "oos_wr": 33.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 2.25,
+    "maker-maker 4bp": 3.26,
+    "vip maker-t 5bp": 2.7
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": 4.79
+    },
+    "2026-10": {
+     "n": 31,
+     "sum_R": -2.7
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": 0.16
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "impulse",
+   "exit": "tf_wide",
+   "is_n": 42,
+   "is_sum_R": 5.24,
+   "oos_n": 24,
+   "oos_sum_R": -7.25,
+   "oos_wr": 16.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": -7.25,
+    "maker-maker 4bp": -6.79,
+    "vip maker-t 5bp": -7.04
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": -2.46
+    },
+    "2026-10": {
+     "n": 13,
+     "sum_R": -5.47
+    },
+    "2026-11": {
+     "n": 6,
+     "sum_R": 0.67
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "pullback",
+   "exit": "tf_trail",
+   "is_n": 197,
+   "is_sum_R": 8.9,
+   "oos_n": 97,
+   "oos_sum_R": 1.15,
+   "oos_wr": 54.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": 1.15,
+    "maker-maker 4bp": 3.57,
+    "vip maker-t 5bp": 2.24
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 16,
+     "sum_R": -1.02
+    },
+    "2026-10": {
+     "n": 54,
+     "sum_R": -3.27
+    },
+    "2026-11": {
+     "n": 27,
+     "sum_R": 5.43
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 111,
+   "is_sum_R": 6.44,
+   "oos_n": 58,
+   "oos_sum_R": 7.61,
+   "oos_wr": 31.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 7.61,
+    "maker-maker 4bp": 8.76,
+    "vip maker-t 5bp": 8.13
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": 1.88
+    },
+    "2026-10": {
+     "n": 33,
+     "sum_R": -0.82
+    },
+    "2026-11": {
+     "n": 15,
+     "sum_R": 6.56
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "trend_bb15",
+   "exit": "tf_trail",
+   "is_n": 191,
+   "is_sum_R": 9.87,
+   "oos_n": 98,
+   "oos_sum_R": -1.89,
+   "oos_wr": 51.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.89,
+    "maker-maker 4bp": 0.77,
+    "vip maker-t 5bp": -0.7
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 19,
+     "sum_R": 1.23
+    },
+    "2026-10": {
+     "n": 51,
+     "sum_R": -4.99
+    },
+    "2026-11": {
+     "n": 28,
+     "sum_R": 1.87
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "trend_bb15",
+   "exit": "tf_wide",
+   "is_n": 133,
+   "is_sum_R": 8.17,
+   "oos_n": 59,
+   "oos_sum_R": 10.47,
+   "oos_wr": 32.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": 10.47,
+    "maker-maker 4bp": 11.62,
+    "vip maker-t 5bp": 11.01
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": 0.95
+    },
+    "2026-10": {
+     "n": 35,
+     "sum_R": -1.15
+    },
+    "2026-11": {
+     "n": 12,
+     "sum_R": 10.67
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_wide",
+   "is_n": 101,
+   "is_sum_R": 3.25,
+   "oos_n": 50,
+   "oos_sum_R": 0.48,
+   "oos_wr": 28.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 0.48,
+    "maker-maker 4bp": 1.47,
+    "vip maker-t 5bp": 0.94
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": -0.84
+    },
+    "2026-10": {
+     "n": 29,
+     "sum_R": -8.04
+    },
+    "2026-11": {
+     "n": 11,
+     "sum_R": 9.36
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "squeeze",
+   "exit": "tf_trail",
+   "is_n": 186,
+   "is_sum_R": 7.43,
+   "oos_n": 98,
+   "oos_sum_R": -1.89,
+   "oos_wr": 51.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.89,
+    "maker-maker 4bp": 0.77,
+    "vip maker-t 5bp": -0.7
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 19,
+     "sum_R": 1.23
+    },
+    "2026-10": {
+     "n": 51,
+     "sum_R": -4.99
+    },
+    "2026-11": {
+     "n": 28,
+     "sum_R": 1.87
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "squeeze",
+   "exit": "tf_wide",
+   "is_n": 129,
+   "is_sum_R": 3.71,
+   "oos_n": 59,
+   "oos_sum_R": 10.47,
+   "oos_wr": 32.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": 10.47,
+    "maker-maker 4bp": 11.62,
+    "vip maker-t 5bp": 11.01
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": 0.95
+    },
+    "2026-10": {
+     "n": 35,
+     "sum_R": -1.15
+    },
+    "2026-11": {
+     "n": 12,
+     "sum_R": 10.67
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_wide",
+   "is_n": 105,
+   "is_sum_R": 0.92,
+   "oos_n": 54,
+   "oos_sum_R": 9.26,
+   "oos_wr": 37.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 9.26,
+    "maker-maker 4bp": 10.3,
+    "vip maker-t 5bp": 9.74
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 11,
+     "sum_R": 2.72
+    },
+    "2026-10": {
+     "n": 27,
+     "sum_R": -0.09
+    },
+    "2026-11": {
+     "n": 16,
+     "sum_R": 6.63
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 172,
+   "is_sum_R": 16.68,
+   "oos_n": 90,
+   "oos_sum_R": 10.27,
+   "oos_wr": 56.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": 10.27,
+    "maker-maker 4bp": 12.39,
+    "vip maker-t 5bp": 11.27
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": 4.56
+    },
+    "2026-10": {
+     "n": 47,
+     "sum_R": 1.21
+    },
+    "2026-11": {
+     "n": 29,
+     "sum_R": 4.5
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 113,
+   "is_sum_R": 12.79,
+   "oos_n": 60,
+   "oos_sum_R": 0.61,
+   "oos_wr": 28.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 0.6,
+    "maker-maker 4bp": 1.76,
+    "vip maker-t 5bp": 1.14
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": -0.26
+    },
+    "2026-10": {
+     "n": 30,
+     "sum_R": -2.52
+    },
+    "2026-11": {
+     "n": 16,
+     "sum_R": 3.39
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "donchian",
+   "exit": "tf_wide",
+   "is_n": 93,
+   "is_sum_R": 1.21,
+   "oos_n": 41,
+   "oos_sum_R": -0.06,
+   "oos_wr": 24.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -0.06,
+    "maker-maker 4bp": 0.77,
+    "vip maker-t 5bp": 0.32
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": 1.25
+    },
+    "2026-10": {
+     "n": 24,
+     "sum_R": -4.06
+    },
+    "2026-11": {
+     "n": 10,
+     "sum_R": 2.75
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "impulse",
+   "exit": "wide:3.5x3.0",
+   "is_n": 49,
+   "is_sum_R": 6.96,
+   "oos_n": 26,
+   "oos_sum_R": -2.93,
+   "oos_wr": 23.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -2.93,
+    "maker-maker 4bp": -2.39,
+    "vip maker-t 5bp": -2.69
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 9,
+     "sum_R": -1.57
+    },
+    "2026-10": {
+     "n": 12,
+     "sum_R": -2.88
+    },
+    "2026-11": {
+     "n": 5,
+     "sum_R": 1.52
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 119,
+   "is_sum_R": 3.14,
+   "oos_n": 66,
+   "oos_sum_R": 6.28,
+   "oos_wr": 27.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 6.28,
+    "maker-maker 4bp": 7.62,
+    "vip maker-t 5bp": 6.9
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 11,
+     "sum_R": 1.58
+    },
+    "2026-10": {
+     "n": 34,
+     "sum_R": 3.6
+    },
+    "2026-11": {
+     "n": 21,
+     "sum_R": 1.1
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "DOGEUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_trail",
+   "is_n": 136,
+   "is_sum_R": 3.32,
+   "oos_n": 63,
+   "oos_sum_R": -14.92,
+   "oos_wr": 39.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": -14.92,
+    "maker-maker 4bp": -13.47,
+    "vip maker-t 5bp": -14.25
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": -4.78
+    },
+    "2026-10": {
+     "n": 33,
+     "sum_R": -7.96
+    },
+    "2026-11": {
+     "n": 18,
+     "sum_R": -2.19
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "DOGEUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_wide",
+   "is_n": 91,
+   "is_sum_R": 5.56,
+   "oos_n": 51,
+   "oos_sum_R": -2.34,
+   "oos_wr": 25.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": -2.34,
+    "maker-maker 4bp": -1.43,
+    "vip maker-t 5bp": -1.91
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": -4.92
+    },
+    "2026-10": {
+     "n": 30,
+     "sum_R": -1.91
+    },
+    "2026-11": {
+     "n": 11,
+     "sum_R": 4.49
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "DOGEUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 177,
+   "is_sum_R": 8.64,
+   "oos_n": 86,
+   "oos_sum_R": -9.27,
+   "oos_wr": 45.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": -9.26,
+    "maker-maker 4bp": -7.39,
+    "vip maker-t 5bp": -8.4
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 18,
+     "sum_R": -4.82
+    },
+    "2026-10": {
+     "n": 42,
+     "sum_R": -5.99
+    },
+    "2026-11": {
+     "n": 26,
+     "sum_R": 1.54
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "DOGEUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 111,
+   "is_sum_R": 5.02,
+   "oos_n": 64,
+   "oos_sum_R": -1.87,
+   "oos_wr": 25.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.87,
+    "maker-maker 4bp": -0.74,
+    "vip maker-t 5bp": -1.35
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 15,
+     "sum_R": -4.23
+    },
+    "2026-10": {
+     "n": 31,
+     "sum_R": -5.83
+    },
+    "2026-11": {
+     "n": 18,
+     "sum_R": 8.2
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "DOGEUSDT",
+   "idea": "impulse",
+   "exit": "m1",
+   "is_n": 45,
+   "is_sum_R": 10.09,
+   "oos_n": 27,
+   "oos_sum_R": 0.73,
+   "oos_wr": 33.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 0.73,
+    "maker-maker 4bp": 1.67,
+    "vip maker-t 5bp": 1.21
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": -0.23
+    },
+    "2026-10": {
+     "n": 14,
+     "sum_R": 5.28
+    },
+    "2026-11": {
+     "n": 8,
+     "sum_R": -4.32
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "DOGEUSDT",
+   "idea": "impulse",
+   "exit": "m1_trail",
+   "is_n": 44,
+   "is_sum_R": 6.51,
+   "oos_n": 27,
+   "oos_sum_R": -3.25,
+   "oos_wr": 29.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -3.25,
+    "maker-maker 4bp": -2.52,
+    "vip maker-t 5bp": -2.89
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": -3.64
+    },
+    "2026-10": {
+     "n": 14,
+     "sum_R": 0.84
+    },
+    "2026-11": {
+     "n": 8,
+     "sum_R": -0.45
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "DOGEUSDT",
+   "idea": "impulse",
+   "exit": "wide:3.5x3.0",
+   "is_n": 45,
+   "is_sum_R": 4.71,
+   "oos_n": 27,
+   "oos_sum_R": -0.0,
+   "oos_wr": 29.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -0.0,
+    "maker-maker 4bp": 0.53,
+    "vip maker-t 5bp": 0.23
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": -0.98
+    },
+    "2026-10": {
+     "n": 14,
+     "sum_R": 1.16
+    },
+    "2026-11": {
+     "n": 8,
+     "sum_R": -0.18
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "DOGEUSDT",
+   "idea": "impulse",
+   "exit": "tf_trail",
+   "is_n": 40,
+   "is_sum_R": 8.2,
+   "oos_n": 27,
+   "oos_sum_R": -6.15,
+   "oos_wr": 37.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -6.15,
+    "maker-maker 4bp": -5.6,
+    "vip maker-t 5bp": -5.9
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": -1.94
+    },
+    "2026-10": {
+     "n": 14,
+     "sum_R": -0.98
+    },
+    "2026-11": {
+     "n": 8,
+     "sum_R": -3.23
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "DOGEUSDT",
+   "idea": "impulse",
+   "exit": "tf_wide",
+   "is_n": 34,
+   "is_sum_R": 7.76,
+   "oos_n": 24,
+   "oos_sum_R": 2.8,
+   "oos_wr": 25.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 2.8,
+    "maker-maker 4bp": 3.14,
+    "vip maker-t 5bp": 2.97
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": -1.78
+    },
+    "2026-10": {
+     "n": 13,
+     "sum_R": 0.09
+    },
+    "2026-11": {
+     "n": 6,
+     "sum_R": 4.5
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "DOGEUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 129,
+   "is_sum_R": 3.2,
+   "oos_n": 61,
+   "oos_sum_R": 11.98,
+   "oos_wr": 36.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": 11.98,
+    "maker-maker 4bp": 13.08,
+    "vip maker-t 5bp": 12.5
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 13,
+     "sum_R": -2.89
+    },
+    "2026-10": {
+     "n": 31,
+     "sum_R": 7.37
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": 7.49
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SUIUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_wide",
+   "is_n": 100,
+   "is_sum_R": 0.09,
+   "oos_n": 47,
+   "oos_sum_R": 11.55,
+   "oos_wr": 23.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": 11.55,
+    "maker-maker 4bp": 12.1,
+    "vip maker-t 5bp": 11.82
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": 4.22
+    },
+    "2026-10": {
+     "n": 24,
+     "sum_R": 5.11
+    },
+    "2026-11": {
+     "n": 13,
+     "sum_R": 2.22
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SUIUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 200,
+   "is_sum_R": 3.1,
+   "oos_n": 97,
+   "oos_sum_R": -3.47,
+   "oos_wr": 48.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": -3.47,
+    "maker-maker 4bp": -1.86,
+    "vip maker-t 5bp": -2.73
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 19,
+     "sum_R": -3.45
+    },
+    "2026-10": {
+     "n": 51,
+     "sum_R": -0.36
+    },
+    "2026-11": {
+     "n": 27,
+     "sum_R": 0.34
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SUIUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 108,
+   "is_sum_R": 5.63,
+   "oos_n": 63,
+   "oos_sum_R": -4.63,
+   "oos_wr": 30.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": -4.63,
+    "maker-maker 4bp": -3.84,
+    "vip maker-t 5bp": -4.27
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": 4.59
+    },
+    "2026-10": {
+     "n": 31,
+     "sum_R": -3.83
+    },
+    "2026-11": {
+     "n": 18,
+     "sum_R": -5.39
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SUIUSDT",
+   "idea": "donchian",
+   "exit": "tf_trail",
+   "is_n": 112,
+   "is_sum_R": 5.51,
+   "oos_n": 68,
+   "oos_sum_R": -0.35,
+   "oos_wr": 45.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -0.35,
+    "maker-maker 4bp": 0.74,
+    "vip maker-t 5bp": 0.16
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 16,
+     "sum_R": -2.75
+    },
+    "2026-10": {
+     "n": 32,
+     "sum_R": 2.18
+    },
+    "2026-11": {
+     "n": 20,
+     "sum_R": 0.22
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SUIUSDT",
+   "idea": "impulse",
+   "exit": "tf_trail",
+   "is_n": 44,
+   "is_sum_R": 9.59,
+   "oos_n": 25,
+   "oos_sum_R": -0.9,
+   "oos_wr": 48.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -0.9,
+    "maker-maker 4bp": -0.54,
+    "vip maker-t 5bp": -0.74
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": -1.07
+    },
+    "2026-10": {
+     "n": 13,
+     "sum_R": 0.74
+    },
+    "2026-11": {
+     "n": 6,
+     "sum_R": -0.57
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SUIUSDT",
+   "idea": "impulse",
+   "exit": "tf_wide",
+   "is_n": 38,
+   "is_sum_R": 0.38,
+   "oos_n": 21,
+   "oos_sum_R": 10.52,
+   "oos_wr": 38.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": 10.52,
+    "maker-maker 4bp": 10.71,
+    "vip maker-t 5bp": 10.62
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": 7.25
+    },
+    "2026-10": {
+     "n": 12,
+     "sum_R": -1.64
+    },
+    "2026-11": {
+     "n": 5,
+     "sum_R": 4.9
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "LINKUSDT",
+   "idea": "squeeze",
+   "exit": "m1_trail",
+   "is_n": 242,
+   "is_sum_R": 1.83,
+   "oos_n": 133,
+   "oos_sum_R": -6.45,
+   "oos_wr": 43.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -6.45,
+    "maker-maker 4bp": -2.54,
+    "vip maker-t 5bp": -4.53
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 21,
+     "sum_R": -2.66
+    },
+    "2026-10": {
+     "n": 67,
+     "sum_R": 6.14
+    },
+    "2026-11": {
+     "n": 45,
+     "sum_R": -9.94
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "LINKUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_trail",
+   "is_n": 147,
+   "is_sum_R": 0.98,
+   "oos_n": 75,
+   "oos_sum_R": -11.97,
+   "oos_wr": 45.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": -11.97,
+    "maker-maker 4bp": -10.36,
+    "vip maker-t 5bp": -11.25
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 13,
+     "sum_R": -2.07
+    },
+    "2026-10": {
+     "n": 41,
+     "sum_R": -10.45
+    },
+    "2026-11": {
+     "n": 21,
+     "sum_R": 0.55
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "LINKUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_wide",
+   "is_n": 103,
+   "is_sum_R": 2.91,
+   "oos_n": 48,
+   "oos_sum_R": -4.19,
+   "oos_wr": 25.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -4.19,
+    "maker-maker 4bp": -3.41,
+    "vip maker-t 5bp": -3.83
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 9,
+     "sum_R": -3.38
+    },
+    "2026-10": {
+     "n": 25,
+     "sum_R": -5.91
+    },
+    "2026-11": {
+     "n": 14,
+     "sum_R": 5.1
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "LINKUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 200,
+   "is_sum_R": 7.25,
+   "oos_n": 94,
+   "oos_sum_R": 3.72,
+   "oos_wr": 50.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.72,
+    "maker-maker 4bp": 5.5,
+    "vip maker-t 5bp": 4.55
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 21,
+     "sum_R": 1.62
+    },
+    "2026-10": {
+     "n": 41,
+     "sum_R": -4.26
+    },
+    "2026-11": {
+     "n": 32,
+     "sum_R": 6.36
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "LINKUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 125,
+   "is_sum_R": 2.02,
+   "oos_n": 55,
+   "oos_sum_R": 1.67,
+   "oos_wr": 36.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": 1.67,
+    "maker-maker 4bp": 2.51,
+    "vip maker-t 5bp": 2.06
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 9,
+     "sum_R": 6.34
+    },
+    "2026-10": {
+     "n": 29,
+     "sum_R": -10.31
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": 5.64
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "LINKUSDT",
+   "idea": "impulse",
+   "exit": "tf_wide",
+   "is_n": 47,
+   "is_sum_R": 2.74,
+   "oos_n": 21,
+   "oos_sum_R": -7.19,
+   "oos_wr": 14.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": -7.19,
+    "maker-maker 4bp": -6.88,
+    "vip maker-t 5bp": -7.05
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 3,
+     "sum_R": -2.08
+    },
+    "2026-10": {
+     "n": 12,
+     "sum_R": -6.97
+    },
+    "2026-11": {
+     "n": 6,
+     "sum_R": 1.86
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "LINKUSDT",
+   "idea": "pullback",
+   "exit": "m1_trail",
+   "is_n": 300,
+   "is_sum_R": 2.76,
+   "oos_n": 119,
+   "oos_sum_R": 4.98,
+   "oos_wr": 47.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": 4.98,
+    "maker-maker 4bp": 8.43,
+    "vip maker-t 5bp": 6.63
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 22,
+     "sum_R": -4.6
+    },
+    "2026-10": {
+     "n": 68,
+     "sum_R": 3.37
+    },
+    "2026-11": {
+     "n": 29,
+     "sum_R": 6.21
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "LINKUSDT",
+   "idea": "pullback",
+   "exit": "tf_trail",
+   "is_n": 214,
+   "is_sum_R": 2.9,
+   "oos_n": 88,
+   "oos_sum_R": 5.11,
+   "oos_wr": 52.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 5.11,
+    "maker-maker 4bp": 6.89,
+    "vip maker-t 5bp": 5.92
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 15,
+     "sum_R": 0.16
+    },
+    "2026-10": {
+     "n": 50,
+     "sum_R": 1.15
+    },
+    "2026-11": {
+     "n": 23,
+     "sum_R": 3.8
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "trend_bb15",
+   "exit": "tf_wide",
+   "is_n": 135,
+   "is_sum_R": 7.36,
+   "oos_n": 76,
+   "oos_sum_R": -17.08,
+   "oos_wr": 19.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": -17.08,
+    "maker-maker 4bp": -15.97,
+    "vip maker-t 5bp": -16.57
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 15,
+     "sum_R": -4.79
+    },
+    "2026-10": {
+     "n": 37,
+     "sum_R": -4.2
+    },
+    "2026-11": {
+     "n": 24,
+     "sum_R": -8.09
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_wide",
+   "is_n": 93,
+   "is_sum_R": 23.8,
+   "oos_n": 47,
+   "oos_sum_R": -3.27,
+   "oos_wr": 21.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": -3.27,
+    "maker-maker 4bp": -2.54,
+    "vip maker-t 5bp": -2.95
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": 0.31
+    },
+    "2026-10": {
+     "n": 22,
+     "sum_R": -2.99
+    },
+    "2026-11": {
+     "n": 15,
+     "sum_R": -0.59
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "squeeze",
+   "exit": "tf_wide",
+   "is_n": 129,
+   "is_sum_R": 10.24,
+   "oos_n": 75,
+   "oos_sum_R": -16.5,
+   "oos_wr": 20.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -16.5,
+    "maker-maker 4bp": -15.42,
+    "vip maker-t 5bp": -16.01
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 15,
+     "sum_R": -4.79
+    },
+    "2026-10": {
+     "n": 37,
+     "sum_R": -4.2
+    },
+    "2026-11": {
+     "n": 23,
+     "sum_R": -7.51
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_trail",
+   "is_n": 139,
+   "is_sum_R": 5.41,
+   "oos_n": 70,
+   "oos_sum_R": 6.9,
+   "oos_wr": 58.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": 6.9,
+    "maker-maker 4bp": 8.16,
+    "vip maker-t 5bp": 7.48
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": 1.03
+    },
+    "2026-10": {
+     "n": 36,
+     "sum_R": 2.2
+    },
+    "2026-11": {
+     "n": 20,
+     "sum_R": 3.67
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_wide",
+   "is_n": 93,
+   "is_sum_R": 14.02,
+   "oos_n": 52,
+   "oos_sum_R": -1.64,
+   "oos_wr": 28.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.64,
+    "maker-maker 4bp": -0.9,
+    "vip maker-t 5bp": -1.3
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 9,
+     "sum_R": -0.3
+    },
+    "2026-10": {
+     "n": 28,
+     "sum_R": 0.18
+    },
+    "2026-11": {
+     "n": 15,
+     "sum_R": -1.51
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 183,
+   "is_sum_R": 9.76,
+   "oos_n": 85,
+   "oos_sum_R": -3.3,
+   "oos_wr": 50.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -3.3,
+    "maker-maker 4bp": -1.82,
+    "vip maker-t 5bp": -2.62
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 21,
+     "sum_R": -4.83
+    },
+    "2026-10": {
+     "n": 41,
+     "sum_R": -0.31
+    },
+    "2026-11": {
+     "n": 23,
+     "sum_R": 1.84
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 99,
+   "is_sum_R": 21.85,
+   "oos_n": 60,
+   "oos_sum_R": 6.93,
+   "oos_wr": 41.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": 6.93,
+    "maker-maker 4bp": 7.73,
+    "vip maker-t 5bp": 7.3
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 13,
+     "sum_R": -1.85
+    },
+    "2026-10": {
+     "n": 28,
+     "sum_R": 3.32
+    },
+    "2026-11": {
+     "n": 19,
+     "sum_R": 5.45
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "donchian",
+   "exit": "tf_wide",
+   "is_n": 88,
+   "is_sum_R": 14.72,
+   "oos_n": 46,
+   "oos_sum_R": -3.87,
+   "oos_wr": 26.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -3.87,
+    "maker-maker 4bp": -3.22,
+    "vip maker-t 5bp": -3.58
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": 0.12
+    },
+    "2026-10": {
+     "n": 22,
+     "sum_R": -3.0
+    },
+    "2026-11": {
+     "n": 14,
+     "sum_R": -0.99
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "pullback",
+   "exit": "m1_trail",
+   "is_n": 286,
+   "is_sum_R": 6.49,
+   "oos_n": 139,
+   "oos_sum_R": 3.38,
+   "oos_wr": 53.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.38,
+    "maker-maker 4bp": 7.42,
+    "vip maker-t 5bp": 5.24
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 23,
+     "sum_R": -0.72
+    },
+    "2026-10": {
+     "n": 67,
+     "sum_R": 0.74
+    },
+    "2026-11": {
+     "n": 49,
+     "sum_R": 3.35
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "pullback",
+   "exit": "tf_trail",
+   "is_n": 189,
+   "is_sum_R": 5.05,
+   "oos_n": 86,
+   "oos_sum_R": 8.92,
+   "oos_wr": 60.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": 8.92,
+    "maker-maker 4bp": 10.37,
+    "vip maker-t 5bp": 9.59
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 16,
+     "sum_R": 1.64
+    },
+    "2026-10": {
+     "n": 41,
+     "sum_R": 2.9
+    },
+    "2026-11": {
+     "n": 29,
+     "sum_R": 4.38
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 108,
+   "is_sum_R": 26.19,
+   "oos_n": 53,
+   "oos_sum_R": 10.65,
+   "oos_wr": 35.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": 10.65,
+    "maker-maker 4bp": 11.36,
+    "vip maker-t 5bp": 10.99
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": 0.36
+    },
+    "2026-10": {
+     "n": 26,
+     "sum_R": 2.67
+    },
+    "2026-11": {
+     "n": 20,
+     "sum_R": 7.62
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "BNBUSDT",
+   "idea": "btc_led",
+   "exit": "m1_trail",
+   "is_n": 34,
+   "is_sum_R": 3.73,
+   "oos_n": 12,
+   "oos_sum_R": 0.63,
+   "oos_wr": 50.0
+  },
+  {
+   "view": "15m",
+   "symbol": "NEARUSDT",
+   "idea": "impulse",
+   "exit": "tf_wide",
+   "is_n": 29,
+   "is_sum_R": 8.92,
+   "oos_n": 18,
+   "oos_sum_R": -7.27,
+   "oos_wr": 16.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": -7.27,
+    "maker-maker 4bp": -7.1,
+    "vip maker-t 5bp": -7.2
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -2.94
+    },
+    "2026-10": {
+     "n": 7,
+     "sum_R": -0.97
+    },
+    "2026-11": {
+     "n": 7,
+     "sum_R": -3.36
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_wide",
+   "is_n": 102,
+   "is_sum_R": 12.68,
+   "oos_n": 53,
+   "oos_sum_R": -9.99,
+   "oos_wr": 18.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -9.99,
+    "maker-maker 4bp": -9.38,
+    "vip maker-t 5bp": -9.72
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 11,
+     "sum_R": -5.62
+    },
+    "2026-10": {
+     "n": 29,
+     "sum_R": -5.78
+    },
+    "2026-11": {
+     "n": 13,
+     "sum_R": 1.41
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "mr_rsi5",
+   "exit": "m1_trail",
+   "is_n": 199,
+   "is_sum_R": 17.0,
+   "oos_n": 98,
+   "oos_sum_R": 12.64,
+   "oos_wr": 50.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 12.64,
+    "maker-maker 4bp": 14.7,
+    "vip maker-t 5bp": 13.64
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 17,
+     "sum_R": 2.19
+    },
+    "2026-10": {
+     "n": 51,
+     "sum_R": -4.17
+    },
+    "2026-11": {
+     "n": 30,
+     "sum_R": 14.62
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_trail",
+   "is_n": 154,
+   "is_sum_R": 15.21,
+   "oos_n": 83,
+   "oos_sum_R": 16.47,
+   "oos_wr": 60.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": 16.46,
+    "maker-maker 4bp": 17.7,
+    "vip maker-t 5bp": 17.03
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 16,
+     "sum_R": 5.45
+    },
+    "2026-10": {
+     "n": 42,
+     "sum_R": 2.01
+    },
+    "2026-11": {
+     "n": 25,
+     "sum_R": 9.0
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_wide",
+   "is_n": 92,
+   "is_sum_R": 3.05,
+   "oos_n": 44,
+   "oos_sum_R": 11.69,
+   "oos_wr": 22.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": 11.7,
+    "maker-maker 4bp": 12.17,
+    "vip maker-t 5bp": 11.92
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": 1.85
+    },
+    "2026-10": {
+     "n": 24,
+     "sum_R": 1.85
+    },
+    "2026-11": {
+     "n": 14,
+     "sum_R": 7.99
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 199,
+   "is_sum_R": 12.21,
+   "oos_n": 108,
+   "oos_sum_R": 13.44,
+   "oos_wr": 53.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": 13.44,
+    "maker-maker 4bp": 14.97,
+    "vip maker-t 5bp": 14.15
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 23,
+     "sum_R": -2.4
+    },
+    "2026-10": {
+     "n": 54,
+     "sum_R": 1.17
+    },
+    "2026-11": {
+     "n": 31,
+     "sum_R": 14.67
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 120,
+   "is_sum_R": 0.05,
+   "oos_n": 57,
+   "oos_sum_R": 12.86,
+   "oos_wr": 40.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": 12.86,
+    "maker-maker 4bp": 13.5,
+    "vip maker-t 5bp": 13.16
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": 0.52
+    },
+    "2026-10": {
+     "n": 30,
+     "sum_R": 2.0
+    },
+    "2026-11": {
+     "n": 20,
+     "sum_R": 10.34
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "pullback",
+   "exit": "tf_trail",
+   "is_n": 202,
+   "is_sum_R": 7.82,
+   "oos_n": 95,
+   "oos_sum_R": 4.21,
+   "oos_wr": 55.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": 4.21,
+    "maker-maker 4bp": 5.67,
+    "vip maker-t 5bp": 4.87
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": 4.88
+    },
+    "2026-10": {
+     "n": 55,
+     "sum_R": -8.72
+    },
+    "2026-11": {
+     "n": 26,
+     "sum_R": 8.05
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 114,
+   "is_sum_R": 12.76,
+   "oos_n": 65,
+   "oos_sum_R": 1.04,
+   "oos_wr": 36.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": 1.05,
+    "maker-maker 4bp": 1.81,
+    "vip maker-t 5bp": 1.39
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": -1.5
+    },
+    "2026-10": {
+     "n": 36,
+     "sum_R": -4.48
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": 7.02
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ARBUSDT",
+   "idea": "trend_bb1h",
+   "exit": "m1_trail",
+   "is_n": 196,
+   "is_sum_R": 6.21,
+   "oos_n": 89,
+   "oos_sum_R": -16.66,
+   "oos_wr": 41.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -16.66,
+    "maker-maker 4bp": -14.69,
+    "vip maker-t 5bp": -15.76
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 15,
+     "sum_R": -3.65
+    },
+    "2026-10": {
+     "n": 40,
+     "sum_R": -5.39
+    },
+    "2026-11": {
+     "n": 34,
+     "sum_R": -7.62
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ARBUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_trail",
+   "is_n": 150,
+   "is_sum_R": 10.45,
+   "oos_n": 67,
+   "oos_sum_R": -9.77,
+   "oos_wr": 41.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": -9.77,
+    "maker-maker 4bp": -8.78,
+    "vip maker-t 5bp": -9.32
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": -2.79
+    },
+    "2026-10": {
+     "n": 28,
+     "sum_R": -0.15
+    },
+    "2026-11": {
+     "n": 27,
+     "sum_R": -6.83
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ARBUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_wide",
+   "is_n": 105,
+   "is_sum_R": 7.5,
+   "oos_n": 44,
+   "oos_sum_R": -13.06,
+   "oos_wr": 15.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -13.06,
+    "maker-maker 4bp": -12.54,
+    "vip maker-t 5bp": -12.83
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 8,
+     "sum_R": -5.12
+    },
+    "2026-10": {
+     "n": 18,
+     "sum_R": -1.19
+    },
+    "2026-11": {
+     "n": 18,
+     "sum_R": -6.75
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ARBUSDT",
+   "idea": "squeeze",
+   "exit": "tf_wide",
+   "is_n": 123,
+   "is_sum_R": 0.37,
+   "oos_n": 61,
+   "oos_sum_R": -14.15,
+   "oos_wr": 19.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": -14.15,
+    "maker-maker 4bp": -13.45,
+    "vip maker-t 5bp": -13.84
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": -4.2
+    },
+    "2026-10": {
+     "n": 28,
+     "sum_R": -5.79
+    },
+    "2026-11": {
+     "n": 21,
+     "sum_R": -4.16
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ARBUSDT",
+   "idea": "donchian",
+   "exit": "m1_trail",
+   "is_n": 161,
+   "is_sum_R": 1.29,
+   "oos_n": 75,
+   "oos_sum_R": -15.92,
+   "oos_wr": 40.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -15.91,
+    "maker-maker 4bp": -14.3,
+    "vip maker-t 5bp": -15.18
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": -8.4
+    },
+    "2026-10": {
+     "n": 33,
+     "sum_R": -6.51
+    },
+    "2026-11": {
+     "n": 28,
+     "sum_R": -1.01
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ARBUSDT",
+   "idea": "donchian",
+   "exit": "tf_trail",
+   "is_n": 125,
+   "is_sum_R": 15.52,
+   "oos_n": 63,
+   "oos_sum_R": -5.78,
+   "oos_wr": 44.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -5.78,
+    "maker-maker 4bp": -4.89,
+    "vip maker-t 5bp": -5.37
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": -6.03
+    },
+    "2026-10": {
+     "n": 27,
+     "sum_R": -0.09
+    },
+    "2026-11": {
+     "n": 24,
+     "sum_R": 0.33
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ARBUSDT",
+   "idea": "donchian",
+   "exit": "tf_wide",
+   "is_n": 91,
+   "is_sum_R": 12.38,
+   "oos_n": 41,
+   "oos_sum_R": -6.69,
+   "oos_wr": 24.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -6.69,
+    "maker-maker 4bp": -6.24,
+    "vip maker-t 5bp": -6.49
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 9,
+     "sum_R": -5.39
+    },
+    "2026-10": {
+     "n": 20,
+     "sum_R": -3.2
+    },
+    "2026-11": {
+     "n": 12,
+     "sum_R": 1.9
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ARBUSDT",
+   "idea": "impulse",
+   "exit": "tf_wide",
+   "is_n": 36,
+   "is_sum_R": 10.64,
+   "oos_n": 21,
+   "oos_sum_R": -10.24,
+   "oos_wr": 4.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": -10.24,
+    "maker-maker 4bp": -10.03,
+    "vip maker-t 5bp": -10.15
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -2.05
+    },
+    "2026-10": {
+     "n": 10,
+     "sum_R": -4.56
+    },
+    "2026-11": {
+     "n": 7,
+     "sum_R": -3.63
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ARBUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 123,
+   "is_sum_R": 6.56,
+   "oos_n": 66,
+   "oos_sum_R": -10.04,
+   "oos_wr": 27.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": -10.04,
+    "maker-maker 4bp": -9.28,
+    "vip maker-t 5bp": -9.7
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": 2.76
+    },
+    "2026-10": {
+     "n": 35,
+     "sum_R": -18.43
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": 5.64
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "OPUSDT",
+   "idea": "trend_bb1h",
+   "exit": "m1",
+   "is_n": 223,
+   "is_sum_R": 1.06,
+   "oos_n": 122,
+   "oos_sum_R": 0.13,
+   "oos_wr": 32.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": 0.13,
+    "maker-maker 4bp": 3.52,
+    "vip maker-t 5bp": 1.73
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 24,
+     "sum_R": -6.52
+    },
+    "2026-10": {
+     "n": 58,
+     "sum_R": -2.82
+    },
+    "2026-11": {
+     "n": 40,
+     "sum_R": 9.47
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "OPUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_trail",
+   "is_n": 140,
+   "is_sum_R": 2.13,
+   "oos_n": 73,
+   "oos_sum_R": 2.81,
+   "oos_wr": 52.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": 2.81,
+    "maker-maker 4bp": 3.85,
+    "vip maker-t 5bp": 3.29
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": -3.37
+    },
+    "2026-10": {
+     "n": 34,
+     "sum_R": 2.21
+    },
+    "2026-11": {
+     "n": 25,
+     "sum_R": 3.97
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "OPUSDT",
+   "idea": "mr_rsi5",
+   "exit": "m1_trail",
+   "is_n": 201,
+   "is_sum_R": 3.36,
+   "oos_n": 91,
+   "oos_sum_R": -5.59,
+   "oos_wr": 44.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -5.59,
+    "maker-maker 4bp": -3.63,
+    "vip maker-t 5bp": -4.68
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 11,
+     "sum_R": -4.41
+    },
+    "2026-10": {
+     "n": 55,
+     "sum_R": -11.58
+    },
+    "2026-11": {
+     "n": 25,
+     "sum_R": 10.41
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "OPUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_wide",
+   "is_n": 98,
+   "is_sum_R": 11.2,
+   "oos_n": 43,
+   "oos_sum_R": 0.9,
+   "oos_wr": 32.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": 0.9,
+    "maker-maker 4bp": 1.38,
+    "vip maker-t 5bp": 1.12
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": -0.56
+    },
+    "2026-10": {
+     "n": 25,
+     "sum_R": -0.7
+    },
+    "2026-11": {
+     "n": 13,
+     "sum_R": 2.16
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "OPUSDT",
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "is_n": 308,
+   "is_sum_R": 6.67,
+   "oos_n": 164,
+   "oos_sum_R": -28.62,
+   "oos_wr": 38.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -28.62,
+    "maker-maker 4bp": -25.12,
+    "vip maker-t 5bp": -27.0
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 28,
+     "sum_R": -3.58
+    },
+    "2026-10": {
+     "n": 88,
+     "sum_R": -25.12
+    },
+    "2026-11": {
+     "n": 48,
+     "sum_R": 0.09
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "OPUSDT",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 200,
+   "is_sum_R": 2.63,
+   "oos_n": 106,
+   "oos_sum_R": 0.12,
+   "oos_wr": 34.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 0.12,
+    "maker-maker 4bp": 1.96,
+    "vip maker-t 5bp": 0.94
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 22,
+     "sum_R": -7.56
+    },
+    "2026-10": {
+     "n": 49,
+     "sum_R": 4.1
+    },
+    "2026-11": {
+     "n": 35,
+     "sum_R": 3.58
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "OPUSDT",
+   "idea": "pullback",
+   "exit": "m1_trail",
+   "is_n": 262,
+   "is_sum_R": 19.61,
+   "oos_n": 130,
+   "oos_sum_R": -29.47,
+   "oos_wr": 40.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": -29.47,
+    "maker-maker 4bp": -26.38,
+    "vip maker-t 5bp": -28.1
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 27,
+     "sum_R": -0.66
+    },
+    "2026-10": {
+     "n": 69,
+     "sum_R": -24.09
+    },
+    "2026-11": {
+     "n": 34,
+     "sum_R": -4.72
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "OPUSDT",
+   "idea": "pullback",
+   "exit": "tf_trail",
+   "is_n": 193,
+   "is_sum_R": 7.18,
+   "oos_n": 95,
+   "oos_sum_R": 2.43,
+   "oos_wr": 52.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": 2.43,
+    "maker-maker 4bp": 3.81,
+    "vip maker-t 5bp": 3.07
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 19,
+     "sum_R": 4.57
+    },
+    "2026-10": {
+     "n": 49,
+     "sum_R": -4.46
+    },
+    "2026-11": {
+     "n": 27,
+     "sum_R": 2.32
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "OPUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 106,
+   "is_sum_R": 10.77,
+   "oos_n": 63,
+   "oos_sum_R": -2.64,
+   "oos_wr": 31.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": -2.64,
+    "maker-maker 4bp": -1.95,
+    "vip maker-t 5bp": -2.33
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 9,
+     "sum_R": -0.17
+    },
+    "2026-10": {
+     "n": 37,
+     "sum_R": -6.41
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": 3.94
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BTCUSDT",
+   "idea": "trend_bb1h",
+   "exit": "m1_trail",
+   "is_n": 67,
+   "is_sum_R": 4.36,
+   "oos_n": 38,
+   "oos_sum_R": -5.08,
+   "oos_wr": 47.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -5.08,
+    "maker-maker 4bp": -4.01,
+    "vip maker-t 5bp": -4.56
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": -0.73
+    },
+    "2026-10": {
+     "n": 18,
+     "sum_R": -4.19
+    },
+    "2026-11": {
+     "n": 14,
+     "sum_R": -0.16
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BTCUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_trail",
+   "is_n": 49,
+   "is_sum_R": 4.7,
+   "oos_n": 28,
+   "oos_sum_R": 1.0,
+   "oos_wr": 42.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": 1.0,
+    "maker-maker 4bp": 1.47,
+    "vip maker-t 5bp": 1.25
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": -0.42
+    },
+    "2026-10": {
+     "n": 16,
+     "sum_R": -4.09
+    },
+    "2026-11": {
+     "n": 7,
+     "sum_R": 5.51
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BTCUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_wide",
+   "is_n": 62,
+   "is_sum_R": 1.52,
+   "oos_n": 27,
+   "oos_sum_R": -2.8,
+   "oos_wr": 29.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -2.8,
+    "maker-maker 4bp": -2.35,
+    "vip maker-t 5bp": -2.6
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 1,
+     "sum_R": 2.73
+    },
+    "2026-10": {
+     "n": 15,
+     "sum_R": -5.86
+    },
+    "2026-11": {
+     "n": 11,
+     "sum_R": 0.33
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BTCUSDT",
+   "idea": "mr_vwap",
+   "exit": "wide:3.5x3.0",
+   "is_n": 205,
+   "is_sum_R": 0.3,
+   "oos_n": 105,
+   "oos_sum_R": -4.5,
+   "oos_wr": 38.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -4.5,
+    "maker-maker 4bp": -2.4,
+    "vip maker-t 5bp": -3.6
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 23,
+     "sum_R": -0.63
+    },
+    "2026-10": {
+     "n": 52,
+     "sum_R": -5.64
+    },
+    "2026-11": {
+     "n": 30,
+     "sum_R": 1.77
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BTCUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 62,
+   "is_sum_R": 8.41,
+   "oos_n": 31,
+   "oos_sum_R": -1.07,
+   "oos_wr": 48.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.07,
+    "maker-maker 4bp": -0.46,
+    "vip maker-t 5bp": -0.79
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": 1.7
+    },
+    "2026-10": {
+     "n": 20,
+     "sum_R": -8.41
+    },
+    "2026-11": {
+     "n": 6,
+     "sum_R": 5.64
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BTCUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 89,
+   "is_sum_R": 8.36,
+   "oos_n": 35,
+   "oos_sum_R": 1.16,
+   "oos_wr": 54.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 1.16,
+    "maker-maker 4bp": 1.75,
+    "vip maker-t 5bp": 1.41
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 1,
+     "sum_R": 2.6
+    },
+    "2026-10": {
+     "n": 23,
+     "sum_R": -3.54
+    },
+    "2026-11": {
+     "n": 11,
+     "sum_R": 2.1
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BTCUSDT",
+   "idea": "donchian",
+   "exit": "m1",
+   "is_n": 82,
+   "is_sum_R": 3.23,
+   "oos_n": 33,
+   "oos_sum_R": 4.74,
+   "oos_wr": 33.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 4.74,
+    "maker-maker 4bp": 5.99,
+    "vip maker-t 5bp": 5.34
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": 0.35
+    },
+    "2026-10": {
+     "n": 16,
+     "sum_R": 0.43
+    },
+    "2026-11": {
+     "n": 11,
+     "sum_R": 3.96
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BTCUSDT",
+   "idea": "donchian",
+   "exit": "m1_trail",
+   "is_n": 59,
+   "is_sum_R": 1.43,
+   "oos_n": 27,
+   "oos_sum_R": -1.28,
+   "oos_wr": 48.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.28,
+    "maker-maker 4bp": -0.46,
+    "vip maker-t 5bp": -0.91
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": 0.24
+    },
+    "2026-10": {
+     "n": 12,
+     "sum_R": -1.88
+    },
+    "2026-11": {
+     "n": 10,
+     "sum_R": 0.36
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BTCUSDT",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 83,
+   "is_sum_R": 0.99,
+   "oos_n": 32,
+   "oos_sum_R": 0.47,
+   "oos_wr": 34.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": 0.47,
+    "maker-maker 4bp": 1.12,
+    "vip maker-t 5bp": 0.75
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": -0.31
+    },
+    "2026-10": {
+     "n": 16,
+     "sum_R": -0.07
+    },
+    "2026-11": {
+     "n": 10,
+     "sum_R": 0.85
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ETHUSDT",
+   "idea": "trend_bb1h",
+   "exit": "m1",
+   "is_n": 84,
+   "is_sum_R": 3.46,
+   "oos_n": 48,
+   "oos_sum_R": -1.35,
+   "oos_wr": 27.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.35,
+    "maker-maker 4bp": 0.04,
+    "vip maker-t 5bp": -0.7
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": -2.12
+    },
+    "2026-10": {
+     "n": 24,
+     "sum_R": 2.02
+    },
+    "2026-11": {
+     "n": 19,
+     "sum_R": -1.25
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ETHUSDT",
+   "idea": "trend_bb1h",
+   "exit": "m1_trail",
+   "is_n": 65,
+   "is_sum_R": 3.82,
+   "oos_n": 37,
+   "oos_sum_R": 3.39,
+   "oos_wr": 48.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.39,
+    "maker-maker 4bp": 4.17,
+    "vip maker-t 5bp": 3.76
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -0.73
+    },
+    "2026-10": {
+     "n": 17,
+     "sum_R": 2.46
+    },
+    "2026-11": {
+     "n": 16,
+     "sum_R": 1.66
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ETHUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_trail",
+   "is_n": 44,
+   "is_sum_R": 6.21,
+   "oos_n": 30,
+   "oos_sum_R": 3.38,
+   "oos_wr": 50.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.38,
+    "maker-maker 4bp": 3.82,
+    "vip maker-t 5bp": 3.59
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -2.27
+    },
+    "2026-10": {
+     "n": 16,
+     "sum_R": -0.03
+    },
+    "2026-11": {
+     "n": 10,
+     "sum_R": 5.68
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ETHUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_wide",
+   "is_n": 60,
+   "is_sum_R": 3.26,
+   "oos_n": 29,
+   "oos_sum_R": 1.43,
+   "oos_wr": 24.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": 1.43,
+    "maker-maker 4bp": 1.76,
+    "vip maker-t 5bp": 1.58
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -1.89
+    },
+    "2026-10": {
+     "n": 13,
+     "sum_R": -0.52
+    },
+    "2026-11": {
+     "n": 12,
+     "sum_R": 3.84
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ETHUSDT",
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "is_n": 101,
+   "is_sum_R": 2.63,
+   "oos_n": 49,
+   "oos_sum_R": -2.49,
+   "oos_wr": 42.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -2.49,
+    "maker-maker 4bp": -1.49,
+    "vip maker-t 5bp": -2.03
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 9,
+     "sum_R": -2.03
+    },
+    "2026-10": {
+     "n": 25,
+     "sum_R": -1.09
+    },
+    "2026-11": {
+     "n": 15,
+     "sum_R": 0.64
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ETHUSDT",
+   "idea": "donchian",
+   "exit": "m1",
+   "is_n": 65,
+   "is_sum_R": 5.61,
+   "oos_n": 32,
+   "oos_sum_R": -0.18,
+   "oos_wr": 28.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -0.18,
+    "maker-maker 4bp": 0.71,
+    "vip maker-t 5bp": 0.23
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -0.97
+    },
+    "2026-10": {
+     "n": 17,
+     "sum_R": 2.07
+    },
+    "2026-11": {
+     "n": 11,
+     "sum_R": -1.29
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ETHUSDT",
+   "idea": "donchian",
+   "exit": "m1_trail",
+   "is_n": 54,
+   "is_sum_R": 0.21,
+   "oos_n": 26,
+   "oos_sum_R": 3.09,
+   "oos_wr": 42.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.09,
+    "maker-maker 4bp": 3.6,
+    "vip maker-t 5bp": 3.35
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 2,
+     "sum_R": 1.41
+    },
+    "2026-10": {
+     "n": 15,
+     "sum_R": -3.47
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": 5.15
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ETHUSDT",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 60,
+   "is_sum_R": 3.31,
+   "oos_n": 32,
+   "oos_sum_R": 2.1,
+   "oos_wr": 31.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": 2.1,
+    "maker-maker 4bp": 2.65,
+    "vip maker-t 5bp": 2.34
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -0.52
+    },
+    "2026-10": {
+     "n": 17,
+     "sum_R": 3.16
+    },
+    "2026-11": {
+     "n": 11,
+     "sum_R": -0.55
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ETHUSDT",
+   "idea": "donchian",
+   "exit": "tf_trail",
+   "is_n": 43,
+   "is_sum_R": 2.16,
+   "oos_n": 24,
+   "oos_sum_R": -1.31,
+   "oos_wr": 37.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.31,
+    "maker-maker 4bp": -0.95,
+    "vip maker-t 5bp": -1.14
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 2,
+     "sum_R": -0.18
+    },
+    "2026-10": {
+     "n": 15,
+     "sum_R": -7.98
+    },
+    "2026-11": {
+     "n": 7,
+     "sum_R": 6.86
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_trail",
+   "is_n": 53,
+   "is_sum_R": 5.38,
+   "oos_n": 27,
+   "oos_sum_R": 2.2,
+   "oos_wr": 55.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": 2.2,
+    "maker-maker 4bp": 2.52,
+    "vip maker-t 5bp": 2.35
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -0.19
+    },
+    "2026-10": {
+     "n": 13,
+     "sum_R": -1.26
+    },
+    "2026-11": {
+     "n": 10,
+     "sum_R": 3.65
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_wide",
+   "is_n": 62,
+   "is_sum_R": 2.1,
+   "oos_n": 22,
+   "oos_sum_R": 3.76,
+   "oos_wr": 45.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.76,
+    "maker-maker 4bp": 3.98,
+    "vip maker-t 5bp": 3.85
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 1,
+     "sum_R": 1.9
+    },
+    "2026-10": {
+     "n": 11,
+     "sum_R": 1.69
+    },
+    "2026-11": {
+     "n": 10,
+     "sum_R": 0.17
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "is_n": 116,
+   "is_sum_R": 4.63,
+   "oos_n": 55,
+   "oos_sum_R": 8.5,
+   "oos_wr": 54.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": 8.5,
+    "maker-maker 4bp": 9.48,
+    "vip maker-t 5bp": 8.96
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": 0.07
+    },
+    "2026-10": {
+     "n": 27,
+     "sum_R": 3.28
+    },
+    "2026-11": {
+     "n": 18,
+     "sum_R": 5.15
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 71,
+   "is_sum_R": 11.03,
+   "oos_n": 31,
+   "oos_sum_R": 4.97,
+   "oos_wr": 54.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": 4.97,
+    "maker-maker 4bp": 5.3,
+    "vip maker-t 5bp": 5.13
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": -1.02
+    },
+    "2026-10": {
+     "n": 15,
+     "sum_R": 5.69
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": 0.3
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 86,
+   "is_sum_R": 4.95,
+   "oos_n": 27,
+   "oos_sum_R": 13.39,
+   "oos_wr": 63.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 13.39,
+    "maker-maker 4bp": 13.65,
+    "vip maker-t 5bp": 13.51
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 1,
+     "sum_R": 2.06
+    },
+    "2026-10": {
+     "n": 19,
+     "sum_R": 11.49
+    },
+    "2026-11": {
+     "n": 7,
+     "sum_R": -0.16
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "donchian",
+   "exit": "tf_trail",
+   "is_n": 48,
+   "is_sum_R": 1.69,
+   "oos_n": 27,
+   "oos_sum_R": -1.81,
+   "oos_wr": 48.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.81,
+    "maker-maker 4bp": -1.48,
+    "vip maker-t 5bp": -1.66
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -0.27
+    },
+    "2026-10": {
+     "n": 15,
+     "sum_R": -5.8
+    },
+    "2026-11": {
+     "n": 8,
+     "sum_R": 4.26
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "donchian",
+   "exit": "tf_wide",
+   "is_n": 58,
+   "is_sum_R": 1.0,
+   "oos_n": 21,
+   "oos_sum_R": 3.97,
+   "oos_wr": 42.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.97,
+    "maker-maker 4bp": 4.18,
+    "vip maker-t 5bp": 4.06
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 1,
+     "sum_R": 1.9
+    },
+    "2026-10": {
+     "n": 11,
+     "sum_R": 1.62
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": 0.45
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 70,
+   "is_sum_R": 11.2,
+   "oos_n": 24,
+   "oos_sum_R": 7.44,
+   "oos_wr": 45.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": 7.44,
+    "maker-maker 4bp": 7.68,
+    "vip maker-t 5bp": 7.55
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 1,
+     "sum_R": 2.72
+    },
+    "2026-10": {
+     "n": 17,
+     "sum_R": 1.09
+    },
+    "2026-11": {
+     "n": 6,
+     "sum_R": 3.63
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "XRPUSDT",
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "is_n": 107,
+   "is_sum_R": 11.44,
+   "oos_n": 56,
+   "oos_sum_R": 16.39,
+   "oos_wr": 48.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": 16.39,
+    "maker-maker 4bp": 17.3,
+    "vip maker-t 5bp": 16.86
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": 6.97
+    },
+    "2026-10": {
+     "n": 27,
+     "sum_R": 7.43
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": 1.99
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "XRPUSDT",
+   "idea": "donchian",
+   "exit": "m1_trail",
+   "is_n": 55,
+   "is_sum_R": 11.69,
+   "oos_n": 29,
+   "oos_sum_R": -0.51,
+   "oos_wr": 41.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -0.51,
+    "maker-maker 4bp": -0.02,
+    "vip maker-t 5bp": -0.28
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": -1.91
+    },
+    "2026-10": {
+     "n": 13,
+     "sum_R": 2.57
+    },
+    "2026-11": {
+     "n": 10,
+     "sum_R": -1.18
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "XRPUSDT",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 75,
+   "is_sum_R": 4.71,
+   "oos_n": 40,
+   "oos_sum_R": -6.81,
+   "oos_wr": 25.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -6.81,
+    "maker-maker 4bp": -6.12,
+    "vip maker-t 5bp": -6.51
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": -2.39
+    },
+    "2026-10": {
+     "n": 19,
+     "sum_R": -2.8
+    },
+    "2026-11": {
+     "n": 14,
+     "sum_R": -1.62
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "XRPUSDT",
+   "idea": "donchian",
+   "exit": "tf_trail",
+   "is_n": 43,
+   "is_sum_R": 11.93,
+   "oos_n": 26,
+   "oos_sum_R": -3.68,
+   "oos_wr": 46.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": -3.68,
+    "maker-maker 4bp": -3.36,
+    "vip maker-t 5bp": -3.54
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": -2.76
+    },
+    "2026-10": {
+     "n": 12,
+     "sum_R": -2.66
+    },
+    "2026-11": {
+     "n": 8,
+     "sum_R": 1.74
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "XRPUSDT",
+   "idea": "donchian",
+   "exit": "tf_wide",
+   "is_n": 49,
+   "is_sum_R": 2.37,
+   "oos_n": 25,
+   "oos_sum_R": -5.69,
+   "oos_wr": 32.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -5.69,
+    "maker-maker 4bp": -5.44,
+    "vip maker-t 5bp": -5.59
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -2.02
+    },
+    "2026-10": {
+     "n": 12,
+     "sum_R": -1.83
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": -1.84
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "DOGEUSDT",
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "is_n": 107,
+   "is_sum_R": 10.74,
+   "oos_n": 54,
+   "oos_sum_R": 2.87,
+   "oos_wr": 46.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 2.87,
+    "maker-maker 4bp": 3.75,
+    "vip maker-t 5bp": 3.29
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 15,
+     "sum_R": -1.68
+    },
+    "2026-10": {
+     "n": 24,
+     "sum_R": 1.77
+    },
+    "2026-11": {
+     "n": 15,
+     "sum_R": 2.77
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "DOGEUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 89,
+   "is_sum_R": 5.37,
+   "oos_n": 42,
+   "oos_sum_R": -0.71,
+   "oos_wr": 42.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -0.71,
+    "maker-maker 4bp": -0.31,
+    "vip maker-t 5bp": -0.53
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 11,
+     "sum_R": -5.17
+    },
+    "2026-10": {
+     "n": 18,
+     "sum_R": 0.71
+    },
+    "2026-11": {
+     "n": 13,
+     "sum_R": 3.74
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "DOGEUSDT",
+   "idea": "pullback",
+   "exit": "m1_trail",
+   "is_n": 75,
+   "is_sum_R": 1.9,
+   "oos_n": 37,
+   "oos_sum_R": -3.76,
+   "oos_wr": 43.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": -3.76,
+    "maker-maker 4bp": -3.12,
+    "vip maker-t 5bp": -3.46
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": -5.77
+    },
+    "2026-10": {
+     "n": 17,
+     "sum_R": -1.98
+    },
+    "2026-11": {
+     "n": 10,
+     "sum_R": 3.99
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "DOGEUSDT",
+   "idea": "pullback",
+   "exit": "tf_trail",
+   "is_n": 48,
+   "is_sum_R": 4.76,
+   "oos_n": 29,
+   "oos_sum_R": -4.25,
+   "oos_wr": 34.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": -4.25,
+    "maker-maker 4bp": -3.91,
+    "vip maker-t 5bp": -4.09
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 8,
+     "sum_R": -5.36
+    },
+    "2026-10": {
+     "n": 13,
+     "sum_R": -4.34
+    },
+    "2026-11": {
+     "n": 8,
+     "sum_R": 5.45
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SUIUSDT",
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "is_n": 129,
+   "is_sum_R": 0.07,
+   "oos_n": 64,
+   "oos_sum_R": -0.62,
+   "oos_wr": 34.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -0.62,
+    "maker-maker 4bp": 0.32,
+    "vip maker-t 5bp": -0.16
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": -1.72
+    },
+    "2026-10": {
+     "n": 33,
+     "sum_R": 1.41
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": -0.31
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SUIUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 82,
+   "is_sum_R": 7.37,
+   "oos_n": 49,
+   "oos_sum_R": 4.59,
+   "oos_wr": 42.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": 4.59,
+    "maker-maker 4bp": 5.0,
+    "vip maker-t 5bp": 4.77
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": 3.81
+    },
+    "2026-10": {
+     "n": 23,
+     "sum_R": 1.74
+    },
+    "2026-11": {
+     "n": 16,
+     "sum_R": -0.96
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SUIUSDT",
+   "idea": "pullback",
+   "exit": "wide:3.5x3.0",
+   "is_n": 143,
+   "is_sum_R": 2.49,
+   "oos_n": 49,
+   "oos_sum_R": -2.57,
+   "oos_wr": 49.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -2.57,
+    "maker-maker 4bp": -1.73,
+    "vip maker-t 5bp": -2.2
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 3,
+     "sum_R": -0.8
+    },
+    "2026-10": {
+     "n": 28,
+     "sum_R": 0.8
+    },
+    "2026-11": {
+     "n": 18,
+     "sum_R": -2.57
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SUIUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 58,
+   "is_sum_R": 0.65,
+   "oos_n": 29,
+   "oos_sum_R": -5.17,
+   "oos_wr": 37.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -5.17,
+    "maker-maker 4bp": -4.91,
+    "vip maker-t 5bp": -5.06
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 2,
+     "sum_R": -0.78
+    },
+    "2026-10": {
+     "n": 15,
+     "sum_R": -3.72
+    },
+    "2026-11": {
+     "n": 12,
+     "sum_R": -0.67
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "AVAXUSDT",
+   "idea": "mr_rsi5",
+   "exit": "m1_trail",
+   "is_n": 24,
+   "is_sum_R": 0.85,
+   "oos_n": 7,
+   "oos_sum_R": -3.7,
+   "oos_wr": 28.6
+  },
+  {
+   "view": "1h",
+   "symbol": "AVAXUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_trail",
+   "is_n": 22,
+   "is_sum_R": 0.31,
+   "oos_n": 7,
+   "oos_sum_R": -3.99,
+   "oos_wr": 28.6
+  },
+  {
+   "view": "1h",
+   "symbol": "LINKUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_wide",
+   "is_n": 59,
+   "is_sum_R": 0.08,
+   "oos_n": 31,
+   "oos_sum_R": -7.19,
+   "oos_wr": 38.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": -7.19,
+    "maker-maker 4bp": -6.89,
+    "vip maker-t 5bp": -7.06
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": -3.32
+    },
+    "2026-10": {
+     "n": 15,
+     "sum_R": -4.04
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": 0.17
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "LINKUSDT",
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "is_n": 127,
+   "is_sum_R": 5.37,
+   "oos_n": 65,
+   "oos_sum_R": 9.83,
+   "oos_wr": 40.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 9.83,
+    "maker-maker 4bp": 10.79,
+    "vip maker-t 5bp": 10.31
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 15,
+     "sum_R": 2.49
+    },
+    "2026-10": {
+     "n": 31,
+     "sum_R": 4.27
+    },
+    "2026-11": {
+     "n": 19,
+     "sum_R": 3.07
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "LINKUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 91,
+   "is_sum_R": 4.99,
+   "oos_n": 54,
+   "oos_sum_R": -3.63,
+   "oos_wr": 44.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -3.63,
+    "maker-maker 4bp": -3.13,
+    "vip maker-t 5bp": -3.42
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": 2.14
+    },
+    "2026-10": {
+     "n": 29,
+     "sum_R": -6.01
+    },
+    "2026-11": {
+     "n": 18,
+     "sum_R": 0.24
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "LINKUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 61,
+   "is_sum_R": 3.83,
+   "oos_n": 37,
+   "oos_sum_R": -0.63,
+   "oos_wr": 40.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": -0.63,
+    "maker-maker 4bp": -0.29,
+    "vip maker-t 5bp": -0.49
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": -2.55
+    },
+    "2026-10": {
+     "n": 18,
+     "sum_R": 2.05
+    },
+    "2026-11": {
+     "n": 13,
+     "sum_R": -0.14
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ADAUSDT",
+   "idea": "trend_bb1h",
+   "exit": "m1_trail",
+   "is_n": 69,
+   "is_sum_R": 5.52,
+   "oos_n": 40,
+   "oos_sum_R": -1.25,
+   "oos_wr": 40.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.25,
+    "maker-maker 4bp": -0.65,
+    "vip maker-t 5bp": -0.96
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": -4.36
+    },
+    "2026-10": {
+     "n": 21,
+     "sum_R": 1.85
+    },
+    "2026-11": {
+     "n": 12,
+     "sum_R": 1.26
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ADAUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_trail",
+   "is_n": 49,
+   "is_sum_R": 11.43,
+   "oos_n": 33,
+   "oos_sum_R": -2.07,
+   "oos_wr": 42.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -2.07,
+    "maker-maker 4bp": -1.71,
+    "vip maker-t 5bp": -1.9
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": -2.23
+    },
+    "2026-10": {
+     "n": 16,
+     "sum_R": 1.66
+    },
+    "2026-11": {
+     "n": 11,
+     "sum_R": -1.5
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ADAUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_wide",
+   "is_n": 56,
+   "is_sum_R": 4.82,
+   "oos_n": 25,
+   "oos_sum_R": 0.92,
+   "oos_wr": 40.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 0.92,
+    "maker-maker 4bp": 1.14,
+    "vip maker-t 5bp": 1.02
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": 0.61
+    },
+    "2026-10": {
+     "n": 10,
+     "sum_R": 0.11
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": 0.2
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ADAUSDT",
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "is_n": 110,
+   "is_sum_R": 2.35,
+   "oos_n": 58,
+   "oos_sum_R": 0.72,
+   "oos_wr": 37.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": 0.72,
+    "maker-maker 4bp": 1.57,
+    "vip maker-t 5bp": 1.13
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": 5.38
+    },
+    "2026-10": {
+     "n": 29,
+     "sum_R": -1.46
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": -3.2
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ADAUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 79,
+   "is_sum_R": 11.57,
+   "oos_n": 41,
+   "oos_sum_R": -0.13,
+   "oos_wr": 48.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": -0.13,
+    "maker-maker 4bp": 0.3,
+    "vip maker-t 5bp": 0.07
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 8,
+     "sum_R": 1.21
+    },
+    "2026-10": {
+     "n": 22,
+     "sum_R": -2.89
+    },
+    "2026-11": {
+     "n": 11,
+     "sum_R": 1.56
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ADAUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 88,
+   "is_sum_R": 7.95,
+   "oos_n": 53,
+   "oos_sum_R": -4.22,
+   "oos_wr": 45.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": -4.22,
+    "maker-maker 4bp": -3.74,
+    "vip maker-t 5bp": -4.01
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": 2.09
+    },
+    "2026-10": {
+     "n": 29,
+     "sum_R": -6.77
+    },
+    "2026-11": {
+     "n": 18,
+     "sum_R": 0.46
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ADAUSDT",
+   "idea": "donchian",
+   "exit": "wide:3.5x3.0",
+   "is_n": 79,
+   "is_sum_R": 0.6,
+   "oos_n": 33,
+   "oos_sum_R": -3.86,
+   "oos_wr": 27.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": -3.86,
+    "maker-maker 4bp": -3.32,
+    "vip maker-t 5bp": -3.62
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": -4.47
+    },
+    "2026-10": {
+     "n": 18,
+     "sum_R": -1.27
+    },
+    "2026-11": {
+     "n": 8,
+     "sum_R": 1.88
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ADAUSDT",
+   "idea": "donchian",
+   "exit": "tf_trail",
+   "is_n": 49,
+   "is_sum_R": 1.84,
+   "oos_n": 23,
+   "oos_sum_R": 2.53,
+   "oos_wr": 52.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": 2.53,
+    "maker-maker 4bp": 2.76,
+    "vip maker-t 5bp": 2.64
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": -2.22
+    },
+    "2026-10": {
+     "n": 13,
+     "sum_R": 1.61
+    },
+    "2026-11": {
+     "n": 5,
+     "sum_R": 3.14
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ADAUSDT",
+   "idea": "donchian",
+   "exit": "tf_wide",
+   "is_n": 51,
+   "is_sum_R": 3.42,
+   "oos_n": 24,
+   "oos_sum_R": -3.12,
+   "oos_wr": 41.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": -3.12,
+    "maker-maker 4bp": -2.91,
+    "vip maker-t 5bp": -3.03
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": -0.03
+    },
+    "2026-10": {
+     "n": 13,
+     "sum_R": -3.86
+    },
+    "2026-11": {
+     "n": 6,
+     "sum_R": 0.77
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ADAUSDT",
+   "idea": "pullback",
+   "exit": "m1",
+   "is_n": 115,
+   "is_sum_R": 8.31,
+   "oos_n": 55,
+   "oos_sum_R": 2.74,
+   "oos_wr": 47.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 2.74,
+    "maker-maker 4bp": 3.87,
+    "vip maker-t 5bp": 3.24
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": 0.04
+    },
+    "2026-10": {
+     "n": 26,
+     "sum_R": 4.05
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": -1.36
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ADAUSDT",
+   "idea": "pullback",
+   "exit": "m1_trail",
+   "is_n": 67,
+   "is_sum_R": 6.8,
+   "oos_n": 32,
+   "oos_sum_R": -3.94,
+   "oos_wr": 40.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": -3.94,
+    "maker-maker 4bp": -3.42,
+    "vip maker-t 5bp": -3.7
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": -4.27
+    },
+    "2026-10": {
+     "n": 17,
+     "sum_R": 2.81
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": -2.48
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ADAUSDT",
+   "idea": "pullback",
+   "exit": "wide:3.5x3.0",
+   "is_n": 112,
+   "is_sum_R": 7.37,
+   "oos_n": 55,
+   "oos_sum_R": -1.69,
+   "oos_wr": 45.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.69,
+    "maker-maker 4bp": -0.74,
+    "vip maker-t 5bp": -1.28
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": 0.06
+    },
+    "2026-10": {
+     "n": 26,
+     "sum_R": 0.36
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": -2.11
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ADAUSDT",
+   "idea": "pullback",
+   "exit": "tf_trail",
+   "is_n": 48,
+   "is_sum_R": 4.28,
+   "oos_n": 26,
+   "oos_sum_R": -1.85,
+   "oos_wr": 46.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.85,
+    "maker-maker 4bp": -1.58,
+    "vip maker-t 5bp": -1.73
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 5,
+     "sum_R": -4.51
+    },
+    "2026-10": {
+     "n": 14,
+     "sum_R": 2.61
+    },
+    "2026-11": {
+     "n": 7,
+     "sum_R": 0.04
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BNBUSDT",
+   "idea": "trend_bb1h",
+   "exit": "m1_trail",
+   "is_n": 65,
+   "is_sum_R": 0.14,
+   "oos_n": 34,
+   "oos_sum_R": -6.85,
+   "oos_wr": 44.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -6.85,
+    "maker-maker 4bp": -5.87,
+    "vip maker-t 5bp": -6.4
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": -3.61
+    },
+    "2026-10": {
+     "n": 18,
+     "sum_R": -0.93
+    },
+    "2026-11": {
+     "n": 10,
+     "sum_R": -2.31
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BNBUSDT",
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "is_n": 97,
+   "is_sum_R": 8.6,
+   "oos_n": 47,
+   "oos_sum_R": 2.13,
+   "oos_wr": 46.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": 2.13,
+    "maker-maker 4bp": 3.4,
+    "vip maker-t 5bp": 2.72
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": -0.95
+    },
+    "2026-10": {
+     "n": 26,
+     "sum_R": -1.17
+    },
+    "2026-11": {
+     "n": 11,
+     "sum_R": 4.24
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BNBUSDT",
+   "idea": "donchian",
+   "exit": "m1_trail",
+   "is_n": 57,
+   "is_sum_R": 6.91,
+   "oos_n": 30,
+   "oos_sum_R": -1.87,
+   "oos_wr": 36.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.87,
+    "maker-maker 4bp": -1.08,
+    "vip maker-t 5bp": -1.49
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 3,
+     "sum_R": 0.36
+    },
+    "2026-10": {
+     "n": 18,
+     "sum_R": -3.72
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": 1.49
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BNBUSDT",
+   "idea": "donchian",
+   "exit": "tf_trail",
+   "is_n": 46,
+   "is_sum_R": 2.29,
+   "oos_n": 25,
+   "oos_sum_R": -2.57,
+   "oos_wr": 40.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -2.57,
+    "maker-maker 4bp": -2.08,
+    "vip maker-t 5bp": -2.34
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 2,
+     "sum_R": 0.01
+    },
+    "2026-10": {
+     "n": 16,
+     "sum_R": -4.27
+    },
+    "2026-11": {
+     "n": 7,
+     "sum_R": 1.7
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BNBUSDT",
+   "idea": "donchian",
+   "exit": "tf_wide",
+   "is_n": 49,
+   "is_sum_R": 4.81,
+   "oos_n": 18,
+   "oos_sum_R": -2.95,
+   "oos_wr": 27.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": -2.95,
+    "maker-maker 4bp": -2.7,
+    "vip maker-t 5bp": -2.84
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 3,
+     "sum_R": 0.82
+    },
+    "2026-10": {
+     "n": 8,
+     "sum_R": -5.0
+    },
+    "2026-11": {
+     "n": 7,
+     "sum_R": 1.23
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "NEARUSDT",
+   "idea": "trend_bb1h",
+   "exit": "m1",
+   "is_n": 80,
+   "is_sum_R": 4.13,
+   "oos_n": 49,
+   "oos_sum_R": -3.94,
+   "oos_wr": 20.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -3.94,
+    "maker-maker 4bp": -3.16,
+    "vip maker-t 5bp": -3.58
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 13,
+     "sum_R": 1.36
+    },
+    "2026-10": {
+     "n": 22,
+     "sum_R": -1.03
+    },
+    "2026-11": {
+     "n": 14,
+     "sum_R": -4.27
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "NEARUSDT",
+   "idea": "trend_bb1h",
+   "exit": "m1_trail",
+   "is_n": 69,
+   "is_sum_R": 4.45,
+   "oos_n": 42,
+   "oos_sum_R": 0.6,
+   "oos_wr": 33.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 0.6,
+    "maker-maker 4bp": 1.14,
+    "vip maker-t 5bp": 0.88
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 11,
+     "sum_R": 2.7
+    },
+    "2026-10": {
+     "n": 17,
+     "sum_R": 3.76
+    },
+    "2026-11": {
+     "n": 14,
+     "sum_R": -5.87
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "NEARUSDT",
+   "idea": "trend_bb1h",
+   "exit": "wide:3.5x3.0",
+   "is_n": 78,
+   "is_sum_R": 0.89,
+   "oos_n": 49,
+   "oos_sum_R": -5.33,
+   "oos_wr": 18.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": -5.33,
+    "maker-maker 4bp": -4.54,
+    "vip maker-t 5bp": -4.97
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 13,
+     "sum_R": -0.62
+    },
+    "2026-10": {
+     "n": 22,
+     "sum_R": -0.03
+    },
+    "2026-11": {
+     "n": 14,
+     "sum_R": -4.68
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "NEARUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_wide",
+   "is_n": 59,
+   "is_sum_R": 2.68,
+   "oos_n": 32,
+   "oos_sum_R": -5.79,
+   "oos_wr": 25.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -5.79,
+    "maker-maker 4bp": -5.52,
+    "vip maker-t 5bp": -5.67
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 8,
+     "sum_R": 2.13
+    },
+    "2026-10": {
+     "n": 13,
+     "sum_R": -2.76
+    },
+    "2026-11": {
+     "n": 11,
+     "sum_R": -5.16
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ARBUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_wide",
+   "is_n": 64,
+   "is_sum_R": 6.91,
+   "oos_n": 26,
+   "oos_sum_R": -6.19,
+   "oos_wr": 23.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": -6.19,
+    "maker-maker 4bp": -5.97,
+    "vip maker-t 5bp": -6.09
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -1.03
+    },
+    "2026-10": {
+     "n": 13,
+     "sum_R": -5.94
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": 0.78
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ARBUSDT",
+   "idea": "donchian",
+   "exit": "tf_wide",
+   "is_n": 55,
+   "is_sum_R": 6.86,
+   "oos_n": 21,
+   "oos_sum_R": -1.6,
+   "oos_wr": 19.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -1.6,
+    "maker-maker 4bp": -1.42,
+    "vip maker-t 5bp": -1.52
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -0.21
+    },
+    "2026-10": {
+     "n": 10,
+     "sum_R": -3.55
+    },
+    "2026-11": {
+     "n": 7,
+     "sum_R": 2.16
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "OPUSDT",
+   "idea": "pullback",
+   "exit": "m1_trail",
+   "is_n": 70,
+   "is_sum_R": 7.4,
+   "oos_n": 39,
+   "oos_sum_R": -3.54,
+   "oos_wr": 35.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": -3.54,
+    "maker-maker 4bp": -2.98,
+    "vip maker-t 5bp": -3.27
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": -1.45
+    },
+    "2026-10": {
+     "n": 19,
+     "sum_R": -10.76
+    },
+    "2026-11": {
+     "n": 14,
+     "sum_R": 8.68
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SEIUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 87,
+   "is_sum_R": 1.82,
+   "oos_n": 50,
+   "oos_sum_R": -0.01,
+   "oos_wr": 46.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": -0.01,
+    "maker-maker 4bp": 0.49,
+    "vip maker-t 5bp": 0.23
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 13,
+     "sum_R": 5.83
+    },
+    "2026-10": {
+     "n": 24,
+     "sum_R": -6.25
+    },
+    "2026-11": {
+     "n": 13,
+     "sum_R": 0.41
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SEIUSDT",
+   "idea": "donchian",
+   "exit": "tf_trail",
+   "is_n": 47,
+   "is_sum_R": 2.53,
+   "oos_n": 24,
+   "oos_sum_R": 9.58,
+   "oos_wr": 58.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 9.58,
+    "maker-maker 4bp": 9.79,
+    "vip maker-t 5bp": 9.69
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": 7.63
+    },
+    "2026-10": {
+     "n": 13,
+     "sum_R": -4.18
+    },
+    "2026-11": {
+     "n": 4,
+     "sum_R": 6.12
+    }
+   }
+  }
+ ],
+ "oos_raw_positive": [
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_trail",
+   "is_n": 154,
+   "is_sum_R": 15.21,
+   "oos_n": 83,
+   "oos_sum_R": 16.47,
+   "oos_wr": 60.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": 16.46,
+    "maker-maker 4bp": 17.7,
+    "vip maker-t 5bp": 17.03
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 16,
+     "sum_R": 5.45
+    },
+    "2026-10": {
+     "n": 42,
+     "sum_R": 2.01
+    },
+    "2026-11": {
+     "n": 25,
+     "sum_R": 9.0
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "XRPUSDT",
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "is_n": 107,
+   "is_sum_R": 11.44,
+   "oos_n": 56,
+   "oos_sum_R": 16.39,
+   "oos_wr": 48.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": 16.39,
+    "maker-maker 4bp": 17.3,
+    "vip maker-t 5bp": 16.86
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": 6.97
+    },
+    "2026-10": {
+     "n": 27,
+     "sum_R": 7.43
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": 1.99
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 199,
+   "is_sum_R": 12.21,
+   "oos_n": 108,
+   "oos_sum_R": 13.44,
+   "oos_wr": 53.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": 13.44,
+    "maker-maker 4bp": 14.97,
+    "vip maker-t 5bp": 14.15
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 23,
+     "sum_R": -2.4
+    },
+    "2026-10": {
+     "n": 54,
+     "sum_R": 1.17
+    },
+    "2026-11": {
+     "n": 31,
+     "sum_R": 14.67
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 86,
+   "is_sum_R": 4.95,
+   "oos_n": 27,
+   "oos_sum_R": 13.39,
+   "oos_wr": 63.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 13.39,
+    "maker-maker 4bp": 13.65,
+    "vip maker-t 5bp": 13.51
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 1,
+     "sum_R": 2.06
+    },
+    "2026-10": {
+     "n": 19,
+     "sum_R": 11.49
+    },
+    "2026-11": {
+     "n": 7,
+     "sum_R": -0.16
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 120,
+   "is_sum_R": 0.05,
+   "oos_n": 57,
+   "oos_sum_R": 12.86,
+   "oos_wr": 40.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": 12.86,
+    "maker-maker 4bp": 13.5,
+    "vip maker-t 5bp": 13.16
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": 0.52
+    },
+    "2026-10": {
+     "n": 30,
+     "sum_R": 2.0
+    },
+    "2026-11": {
+     "n": 20,
+     "sum_R": 10.34
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "mr_rsi5",
+   "exit": "m1_trail",
+   "is_n": 199,
+   "is_sum_R": 17.0,
+   "oos_n": 98,
+   "oos_sum_R": 12.64,
+   "oos_wr": 50.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 12.64,
+    "maker-maker 4bp": 14.7,
+    "vip maker-t 5bp": 13.64
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 17,
+     "sum_R": 2.19
+    },
+    "2026-10": {
+     "n": 51,
+     "sum_R": -4.17
+    },
+    "2026-11": {
+     "n": 30,
+     "sum_R": 14.62
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "DOGEUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 129,
+   "is_sum_R": 3.2,
+   "oos_n": 61,
+   "oos_sum_R": 11.98,
+   "oos_wr": 36.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": 11.98,
+    "maker-maker 4bp": 13.08,
+    "vip maker-t 5bp": 12.5
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 13,
+     "sum_R": -2.89
+    },
+    "2026-10": {
+     "n": 31,
+     "sum_R": 7.37
+    },
+    "2026-11": {
+     "n": 17,
+     "sum_R": 7.49
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_wide",
+   "is_n": 92,
+   "is_sum_R": 3.05,
+   "oos_n": 44,
+   "oos_sum_R": 11.69,
+   "oos_wr": 22.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": 11.7,
+    "maker-maker 4bp": 12.17,
+    "vip maker-t 5bp": 11.92
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": 1.85
+    },
+    "2026-10": {
+     "n": 24,
+     "sum_R": 1.85
+    },
+    "2026-11": {
+     "n": 14,
+     "sum_R": 7.99
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SUIUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_wide",
+   "is_n": 100,
+   "is_sum_R": 0.09,
+   "oos_n": 47,
+   "oos_sum_R": 11.55,
+   "oos_wr": 23.4,
+   "oos_net": {
+    "full(m+t 7.5bp)": 11.55,
+    "maker-maker 4bp": 12.1,
+    "vip maker-t 5bp": 11.82
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": 4.22
+    },
+    "2026-10": {
+     "n": 24,
+     "sum_R": 5.11
+    },
+    "2026-11": {
+     "n": 13,
+     "sum_R": 2.22
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 108,
+   "is_sum_R": 26.19,
+   "oos_n": 53,
+   "oos_sum_R": 10.65,
+   "oos_wr": 35.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": 10.65,
+    "maker-maker 4bp": 11.36,
+    "vip maker-t 5bp": 10.99
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": 0.36
+    },
+    "2026-10": {
+     "n": 26,
+     "sum_R": 2.67
+    },
+    "2026-11": {
+     "n": 20,
+     "sum_R": 7.62
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SUIUSDT",
+   "idea": "impulse",
+   "exit": "tf_wide",
+   "is_n": 38,
+   "is_sum_R": 0.38,
+   "oos_n": 21,
+   "oos_sum_R": 10.52,
+   "oos_wr": 38.1,
+   "oos_net": {
+    "full(m+t 7.5bp)": 10.52,
+    "maker-maker 4bp": 10.71,
+    "vip maker-t 5bp": 10.62
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": 7.25
+    },
+    "2026-10": {
+     "n": 12,
+     "sum_R": -1.64
+    },
+    "2026-11": {
+     "n": 5,
+     "sum_R": 4.9
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "trend_bb15",
+   "exit": "tf_wide",
+   "is_n": 133,
+   "is_sum_R": 8.17,
+   "oos_n": 59,
+   "oos_sum_R": 10.47,
+   "oos_wr": 32.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": 10.47,
+    "maker-maker 4bp": 11.62,
+    "vip maker-t 5bp": 11.01
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": 0.95
+    },
+    "2026-10": {
+     "n": 35,
+     "sum_R": -1.15
+    },
+    "2026-11": {
+     "n": 12,
+     "sum_R": 10.67
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "squeeze",
+   "exit": "tf_wide",
+   "is_n": 129,
+   "is_sum_R": 3.71,
+   "oos_n": 59,
+   "oos_sum_R": 10.47,
+   "oos_wr": 32.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": 10.47,
+    "maker-maker 4bp": 11.62,
+    "vip maker-t 5bp": 11.01
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 12,
+     "sum_R": 0.95
+    },
+    "2026-10": {
+     "n": 35,
+     "sum_R": -1.15
+    },
+    "2026-11": {
+     "n": 12,
+     "sum_R": 10.67
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 172,
+   "is_sum_R": 16.68,
+   "oos_n": 90,
+   "oos_sum_R": 10.27,
+   "oos_wr": 56.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": 10.27,
+    "maker-maker 4bp": 12.39,
+    "vip maker-t 5bp": 11.27
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": 4.56
+    },
+    "2026-10": {
+     "n": 47,
+     "sum_R": 1.21
+    },
+    "2026-11": {
+     "n": 29,
+     "sum_R": 4.5
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "LINKUSDT",
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "is_n": 127,
+   "is_sum_R": 5.37,
+   "oos_n": 65,
+   "oos_sum_R": 9.83,
+   "oos_wr": 40.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 9.83,
+    "maker-maker 4bp": 10.79,
+    "vip maker-t 5bp": 10.31
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 15,
+     "sum_R": 2.49
+    },
+    "2026-10": {
+     "n": 31,
+     "sum_R": 4.27
+    },
+    "2026-11": {
+     "n": 19,
+     "sum_R": 3.07
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SEIUSDT",
+   "idea": "donchian",
+   "exit": "tf_trail",
+   "is_n": 47,
+   "is_sum_R": 2.53,
+   "oos_n": 24,
+   "oos_sum_R": 9.58,
+   "oos_wr": 58.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 9.58,
+    "maker-maker 4bp": 9.79,
+    "vip maker-t 5bp": 9.69
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": 7.63
+    },
+    "2026-10": {
+     "n": 13,
+     "sum_R": -4.18
+    },
+    "2026-11": {
+     "n": 4,
+     "sum_R": 6.12
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_wide",
+   "is_n": 105,
+   "is_sum_R": 0.92,
+   "oos_n": 54,
+   "oos_sum_R": 9.26,
+   "oos_wr": 37.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 9.26,
+    "maker-maker 4bp": 10.3,
+    "vip maker-t 5bp": 9.74
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 11,
+     "sum_R": 2.72
+    },
+    "2026-10": {
+     "n": 27,
+     "sum_R": -0.09
+    },
+    "2026-11": {
+     "n": 16,
+     "sum_R": 6.63
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "pullback",
+   "exit": "tf_trail",
+   "is_n": 189,
+   "is_sum_R": 5.05,
+   "oos_n": 86,
+   "oos_sum_R": 8.92,
+   "oos_wr": 60.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": 8.92,
+    "maker-maker 4bp": 10.37,
+    "vip maker-t 5bp": 9.59
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 16,
+     "sum_R": 1.64
+    },
+    "2026-10": {
+     "n": 41,
+     "sum_R": 2.9
+    },
+    "2026-11": {
+     "n": 29,
+     "sum_R": 4.38
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "is_n": 116,
+   "is_sum_R": 4.63,
+   "oos_n": 55,
+   "oos_sum_R": 8.5,
+   "oos_wr": 54.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": 8.5,
+    "maker-maker 4bp": 9.48,
+    "vip maker-t 5bp": 8.96
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": 0.07
+    },
+    "2026-10": {
+     "n": 27,
+     "sum_R": 3.28
+    },
+    "2026-11": {
+     "n": 18,
+     "sum_R": 5.15
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "SOLUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 111,
+   "is_sum_R": 6.44,
+   "oos_n": 58,
+   "oos_sum_R": 7.61,
+   "oos_wr": 31.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 7.61,
+    "maker-maker 4bp": 8.76,
+    "vip maker-t 5bp": 8.13
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": 1.88
+    },
+    "2026-10": {
+     "n": 33,
+     "sum_R": -0.82
+    },
+    "2026-11": {
+     "n": 15,
+     "sum_R": 6.56
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 70,
+   "is_sum_R": 11.2,
+   "oos_n": 24,
+   "oos_sum_R": 7.44,
+   "oos_wr": 45.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": 7.44,
+    "maker-maker 4bp": 7.68,
+    "vip maker-t 5bp": 7.55
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 1,
+     "sum_R": 2.72
+    },
+    "2026-10": {
+     "n": 17,
+     "sum_R": 1.09
+    },
+    "2026-11": {
+     "n": 6,
+     "sum_R": 3.63
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 99,
+   "is_sum_R": 21.85,
+   "oos_n": 60,
+   "oos_sum_R": 6.93,
+   "oos_wr": 41.7,
+   "oos_net": {
+    "full(m+t 7.5bp)": 6.93,
+    "maker-maker 4bp": 7.73,
+    "vip maker-t 5bp": 7.3
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 13,
+     "sum_R": -1.85
+    },
+    "2026-10": {
+     "n": 28,
+     "sum_R": 3.32
+    },
+    "2026-11": {
+     "n": 19,
+     "sum_R": 5.45
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "mr_rsi5",
+   "exit": "tf_trail",
+   "is_n": 139,
+   "is_sum_R": 5.41,
+   "oos_n": 70,
+   "oos_sum_R": 6.9,
+   "oos_wr": 58.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": 6.9,
+    "maker-maker 4bp": 8.16,
+    "vip maker-t 5bp": 7.48
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": 1.03
+    },
+    "2026-10": {
+     "n": 36,
+     "sum_R": 2.2
+    },
+    "2026-11": {
+     "n": 20,
+     "sum_R": 3.67
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "BTCUSDT",
+   "idea": "impulse",
+   "exit": "tf_wide",
+   "is_n": 50,
+   "is_sum_R": 4.24,
+   "oos_n": 24,
+   "oos_sum_R": 6.85,
+   "oos_wr": 25.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 6.85,
+    "maker-maker 4bp": 7.56,
+    "vip maker-t 5bp": 7.23
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": 1.71
+    },
+    "2026-10": {
+     "n": 11,
+     "sum_R": -2.03
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": 7.16
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "XRPUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 119,
+   "is_sum_R": 3.14,
+   "oos_n": 66,
+   "oos_sum_R": 6.28,
+   "oos_wr": 27.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 6.28,
+    "maker-maker 4bp": 7.62,
+    "vip maker-t 5bp": 6.9
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 11,
+     "sum_R": 1.58
+    },
+    "2026-10": {
+     "n": 34,
+     "sum_R": 3.6
+    },
+    "2026-11": {
+     "n": 21,
+     "sum_R": 1.1
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "LINKUSDT",
+   "idea": "pullback",
+   "exit": "tf_trail",
+   "is_n": 214,
+   "is_sum_R": 2.9,
+   "oos_n": 88,
+   "oos_sum_R": 5.11,
+   "oos_wr": 52.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 5.11,
+    "maker-maker 4bp": 6.89,
+    "vip maker-t 5bp": 5.92
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 15,
+     "sum_R": 0.16
+    },
+    "2026-10": {
+     "n": 50,
+     "sum_R": 1.15
+    },
+    "2026-11": {
+     "n": 23,
+     "sum_R": 3.8
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "LINKUSDT",
+   "idea": "pullback",
+   "exit": "m1_trail",
+   "is_n": 300,
+   "is_sum_R": 2.76,
+   "oos_n": 119,
+   "oos_sum_R": 4.98,
+   "oos_wr": 47.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": 4.98,
+    "maker-maker 4bp": 8.43,
+    "vip maker-t 5bp": 6.63
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 22,
+     "sum_R": -4.6
+    },
+    "2026-10": {
+     "n": 68,
+     "sum_R": 3.37
+    },
+    "2026-11": {
+     "n": 29,
+     "sum_R": 6.21
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 71,
+   "is_sum_R": 11.03,
+   "oos_n": 31,
+   "oos_sum_R": 4.97,
+   "oos_wr": 54.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": 4.97,
+    "maker-maker 4bp": 5.3,
+    "vip maker-t 5bp": 5.13
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 7,
+     "sum_R": -1.02
+    },
+    "2026-10": {
+     "n": 15,
+     "sum_R": 5.69
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": 0.3
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "BTCUSDT",
+   "idea": "donchian",
+   "exit": "m1",
+   "is_n": 82,
+   "is_sum_R": 3.23,
+   "oos_n": 33,
+   "oos_sum_R": 4.74,
+   "oos_wr": 33.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 4.74,
+    "maker-maker 4bp": 5.99,
+    "vip maker-t 5bp": 5.34
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 6,
+     "sum_R": 0.35
+    },
+    "2026-10": {
+     "n": 16,
+     "sum_R": 0.43
+    },
+    "2026-11": {
+     "n": 11,
+     "sum_R": 3.96
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SUIUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_wide",
+   "is_n": 82,
+   "is_sum_R": 7.37,
+   "oos_n": 49,
+   "oos_sum_R": 4.59,
+   "oos_wr": 42.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": 4.59,
+    "maker-maker 4bp": 5.0,
+    "vip maker-t 5bp": 4.77
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 10,
+     "sum_R": 3.81
+    },
+    "2026-10": {
+     "n": 23,
+     "sum_R": 1.74
+    },
+    "2026-11": {
+     "n": 16,
+     "sum_R": -0.96
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "APTUSDT",
+   "idea": "pullback",
+   "exit": "tf_trail",
+   "is_n": 202,
+   "is_sum_R": 7.82,
+   "oos_n": 95,
+   "oos_sum_R": 4.21,
+   "oos_wr": 55.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": 4.21,
+    "maker-maker 4bp": 5.67,
+    "vip maker-t 5bp": 4.87
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": 4.88
+    },
+    "2026-10": {
+     "n": 55,
+     "sum_R": -8.72
+    },
+    "2026-11": {
+     "n": 26,
+     "sum_R": 8.05
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "donchian",
+   "exit": "tf_wide",
+   "is_n": 58,
+   "is_sum_R": 1.0,
+   "oos_n": 21,
+   "oos_sum_R": 3.97,
+   "oos_wr": 42.9,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.97,
+    "maker-maker 4bp": 4.18,
+    "vip maker-t 5bp": 4.06
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 1,
+     "sum_R": 1.9
+    },
+    "2026-10": {
+     "n": 11,
+     "sum_R": 1.62
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": 0.45
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "SOLUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_wide",
+   "is_n": 62,
+   "is_sum_R": 2.1,
+   "oos_n": 22,
+   "oos_sum_R": 3.76,
+   "oos_wr": 45.5,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.76,
+    "maker-maker 4bp": 3.98,
+    "vip maker-t 5bp": 3.85
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 1,
+     "sum_R": 1.9
+    },
+    "2026-10": {
+     "n": 11,
+     "sum_R": 1.69
+    },
+    "2026-11": {
+     "n": 10,
+     "sum_R": 0.17
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "LINKUSDT",
+   "idea": "mr_vwap",
+   "exit": "tf_trail",
+   "is_n": 200,
+   "is_sum_R": 7.25,
+   "oos_n": 94,
+   "oos_sum_R": 3.72,
+   "oos_wr": 50.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.72,
+    "maker-maker 4bp": 5.5,
+    "vip maker-t 5bp": 4.55
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 21,
+     "sum_R": 1.62
+    },
+    "2026-10": {
+     "n": 41,
+     "sum_R": -4.26
+    },
+    "2026-11": {
+     "n": 32,
+     "sum_R": 6.36
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "BTCUSDT",
+   "idea": "pullback",
+   "exit": "tf_wide",
+   "is_n": 109,
+   "is_sum_R": 5.98,
+   "oos_n": 71,
+   "oos_sum_R": 3.42,
+   "oos_wr": 26.8,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.42,
+    "maker-maker 4bp": 5.99,
+    "vip maker-t 5bp": 4.64
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 14,
+     "sum_R": -2.97
+    },
+    "2026-10": {
+     "n": 36,
+     "sum_R": -0.21
+    },
+    "2026-11": {
+     "n": 21,
+     "sum_R": 6.59
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ETHUSDT",
+   "idea": "trend_bb1h",
+   "exit": "m1_trail",
+   "is_n": 65,
+   "is_sum_R": 3.82,
+   "oos_n": 37,
+   "oos_sum_R": 3.39,
+   "oos_wr": 48.6,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.39,
+    "maker-maker 4bp": 4.17,
+    "vip maker-t 5bp": 3.76
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -0.73
+    },
+    "2026-10": {
+     "n": 17,
+     "sum_R": 2.46
+    },
+    "2026-11": {
+     "n": 16,
+     "sum_R": 1.66
+    }
+   }
+  },
+  {
+   "view": "15m",
+   "symbol": "ADAUSDT",
+   "idea": "pullback",
+   "exit": "m1_trail",
+   "is_n": 286,
+   "is_sum_R": 6.49,
+   "oos_n": 139,
+   "oos_sum_R": 3.38,
+   "oos_wr": 53.2,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.38,
+    "maker-maker 4bp": 7.42,
+    "vip maker-t 5bp": 5.24
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 23,
+     "sum_R": -0.72
+    },
+    "2026-10": {
+     "n": 67,
+     "sum_R": 0.74
+    },
+    "2026-11": {
+     "n": 49,
+     "sum_R": 3.35
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ETHUSDT",
+   "idea": "trend_bb1h",
+   "exit": "tf_trail",
+   "is_n": 44,
+   "is_sum_R": 6.21,
+   "oos_n": 30,
+   "oos_sum_R": 3.38,
+   "oos_wr": 50.0,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.38,
+    "maker-maker 4bp": 3.82,
+    "vip maker-t 5bp": 3.59
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 4,
+     "sum_R": -2.27
+    },
+    "2026-10": {
+     "n": 16,
+     "sum_R": -0.03
+    },
+    "2026-11": {
+     "n": 10,
+     "sum_R": 5.68
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "ETHUSDT",
+   "idea": "donchian",
+   "exit": "m1_trail",
+   "is_n": 54,
+   "is_sum_R": 0.21,
+   "oos_n": 26,
+   "oos_sum_R": 3.09,
+   "oos_wr": 42.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 3.09,
+    "maker-maker 4bp": 3.6,
+    "vip maker-t 5bp": 3.35
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 2,
+     "sum_R": 1.41
+    },
+    "2026-10": {
+     "n": 15,
+     "sum_R": -3.47
+    },
+    "2026-11": {
+     "n": 9,
+     "sum_R": 5.15
+    }
+   }
+  },
+  {
+   "view": "1h",
+   "symbol": "DOGEUSDT",
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "is_n": 107,
+   "is_sum_R": 10.74,
+   "oos_n": 54,
+   "oos_sum_R": 2.87,
+   "oos_wr": 46.3,
+   "oos_net": {
+    "full(m+t 7.5bp)": 2.87,
+    "maker-maker 4bp": 3.75,
+    "vip maker-t 5bp": 3.29
+   },
+   "monthly": {
+    "2026-09": {
+     "n": 15,
+     "sum_R": -1.68
+    },
+    "2026-10": {
+     "n": 24,
+     "sum_R": 1.77
+    },
+    "2026-11": {
+     "n": 15,
+     "sum_R": 2.77
+    }
+   }
+  }
+ ]
+}

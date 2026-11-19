@@ -7,3 +7,4 @@ research/cache/
 research/*.log
 panel.log*
 paper.log*
+research/cache/lob_*

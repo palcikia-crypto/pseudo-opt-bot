@@ -1,0 +1,224 @@
+{
+ "15m|tf_trail": {
+  "IS": {
+   "n": 1156,
+   "sum_R": -27.61,
+   "win_rate": 50.4,
+   "expectancy_R": -0.0239,
+   "profit_factor": 0.954,
+   "net_pnl": -298.08
+  },
+  "OOS": {
+   "n": 561,
+   "sum_R": -4.22,
+   "win_rate": 49.4,
+   "expectancy_R": -0.0075,
+   "profit_factor": 0.986,
+   "net_pnl": -78.61
+  },
+  "net": {
+   "full(m+t 7.5bp)": -4.22,
+   "maker-maker 4bp": 8.13,
+   "vip maker-t 5bp": 1.53
+  },
+  "monthly": {
+   "2026-09": {
+    "n": 94,
+    "sum_R": -10.27
+   },
+   "2026-10": {
+    "n": 308,
+    "sum_R": -26.74
+   },
+   "2026-11": {
+    "n": 159,
+    "sum_R": 32.79
+   }
+  }
+ },
+ "15m|tf_wide": {
+  "IS": {
+   "n": 632,
+   "sum_R": -77.99,
+   "win_rate": 27.7,
+   "expectancy_R": -0.1234,
+   "profit_factor": 0.754,
+   "net_pnl": -564.36
+  },
+  "OOS": {
+   "n": 334,
+   "sum_R": -5.89,
+   "win_rate": 29.3,
+   "expectancy_R": -0.0176,
+   "profit_factor": 0.964,
+   "net_pnl": -88.2
+  },
+  "net": {
+   "full(m+t 7.5bp)": -5.89,
+   "maker-maker 4bp": 0.84,
+   "vip maker-t 5bp": -2.83
+  },
+  "monthly": {
+   "2026-09": {
+    "n": 56,
+    "sum_R": -3.4
+   },
+   "2026-10": {
+    "n": 179,
+    "sum_R": -5.49
+   },
+   "2026-11": {
+    "n": 99,
+    "sum_R": 3.0
+   }
+  }
+ },
+ "15m|m1_trail": {
+  "IS": {
+   "n": 1726,
+   "sum_R": -146.68,
+   "win_rate": 43.7,
+   "expectancy_R": -0.085,
+   "profit_factor": 0.848,
+   "net_pnl": -796.92
+  },
+  "OOS": {
+   "n": 735,
+   "sum_R": -92.84,
+   "win_rate": 42.2,
+   "expectancy_R": -0.1263,
+   "profit_factor": 0.783,
+   "net_pnl": -625.67
+  },
+  "net": {
+   "full(m+t 7.5bp)": -92.84,
+   "maker-maker 4bp": -66.5,
+   "vip maker-t 5bp": -80.43
+  },
+  "monthly": {
+   "2026-09": {
+    "n": 104,
+    "sum_R": -49.12
+   },
+   "2026-10": {
+    "n": 412,
+    "sum_R": -48.98
+   },
+   "2026-11": {
+    "n": 219,
+    "sum_R": 5.26
+   }
+  }
+ },
+ "1h|tf_trail": {
+  "IS": {
+   "n": 447,
+   "sum_R": -59.07,
+   "win_rate": 39.4,
+   "expectancy_R": -0.1321,
+   "profit_factor": 0.779,
+   "net_pnl": -463.94
+  },
+  "OOS": {
+   "n": 241,
+   "sum_R": -20.43,
+   "win_rate": 42.7,
+   "expectancy_R": -0.0848,
+   "profit_factor": 0.846,
+   "net_pnl": -198.36
+  },
+  "net": {
+   "full(m+t 7.5bp)": -20.43,
+   "maker-maker 4bp": -17.54,
+   "vip maker-t 5bp": -19.1
+  },
+  "monthly": {
+   "2026-09": {
+    "n": 57,
+    "sum_R": 6.79
+   },
+   "2026-10": {
+    "n": 127,
+    "sum_R": -21.6
+   },
+   "2026-11": {
+    "n": 57,
+    "sum_R": -5.61
+   }
+  }
+ },
+ "1h|tf_wide": {
+  "IS": {
+   "n": 534,
+   "sum_R": -16.97,
+   "win_rate": 41.8,
+   "expectancy_R": -0.0318,
+   "profit_factor": 0.901,
+   "net_pnl": -175.1
+  },
+  "OOS": {
+   "n": 277,
+   "sum_R": -34.96,
+   "win_rate": 39.4,
+   "expectancy_R": -0.1262,
+   "profit_factor": 0.652,
+   "net_pnl": -302.67
+  },
+  "net": {
+   "full(m+t 7.5bp)": -34.96,
+   "maker-maker 4bp": -31.99,
+   "vip maker-t 5bp": -33.66
+  },
+  "monthly": {
+   "2026-09": {
+    "n": 52,
+    "sum_R": -6.49
+   },
+   "2026-10": {
+    "n": 147,
+    "sum_R": -22.2
+   },
+   "2026-11": {
+    "n": 78,
+    "sum_R": -6.26
+   }
+  }
+ },
+ "1h|m1_trail": {
+  "IS": {
+   "n": 787,
+   "sum_R": -75.31,
+   "win_rate": 38.8,
+   "expectancy_R": -0.0957,
+   "profit_factor": 0.836,
+   "net_pnl": -557.67
+  },
+  "OOS": {
+   "n": 377,
+   "sum_R": -23.19,
+   "win_rate": 37.1,
+   "expectancy_R": -0.0615,
+   "profit_factor": 0.898,
+   "net_pnl": -233.03
+  },
+  "net": {
+   "full(m+t 7.5bp)": -23.18,
+   "maker-maker 4bp": -16.9,
+   "vip maker-t 5bp": -20.12
+  },
+  "monthly": {
+   "2026-09": {
+    "n": 76,
+    "sum_R": 1.62
+   },
+   "2026-10": {
+    "n": 204,
+    "sum_R": -19.02
+   },
+   "2026-11": {
+    "n": 97,
+    "sum_R": -5.78
+   }
+  }
+ }
+}
