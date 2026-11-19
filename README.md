@@ -31,6 +31,12 @@ python main.py
 ```
 
 ## Веб-панель
+Онлайн: **https://palcikia-crypto.github.io/pseudo-opt-bot/** (GitHub Pages, деплой через
+.github/workflows/panel-pages.yml) — показывает снапшот из ветки `panel-site` +
+live-цены Bybit в браузере. Обновление снапшота там, где работает бот:
+`PANEL_SYNC_SEC=600 sh panel/sync.sh`.
+
+Локально:
 ```bash
 sh run_bot.sh                 # бот + панель http://127.0.0.1:8080
 DASH_HOST=0.0.0.0 sh run_bot.sh   # на VPS: панель по IP (закройте фаерволом/SSH-туннелем!)

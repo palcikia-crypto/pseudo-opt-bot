@@ -2,7 +2,7 @@ name: cloudflare-pages
 
 on:
   push:
-    branches: [main, 'vibe/**']
+    branches: [main]
     paths: ["panel/**", ".github/workflows/cloudflare-pages.yml"]
   workflow_dispatch:
   workflow_call:
