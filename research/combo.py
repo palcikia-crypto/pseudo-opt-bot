@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import research.lab as lab
 import research.deep as deep
-from scenarios import net_R, SCENARIOS
+from research.scenarios import net_R, SCENARIOS
 
 DAY = lab.DAY
 FAM_TF = ('trend_bb15', 'trend_bb1h', 'squeeze', 'mr_rsi5', 'mr_vwap',

@@ -2,13 +2,13 @@
  "trades": [],
  "cand": {
   "APT_mr_rsi5": {
-   "last_bar_ts": 1795119480000,
-   "last_sig_ts": 1795118400000
+   "last_bar_ts": 1795120920000,
+   "last_sig_ts": 1795119300000
   },
   "XRP_mr_vwap": {
-   "last_bar_ts": 1795119480000,
+   "last_bar_ts": 1795120920000,
    "last_sig_ts": 1795114800000
   }
  },
- "updated_utc": "2026-11-19T20:18:11.824419+00:00"
+ "updated_utc": "2026-11-19T20:42:50.866277+00:00"
 }

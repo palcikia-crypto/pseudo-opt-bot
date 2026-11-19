@@ -1,0 +1,802 @@
+{
+ "measured": "2026-11-19T20:36:26.846509+00:00",
+ "lags": [
+  1,
+  2,
+  3,
+  5,
+  10,
+  15,
+  30
+ ],
+ "pairs": [
+  {
+   "lead": "SUIUSDT",
+   "fol": "SEIUSDT",
+   "corr": 0.0482,
+   "lag_min": 1
+  },
+  {
+   "lead": "XRPUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.0429,
+   "lag_min": 1
+  },
+  {
+   "lead": "SUIUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.041,
+   "lag_min": 1
+  },
+  {
+   "lead": "XRPUSDT",
+   "fol": "SEIUSDT",
+   "corr": 0.0405,
+   "lag_min": 1
+  },
+  {
+   "lead": "DOGEUSDT",
+   "fol": "SEIUSDT",
+   "corr": 0.0397,
+   "lag_min": 1
+  },
+  {
+   "lead": "APTUSDT",
+   "fol": "SEIUSDT",
+   "corr": 0.0382,
+   "lag_min": 1
+  },
+  {
+   "lead": "NEARUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.0379,
+   "lag_min": 1
+  },
+  {
+   "lead": "SUIUSDT",
+   "fol": "AVAXUSDT",
+   "corr": 0.036,
+   "lag_min": 1
+  },
+  {
+   "lead": "ETHUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.0357,
+   "lag_min": 1
+  },
+  {
+   "lead": "OPUSDT",
+   "fol": "SEIUSDT",
+   "corr": 0.0351,
+   "lag_min": 1
+  },
+  {
+   "lead": "NEARUSDT",
+   "fol": "SEIUSDT",
+   "corr": 0.0349,
+   "lag_min": 1
+  },
+  {
+   "lead": "ARBUSDT",
+   "fol": "SEIUSDT",
+   "corr": 0.0349,
+   "lag_min": 1
+  },
+  {
+   "lead": "ETHUSDT",
+   "fol": "SEIUSDT",
+   "corr": 0.0348,
+   "lag_min": 1
+  },
+  {
+   "lead": "SOLUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.0339,
+   "lag_min": 1
+  },
+  {
+   "lead": "AVAXUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.0334,
+   "lag_min": 1
+  },
+  {
+   "lead": "SUIUSDT",
+   "fol": "ADAUSDT",
+   "corr": 0.0331,
+   "lag_min": 1
+  },
+  {
+   "lead": "AVAXUSDT",
+   "fol": "SEIUSDT",
+   "corr": 0.033,
+   "lag_min": 1
+  },
+  {
+   "lead": "SUIUSDT",
+   "fol": "APTUSDT",
+   "corr": 0.0327,
+   "lag_min": 1
+  },
+  {
+   "lead": "LINKUSDT",
+   "fol": "SEIUSDT",
+   "corr": 0.0327,
+   "lag_min": 1
+  },
+  {
+   "lead": "APTUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.0322,
+   "lag_min": 1
+  },
+  {
+   "lead": "BTCUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.0319,
+   "lag_min": 1
+  },
+  {
+   "lead": "SOLUSDT",
+   "fol": "SEIUSDT",
+   "corr": 0.0311,
+   "lag_min": 1
+  },
+  {
+   "lead": "XRPUSDT",
+   "fol": "ADAUSDT",
+   "corr": 0.031,
+   "lag_min": 1
+  },
+  {
+   "lead": "ADAUSDT",
+   "fol": "SEIUSDT",
+   "corr": 0.0304,
+   "lag_min": 1
+  },
+  {
+   "lead": "XRPUSDT",
+   "fol": "AVAXUSDT",
+   "corr": 0.0301,
+   "lag_min": 1
+  },
+  {
+   "lead": "DOGEUSDT",
+   "fol": "ADAUSDT",
+   "corr": 0.03,
+   "lag_min": 1
+  },
+  {
+   "lead": "SUIUSDT",
+   "fol": "LINKUSDT",
+   "corr": 0.0297,
+   "lag_min": 1
+  },
+  {
+   "lead": "SEIUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.0285,
+   "lag_min": 1
+  },
+  {
+   "lead": "ADAUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.0283,
+   "lag_min": 1
+  },
+  {
+   "lead": "DOGEUSDT",
+   "fol": "AVAXUSDT",
+   "corr": 0.0282,
+   "lag_min": 1
+  },
+  {
+   "lead": "LINKUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.0279,
+   "lag_min": 1
+  },
+  {
+   "lead": "NEARUSDT",
+   "fol": "OPUSDT",
+   "corr": 0.0277,
+   "lag_min": 1
+  },
+  {
+   "lead": "OPUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.0273,
+   "lag_min": 1
+  },
+  {
+   "lead": "ARBUSDT",
+   "fol": "APTUSDT",
+   "corr": 0.027,
+   "lag_min": 1
+  },
+  {
+   "lead": "OPUSDT",
+   "fol": "APTUSDT",
+   "corr": 0.026,
+   "lag_min": 1
+  },
+  {
+   "lead": "BTCUSDT",
+   "fol": "SEIUSDT",
+   "corr": 0.0259,
+   "lag_min": 1
+  },
+  {
+   "lead": "SUIUSDT",
+   "fol": "OPUSDT",
+   "corr": 0.0258,
+   "lag_min": 1
+  },
+  {
+   "lead": "DOGEUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.0257,
+   "lag_min": 1
+  },
+  {
+   "lead": "ARBUSDT",
+   "fol": "BNBUSDT",
+   "corr": 0.0257,
+   "lag_min": 1
+  },
+  {
+   "lead": "XRPUSDT",
+   "fol": "APTUSDT",
+   "corr": 0.0252,
+   "lag_min": 1
+  },
+  {
+   "lead": "DOGEUSDT",
+   "fol": "APTUSDT",
+   "corr": 0.0247,
+   "lag_min": 1
+  },
+  {
+   "lead": "NEARUSDT",
+   "fol": "ARBUSDT",
+   "corr": 0.0241,
+   "lag_min": 1
+  },
+  {
+   "lead": "ETHUSDT",
+   "fol": "ADAUSDT",
+   "corr": 0.0239,
+   "lag_min": 1
+  },
+  {
+   "lead": "SUIUSDT",
+   "fol": "ARBUSDT",
+   "corr": 0.0234,
+   "lag_min": 1
+  },
+  {
+   "lead": "XRPUSDT",
+   "fol": "LINKUSDT",
+   "corr": 0.0232,
+   "lag_min": 1
+  },
+  {
+   "lead": "AVAXUSDT",
+   "fol": "APTUSDT",
+   "corr": 0.0229,
+   "lag_min": 1
+  },
+  {
+   "lead": "ARBUSDT",
+   "fol": "OPUSDT",
+   "corr": 0.0229,
+   "lag_min": 1
+  },
+  {
+   "lead": "NEARUSDT",
+   "fol": "APTUSDT",
+   "corr": 0.0225,
+   "lag_min": 1
+  },
+  {
+   "lead": "DOGEUSDT",
+   "fol": "NEARUSDT",
+   "corr": 0.0222,
+   "lag_min": 1
+  },
+  {
+   "lead": "NEARUSDT",
+   "fol": "AVAXUSDT",
+   "corr": 0.0218,
+   "lag_min": 1
+  },
+  {
+   "lead": "ETHUSDT",
+   "fol": "AVAXUSDT",
+   "corr": 0.0213,
+   "lag_min": 1
+  },
+  {
+   "lead": "ADAUSDT",
+   "fol": "AVAXUSDT",
+   "corr": 0.0213,
+   "lag_min": 1
+  },
+  {
+   "lead": "ETHUSDT",
+   "fol": "LINKUSDT",
+   "corr": 0.0212,
+   "lag_min": 1
+  },
+  {
+   "lead": "XRPUSDT",
+   "fol": "OPUSDT",
+   "corr": 0.0206,
+   "lag_min": 1
+  },
+  {
+   "lead": "SOLUSDT",
+   "fol": "AVAXUSDT",
+   "corr": 0.0202,
+   "lag_min": 1
+  },
+  {
+   "lead": "DOGEUSDT",
+   "fol": "LINKUSDT",
+   "corr": 0.0201,
+   "lag_min": 1
+  },
+  {
+   "lead": "ADAUSDT",
+   "fol": "APTUSDT",
+   "corr": 0.0198,
+   "lag_min": 1
+  },
+  {
+   "lead": "XRPUSDT",
+   "fol": "ARBUSDT",
+   "corr": 0.0196,
+   "lag_min": 1
+  },
+  {
+   "lead": "ETHUSDT",
+   "fol": "APTUSDT",
+   "corr": 0.0195,
+   "lag_min": 1
+  },
+  {
+   "lead": "SUIUSDT",
+   "fol": "SOLUSDT",
+   "corr": 0.0193,
+   "lag_min": 1
+  },
+  {
+   "lead": "ARBUSDT",
+   "fol": "AVAXUSDT",
+   "corr": 0.0191,
+   "lag_min": 1
+  },
+  {
+   "lead": "AVAXUSDT",
+   "fol": "OPUSDT",
+   "corr": 0.0188,
+   "lag_min": 1
+  },
+  {
+   "lead": "ARBUSDT",
+   "fol": "ADAUSDT",
+   "corr": 0.0188,
+   "lag_min": 1
+  },
+  {
+   "lead": "SUIUSDT",
+   "fol": "NEARUSDT",
+   "corr": 0.0187,
+   "lag_min": 1
+  },
+  {
+   "lead": "LINKUSDT",
+   "fol": "AVAXUSDT",
+   "corr": 0.0186,
+   "lag_min": 1
+  },
+  {
+   "lead": "OPUSDT",
+   "fol": "ADAUSDT",
+   "corr": 0.0182,
+   "lag_min": 1
+  },
+  {
+   "lead": "SOLUSDT",
+   "fol": "ADAUSDT",
+   "corr": 0.0178,
+   "lag_min": 1
+  },
+  {
+   "lead": "XRPUSDT",
+   "fol": "NEARUSDT",
+   "corr": 0.0178,
+   "lag_min": 1
+  },
+  {
+   "lead": "SOLUSDT",
+   "fol": "APTUSDT",
+   "corr": 0.0175,
+   "lag_min": 1
+  },
+  {
+   "lead": "XRPUSDT",
+   "fol": "SOLUSDT",
+   "corr": 0.0168,
+   "lag_min": 1
+  },
+  {
+   "lead": "DOGEUSDT",
+   "fol": "XRPUSDT",
+   "corr": 0.0165,
+   "lag_min": 1
+  },
+  {
+   "lead": "LINKUSDT",
+   "fol": "APTUSDT",
+   "corr": 0.0164,
+   "lag_min": 1
+  },
+  {
+   "lead": "DOGEUSDT",
+   "fol": "OPUSDT",
+   "corr": 0.0161,
+   "lag_min": 1
+  },
+  {
+   "lead": "NEARUSDT",
+   "fol": "LINKUSDT",
+   "corr": 0.0161,
+   "lag_min": 1
+  },
+  {
+   "lead": "ETHUSDT",
+   "fol": "OPUSDT",
+   "corr": 0.0158,
+   "lag_min": 1
+  },
+  {
+   "lead": "LINKUSDT",
+   "fol": "ADAUSDT",
+   "corr": 0.0156,
+   "lag_min": 1
+  },
+  {
+   "lead": "DOGEUSDT",
+   "fol": "ARBUSDT",
+   "corr": 0.0155,
+   "lag_min": 1
+  },
+  {
+   "lead": "DOGEUSDT",
+   "fol": "SUIUSDT",
+   "corr": -0.0153,
+   "lag_min": 5
+  },
+  {
+   "lead": "SUIUSDT",
+   "fol": "XRPUSDT",
+   "corr": 0.0152,
+   "lag_min": 1
+  },
+  {
+   "lead": "NEARUSDT",
+   "fol": "ADAUSDT",
+   "corr": 0.015,
+   "lag_min": 1
+  },
+  {
+   "lead": "ARBUSDT",
+   "fol": "LINKUSDT",
+   "corr": 0.0148,
+   "lag_min": 1
+  },
+  {
+   "lead": "SOLUSDT",
+   "fol": "LINKUSDT",
+   "corr": 0.0141,
+   "lag_min": 1
+  },
+  {
+   "lead": "LINKUSDT",
+   "fol": "OPUSDT",
+   "corr": 0.014,
+   "lag_min": 1
+  },
+  {
+   "lead": "SOLUSDT",
+   "fol": "OPUSDT",
+   "corr": 0.0139,
+   "lag_min": 1
+  },
+  {
+   "lead": "BTCUSDT",
+   "fol": "ADAUSDT",
+   "corr": 0.0138,
+   "lag_min": 1
+  },
+  {
+   "lead": "ETHUSDT",
+   "fol": "BTCUSDT",
+   "corr": -0.0136,
+   "lag_min": 2
+  },
+  {
+   "lead": "ETHUSDT",
+   "fol": "ARBUSDT",
+   "corr": 0.0136,
+   "lag_min": 1
+  },
+  {
+   "lead": "DOGEUSDT",
+   "fol": "SOLUSDT",
+   "corr": 0.0131,
+   "lag_min": 1
+  },
+  {
+   "lead": "SOLUSDT",
+   "fol": "ARBUSDT",
+   "corr": 0.0126,
+   "lag_min": 1
+  },
+  {
+   "lead": "SOLUSDT",
+   "fol": "BTCUSDT",
+   "corr": -0.0118,
+   "lag_min": 2
+  },
+  {
+   "lead": "BTCUSDT",
+   "fol": "APTUSDT",
+   "corr": 0.0118,
+   "lag_min": 1
+  },
+  {
+   "lead": "SOLUSDT",
+   "fol": "NEARUSDT",
+   "corr": 0.0118,
+   "lag_min": 1
+  },
+  {
+   "lead": "BTCUSDT",
+   "fol": "AVAXUSDT",
+   "corr": 0.0113,
+   "lag_min": 1
+  },
+  {
+   "lead": "ETHUSDT",
+   "fol": "NEARUSDT",
+   "corr": 0.0108,
+   "lag_min": 1
+  },
+  {
+   "lead": "LINKUSDT",
+   "fol": "BTCUSDT",
+   "corr": -0.0107,
+   "lag_min": 2
+  },
+  {
+   "lead": "ETHUSDT",
+   "fol": "XRPUSDT",
+   "corr": -0.0097,
+   "lag_min": 2
+  },
+  {
+   "lead": "ETHUSDT",
+   "fol": "SOLUSDT",
+   "corr": 0.0095,
+   "lag_min": 1
+  },
+  {
+   "lead": "BTCUSDT",
+   "fol": "OPUSDT",
+   "corr": 0.0092,
+   "lag_min": 1
+  },
+  {
+   "lead": "DOGEUSDT",
+   "fol": "BTCUSDT",
+   "corr": -0.009,
+   "lag_min": 2
+  },
+  {
+   "lead": "SUIUSDT",
+   "fol": "BTCUSDT",
+   "corr": -0.0088,
+   "lag_min": 2
+  },
+  {
+   "lead": "BTCUSDT",
+   "fol": "ARBUSDT",
+   "corr": 0.0085,
+   "lag_min": 1
+  },
+  {
+   "lead": "ETHUSDT",
+   "fol": "DOGEUSDT",
+   "corr": -0.0085,
+   "lag_min": 5
+  },
+  {
+   "lead": "XRPUSDT",
+   "fol": "BTCUSDT",
+   "corr": -0.0079,
+   "lag_min": 2
+  },
+  {
+   "lead": "SUIUSDT",
+   "fol": "ETHUSDT",
+   "corr": 0.0072,
+   "lag_min": 1
+  },
+  {
+   "lead": "NEARUSDT",
+   "fol": "BTCUSDT",
+   "corr": 0.0055,
+   "lag_min": 1
+  }
+ ],
+ "btc_shocks": {
+  "ETHUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 0.42,
+   "agree_next_pct": 47.5,
+   "base_agree_pct": 50.0
+  },
+  "SOLUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 0.88,
+   "agree_next_pct": 46.3,
+   "base_agree_pct": 50.0
+  },
+  "XRPUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 0.97,
+   "agree_next_pct": 46.7,
+   "base_agree_pct": 50.0
+  },
+  "DOGEUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 0.83,
+   "agree_next_pct": 45.5,
+   "base_agree_pct": 50.0
+  },
+  "SUIUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 1.21,
+   "agree_next_pct": 46.5,
+   "base_agree_pct": 50.0
+  },
+  "AVAXUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 0.74,
+   "agree_next_pct": 46.6,
+   "base_agree_pct": 50.0
+  },
+  "LINKUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 0.91,
+   "agree_next_pct": 46.1,
+   "base_agree_pct": 50.0
+  },
+  "ADAUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 0.93,
+   "agree_next_pct": 43.2,
+   "base_agree_pct": 50.0
+  },
+  "BNBUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 0.42,
+   "agree_next_pct": 45.8,
+   "base_agree_pct": 50.0
+  },
+  "NEARUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 1.41,
+   "agree_next_pct": 46.4,
+   "base_agree_pct": 50.0
+  },
+  "APTUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 0.63,
+   "agree_next_pct": 45.9,
+   "base_agree_pct": 50.0
+  },
+  "ARBUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 1.0,
+   "agree_next_pct": 46.9,
+   "base_agree_pct": 50.0
+  },
+  "OPUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 0.61,
+   "agree_next_pct": 47.7,
+   "base_agree_pct": 50.0
+  },
+  "SEIUSDT": {
+   "threshold_pct": 0.251,
+   "n_events": 1339,
+   "mean_next1m_5m_bp": 0.69,
+   "agree_next_pct": 46.4,
+   "base_agree_pct": 50.0
+  }
+ },
+ "vol_spillover": {
+  "ETHUSDT": {
+   "corr_vlag": 0.879,
+   "corr_contemp": 0.937
+  },
+  "SOLUSDT": {
+   "corr_vlag": 0.836,
+   "corr_contemp": 0.887
+  },
+  "XRPUSDT": {
+   "corr_vlag": 0.716,
+   "corr_contemp": 0.754
+  },
+  "DOGEUSDT": {
+   "corr_vlag": 0.71,
+   "corr_contemp": 0.758
+  },
+  "SUIUSDT": {
+   "corr_vlag": 0.655,
+   "corr_contemp": 0.7
+  },
+  "AVAXUSDT": {
+   "corr_vlag": 0.646,
+   "corr_contemp": 0.689
+  },
+  "LINKUSDT": {
+   "corr_vlag": 0.741,
+   "corr_contemp": 0.789
+  },
+  "ADAUSDT": {
+   "corr_vlag": 0.69,
+   "corr_contemp": 0.736
+  },
+  "BNBUSDT": {
+   "corr_vlag": 0.751,
+   "corr_contemp": 0.794
+  },
+  "NEARUSDT": {
+   "corr_vlag": 0.544,
+   "corr_contemp": 0.573
+  },
+  "APTUSDT": {
+   "corr_vlag": 0.627,
+   "corr_contemp": 0.67
+  },
+  "ARBUSDT": {
+   "corr_vlag": 0.483,
+   "corr_contemp": 0.515
+  },
+  "OPUSDT": {
+   "corr_vlag": 0.612,
+   "corr_contemp": 0.65
+  },
+  "SEIUSDT": {
+   "corr_vlag": 0.601,
+   "corr_contemp": 0.637
+  }
+ }
+}

@@ -1,0 +1,387 @@
+{
+ "measured": "2026-11-19T20:41:23.365898+00:00",
+ "report": {
+  "APT_mr_rsi5": {
+   "symbol": "APTUSDT",
+   "tf": 15,
+   "idea": "mr_rsi5",
+   "exit": "tf_trail",
+   "baseline": {
+    "IS": {
+     "n": 448,
+     "sum_R": 45.84,
+     "win_rate": 57.6,
+     "expectancy_R": 0.1023,
+     "profit_factor": 1.232,
+     "net_pnl": 0.0,
+     "months_pos": 3,
+     "months": 5
+    },
+    "OOS": {
+     "n": 227,
+     "sum_R": 41.6,
+     "win_rate": 58.1,
+     "expectancy_R": 0.1833,
+     "profit_factor": 1.431,
+     "net_pnl": 0.0,
+     "months_pos": 3,
+     "months": 3
+    }
+   },
+   "segments": {
+    "btc_dn": {
+     "n": 416,
+     "sum_R": 34.58,
+     "wr": 55.0
+    },
+    "btc_dn+other_dir": {
+     "n": 333,
+     "sum_R": 18.02,
+     "wr": 54.1
+    },
+    "btc_dn+same_dir": {
+     "n": 83,
+     "sum_R": 16.55,
+     "wr": 59.0
+    },
+    "btc_dn+vol_hi": {
+     "n": 243,
+     "sum_R": 19.55,
+     "wr": 55.1
+    },
+    "btc_dn+vol_lo": {
+     "n": 173,
+     "sum_R": 15.02,
+     "wr": 54.9
+    },
+    "btc_up": {
+     "n": 300,
+     "sum_R": 56.8,
+     "wr": 60.7
+    },
+    "btc_up+other_dir": {
+     "n": 227,
+     "sum_R": 50.13,
+     "wr": 61.7
+    },
+    "btc_up+same_dir": {
+     "n": 73,
+     "sum_R": 6.67,
+     "wr": 57.5
+    },
+    "btc_up+vol_hi": {
+     "n": 133,
+     "sum_R": 27.47,
+     "wr": 62.4
+    },
+    "btc_up+vol_lo": {
+     "n": 167,
+     "sum_R": 29.32,
+     "wr": 59.3
+    },
+    "other_dir": {
+     "n": 560,
+     "sum_R": 68.15,
+     "wr": 57.1
+    },
+    "same_dir": {
+     "n": 156,
+     "sum_R": 23.22,
+     "wr": 58.3
+    },
+    "vol_hi": {
+     "n": 376,
+     "sum_R": 47.03,
+     "wr": 57.7
+    },
+    "vol_hi+other_dir": {
+     "n": 318,
+     "sum_R": 28.7,
+     "wr": 56.3
+    },
+    "vol_hi+same_dir": {
+     "n": 58,
+     "sum_R": 18.32,
+     "wr": 65.5
+    },
+    "vol_lo": {
+     "n": 340,
+     "sum_R": 44.35,
+     "wr": 57.1
+    },
+    "vol_lo+other_dir": {
+     "n": 242,
+     "sum_R": 39.45,
+     "wr": 58.3
+    },
+    "vol_lo+same_dir": {
+     "n": 98,
+     "sum_R": 4.9,
+     "wr": 54.1
+    }
+   },
+   "gates": {
+    "trend_side": {
+     "IS": {
+      "n": 339,
+      "sum_R": 27.2,
+      "win_rate": 56.6,
+      "expectancy_R": 0.0802,
+      "profit_factor": 1.176,
+      "net_pnl": 0.0,
+      "months_pos": 3,
+      "months": 5
+     },
+     "OOS": {
+      "n": 166,
+      "sum_R": 28.61,
+      "win_rate": 56.6,
+      "expectancy_R": 0.1723,
+      "profit_factor": 1.389,
+      "net_pnl": 0.0,
+      "months_pos": 3,
+      "months": 3,
+      "net_full_fee": 29.71
+     }
+    },
+    "btc_vol_hi": {
+     "IS": {
+      "n": 249,
+      "sum_R": 46.09,
+      "win_rate": 61.4,
+      "expectancy_R": 0.1851,
+      "profit_factor": 1.469,
+      "net_pnl": 0.0,
+      "months_pos": 4,
+      "months": 5
+     },
+     "OOS": {
+      "n": 114,
+      "sum_R": 0.22,
+      "win_rate": 50.0,
+      "expectancy_R": 0.0019,
+      "profit_factor": 1.004,
+      "net_pnl": 0.0,
+      "months_pos": 2,
+      "months": 3,
+      "net_full_fee": 0.89
+     }
+    },
+    "btc_impulse": {
+     "IS": {
+      "n": 78,
+      "sum_R": 2.25,
+      "win_rate": 52.6,
+      "expectancy_R": 0.0288,
+      "profit_factor": 1.058,
+      "net_pnl": 0.0,
+      "months_pos": 2,
+      "months": 5
+     },
+     "OOS": {
+      "n": 65,
+      "sum_R": 21.93,
+      "win_rate": 69.2,
+      "expectancy_R": 0.3374,
+      "profit_factor": 2.058,
+      "net_pnl": 0.0,
+      "months_pos": 3,
+      "months": 3,
+      "net_full_fee": 22.42
+     }
+    }
+   }
+  },
+  "XRP_mr_vwap": {
+   "symbol": "XRPUSDT",
+   "tf": 60,
+   "idea": "mr_vwap",
+   "exit": "m1_trail",
+   "baseline": {
+    "IS": {
+     "n": 358,
+     "sum_R": -23.42,
+     "win_rate": 43.3,
+     "expectancy_R": -0.0654,
+     "profit_factor": 0.883,
+     "net_pnl": 0.0,
+     "months_pos": 2,
+     "months": 5
+    },
+    "OOS": {
+     "n": 225,
+     "sum_R": 78.05,
+     "win_rate": 52.4,
+     "expectancy_R": 0.3469,
+     "profit_factor": 1.776,
+     "net_pnl": 0.0,
+     "months_pos": 3,
+     "months": 3
+    }
+   },
+   "segments": {
+    "btc_dn": {
+     "n": 345,
+     "sum_R": 9.63,
+     "wr": 45.5
+    },
+    "btc_dn+other_dir": {
+     "n": 171,
+     "sum_R": 4.34,
+     "wr": 45.0
+    },
+    "btc_dn+same_dir": {
+     "n": 174,
+     "sum_R": 5.29,
+     "wr": 46.0
+    },
+    "btc_dn+vol_hi": {
+     "n": 201,
+     "sum_R": -5.42,
+     "wr": 39.8
+    },
+    "btc_dn+vol_lo": {
+     "n": 144,
+     "sum_R": 15.05,
+     "wr": 53.5
+    },
+    "btc_up": {
+     "n": 262,
+     "sum_R": 39.45,
+     "wr": 49.2
+    },
+    "btc_up+other_dir": {
+     "n": 133,
+     "sum_R": 43.35,
+     "wr": 53.4
+    },
+    "btc_up+same_dir": {
+     "n": 129,
+     "sum_R": -3.9,
+     "wr": 45.0
+    },
+    "btc_up+vol_hi": {
+     "n": 122,
+     "sum_R": 32.05,
+     "wr": 51.6
+    },
+    "btc_up+vol_lo": {
+     "n": 140,
+     "sum_R": 7.4,
+     "wr": 47.1
+    },
+    "other_dir": {
+     "n": 304,
+     "sum_R": 47.69,
+     "wr": 48.7
+    },
+    "same_dir": {
+     "n": 303,
+     "sum_R": 1.39,
+     "wr": 45.5
+    },
+    "vol_hi": {
+     "n": 323,
+     "sum_R": 26.63,
+     "wr": 44.3
+    },
+    "vol_hi+other_dir": {
+     "n": 156,
+     "sum_R": 16.09,
+     "wr": 42.9
+    },
+    "vol_hi+same_dir": {
+     "n": 167,
+     "sum_R": 10.53,
+     "wr": 45.5
+    },
+    "vol_lo": {
+     "n": 284,
+     "sum_R": 22.45,
+     "wr": 50.4
+    },
+    "vol_lo+other_dir": {
+     "n": 148,
+     "sum_R": 31.59,
+     "wr": 54.7
+    },
+    "vol_lo+same_dir": {
+     "n": 136,
+     "sum_R": -9.14,
+     "wr": 45.6
+    }
+   },
+   "gates": {
+    "trend_side": {
+     "IS": {
+      "n": 266,
+      "sum_R": -7.24,
+      "win_rate": 44.0,
+      "expectancy_R": -0.0272,
+      "profit_factor": 0.949,
+      "net_pnl": 0.0,
+      "months_pos": 2,
+      "months": 5
+     },
+     "OOS": {
+      "n": 155,
+      "sum_R": 41.64,
+      "win_rate": 49.7,
+      "expectancy_R": 0.2687,
+      "profit_factor": 1.576,
+      "net_pnl": 0.0,
+      "months_pos": 3,
+      "months": 3,
+      "net_full_fee": 42.91
+     }
+    },
+    "btc_vol_hi": {
+     "IS": {
+      "n": 179,
+      "sum_R": 2.3,
+      "win_rate": 44.1,
+      "expectancy_R": 0.0128,
+      "profit_factor": 1.023,
+      "net_pnl": 0.0,
+      "months_pos": 2,
+      "months": 5
+     },
+     "OOS": {
+      "n": 137,
+      "sum_R": 29.13,
+      "win_rate": 46.0,
+      "expectancy_R": 0.2127,
+      "profit_factor": 1.429,
+      "net_pnl": 0.0,
+      "months_pos": 3,
+      "months": 3,
+      "net_full_fee": 30.19
+     }
+    },
+    "btc_impulse": {
+     "IS": {
+      "n": 173,
+      "sum_R": -25.32,
+      "win_rate": 41.0,
+      "expectancy_R": -0.1464,
+      "profit_factor": 0.739,
+      "net_pnl": 0.0,
+      "months_pos": 1,
+      "months": 5
+     },
+     "OOS": {
+      "n": 119,
+      "sum_R": 30.58,
+      "win_rate": 52.1,
+      "expectancy_R": 0.257,
+      "profit_factor": 1.561,
+      "net_pnl": 0.0,
+      "months_pos": 2,
+      "months": 3,
+      "net_full_fee": 31.62
+     }
+    }
+   }
+  }
+ }
+}
