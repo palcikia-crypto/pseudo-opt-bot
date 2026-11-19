@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<title>⚡ Pseudo-Opt Bot — панель</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root { color-scheme: dark; }
+body { font-family: system-ui, sans-serif; background:#0d1117; color:#e6edf3; margin:24px; }
+h1 { font-size:1.3rem; margin:0 0 4px; } h2 { font-size:1.0rem; color:#8b949e; margin:22px 0 8px; }
+.grid { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:10px; }
+.card { background:#161b22; border:1px solid #30363d; border-radius:10px; padding:12px 18px; min-width:120px; }
+.card .v { font-size:1.4rem; font-weight:700; } .card .l { color:#8b949e; font-size:.75rem; }
+.up { color:#3fb950; } .dn { color:#f85149; }
+.badge { display:inline-block; padding:3px 10px; border-radius:99px; font-size:.8rem; border:1px solid #30363d; }
+.badge.ok { color:#3fb950; } .badge.stop { color:#f85149; } .badge.warn { color:#d29922; }
+table { border-collapse:collapse; width:100%; font-size:.85rem; }
+th, td { padding:5px 10px; border-bottom:1px solid #21262d; text-align:right; }
+th:first-child, td:first-child { text-align:left; }
+th { color:#8b949e; font-weight:600; }
+.small { color:#8b949e; font-size:.75rem; }
+#tickers { display:flex; gap:6px; flex-wrap:wrap; margin:10px 0 4px; }
+.tk { background:#161b22; border:1px solid #30363d; border-radius:8px; padding:4px 10px; font-size:.78rem; }
+.tk b { margin-right:6px; }
+a { color:#58a6ff; text-decoration:none; }
+</style></head><body>
+<h1>⚡ Pseudo-Opt Bot <span id="badge" class="badge">…</span></h1>
+<div class="small" id="meta"><a href="https://github.com/palcikia-crypto/pseudo-opt-bot">репозиторий</a> • paper-режим (без ключей)</div>
+
+<h2>Рынок (Bybit USDT-Perps, live)</h2>
+<div id="tickers">…</div>
+
+<h2>Состояние бота</h2>
+<div class="grid">
+  <div class="card"><div class="v" id="equity">—</div><div class="l">Equity, USDT</div></div>
+  <div class="card"><div class="v" id="pnl">—</div><div class="l">PnL всего</div></div>
+  <div class="card"><div class="v" id="daypnl">—</div><div class="l">PnL сегодня (стоп −<span id="dlp">4</span>%)</div></div>
+  <div class="card"><div class="v" id="wr">—</div><div class="l">Win-rate</div></div>
+  <div class="card"><div class="v" id="pf">—</div><div class="l">Profit factor</div></div>
+  <div class="card"><div class="v" id="closed">—</div><div class="l">Сделок закрыто</div></div>
+  <div class="card"><div class="v" id="open">—</div><div class="l">Открыто сейчас</div></div>
+</div>
+
+<h2>Открытые позиции</h2>
+<table><thead><tr>
+<th>Символ</th><th>Side</th><th>Вход</th><th>Mark (live)</th><th>SL</th><th>TP</th><th>BE</th><th>Unrealized</th><th>Минут</th>
+</tr></thead><tbody id="open"></tbody></table>
+
+<h2>Закрытые сделки (последние 40)</h2>
+<table><thead><tr>
+<th>#</th><th>Символ</th><th>Side</th><th>Вход</th><th>Выход</th><th>PnL</th><th>Причина</th><th>Минут</th>
+</tr></thead><tbody id="hist"></tbody></table>
+
+<p class="small">снапшот состояния: <span id="snap">—</span> (обновляется там, где работает бот) •
+цены — запросы браузера к публичному Bybit v5</p>
+
+<script>
+const STATE_URL = new URLSearchParams(location.search).get('data') ||
+  'https://raw.githubusercontent.com/palcikia-crypto/pseudo-opt-bot/panel-site/state.json';
+const fmt = (x, d=6) => (x == null ? '—' : (+x).toFixed(d));
+const nfmt = (x, d=2) => (x == null ? '—' : (+x).toFixed(d));
+const MARKS = {};
+const TK = {};
+let SYMS_TV = null;
+
+function aggStats(trades) {
+  const closed = trades.filter(t => !(t.open === true || t.open === 1));
+  const wins = closed.filter(t => t.pnl > 0);
+  const losses = closed.filter(t => (t.pnl || 0) <= 0);
+  const gp = wins.reduce((a, t) => a + t.pnl, 0);
+  const gl = Math.abs(losses.reduce((a, t) => a + t.pnl, 0));
+  const pf = gl > 0 ? +(gp / gl).toFixed(2) : (gp > 0 ? 99 : 0);
+  return {closed: closed.length, wins: wins.length, losses: losses.length,
+          wr: closed.length ? +(100 * wins.length / closed.length).toFixed(1) : 0, pf};
+}
+
+async function loadState() {
+  const r = await fetch(STATE_URL + '?ts=' + Date.now(), {cache: 'no-store'});
+  if (!r.ok) throw new Error('state.json HTTP ' + r.status);
+  return r.json();
+}
+
+async function fetchTickers(rawList) {
+  const r = await fetch('https://api.bybit.com/v5/market/tickers?category=linear',
+                        {cache: 'no-store'});
+  const list = ((await r.json()).result || {}).list || [];
+  for (const row of list) {
+    MARKS[row.symbol] = {mark: +row.markPrice, last: +row.lastPrice,
+                         chg: +row.price24hPcnt * 100};
+    if (SYMS_TV && SYMS_TV.raw.includes(row.symbol)) TK[row.symbol] = MARKS[row.symbol];
+  }
+}
+
+function renderTickers() {
+  const el = document.getElementById('tickers');
+  if (!SYMS_TV) return;
+  el.innerHTML = SYMS_TV.labels.map((lbl, i) => {
+    const t = TK[SYMS_TV.raw[i]] || {last: 0, chg: 0};
+    const cls = t.chg >= 0 ? 'up' : 'dn';
+    return `<span class="tk"><b>${lbl}</b>${nfmt(t.last, t.last >= 10 ? 2 : 5)}
+      <span class="${cls}">${t.chg >= 0 ? '+' : ''}${nfmt(t.chg)}%</span></span>`;
+  }).join('');
+}
+
+function render(s) {
+  const st = s.stats || aggStats(s.trades || []);
+  const dayStart = s.day_start_equity ?? s.equity;
+  const dayPnl = +((s.equity || 0) - dayStart).toFixed(2);
+  const openList = (s.trades || []).filter(t => t.open === true || t.open === 1);
+  const set = (id, txt, cls) => {
+    const e = document.getElementById(id);
+    e.textContent = txt; if (cls !== undefined) e.className = 'v ' + cls;
+  };
+  set('equity', nfmt(s.equity), (s.equity || 0) >= (s.start_equity ?? 1000) ? 'up' : 'dn');
+  set('pnl', (s.pnl_total ?? 0) >= 0 ? '+' + nfmt(s.pnl_total) : nfmt(s.pnl_total),
+      (s.pnl_total ?? 0) >= 0 ? 'up' : 'dn');
+  set('daypnl', (dayPnl >= 0 ? '+' : '') + nfmt(dayPnl), dayPnl >= 0 ? 'up' : 'dn');
+  set('wr', st.wr + '%');
+  set('pf', st.pf);
+  set('closed', st.closed);
+  set('open', openList.length);
+  document.getElementById('dlp').textContent = (s.day_loss_limit_pct ?? 4);
+
+  const b = document.getElementById('badge');
+  if (s.halted) { b.textContent = 'СТОП-АУТ'; b.className = 'badge stop'; }
+  else if (s.day_paused) { b.textContent = 'ПАУЗА ДО 00:00 UTC'; b.className = 'badge stop'; }
+  else if (s.age_minutes != null && s.age_minutes < 20) {
+    b.textContent = 'ЖИВОЙ'; b.className = 'badge ok';
+  } else {
+    b.textContent = 'снапшот ' + (s.age_minutes != null ? Math.round(s.age_minutes) + ' мин назад' : '');
+    b.className = 'badge warn';
+  }
+  document.getElementById('snap').textContent =
+    (s.updated_utc || '—') + (s.age_minutes != null ? ' (' + Math.round(s.age_minutes) + ' мин назад)' : '');
+
+  document.querySelector('#open').innerHTML = openList.map(t => {
+    const m = MARKS[t.symbol.split('/')[0] + 'USDT'];
+    const mark = m ? m.mark : null;
+    const dir = t.side === 'long' ? 1 : -1;
+    const u = mark ? +((mark - t.entry) * t.qty * dir).toFixed(4) : null;
+    const mins = Math.round((Date.now() - t.entry_ms) / 60000);
+    return `<tr><td>${t.symbol}</td><td>${t.side}</td><td>${t.entry}</td>
+      <td>${fmt(mark)}</td><td class="dn">${fmt(t.sl)}</td><td class="up">${fmt(t.tp)}</td>
+      <td>${t.be ? '✓' : ''}</td>
+      <td class="${u >= 0 ? 'up' : 'dn'}">${u == null ? '—' : (u >= 0 ? '+' : '') + u}</td>
+      <td>${mins}</td></tr>`;
+  }).join('') || '<tr><td colspan="9" class="small">нет открытых позиций</td></tr>';
+
+  const closedAll = (s.trades || []).filter(t => !(t.open === true || t.open === 1));
+  document.querySelector('#hist').innerHTML = closedAll.slice(-40).reverse().map((t, i) => {
+    const mins = Math.round((t.exit_ms - t.entry_ms) / 60000);
+    return `<tr><td>${closedAll.length - i}</td><td>${t.symbol}</td><td>${t.side}</td>
+      <td>${t.entry}</td><td>${t.exit}</td>
+      <td class="${t.pnl >= 0 ? 'up' : 'dn'}">${(t.pnl >= 0 ? '+' : '')}${t.pnl}</td>
+      <td>${t.reason || ''}</td><td>${mins}</td></tr>`;
+  }).join('') || '<tr><td colspan="8" class="small">пока нет закрытых сделок</td></tr>';
+}
+
+async function tick() {
+  try {
+    const s = await loadState();
+    if (s.symbols_raw) SYMS_TV = s.symbols_raw;
+    await fetchTickers(SYMS_TV ? SYMS_TV.raw
+                       : (s.trades || []).filter(t => t.open).map(t => t.symbol));
+    render(s);
+    renderTickers();
+  } catch (e) {
+    const b = document.getElementById('badge');
+    b.textContent = 'ошибка загрузки'; b.className = 'badge stop';
+    console.error(e);
+  }
+}
+
+async function tickerLoop() {
+  try {
+    if (!SYMS_TV) return;
+    await fetchTickers(SYMS_TV.raw);
+    renderTickers();
+  } catch (e) { console.warn('tickers', e); }
+}
+
+tick(); setInterval(tick, 15000); tickerLoop(); setInterval(tickerLoop, 10000);
+</script>
+</body></html>
