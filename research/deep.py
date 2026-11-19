@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import research.lab as lab
 from research.data import load_1m
 from research.indicators_vec import rollmax_prev, rollmin_prev
-from scenarios import net_R, SCENARIOS
+from research.scenarios import net_R, SCENARIOS
 
 DAY = lab.DAY
 

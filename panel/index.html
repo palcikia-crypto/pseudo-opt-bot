@@ -170,6 +170,21 @@ function render(s) {
     }
     if (R.leadlag) h += '<div style="margin-top:6px"><b>Гонка за битком:</b> ' + R.leadlag + '</div>';
     if (R.collecting) h += '<div><b>Собираем:</b> ' + R.collecting + '</div>';
+    if (R.live) {
+      const lv = R.live;
+      let lh = '<div style="margin-top:8px"><b>🟢 Live-обкатка кандидатов (research/paper_deep)</b></div>';
+      if (lv.updated) lh += '<div class="small">обновлено: ' + String(lv.updated).slice(0,16).replace('T',' ') + ' UTC</div>';
+      for (const cd of Object.keys(lv.cand || {})) {
+        const s2 = (lv.cand[cd] || {}).summary;
+        lh += '<div>' + cd + ': ' + (s2
+          ? s2.n + ' сд, ' + (s2.sum_R >= 0 ? '+' : '') + s2.sum_R + 'R, wr ' + s2.win_rate + '%'
+            + (s2.n_shadow ? ' • бэктест-тень ' + (s2.sum_R_shadow >= 0 ? '+' : '') + s2.sum_R_shadow + 'R/' + s2.n_shadow : '')
+            + (s2.open ? ' • 📈 позиция открыта' : '')
+            + (s2.pending ? ' • ⏳ ждём вход' : '')
+          : '— сделок пока нет, ждём сигнал') + '</div>';
+      }
+      h += lh;
+    }
     if (R.next && R.next.length) h += '<div style="margin-top:4px"><b>Дальше:</b> ' + R.next.join(' • ') + '</div>';
     if (R.updated) h += '<div style="margin-top:4px">обновлено: ' + R.updated + ' • журнал: ' + (R.journal || 'research/LOG.md') + '</div>';
     rel.innerHTML = h;

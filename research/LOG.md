@@ -56,6 +56,7 @@
 - paper.py — paper-торговля текущей стратегии (пока ожидаемо в минусе: −9.9%).
 - panel/sync.sh — публикация снапшота в ветку panel-site каждые 10 мин.
 - research/loblog.py — сбор стакана каждые 10с.
+- research/paper_deep.py — live-обкатка кандидатов APT/XRP (раунд 6), цикл 60с.
 
 ## Правила (не менять без прецедента)
 
@@ -79,3 +80,25 @@
 - Микро-комбинации 1m (heat/streak/wick): всё глубоко отрицательно с комиссиями.
 - Панель: research-блок внедрён (panel/index.html + snapshot.py + panel_meta.json) —
   стат находок автообновляется через ветку panel-site.
+
+## Раунд 6: живая research-paper обкатка кандидатов (paper_deep.py)
+
+- `research/paper_deep.py` — демон-обкатка двух кандидатов рядом с основным ботом:
+  - №1 APTUSDT 15m **mr_rsi5** + **tf_trail** (sl 3.0×ATR, trail 2.5×ATR, cap 361 бар)
+  - №2 XRPUSDT 1h **mr_vwap** + **m1_trail** (sl 2.0×ATR, trail 2.0×ATR)
+- Модель исполнения 1-в-1 из lab.sim(): postOnly limit на open(TF-бара) с буфером
+  EPS=3bp, fill только по касанию; SL-first при касании; trail/BE обновляется по
+  ЗАКРЫТИЮ TF-бара (не по минуте — чтобы live совпадал с бэктестом); cap 361
+  TF-бар; комиссии maker-in 2bp + taker-out 5.5bp.
+- Сигнал = последний ЗАКРЫТЫЙ TF-бар, маски с тем же конфигом, что в deep_sym
+  (atr_min 0.03, vol_mult 1.3). Данные: живые 1m Bybit (~8500 баров постранично
+  каждый цикл; состояние полностью восстанавливаемо из state+истории).
+- Каждая закрытая сделка сравнивается с тенью бэктеста (lab.sim на том же окне
+  в сигнальном индексе) — поле `shadow`; расхождение live vs shadow = сигнал
+  деградации модели.
+- Состояние: research/results/paper_deep.json; панель: snapshot.py встраивает
+  `research.live`, index.html рендерит блок «Live-обкатка кандидатов».
+- Запуск: (setsid nohup ./venv/bin/python research/paper_deep.py >
+  research/paper_deep.log 2>&1 < /dev/null &); разовый прогон --once.
+- Валидация движка: офлайн-реплей побарно vs lab.sim на тех же сигналах —
+  входы/выходы/R должны совпадать.

@@ -59,6 +59,18 @@ def snapshot():
                 research = json.load(f)
         except Exception:
             research = None
+    live_path = os.path.join(REPO, 'research', 'results', 'paper_deep.json')
+    if os.path.exists(live_path):
+        try:
+            with open(live_path) as f:
+                live = json.load(f)
+        except Exception:
+            live = None
+        if live:
+            if research is None:
+                research = {}
+            live.pop('trades', None)
+            research['live'] = live
     return {
         'mode': 'paper',
         'equity': round(equity, 2),
