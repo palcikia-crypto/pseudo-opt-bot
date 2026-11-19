@@ -5,11 +5,13 @@ import json
 import os
 import sys
 import time
+import urllib.error
 import urllib.request
 
 CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cache')
-BYBIT_KLINE = 'https://api.bybit.com/v5/market/kline?category=linear&symbol={s}&interval=1&limit=1000&end={end_ms}'
-MAX_RETRY = 4
+BYBIT_HOSTS = ('api.bybit.com', 'api.bytick.com')
+BYBIT_KLINE = 'https://{host}/v5/market/kline?category=linear&symbol={s}&interval=1&limit=1000&end={end_ms}'
+MAX_RETRY = 6
 
 
 def cache_path(symbol):
@@ -22,37 +24,43 @@ def _parse(rows):
             for r in rows]
 
 
-def _fetch(symbol, end_ms, bars_needed):
-    got, out, end = 0, [], end_ms
-    while got < bars_needed:
-        url = BYBIT_KLINE.format(s=symbol.replace('/', '').split(':')[0], end_ms=end)
-        for attempt in range(MAX_RETRY):
-            try:
-                with urllib.request.urlopen(url, timeout=15) as resp:
-                    data = json.load(resp)
-                break
-            except Exception as e:
-                if attempt == MAX_RETRY - 1:
-                    raise
-                time.sleep(2 * (attempt + 1))
-        if data.get('retCode') != 0:
-            raise RuntimeError('%s: retCode=%s %s' % (symbol, data.get('retCode'), data.get('retMsg')))
-        rows = data['result'].get('list') or []
-        if not rows:
-            break
-        parsed = _parse(rows)
-        out = parsed + out
-        got += len(parsed)
-        end = parsed[0][0] - 1
-        time.sleep(0.15)
-    if out:
-        seen, dedup = set(), []
-        for r in out:
-            if r[0] not in seen:
-                seen.add(r[0])
-                dedup.append(r)
-        out = dedup
-    return out
+def _fetch_page(symbol, end_ms):
+    """Одна страница до 1000 баров с ретраями и ротацией хостов."""
+    for attempt in range(MAX_RETRY):
+        host = BYBIT_HOSTS[attempt % len(BYBIT_HOSTS)]
+        url = BYBIT_KLINE.format(host=host,
+                                 s=symbol.replace('/', '').split(':')[0], end_ms=end_ms)
+        try:
+            with urllib.request.urlopen(url, timeout=20) as resp:
+                d = json.load(resp)
+            if d.get('retCode') == 0:
+                return d['result'].get('list') or []
+            if d.get('retCode') in (10016, 10006):
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            raise RuntimeError('%s: retCode=%s %s' % (
+                symbol, d.get('retCode'), d.get('retMsg')))
+        except (urllib.error.URLError, OSError):
+            time.sleep(1.5 * (attempt + 1))
+    raise RuntimeError('%s: kline @end=%s — не удалось' % (symbol, end_ms))
+
+
+def _fetch_pages(symbol, end_ms, bars_needed):
+    from concurrent.futures import ThreadPoolExecutor
+    n_pages = (bars_needed + 999) // 1000
+    ends = [end_ms - p * 1000 * 60000 for p in range(n_pages)]
+    out = []
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        for rows in pool.map(lambda e: _fetch_page(symbol, e), ends):
+            out.extend(rows)
+    if not out:
+        return []
+    seen, dedup = set(), []
+    for r in sorted(out, key=lambda x: int(x[0])):
+        if r[0] not in seen:
+            seen.add(r[0])
+            dedup.append(r)
+    return _parse(dedup)
 
 
 def load_1m(symbol, days=7, refresh=False):
@@ -61,7 +69,7 @@ def load_1m(symbol, days=7, refresh=False):
     path = cache_path(symbol)
     if refresh or not os.path.exists(path):
         end_ms = int(time.time() * 1000)
-        bars = _fetch(symbol, end_ms, days * 1440 + 50)
+        bars = _fetch_pages(symbol, end_ms, days * 1440 + 50)
         tmp = path + '.tmp'
         with gzip.open(tmp, 'wt', newline='') as f:
             w = csv.writer(f)
@@ -69,12 +77,12 @@ def load_1m(symbol, days=7, refresh=False):
         os.replace(tmp, path)
         return bars
     with gzip.open(path, 'rt') as f:
-        return [tuple([int(r[0])] + [float(x) for x in r[1:]])
-                for r in csv.reader(f)]
+        return [tuple([int(r[0])] + [float(x) for x in r[1:6]])
+                for r in csv.reader(f) if r]
 
 
 def to_5m(bars_1m):
-    """Агрегация 1m -> 5m по границам epoch-минут (совпадает со.Bybit)."""
+    """Агрегация 1m -> 5m по границам 5-минутных epoch-бакетов (как у Bybit)."""
     out = []
     bucket = None
     for ts, o, h, l, c, v in bars_1m:

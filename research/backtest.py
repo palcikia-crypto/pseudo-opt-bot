@@ -42,11 +42,11 @@ def default_cfg():
 
 
 class SymbolData:
-    """Предрасчёт индикаторов по символу (общий для всех комбинаций параметров)."""
+    """Предрасчёт индикаторов по символу (общий для всех комбинаций параметров).
+    Хранит только numpy-массивы (экономия памяти при длинной истории)."""
 
     def __init__(self, symbol, bars):
         self.symbol = symbol
-        self.bars = bars
         self.ts = np.array([b[0] for b in bars], dtype=np.int64)
         self.o = np.array([b[1] for b in bars], dtype=float)
         self.h = np.array([b[2] for b in bars], dtype=float)
@@ -84,12 +84,16 @@ class SymbolData:
             return 'short'
         return None
 
+    def _rows(self, a, b):
+        ts, o, h, l, c, v = self.ts, self.o, self.h, self.l, self.c, self.v
+        return [[int(ts[j]), o[j], h[j], l[j], c[j], v[j]] for j in range(a, b)]
+
     def check_signal(self, i):
         import strategy
         a1 = max(0, i + 2 - CANDLE_LIMIT)
-        df1 = self.bars[a1:i + 2]
+        df1 = self._rows(a1, i + 2)
         a5 = max(0, int(self.map5[i]) + 1 - CANDLE_LIMIT)
-        df5 = to_5m(self.bars[a5:i + 1]) + [list(self.bars[i])]
+        df5 = to_5m(self._rows(a5, i + 1)) + [self._rows(i, i + 1)[0]]
         return strategy.check_signal(df5, df1)
 
     def feats(self, i, side, atr1):
@@ -117,88 +121,127 @@ def _sl_dist(cfg, close, atr1):
     return min(max(d, close * cfg['sl_min_pct']), close * cfg['sl_max_pct'])
 
 
-def _new_position(sd, cfg, p, side, atr1, equity):
-    """Заполнение заявки (entry bar = p). None — если вход не состоялся."""
-    o, h, l = sd.o, sd.h, sd.l
+def candidates(sd, cfg, t0=0, t1=None):
+    """Векторный предфильтр + точный check_signal + симуляция сделки.
+    Возвращает список сделок по одному символу (R на единичном риске)."""
+    ts = sd.ts
+    n = ts.size
+    lo = 25
+    hi = n - 2
+    if t0:
+        lo = max(lo, int(np.searchsorted(ts, t0)))
+    if t1:
+        hi = min(hi, int(np.searchsorted(ts, t1, 'right')) - 1)
+    if hi <= lo:
+        return []
+    atr_ok = np.isfinite(sd.atr_pct[lo:hi + 1]) & (sd.atr_pct[lo:hi + 1] >= cfg['atr_min_pct'])
+    vb = sd.vol_base[lo:hi + 1]
+    vol_ok = np.isfinite(vb) & (vb > 0) & (sd.v[lo:hi + 1] >= cfg['vol_mult'] * vb)
+    idx5 = sd.map5[lo:hi + 1]
+    j5 = np.where(idx5 >= 20, idx5, 0)
+    ema_ok = np.isfinite(sd.ema5[j5]) & (idx5 >= 20)
+    c5 = sd.c5[j5]
+    e5 = sd.ema5[j5]
+    side_long = c5 > e5
+    side_short = c5 < e5
+    rsi = sd.rsi[lo:hi + 1]
+    rsi_l = np.isfinite(rsi) & (rsi >= cfg['rsi_long_lo']) & (rsi <= cfg['rsi_long_hi'])
+    rsi_s = np.isfinite(rsi) & (rsi >= cfg['rsi_short_lo']) & (rsi <= cfg['rsi_short_hi'])
+    cc = sd.c[lo:hi + 1]
+    upper = sd.bb_mid[lo:hi + 1] + cfg['bb_k'] * sd.bb_sd[lo:hi + 1]
+    lower = sd.bb_mid[lo:hi + 1] - cfg['bb_k'] * sd.bb_sd[lo:hi + 1]
+    trig_l = (cc > upper) | (cc > sd.brk_hi[lo:hi + 1])
+    trig_s = (cc < lower) | (cc < sd.brk_lo[lo:hi + 1])
+    mask = ((atr_ok & vol_ok & ema_ok & np.isfinite(upper) & np.isfinite(sd.brk_hi[lo:hi + 1]))
+            & ((side_long & rsi_l & trig_l) | (side_short & rsi_s & trig_s)))
+    cand = np.where(mask)[0] + lo
+    trades = []
+    strict = os.getenv('RESEARCH_STRICT', '0') == '1'
+    for i in cand:
+        i = int(i)
+        if trades and ts[i + 1] < trades[-1]['ts_exit']:
+            continue
+        side = 'long' if sd.trend_side(i) == 'long' else 'short'
+        if strict:
+            sig = sd.check_signal(i)
+            if sig is None or (sig[0] == 'long') != (side == 'long'):
+                continue
+            _, atr1, _ = sig
+        else:
+            atr1 = float(sd.atr_pct[i]) / 100.0 * float(sd.c[i])
+        tr = _sim_from_signal(sd, cfg, i, side, atr1)
+        if tr is not None:
+            trades.append(tr)
+    return trades
+
+
+def _sim_from_signal(sd, cfg, i, side, atr1):
+    """Сигнал на закрытии бара i; вход на баре i+1; walk до выхода.
+    SL считается от close сигнального бара (как в трейдере), привязан к entry."""
     eps = cfg['entry_eps']
+    o, h, l, c, ts = sd.o, sd.h, sd.l, sd.c, sd.ts
+    j = i + 1
     if side == 'long':
-        entry = o[p] * (1.0 - eps)
-        if l[p] > entry:
+        entry = o[j] * (1.0 - eps)
+        if l[j] > entry:
             return None
     else:
-        entry = o[p] * (1.0 + eps)
-        if h[p] < entry:
+        entry = o[j] * (1.0 + eps)
+        if h[j] < entry:
             return None
-    risk_usdt = equity * cfg['risk_pct']
-    sl_d = _sl_dist(cfg, entry, atr1)
-    qty = risk_usdt / sl_d
-    notional = qty * entry
-    cap = equity * 10.0 * 0.95
-    if notional > cap:
-        qty = cap / entry
-    if qty <= 0:
-        return None
+    sl_d = _sl_dist(cfg, c[i], atr1)
+    rr = cfg['rr']
     if side == 'long':
-        sl, tp = entry - sl_d, entry + cfg['rr'] * sl_d
-        be_trigger = entry + cfg['be_trigger'] * sl_d
+        sl, tp = entry - sl_d, entry + rr * sl_d
+        trig = entry + cfg['be_trigger'] * sl_d
         be_sl = entry + cfg['be_offset_pct'] * entry
     else:
-        sl, tp = entry + sl_d, entry - cfg['rr'] * sl_d
-        be_trigger = entry - cfg['be_trigger'] * sl_d
+        sl, tp = entry + sl_d, entry - rr * sl_d
+        trig = entry - cfg['be_trigger'] * sl_d
         be_sl = entry - cfg['be_offset_pct'] * entry
-    tr = dict(symbol=sd.symbol, side=side, ts_entry=int(sd.ts[p]),
-              entry=entry, qty=qty, sl=sl, tp=tp, sl_d=sl_d,
-              be_trigger=be_trigger, be_sl=be_sl, be_moved=False,
-              risk_usdt=risk_usdt, atr1=float(atr1))
-    return tr
-
-
-def _bar_exit_check(tr, sd, p, cfg, first_bar=False):
-    """p — бар, только что закрытый. Возвращает (exit_px|None, reason|None)."""
-    side = tr['side']
-    o, h, l, c = sd.o[p], sd.h[p], sd.l[p], sd.c[p]
-    sl_now = tr['be_sl'] if tr['be_moved'] else tr['sl']
-    if side == 'long':
-        if l <= sl_now:
-            return min(o, sl_now), ('be' if tr['be_moved'] else 'sl')
-        if h >= tr['tp']:
-            return max(o, tr['tp']), 'tp'
-        if not tr['be_moved'] and h >= tr['be_trigger']:
-            tr['be_moved'] = True
-            return None, None
-    else:
-        if h >= sl_now:
-            return max(o, sl_now), ('be' if tr['be_moved'] else 'sl')
-        if l <= tr['tp']:
-            return min(o, tr['tp']), 'tp'
-        if not tr['be_moved'] and l <= tr['be_trigger']:
-            tr['be_moved'] = True
-            return None, None
-    if first_bar:
-        return None, None
-    if not tr['be_moved'] and (sd.ts[p] - tr['ts_entry']) >= int(cfg['time_stop_min']) * 60000:
-        return c, 'time'
-    if (sd.ts[p] - tr['ts_entry']) > 360 * 60000:
-        return c, 'cap'
-    return None, None
-
-
-def _finalize(tr, sd, p, exit_px, reason, cfg):
-    dirn = 1.0 if tr['side'] == 'long' else -1.0
-    qty = tr['qty']
+    be_moved = False
+    exit_px = exit_j = reason = None
+    t_stop_ms = int(cfg['time_stop_min']) * 60000
+    for k in range(j, min(j + 361, ts.size)):
+        sl_now = be_sl if be_moved else sl
+        if side == 'long':
+            hit_sl = l[k] <= sl_now
+            hit_tp = h[k] >= tp
+        else:
+            hit_sl = h[k] >= sl_now
+            hit_tp = l[k] <= tp
+        if hit_sl:
+            exit_px = min(o[k], sl_now) if side == 'long' else max(o[k], sl_now)
+            reason, exit_j = ('be' if be_moved else 'sl'), k
+            break
+        if hit_tp:
+            exit_px = max(o[k], tp) if side == 'long' else min(o[k], tp)
+            reason, exit_j = 'tp', k
+            break
+        if not be_moved:
+            if (side == 'long' and h[k] >= trig) or (side == 'short' and l[k] <= trig):
+                be_moved = True
+            elif (ts[k] - ts[j]) >= t_stop_ms:
+                exit_px, reason, exit_j = c[k], 'time', k
+                break
+        if k == j + 360:
+            exit_px, reason, exit_j = c[k], 'cap', k
+            break
+    if exit_j is None:
+        return None
+    dirn = 1.0 if side == 'long' else -1.0
     fee_out = cfg['maker_fee'] if reason == 'tp' else cfg['taker_fee']
-    fees = cfg['maker_fee'] * tr['entry'] * qty + fee_out * exit_px * qty
-    pnl = dirn * (exit_px - tr['entry']) * qty - fees
-    out = dict(symbol=tr['symbol'], side=tr['side'],
-               ts_entry=tr['ts_entry'], ts_exit=int(sd.ts[p]),
-               entry=round(tr['entry'], 8), exit=round(exit_px, 8),
-               sl=round(tr['sl'], 8), tp=round(tr['tp'], 8),
-               qty=round(qty, 8), exit_reason=reason,
-               bars_held=int((sd.ts[p] - tr['ts_entry']) // 60000),
-               risk_usdt=round(tr['risk_usdt'], 4), fees=round(fees, 4),
-               pnl=round(pnl, 4), R=round(pnl / tr['risk_usdt'], 4),
-               feats=tr.get('feats'))
-    return out
+    fees_per_notional = cfg['maker_fee'] + fee_out * exit_px / entry
+    pnl_per_qty = dirn * (exit_px - entry) - entry * fees_per_notional
+    sl_pct_of_price = sl_d / entry
+    R = pnl_per_qty / (entry * sl_pct_of_price)
+    feats = sd.feats(i, side, atr1)
+    return dict(symbol=sd.symbol, side=side, fees_R=fees_per_notional / sl_pct_of_price,
+                ts_entry=int(ts[j]), ts_exit=int(ts[exit_j]),
+                entry=round(float(entry), 8), exit=round(float(exit_px), 8),
+                sl=round(float(sl), 8), tp=round(float(tp), 8),
+                exit_reason=reason, bars_held=exit_j - j + 1,
+                R=round(float(R), 4), feats=feats)
 
 
 def run(cfg=None, symbols=None, refresh=False, t0=0, t1=None, datas=None):
@@ -206,120 +249,57 @@ def run(cfg=None, symbols=None, refresh=False, t0=0, t1=None, datas=None):
     if symbols is None:
         import config as C
         symbols = C.SYMBOLS
+    smap = set(symbols)
     if datas is None:
         datas = [SymbolData(s, load_1m(s, refresh=refresh)) for s in symbols]
     else:
-        datas = [d for d in datas if d.symbol in set(symbols)] if symbols else datas
-    for sd in datas:
-        if sd.ts.size < 200:
-            raise RuntimeError('%s: мало данных (%d баров)' % (sd.symbol, sd.ts.size))
+        datas = [d for d in datas if d.symbol in smap]
     start_equity = 1000.0
     equity = start_equity
-    trades = []
-    open_pos = {}
-    pending = {}
+    accepted = []
+    busy_until = {}
     day = None
     day_start = equity
     day_pnl = 0.0
     halted = False
-    t_start = max(int(sd.ts[25]) for sd in datas)
-    t_end = min(int(sd.ts[-2]) for sd in datas)
-    if t1:
-        t_end = min(t_end, t1)
-    times = sorted({int(t) for sd in datas for t in sd.ts if t_start <= t <= t_end})
-    idx = {sd.symbol: int(np.searchsorted(sd.ts, max(t_start, t0 or 0)))
-           for sd in datas}
-    for T in times:
-        if T < t0:
-            continue
-        d = T // 86400000
+    t_end = min(int(d.ts[-2]) for d in datas)
+    t1 = min(t1, t_end) if t1 else t_end
+
+    all_tr = []
+    for sd in datas:
+        all_tr.extend(candidates(sd, cfg, t0=t0, t1=t1))
+    all_tr.sort(key=lambda t: t['ts_entry'])
+
+    for t in all_tr:
+        if t['ts_entry'] >= t1:
+            break
+        d = t['ts_entry'] // 86400000
         if d != day:
             day = d
             day_start = equity
             day_pnl = 0.0
             halted = False
-        minute_signals = []
-        for sd in datas:
-            sym = sd.symbol
-            p = idx[sym]
-            if p >= sd.ts.size or int(sd.ts[p]) != T:
-                continue
-            pd_entry = pending.pop(sym, None)
-            if pd_entry is not None and not halted and sym not in open_pos \
-                    and len(open_pos) < cfg['max_positions']:
-                _, p_sig, side, atr1, eq_at_signal = pd_entry
-                tr = _new_position(sd, cfg, p, side, atr1, equity)
-                if tr is not None:
-                    tr['feats'] = sd.feats(p_sig, side, atr1)
-                    open_pos[sym] = tr
-                    ex, reason = _bar_exit_check(tr, sd, p, cfg, first_bar=True)
-                    if ex is not None:
-                        fin = _finalize(tr, sd, p, ex, reason, cfg)
-                        equity += fin['pnl']
-                        day_pnl += fin['pnl']
-                        trades.append(fin)
-                        del open_pos[sym]
-            elif sym in open_pos:
-                tr = open_pos[sym]
-                ex, reason = _bar_exit_check(tr, sd, p, cfg)
-                if ex is not None:
-                    fin = _finalize(tr, sd, p, ex, reason, cfg)
-                    equity += fin['pnl']
-                    day_pnl += fin['pnl']
-                    trades.append(fin)
-                    del open_pos[sym]
-            idx[sym] = p + 1
-        if day_start > 0 and day_pnl <= -day_start * cfg['day_loss_pct'] and not halted:
-            halted = True
-            for sym, tr in list(open_pos.items()):
-                sd2 = next(x for x in datas if x.symbol == sym)
-                p2 = idx[sym] - 1
-                if 0 <= p2 < sd2.ts.size:
-                    fin = _finalize(tr, sd2, p2, float(sd2.c[p2]), 'day', cfg)
-                    equity += fin['pnl']
-                    day_pnl += fin['pnl']
-                    trades.append(fin)
-                del open_pos[sym]
-            pending = {}
-        if halted or len(open_pos) >= cfg['max_positions']:
+        sym = t['symbol']
+        if halted or sym in busy_until and busy_until[sym] > t['ts_entry']:
             continue
-        for sd in datas:
-            sym = sd.symbol
-            p = idx[sym] - 1
-            if sym in open_pos or sym in pending:
-                continue
-            if p < 25 or p >= sd.ts.size - 1 or int(sd.ts[p]) != T:
-                continue
-            ap = sd.atr_pct[p]
-            if not np.isfinite(ap) or ap < cfg['atr_min_pct']:
-                continue
-            vb = sd.vol_base[p]
-            if not np.isfinite(vb) or vb <= 0:
-                continue
-            if sd.v[p] < cfg['vol_mult'] * vb:
-                continue
-            side5 = sd.trend_side(p)
-            rsi = sd.rsi[p]
-            if side5 is None or not np.isfinite(rsi):
-                continue
-            if side5 == 'long':
-                if not (cfg['rsi_long_lo'] <= rsi <= cfg['rsi_long_hi']):
-                    continue
-                upper = sd.bb_mid[p] + cfg['bb_k'] * sd.bb_sd[p]
-                trig = sd.c[p] > upper or sd.c[p] > sd.brk_hi[p]
-            else:
-                if not (cfg['rsi_short_lo'] <= rsi <= cfg['rsi_short_hi']):
-                    continue
-                lower = sd.bb_mid[p] - cfg['bb_k'] * sd.bb_sd[p]
-                trig = sd.c[p] < lower or sd.c[p] < sd.brk_lo[p]
-            if not trig:
-                continue
-            sig = sd.check_signal(p)
-            if sig is None or sig[0] != side5:
-                continue
-            _, atr1, _ = sig
-            pending[sym] = (T, p, side5, atr1, equity)
-    return _report(trades, start_equity, equity), trades
+        if sum(1 for v in busy_until.values() if v > t['ts_entry']) >= cfg['max_positions']:
+            continue
+        accepted.append(t)
+        busy_until[sym] = t['ts_exit']
+        risk_usdt = equity * cfg['risk_pct']
+        pnl = t['R'] * risk_usdt
+        fees = t['fees_R'] * risk_usdt
+        t2 = dict(t)
+        t2['risk_usdt'] = round(risk_usdt, 4)
+        t2['pnl'] = round(pnl, 4)
+        t2['fees'] = round(fees, 4)
+        accepted[-1] = t2
+        equity += pnl
+        day_pnl += pnl
+        if day_start > 0 and day_pnl <= -day_start * cfg['day_loss_pct']:
+            halted = True
+    rep = _report(accepted, start_equity, equity)
+    return rep, accepted
 
 
 def _report(trades, start_equity, end_equity):

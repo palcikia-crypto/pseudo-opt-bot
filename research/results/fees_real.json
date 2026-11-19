@@ -1,0 +1,98 @@
+{
+ "ts": 1795081307432,
+ "notional_usdt": 5000,
+ "maker_fee_pct": 0.02,
+ "taker_fee_pct": 0.055,
+ "rows": [
+  {
+   "symbol": "BTCUSDT",
+   "spread_bps": 0.02,
+   "impact_exit_bps": 0.0,
+   "depth20_usdt": 520381.0
+  },
+  {
+   "symbol": "ETHUSDT",
+   "spread_bps": 0.06,
+   "impact_exit_bps": 0.0,
+   "depth20_usdt": 122257.0
+  },
+  {
+   "symbol": "SOLUSDT",
+   "spread_bps": 1.34,
+   "impact_exit_bps": 0.0,
+   "depth20_usdt": 5938674.0
+  },
+  {
+   "symbol": "XRPUSDT",
+   "spread_bps": 1.01,
+   "impact_exit_bps": -0.0,
+   "depth20_usdt": 2723335.0
+  },
+  {
+   "symbol": "DOGEUSDT",
+   "spread_bps": 1.68,
+   "impact_exit_bps": -0.0,
+   "depth20_usdt": 1870767.0
+  },
+  {
+   "symbol": "SUIUSDT",
+   "spread_bps": 1.37,
+   "impact_exit_bps": 1.01,
+   "depth20_usdt": 440570.0
+  },
+  {
+   "symbol": "AVAXUSDT",
+   "spread_bps": 1.41,
+   "impact_exit_bps": 1.08,
+   "depth20_usdt": 680140.0
+  },
+  {
+   "symbol": "LINKUSDT",
+   "spread_bps": 1.08,
+   "impact_exit_bps": 2.05,
+   "depth20_usdt": 682150.0
+  },
+  {
+   "symbol": "ADAUSDT",
+   "spread_bps": 6.48,
+   "impact_exit_bps": 0.0,
+   "depth20_usdt": 2656384.0
+  },
+  {
+   "symbol": "BNBUSDT",
+   "spread_bps": 0.17,
+   "impact_exit_bps": 0.35,
+   "depth20_usdt": 38728.0
+  },
+  {
+   "symbol": "NEARUSDT",
+   "spread_bps": 2.92,
+   "impact_exit_bps": 0.0,
+   "depth20_usdt": 1072174.0
+  },
+  {
+   "symbol": "APTUSDT",
+   "spread_bps": 2.29,
+   "impact_exit_bps": 1.89,
+   "depth20_usdt": 179556.0
+  },
+  {
+   "symbol": "ARBUSDT",
+   "spread_bps": 0.79,
+   "impact_exit_bps": 1.19,
+   "depth20_usdt": 53173.0
+  },
+  {
+   "symbol": "OPUSDT",
+   "spread_bps": 1.29,
+   "impact_exit_bps": 2.27,
+   "depth20_usdt": 118339.0
+  },
+  {
+   "symbol": "SEIUSDT",
+   "spread_bps": 2.56,
+   "impact_exit_bps": 3.35,
+   "depth20_usdt": 142062.0
+  }
+ ]
+}

@@ -1,7 +1,10 @@
 """research/run_all.py — полный исследовательский прогон и отчёт report.md:
-бэктест текущего конфига -> walk-forward -> edge-scan -> анализ издержек.
-Запуск: ./venv/bin/python research/run_all.py [days]
+бэктест текущего конфига -> реальные издержки (стаканы Bybit) -> walk-forward
+(скользящие окна, consensus-параметры) -> помесячная устойчивость -> edge-scan.
+Запуск: ./venv/bin/python research/run_all.py
 """
+import collections
+import datetime
 import json
 import os
 import subprocess
@@ -14,41 +17,19 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 RES = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'results')
 
 
-def sh(script):
-    r = subprocess.run(script, shell=True, capture_output=True, text=True)
+def sh(cmd):
+    r = subprocess.run(cmd, shell=True, capture_output=True, text=True)
     if r.returncode != 0:
         print(r.stdout[-2000:])
         print(r.stderr[-2000:])
-        raise SystemExit('fail: %s' % script)
+        raise SystemExit('fail: ' + cmd)
     return r.stdout
 
 
-def cost_analysis(cfg):
-    from research.data import load_1m
-    from research.indicators_vec import wilder_atr
-    from config import SYMBOLS
-    rows = []
-    for s in SYMBOLS:
-        bars = load_1m(s)
-        h = np.array([b[2] for b in bars])
-        l = np.array([b[3] for b in bars])
-        c = np.array([b[4] for b in bars])
-        atr = wilder_atr(h, l, c)
-        apct = np.nanmedian(atr / c * 100.0)
-        sl_pct = min(max(cfg['sl_atr_mult'] * apct, cfg['sl_min_pct'] * 100.0),
-                     cfg['sl_max_pct'] * 100.0)
-        cost_pct = cfg['maker_fee'] * 100.0 + cfg['taker_fee'] * 100.0 + cfg['entry_eps'] * 100.0
-        cost_r = cost_pct / sl_pct
-        rows.append(dict(symbol=s.split('/')[0], atr_pct=round(float(apct), 3),
-                         sl_pct=round(float(sl_pct), 3),
-                         cost_r=round(float(cost_r), 3),
-                         wr_needed=round(100.0 * (1.0 + cost_r) / (1.0 + cfg['rr']), 1)))
-    return rows
-
-
-def load(path):
+def load(name):
+    p = os.path.join(RES, name)
     try:
-        with open(path) as f:
+        with open(p) as f:
             return json.load(f)
     except Exception:
         return None
@@ -57,113 +38,188 @@ def load(path):
 def fmt_tbl(rows, cols):
     hdr = '| ' + ' | '.join(cols) + ' |'
     sep = '|' + '|'.join(['---'] * len(cols)) + '|'
-    lines = [hdr, sep]
-    for r in rows:
-        lines.append('| ' + ' | '.join(str(r[c]) for c in cols) + ' |')
-    return '\n'.join(lines)
+    return '\n'.join([hdr, sep] +
+                     ['| ' + ' | '.join(str(r.get(c)) for c in cols) + ' |' for r in rows])
+
+
+def monthly_table(trades):
+    months = collections.defaultdict(lambda: dict(n=0, sum_R=0.0, wins=0, pnl=0.0))
+    for t in trades:
+        k = datetime.datetime.fromtimestamp(t['ts_entry'] / 1000,
+                                            datetime.timezone.utc).strftime('%Y-%m')
+        m = months[k]
+        m['n'] += 1
+        m['sum_R'] += t['R']
+        m['pnl'] += t['pnl']
+        m['wins'] += 1 if t['pnl'] > 0 else 0
+    return [dict(month=k, n=v['n'], sum_R=round(v['sum_R'], 2), pnl=round(v['pnl'], 2),
+                 win_rate=round(100.0 * v['wins'] / v['n'], 1))
+            for k, v in sorted(months.items())]
 
 
 def main():
     os.makedirs(RES, exist_ok=True)
-    print('[1/4] бэктест текущего конфига...')
+    print('[1/5] реальные издержки (стаканы Bybit)...')
+    if load('fees_real.json') is None:
+        sh('./venv/bin/python research/fees_real.py')
+    print('[2/5] бэктест текущего конфига (весь кэш)...')
     sh('./venv/bin/python research/backtest.py --out research/results/base.json')
-    print('[2/4] walk-forward...')
+    print('[3/5] walk-forward...')
     sh('./venv/bin/python research/walkforward.py')
-    print('[3/4] edge-scan...')
+    print('[4/5] edge-scan...')
     sh('./venv/bin/python research/edge_scan.py research/results/base.json')
-    print('[4/4] отчёт...')
+    print('[5/5] отчёт...')
+    build_report()
 
-    base = load(os.path.join(RES, 'base.json'))['report']
-    wf = load(os.path.join(RES, 'walkforward.json'))
-    es = load(os.path.join(RES, 'edge_scan.json'))
-    cfg = __import__('research.backtest', fromlist=['default_cfg']).default_cfg()
-    costs = cost_analysis(cfg)
-    wr_needed = 100.0 / (1.0 + cfg['rr'])
 
-    md = ['# Исследовательский отчёт — pseudo-opt-bot',
+def build_report():
+    basej = load('base.json') or {}
+    base = basej.get('report', {})
+    trades = basej.get('trades', [])
+    wf = load('walkforward.json') or {}
+    es = load('edge_scan.json') or {}
+    fr = load('fees_real.json') or {}
+
+    import research.backtest as bt
+    cfg = bt.default_cfg()
+    wr_free = 100.0 / (1.0 + cfg['rr'])
+
+    costs = []
+    if fr.get('rows'):
+        by_sym = {r['symbol']: r for r in fr['rows']}
+        from research.data import load_1m
+        from research.indicators_vec import wilder_atr
+        from config import SYMBOLS
+        for s in SYMBOLS:
+            sym = s.split('/')[0] + 'USDT'
+            m = by_sym.get(sym)
+            if not m:
+                continue
+            bars = load_1m(s)
+            h = np.array([b[2] for b in bars])
+            l = np.array([b[3] for b in bars])
+            c = np.array([b[4] for b in bars])
+            apct = float(np.nanmedian(wilder_atr(h, l, c) / c * 100.0))
+            sl_pct = min(max(cfg['sl_atr_mult'] * apct, cfg['sl_min_pct'] * 100.0),
+                         cfg['sl_max_pct'] * 100.0)
+            rt = (cfg['maker_fee'] + cfg['taker_fee']) * 100.0 + cfg['entry_eps'] * 100.0 \
+                + m['spread_bps'] / 200.0 + (m['impact_exit_bps'] or 0.0) / 100.0
+            cost_r = rt / sl_pct
+            costs.append(dict(symbol=s.split('/')[0], spread_bps=m['spread_bps'],
+                              impact_bps=m['impact_exit_bps'], sl_pct=round(sl_pct, 3),
+                              cost_r=round(cost_r, 3),
+                              wr_needed=round(100.0 * (1 + cost_r) / (1 + cfg['rr']), 1)))
+    wr_real = (lambda: 100.0 * (1 + max((x['cost_r'] for x in costs), default=0.3)) / (1 + cfg['rr']))()
+
+    md = ['# Исследовательский отчёт — pseudo-opt-bot (6 месяцев, 15 символов)',
           '',
-          'Данные: Bybit linear 1m, ~7.6 дней, %d символов. Период: %s' % (
-              len(costs), __import__('datetime').datetime
-              .fromtimestamp(bars_t0() / 1000).strftime('%Y-%m-%d %H:%M UTC')),
+          'Сгенерирован: %s. Данные: Bybit linear 1m, span ~%.0f дней.' % (
+              datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),
+              (wf.get('span_days') or 0)),
           '',
-          '## 1. Бэктест текущего конфига (консервативная модель входа)',
+          '## 1. Бэктест текущего конфига',
           '',
-          '| метрика | значение |',
-          '|---|---|',
-          '| сделок | %d |' % base['n_trades'],
-          '| винрейт | %.1f%% (нужно ≥%.1f%% при RR=%.1f без учёта комиссий) |' % (
-              base['win_rate'], wr_needed, cfg['rr']),
-          '| ожидание | %.2fR на сделку |' % base['expectancy_R'],
-          '| profit factor | %s |' % base['profit_factor'],
-          '| итог | %+.1f%% к депо 1000 |' % base['net_pnl_pct'],
-          '| макс. просадка | %.1f%% |' % base['max_dd_pct'],
-          '| уплачено комиссий | %.1f USDT (%.0f%% депо!) |' % (
-              base['total_fees'], base['total_fees'] / 10.0),
-          '', 'Выходы: %s' % json.dumps(base['by_reason']),
+          fmt_tbl([dict(metric=k, value=v) for k, v in [
+              ('сделок', base.get('n_trades')),
+              ('винрейт, %', base.get('win_rate')),
+              ('порог безубытка без комиссий, %', round(wr_free, 1)),
+              ('ожидание, R', base.get('expectancy_R')),
+              ('profit factor', base.get('profit_factor')),
+              ('итог, %', base.get('net_pnl_pct')),
+              ('макс просадка, %', base.get('max_dd_pct')),
+              ('комиссии, USDT', base.get('total_fees')),
+              ('выходы', json.dumps(base.get('by_reason', {}))),
+          ]], ['metric', 'value']),
           '',
-          '## 2. Издержки — главный убийца стратегии',
+          '## 2. Реальные издержки (спред/глубина Bybit сейчас + наши комиссии)',
           '',
-          'Стоимость круга (maker-in + taker-out + буфер входа) ≈ 10.5 бп цены.',
-          'Относительный размер стопа определяет цену страхалки:',
+          fmt_tbl(costs, ['symbol', 'spread_bps', 'impact_bps', 'sl_pct', 'cost_r', 'wr_needed']),
           '',
-          fmt_tbl(costs, ['symbol', 'atr_pct', 'sl_pct', 'cost_r', 'wr_needed']),
+          'cost_r = (maker+вход buфер+taker+полспреда+impact) / размер стопа в % цены.',
+          'Перед выходом на деньги: порог винрейта с реальными издержками ≈ **%.1f%%** (для худшего по стоимости символа).' % wr_real,
           '',
-          '`wr_needed` — винрейт, при котором сделка хотя бы безубыточна С УЧЁТОМ издержек.',
+          '## 3. Walk-forward (%d фолд: train %s→test, без подглядывания)' % (
+              wf.get('n_folds', 0), ', '.join('%d/%d' % (f['train_days'], f['test_days'])
+                                              for f in wf.get('folds', []))),
           '',
-          '## 3. Walk-forward (без подглядывания в будущее)',
+          fmt_tbl([dict(fold=f['fold'],
+                        params=json.dumps(f['best_params']),
+                        train_sum_R=f['best_train_sum_R'],
+                        oos_n=f['oos']['n'], oos_sum_R=f['oos']['sum_R'],
+                        oos_win=f['oos']['win_rate'], oos_net=f['oos']['net_pct'],
+                        base_sum_R=f['oos_default']['sum_R'])
+                   for f in wf.get('folds', [])],
+                  ['fold', 'params', 'train_sum_R', 'oos_n', 'oos_sum_R', 'oos_win', 'oos_net', 'base_sum_R']),
           '',
+          'OOS суммарно: N=%s, ΣR=%s (базовый конфиг: ΣR=%s)' % (
+              wf.get('oos_total', {}).get('n_total'),
+              wf.get('oos_total', {}).get('sum_R_total'),
+              wf.get('oos_total', {}).get('sum_R_default')),
           '',
-          fmt_tbl([f['oos'] | {'fold': f['fold'], 'params': json.dumps(f['best_params'])}
-                   for f in wf['folds']], ['fold', 'params', 'n', 'sum_R', 'win_rate', 'net_pct']),
+          '### Consensus-параметры (что ход-форвард выбирает чаще всего)',
           '',
-          'OOS суммарно: %s сделок, ΣR=%s (базовый конфиг: ΣR=%s)' % (
-              wf['oos_total']['n_total'], wf['oos_total']['sum_R_total'],
-              wf['oos_total']['sum_R_default']),
+          'Параметры: `%s`' % json.dumps(wf.get('consensus', {})),
           '',
-          '## 4. Edge-scan (ML-lite, логрегрессия, time-CV)',
+          fmt_tbl([dict(metric=k, value=v) for k, v in (wf.get('consensus_full') or {}).items()],
+                  ['metric', 'value']),
           '',
-          fmt_tbl(es['cv'], ['fold', 'n_test', 'auc', 'acc', 'wr_base', 'wr_p05', 'R_base', 'R_p05', 'n_p05']),
+          '### Помесячная устойчивость consensus на всей истории',
           '',
-          '### По корзинам',
+          fmt_tbl(wf.get('monthly', []), ['month', 'n', 'sum_R', 'win_rate']),
           '',
-          'Часы:', '',
-          fmt_tbl(es['by_hour'], ['bucket', 'n', 'win_rate', 'avg_R', 'sum_R']),
+          '## 4. Edge-scan (логрегрессия, time-CV)',
           '',
-          'ATR:', '',
-          fmt_tbl(es['by_atr'], ['bucket', 'n', 'win_rate', 'avg_R', 'sum_R']),
+          fmt_tbl(es.get('cv', []), ['fold', 'n_test', 'auc', 'acc', 'wr_base', 'wr_p05', 'R_base', 'R_p05', 'n_p05']),
           '',
-          'Объём:', '',
-          fmt_tbl(es['by_vol'], ['bucket', 'n', 'win_rate', 'avg_R', 'sum_R']),
+          '### Разрезы (по сделкам текущего конфига)',
           '',
           'Сторона:', '',
-          fmt_tbl(es['by_side'], ['bucket', 'n', 'win_rate', 'avg_R', 'sum_R']),
+          fmt_tbl(es.get('by_side', []), ['bucket', 'n', 'win_rate', 'avg_R', 'sum_R']),
+          '',
+          'ATR:', '',
+          fmt_tbl(es.get('by_atr', []), ['bucket', 'n', 'win_rate', 'avg_R', 'sum_R']),
+          '',
+          'Лучшие/худшие символы:', '',
+          fmt_tbl(es.get('by_symbol', []), ['bucket', 'n', 'win_rate', 'avg_R', 'sum_R']),
           '',
           '## Выводы',
           '',
-          '1. У текущего конфига нет эджа: винрейт %.1f%% ниже порога %.1f%% ещё до комиссий;' % (base['win_rate'], wr_needed),
-          '   с издержками порог 39–49% винрейта (0.37–0.70R за круг при текущих стопах).',
-          '2. Главная структурная проблема — крошечные стопы (SL 0.15–0.6% от цены):',
-          '   комиссия + буфер + выход по тейкеру съедают до половины каждой ставки.',
-          '3. Walk-forward устойчиво выбирает более широкие стопы (sl_atr_mult 3.5) и RR 3.0:',
-          '   OOS ΣR=%s против %s у базового — лучше, но всё ещё отрицательно.' % (
-              wf['oos_total']['sum_R_total'], wf['oos_total']['sum_R_default']),
-          '4. Edge-scan: OOS AUC логрегрессии 0.30–0.36 — признаки при входе НЕ предсказывают',
-          '   исход; лонги заметно хуже шортов — проверять стороны раздельно.',
-          '5. Практические шаги: (а) SL_ATR_MULT 2.5–3.5 и/или фильтр сделок со стопом ≥0.3% цены;',
-          '   (б) более редкие входы (трендовый фильтр старшего ТФ); (в) каждую новую идею',
-          '   прогонять этим конвейером ДО включения в бота; (г) слippage/скорость мерить',
-          '   по факту в paper-режиме, а не задавать константами на глаз.',
+          conclusions(base, wf, es, costs),
           '']
-    path_md = os.path.join(RES, 'report.md')
-    with open(path_md, 'w') as f:
+    with open(os.path.join(RES, 'report.md'), 'w') as f:
         f.write('\n'.join(md))
-    print('OK:', path_md)
+    print('OK: research/results/report.md')
 
 
-def bars_t0():
-    from research.data import load_1m
-    import config
-    return min(int(load_1m(s)[0][0]) for s in config.SYMBOLS)
+def conclusions(base, wf, es, costs):
+    lines = []
+    cons = wf.get('consensus_full') or {}
+    if base.get('n_trades'):
+        wr_free = 100.0 / (1.0 + base.get('_rr', 2.5))
+        lines.append('1. Текущий конфиг: винрейт %s%% — ниже порога безубытка (%.1f%% при RR 2.5)' % (
+            base.get('win_rate'), 28.6))
+        lines.append('   даже без комиссий; с издержками порог ~%.0f%% (стоимость круга до %.2fR).' % (
+            max((x['wr_needed'] for x in costs), default=45.0),
+            max((x['cost_r'] for x in costs), default=0.45)))
+        lines.append('   Итог: %s%% времени/депо — минус, исполнение само по себе корректно.' % base.get('net_pnl_pct'))
+    if wf.get('oos_total'):
+        c, d = wf['oos_total']['sum_R_total'], wf['oos_total']['sum_R_default']
+        lines.append('2. Walk-forward OOS: ΣR=%s против %s у базового — %s.' % (
+            c, d, 'лучше, но не плюс' if (c or 0) < 0 else 'плюс!'))
+    if cons:
+        lines.append('3. Consensus-параметры `%s`: всю историю N=%s, ΣR=%s, минус-месяцы %s.' % (
+            json.dumps(wf.get('consensus', {})), cons.get('n'), cons.get('sum_R'),
+            cons.get('months_pos')))
+    aucs = [f.get('auc') for f in (es.get('cv') or []) if f.get('auc') is not None]
+    if aucs:
+        lines.append('4. ML-скан: OOS AUC %.2f–%.2f — %s.' % (
+            min(aucs), max(aucs),
+            'предсказательной силы у текущих признаков входа нет' if max(aucs) < 0.55
+            else 'слабая предсказательная сила — проверить фильтр p>0.5'))
+    lines.append('5. Решение: не включать текущую стратегию на реальные деньги.')
+    lines.append('   План: другой вход/выход (старший ТФ, трейлинг, шорт-байс), каждая идея —')
+    lines.append('   через run_all.py до включения; только OOS-плюс + положительное большинство месяцев.')
+    return '\n'.join(lines)
 
 
 if __name__ == '__main__':

@@ -1,258 +1,377 @@
 {
- "n_trades": 136,
+ "n_trades": 2471,
  "cv": [
   {
    "fold": 0,
-   "n_test": 46,
-   "auc": 0.298,
-   "acc": 0.652,
-   "wr_base": 0.283,
-   "wr_p05": 0.2,
-   "R_base": -0.0,
-   "R_p05": -0.11,
-   "n_p05": 5
+   "n_test": 824,
+   "auc": 0.52,
+   "acc": 0.807,
+   "wr_base": 0.193,
+   "wr_p05": null,
+   "R_base": -0.359,
+   "R_p05": 0.0,
+   "n_p05": 0
   },
   {
    "fold": 1,
-   "n_test": 45,
-   "auc": 0.304,
-   "acc": 0.422,
-   "wr_base": 0.178,
-   "wr_p05": 0.091,
-   "R_base": -0.394,
-   "R_p05": -0.743,
-   "n_p05": 22
+   "n_test": 824,
+   "auc": 0.497,
+   "acc": 0.816,
+   "wr_base": 0.182,
+   "wr_p05": 0.0,
+   "R_base": -0.355,
+   "R_p05": -0.579,
+   "n_p05": 2
   },
   {
    "fold": 2,
-   "n_test": 45,
-   "auc": 0.355,
-   "acc": 0.644,
-   "wr_base": 0.133,
-   "wr_p05": 0.083,
-   "R_base": -0.617,
-   "R_p05": -0.678,
-   "n_p05": 12
+   "n_test": 823,
+   "auc": 0.506,
+   "acc": 0.796,
+   "wr_base": 0.204,
+   "wr_p05": null,
+   "R_base": -0.29,
+   "R_p05": 0.0,
+   "n_p05": 0
   }
  ],
  "by_hour": [
   {
    "bucket": 0,
-   "n": 43,
-   "win_rate": 23.3,
-   "avg_R": -0.103,
-   "sum_R": -4.42
+   "n": 990,
+   "win_rate": 18.6,
+   "avg_R": -0.339,
+   "sum_R": -335.43
   },
   {
    "bucket": 1,
-   "n": 38,
-   "win_rate": 13.2,
-   "avg_R": -0.667,
-   "sum_R": -25.36
+   "n": 493,
+   "win_rate": 22.5,
+   "avg_R": -0.227,
+   "sum_R": -111.99
   },
   {
    "bucket": 2,
-   "n": 25,
-   "win_rate": 36.0,
-   "avg_R": 0.169,
-   "sum_R": 4.24
+   "n": 251,
+   "win_rate": 20.3,
+   "avg_R": -0.304,
+   "sum_R": -76.26
   },
   {
    "bucket": 3,
-   "n": 13,
-   "win_rate": 23.1,
-   "avg_R": -0.136,
-   "sum_R": -1.77
+   "n": 167,
+   "win_rate": 22.8,
+   "avg_R": -0.245,
+   "sum_R": -40.87
   },
   {
    "bucket": 4,
-   "n": 13,
+   "n": 115,
+   "win_rate": 18.3,
+   "avg_R": -0.386,
+   "sum_R": -44.37
+  },
+  {
+   "bucket": 5,
+   "n": 61,
+   "win_rate": 13.1,
+   "avg_R": -0.611,
+   "sum_R": -37.26
+  },
+  {
+   "bucket": 6,
+   "n": 56,
+   "win_rate": 23.2,
+   "avg_R": -0.313,
+   "sum_R": -17.54
+  },
+  {
+   "bucket": 7,
+   "n": 54,
+   "win_rate": 11.1,
+   "avg_R": -0.644,
+   "sum_R": -34.75
+  },
+  {
+   "bucket": 8,
+   "n": 50,
+   "win_rate": 24.0,
+   "avg_R": -0.184,
+   "sum_R": -9.19
+  },
+  {
+   "bucket": 9,
+   "n": 41,
+   "win_rate": 12.2,
+   "avg_R": -0.645,
+   "sum_R": -26.43
+  },
+  {
+   "bucket": 10,
+   "n": 27,
+   "win_rate": 11.1,
+   "avg_R": -0.454,
+   "sum_R": -12.26
+  },
+  {
+   "bucket": 11,
+   "n": 34,
+   "win_rate": 17.6,
+   "avg_R": -0.098,
+   "sum_R": -3.33
+  },
+  {
+   "bucket": 12,
+   "n": 30,
+   "win_rate": 16.7,
+   "avg_R": -0.613,
+   "sum_R": -18.38
+  },
+  {
+   "bucket": 13,
+   "n": 22,
+   "win_rate": 13.6,
+   "avg_R": -0.391,
+   "sum_R": -8.6
+  },
+  {
+   "bucket": 14,
+   "n": 17,
+   "win_rate": 17.6,
+   "avg_R": -0.521,
+   "sum_R": -8.86
+  },
+  {
+   "bucket": 15,
+   "n": 7,
+   "win_rate": 14.3,
+   "avg_R": -0.601,
+   "sum_R": -4.21
+  },
+  {
+   "bucket": 16,
+   "n": 8,
+   "win_rate": 25.0,
+   "avg_R": -0.28,
+   "sum_R": -2.24
+  },
+  {
+   "bucket": 17,
+   "n": 12,
+   "win_rate": 8.3,
+   "avg_R": -1.113,
+   "sum_R": -13.35
+  },
+  {
+   "bucket": 18,
+   "n": 6,
    "win_rate": 0.0,
-   "avg_R": -1.072,
-   "sum_R": -13.94
+   "avg_R": -1.159,
+   "sum_R": -6.95
+  },
+  {
+   "bucket": 19,
+   "n": 4,
+   "win_rate": 0.0,
+   "avg_R": -1.05,
+   "sum_R": -4.2
   },
   {
    "bucket": 20,
-   "n": 3,
+   "n": 2,
    "win_rate": 0.0,
-   "avg_R": -0.959,
-   "sum_R": -2.88
+   "avg_R": -1.306,
+   "sum_R": -2.61
   },
   {
    "bucket": 21,
+   "n": 4,
+   "win_rate": 0.0,
+   "avg_R": -0.731,
+   "sum_R": -2.92
+  },
+  {
+   "bucket": 22,
    "n": 1,
    "win_rate": 0.0,
-   "avg_R": -1.394,
-   "sum_R": -1.39
+   "avg_R": -1.317,
+   "sum_R": -1.32
+  },
+  {
+   "bucket": 23,
+   "n": 19,
+   "win_rate": 21.1,
+   "avg_R": -0.217,
+   "sum_R": -4.12
   }
  ],
  "by_atr": [
   {
    "bucket": "atr_0.10-0.20",
-   "n": 97,
-   "win_rate": 20.6,
-   "avg_R": -0.292,
-   "sum_R": -28.35
+   "n": 1778,
+   "win_rate": 18.4,
+   "avg_R": -0.403,
+   "sum_R": -717.09
   },
   {
    "bucket": "atr_0.20-0.35",
-   "n": 37,
-   "win_rate": 18.9,
-   "avg_R": -0.403,
-   "sum_R": -14.92
+   "n": 568,
+   "win_rate": 21.5,
+   "avg_R": -0.171,
+   "sum_R": -97.14
   },
   {
    "bucket": "atr_>=0.35",
-   "n": 2,
-   "win_rate": 0.0,
-   "avg_R": -1.126,
-   "sum_R": -2.25
+   "n": 125,
+   "win_rate": 21.6,
+   "avg_R": -0.106,
+   "sum_R": -13.23
   }
  ],
  "by_vol": [
   {
    "bucket": "vol_2-4",
-   "n": 62,
-   "win_rate": 21.0,
-   "avg_R": -0.276,
-   "sum_R": -17.11
+   "n": 1156,
+   "win_rate": 20.2,
+   "avg_R": -0.298,
+   "sum_R": -344.54
   },
   {
    "bucket": "vol_<2",
-   "n": 29,
-   "win_rate": 17.2,
-   "avg_R": -0.395,
-   "sum_R": -11.44
+   "n": 245,
+   "win_rate": 13.5,
+   "avg_R": -0.514,
+   "sum_R": -126.05
   },
   {
    "bucket": "vol_>=4",
-   "n": 45,
-   "win_rate": 20.0,
-   "avg_R": -0.377,
-   "sum_R": -16.97
+   "n": 1070,
+   "win_rate": 19.7,
+   "avg_R": -0.334,
+   "sum_R": -356.86
   }
  ],
  "by_side": [
   {
    "bucket": "long",
-   "n": 31,
-   "win_rate": 12.9,
-   "avg_R": -0.766,
-   "sum_R": -23.74
+   "n": 1337,
+   "win_rate": 20.0,
+   "avg_R": -0.32,
+   "sum_R": -428.49
   },
   {
    "bucket": "short",
-   "n": 105,
-   "win_rate": 21.9,
-   "avg_R": -0.207,
-   "sum_R": -21.78
+   "n": 1134,
+   "win_rate": 18.4,
+   "avg_R": -0.352,
+   "sum_R": -398.96
   }
  ],
  "by_symbol": [
   {
    "bucket": "ADA",
-   "n": 4,
-   "win_rate": 25.0,
-   "avg_R": -0.42,
-   "sum_R": -1.68
+   "n": 265,
+   "win_rate": 19.6,
+   "avg_R": -0.301,
+   "sum_R": -79.86
   },
   {
    "bucket": "APT",
-   "n": 7,
-   "win_rate": 0.0,
-   "avg_R": -1.341,
-   "sum_R": -9.39
+   "n": 233,
+   "win_rate": 19.7,
+   "avg_R": -0.353,
+   "sum_R": -82.2
   },
   {
    "bucket": "ARB",
-   "n": 13,
-   "win_rate": 15.4,
-   "avg_R": -0.435,
-   "sum_R": -5.65
+   "n": 308,
+   "win_rate": 19.8,
+   "avg_R": -0.312,
+   "sum_R": -96.15
   },
   {
    "bucket": "AVAX",
-   "n": 8,
-   "win_rate": 25.0,
-   "avg_R": -0.322,
-   "sum_R": -2.58
+   "n": 138,
+   "win_rate": 19.6,
+   "avg_R": -0.303,
+   "sum_R": -41.75
   },
   {
    "bucket": "BNB",
-   "n": 4,
-   "win_rate": 0.0,
-   "avg_R": -0.833,
-   "sum_R": -3.33
+   "n": 17,
+   "win_rate": 5.9,
+   "avg_R": -0.777,
+   "sum_R": -13.21
   },
   {
    "bucket": "BTC",
-   "n": 8,
-   "win_rate": 12.5,
-   "avg_R": -0.458,
-   "sum_R": -3.66
+   "n": 26,
+   "win_rate": 19.2,
+   "avg_R": -0.413,
+   "sum_R": -10.73
   },
   {
    "bucket": "DOGE",
-   "n": 8,
-   "win_rate": 37.5,
-   "avg_R": -0.003,
-   "sum_R": -0.02
+   "n": 62,
+   "win_rate": 16.1,
+   "avg_R": -0.433,
+   "sum_R": -26.87
   },
   {
    "bucket": "ETH",
-   "n": 9,
-   "win_rate": 22.2,
-   "avg_R": -0.23,
-   "sum_R": -2.07
+   "n": 72,
+   "win_rate": 13.9,
+   "avg_R": -0.507,
+   "sum_R": -36.52
   },
   {
    "bucket": "LINK",
-   "n": 5,
-   "win_rate": 20.0,
-   "avg_R": -0.29,
-   "sum_R": -1.45
+   "n": 99,
+   "win_rate": 20.2,
+   "avg_R": -0.284,
+   "sum_R": -28.15
   },
   {
    "bucket": "NEAR",
-   "n": 19,
-   "win_rate": 26.3,
-   "avg_R": -0.069,
-   "sum_R": -1.31
+   "n": 466,
+   "win_rate": 20.2,
+   "avg_R": -0.286,
+   "sum_R": -133.36
   },
   {
    "bucket": "OP",
-   "n": 15,
-   "win_rate": 20.0,
-   "avg_R": -0.475,
-   "sum_R": -7.13
+   "n": 267,
+   "win_rate": 18.4,
+   "avg_R": -0.424,
+   "sum_R": -113.11
   },
   {
    "bucket": "SEI",
-   "n": 3,
-   "win_rate": 33.3,
-   "avg_R": 0.72,
-   "sum_R": 2.16
+   "n": 142,
+   "win_rate": 23.2,
+   "avg_R": -0.174,
+   "sum_R": -24.76
   },
   {
    "bucket": "SOL",
-   "n": 14,
-   "win_rate": 21.4,
-   "avg_R": -0.141,
-   "sum_R": -1.97
+   "n": 103,
+   "win_rate": 17.5,
+   "avg_R": -0.433,
+   "sum_R": -44.57
   },
   {
    "bucket": "SUI",
-   "n": 8,
-   "win_rate": 25.0,
-   "avg_R": -0.061,
-   "sum_R": -0.49
+   "n": 186,
+   "win_rate": 20.4,
+   "avg_R": -0.303,
+   "sum_R": -56.37
   },
   {
    "bucket": "XRP",
-   "n": 11,
-   "win_rate": 9.1,
-   "avg_R": -0.631,
-   "sum_R": -6.94
+   "n": 87,
+   "win_rate": 14.9,
+   "avg_R": -0.458,
+   "sum_R": -39.84
   }
  ]
 }
