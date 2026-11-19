@@ -1,0 +1,61 @@
+{
+ "updated": "2026-11-19",
+ "journal": "research/LOG.md",
+ "verdict": "Устойчивого универсального эджа нет — резкие деньги OFF, торгуем только paper",
+ "candidates": [
+  {
+   "symbol": "APTUSDT",
+   "idea": "15m mean-reversion (RSI5)",
+   "is": "+15.2R / 154 сд",
+   "oos": "+16.5R / 83 сд",
+   "months": "3/3 OOS-месяцев в плюсе",
+   "fees": "выживает при полных (maker+taker)",
+   "status": "кандидат на paper-обкатку"
+  },
+  {
+   "symbol": "XRPUSDT",
+   "idea": "1h mean-reversion (VWAP)",
+   "is": "+11.4R / 107 сд",
+   "oos": "+16.4R / 56 сд",
+   "months": "3/3",
+   "fees": "выживает при full",
+   "status": "кандидат на paper-обкатку"
+  },
+  {
+   "symbol": "SOLUSDT",
+   "idea": "1h mean-reversion (VWAP)",
+   "is": "+5.0R / 86 сд",
+   "oos": "+13.4R / 27 сд",
+   "months": "2/3",
+   "fees": "выживает при maker-maker",
+   "status": "наблюдение"
+  },
+  {
+   "symbol": "BTCUSDT",
+   "idea": "15m impulse + pullback",
+   "is": "+4.2R / 50 сд",
+   "oos": "+6.8R / 24 сд",
+   "months": "2/3",
+   "fees": "mm4+",
+   "status": "наблюдение"
+  },
+  {
+   "symbol": "ВСЕ 15",
+   "idea": "15m impulse+pullback (комбо)",
+   "is": "+26.9R",
+   "oos": "+6.4R / 297 сд",
+   "months": "см. combo.md",
+   "fees": "выживает при full (0.02R/сд)",
+   "status": "наблюдение"
+  }
+ ],
+ "leadlag": "За битком в реальном времени идёт только SOL: лаг 1 мин, corr 0.81, R² 0.65. Остальные альты отваливаются сразу. На 1m не торгуемо (задержка съедает) — копим стакан loblog",
+ "collecting": "loblog: live-стакан BTC/SOL/BNB/XRP каждые 10с (дисбаланс, спред, VWAP уровней, дельта сделок) — датасет для микро-бэктестов",
+ "checked": "294 портфельных + 1608 per-symbol+167 TF вариантов, walk-forward, ML (AUC 0.50), funding, lead-lag — все протоколы IS 120д → OOS 60д",
+ "next": [
+  "live paper-обкатка кандидатов APT/XRP (параллельный порт)",
+  "микро-бэктесты на собранном стакане (loblog)",
+  "расширение данных: +2 недели 1m усилят или убьют кандидатов",
+  "комбинации семейств (combo.py), рандомные ансамбли"
+ ]
+}

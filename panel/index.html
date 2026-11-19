@@ -49,6 +49,9 @@ a { color:#58a6ff; text-decoration:none; }
 <th>#</th><th>Символ</th><th>Side</th><th>Вход</th><th>Выход</th><th>PnL</th><th>Причина</th><th>Минут</th>
 </tr></thead><tbody id="hist"></tbody></table>
 
+<h2>🔬 Research — поиск эджа</h2>
+<div id="research" class="small">загрузка…</div>
+
 <p class="small">снапшот состояния: <span id="snap">—</span> (обновляется там, где работает бот) •
 цены — запросы браузера к публичному Bybit v5 • Pages-деплой</p>
 
@@ -152,6 +155,27 @@ function render(s) {
       <td class="${t.pnl >= 0 ? 'up' : 'dn'}">${(t.pnl >= 0 ? '+' : '')}${t.pnl}</td>
       <td>${t.reason || ''}</td><td>${mins}</td></tr>`;
   }).join('') || '<tr><td colspan="8" class="small">пока нет закрытых сделок</td></tr>';
+
+  const R = s.research;
+  const rel = document.getElementById('research');
+  if (R) {
+    let h = '<div><b>Вердикт:</b> ' + R.verdict + '</div>';
+    if (R.candidates && R.candidates.length) {
+      h += '<table style="margin-top:8px"><thead><tr><th>Монета</th><th>Идея</th><th>IS</th><th>OOS</th><th>Месяцы</th><th>Комиссии</th><th>Статус</th></tr></thead><tbody>';
+      for (const c of R.candidates)
+        h += '<tr><td>' + c.symbol + '</td><td>' + c.idea + '</td><td class="up">' + c.is +
+             '</td><td class="up">' + c.oos + '</td><td>' + (c.months || '') + '</td><td>' +
+             (c.fees || '') + '</td><td>' + (c.status || '') + '</td></tr>';
+      h += '</tbody></table>';
+    }
+    if (R.leadlag) h += '<div style="margin-top:6px"><b>Гонка за битком:</b> ' + R.leadlag + '</div>';
+    if (R.collecting) h += '<div><b>Собираем:</b> ' + R.collecting + '</div>';
+    if (R.next && R.next.length) h += '<div style="margin-top:4px"><b>Дальше:</b> ' + R.next.join(' • ') + '</div>';
+    if (R.updated) h += '<div style="margin-top:4px">обновлено: ' + R.updated + ' • журнал: ' + (R.journal || 'research/LOG.md') + '</div>';
+    rel.innerHTML = h;
+  } else {
+    rel.textContent = 'research-метаданные отсутствуют в снапшоте';
+  }
 }
 
 async function tick() {

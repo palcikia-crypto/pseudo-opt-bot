@@ -51,6 +51,14 @@ def snapshot():
             halted_live = bool(json.load(f).get('halted', False))
     except Exception:
         pass
+    research = None
+    rmeta = os.path.join(REPO, 'research', 'results', 'panel_meta.json')
+    if os.path.exists(rmeta):
+        try:
+            with open(rmeta) as f:
+                research = json.load(f)
+        except Exception:
+            research = None
     return {
         'mode': 'paper',
         'equity': round(equity, 2),
@@ -70,6 +78,7 @@ def snapshot():
                         if mtime else None,
         'symbols_raw': _raw_symbols(),
         'trades': trades,
+        'research': research,
     }
 
 
