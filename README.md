@@ -15,6 +15,8 @@
 | `trader.py` | postOnly вход с таймаутом, биржевые SL/TP, безубыток, тайм-стоп |
 | `main.py` | asyncio-цикл: сигналы на закрытии 1m, монитор каждые 2 с |
 | `paper.py` | live paper-trading на публичных данных Bybit — ключи НЕ нужны |
+| `dashboard.py` | веб-панель: equity, PnL, открытые позиции (live-цены Bybit), история сделок, WR/PF, статус стоп-аута |
+| `run_bot.sh` | супервизор-цикл: бот + панель с автоперезапуском |
 | `tests/local_check.py` | офлайн-проверка математики без сети |
 
 ## Быстрый старт (Ubuntu VPS)
@@ -27,6 +29,14 @@ cp .env.example .env   # заполнить BYBIT_API_KEY/SECRET, TESTNET=true
 python tests/local_check.py
 python main.py
 ```
+
+## Веб-панель
+```bash
+sh run_bot.sh                 # бот + панель http://127.0.0.1:8080
+DASH_HOST=0.0.0.0 sh run_bot.sh   # на VPS: панель по IP (закройте фаерволом/SSH-туннелем!)
+```
+Панель (`/`) обновляется каждые 3 с, JSON-эндпоинты: `/api/summary`, `/api/health`.
+Отдельно (без бота, только чтение состояния): `python dashboard.py`.
 
 ## Paper-режим (реальные данные, без ключей)
 ```bash

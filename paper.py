@@ -218,6 +218,11 @@ async def _load_with_retry(ex, attempts=3):
 
 async def run_forever():
     from exchange import PaperExchange
+    dash_runner = None
+    if os.getenv('DASH_PORT'):
+        import dashboard
+        dash_runner, host, port = await dashboard.start_dashboard_async()
+        print(f"[DASH] панель: http://{host}:{port}")
     ex = PaperExchange()
     try:
         await _load_with_retry(ex)
