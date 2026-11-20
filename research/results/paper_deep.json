@@ -83,7 +83,7 @@
  ],
  "cand": {
   "APT_mr_rsi5": {
-   "last_bar_ts": 1795193340000,
+   "last_bar_ts": 1795193820000,
    "last_sig_ts": 1795192200000,
    "pending": null,
    "pos": null,
@@ -105,7 +105,7 @@
    }
   },
   "XRP_mr_vwap": {
-   "last_bar_ts": 1795193340000,
+   "last_bar_ts": 1795193820000,
    "last_sig_ts": 1795186800000,
    "pending": null,
    "pos": null,
@@ -127,7 +127,7 @@
    }
   },
   "SOL_mr_vwap": {
-   "last_bar_ts": 1795193340000,
+   "last_bar_ts": 1795193820000,
    "last_sig_ts": 1795186800000,
    "pending": null,
    "pos": null,
@@ -149,7 +149,7 @@
    }
   },
   "BTC_impulse+pullback": {
-   "last_bar_ts": 1795193340000,
+   "last_bar_ts": 1795193820000,
    "last_sig_ts": 1795192200000,
    "pending": null,
    "pos": null,
@@ -171,9 +171,9 @@
    }
   },
   "SEI_doji_exhaust": {
-   "last_bar_ts": 1795193340000,
+   "last_bar_ts": 1795193820000,
    "last_sig_ts": 1795192200000
   }
  },
- "updated_utc": "2026-11-20T16:49:33.762841+00:00"
+ "updated_utc": "2026-11-20T16:57:03.796760+00:00"
 }

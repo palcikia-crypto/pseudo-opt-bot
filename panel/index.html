@@ -416,17 +416,18 @@ function renderResearch(R) {
   }
   if (R.live) {
     const lv = R.live;
-    let lh = `<h2 class="sec" style="margin-top:22px">🟢 Live-обкатка · paper_deep</h2><div class="live-grid">`;
+    let lh = `<h2 class="sec" style="margin-top:22px">🟢 Live-обкатка · paper_deep</h2>
+      <div class="meta-rows"><span>perp-сделки Bybit: биржевые SL/TP; открытая позиция видна здесь пока не закроется — закрытая навсегда уходит в счётчики сделок</span></div><div class="live-grid">`;
     for (const cd of Object.keys(lv.cand || {})) {
       const s2 = (lv.cand[cd] || {}).summary;
       const on = s2 && (s2.open || s2.pending);
       lh += `<div class="live-card${on ? ' on' : ''}">
         <div class="t"><span class="badge ${on ? 'ok' : 'warn'}" style="padding:3px 9px"><span class="led"></span>${cd}</span></div>
         <div class="st">${s2
-          ? `<b>${s2.n}</b> сд · <b class="${s2.sum_R >= 0 ? 'up' : 'dn'}">${s2.sum_R >= 0 ? '+' : ''}${s2.sum_R}R</b> · wr <b>${s2.win_rate}%</b>`
-            + (s2.n_shadow ? `<br>бэктест-тень: <b>${s2.sum_R_shadow >= 0 ? '+' : ''}${s2.sum_R_shadow}R</b> / ${s2.n_shadow}` : '')
+          ? `<b>${s2.n}</b> сд · <b class="${s2.sum_R >= 0 ? 'up' : 'dn'}">${s2.sum_R >= 0 ? '+' : ''}${s2.sum_R}R</b> · wr <b>${s2.win_rate}%</b>${s2.n < 20 ? ` <span class="dim">⚠️ мало сделок (${s2.n}) — wr не статистичен</span>` : ''}`
+            + (s2.n_shadow ? `<br>бэктест-тень 1-в-1: <b>${s2.sum_R_shadow >= 0 ? '+' : ''}${s2.sum_R_shadow}R</b> / ${s2.n_shadow}` : '')
           : 'сделок пока нет — ждём сигнал'}</div>
-        <div class="st">${s2 && s2.open ? '📈 <b class="up">позиция открыта</b>' : ''}${s2 && s2.pending ? '⏳ ждём вход' : ''}</div>
+        <div class="st">${s2 && s2.open ? '📈 <b class="up">открыта позиция сейчас</b>' : (s2 && s2.pending ? '⏳ ждём вход' : (s2 && s2.n ? '✔Ҵ открытых нет — последняя закрылась, ждём новый сигнал' : ''))}</div>
       </div>`;
     }
     lh += '</div>';
@@ -473,7 +474,7 @@ function renderResearch(R) {
       const on = !!v.open_pos;
       h += `<div class="live-card${on ? ' on' : ''}">
         <div class="t"><span class="badge ${on ? 'ok' : 'warn'}" style="padding:3px 9px"><span class="led"></span>${k}</span></div>
-        <div class="st">${v.n ? `<b>${v.n}</b> контрактов · wr <b>${v.wr}%</b> · <b class="${v.pnl >= 0 ? 'up' : 'dn'}">${v.pnl >= 0 ? '+' : ''}${v.pnl}$</b>` : 'сделок пока нет — ждём сигнал'}${v.status ? `<br><span class="dim">${v.status}</span>` : ''}</div>
+        <div class="st">${v.open_pos ? '🔴 <b class="up">контракт ОТКРЫТ сейчас — ждём экспирацию</b><br>' : ''}${v.n ? `<b>${v.n}</b> контрактов · wr <b>${v.wr}%</b>${v.n < 20 ? ` <span class="dim">⚠️ мало (${v.n})</span>` : ''} · <b class="${v.pnl >= 0 ? 'up' : 'dn'}">${v.pnl >= 0 ? '+' : ''}${v.pnl}$</b>` : (v.open_pos ? '' : 'контрактов нет — демон днем ждёт сигнал, откроет на ближайшем')}${v.status ? `<br><span class="dim">${v.status}</span>` : ''}</div>
       </div>`;
     }
     h += `</div><div class="meta-rows"><span>equity опцион-счёта: <b>$${opq.equity}</b> (старт $1000, ставка 1%) · обновлено ${String(opq.updated).slice(0, 16).replace('T', ' ')} UTC</span></div>`;

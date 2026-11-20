@@ -1,6 +1,6 @@
 {
- "measured": "2026-11-20T11:12:58.219403+00:00",
- "gen": 33,
+ "measured": "2026-11-20T16:52:19.874585+00:00",
+ "gen": 58,
  "pop": 30,
  "hall": [
   {
@@ -25,43 +25,20 @@
    },
    "val": {
     "n": 23,
-    "sum_bp": -714.4,
-    "wr_vanilla": 17.4,
+    "sum_bp": -833.8,
+    "wr_vanilla": 13.0,
     "wr_digital": 65.2,
     "dig_wins": 15
    },
-   "prem_bp": 85.45
+   "prem_bp": 85.73
   }
  ],
- "slippage": {
-  "XRPUSDT": {
-   "median_spread_bps": 1.04,
-   "p90_spread_bps": 1.05,
-   "mean_imb25": 0.011,
-   "n": 1737
-  },
-  "SOLUSDT": {
-   "median_spread_bps": 1.37,
-   "p90_spread_bps": 1.38,
-   "mean_imb25": 0.011,
-   "n": 1737
-  },
-  "BTCUSDT": {
-   "median_spread_bps": 0.02,
-   "p90_spread_bps": 0.02,
-   "mean_imb25": 0.038,
-   "n": 1737
-  },
-  "BNBUSDT": {
-   "median_spread_bps": 0.17,
-   "p90_spread_bps": 0.17,
-   "mean_imb25": 0.05,
-   "n": 1737
-  }
- },
+ "slippage": {},
  "shadow": {
-  "trades": 0,
-  "matched": 0,
-  "mean_abs_R_diff": null
+  "trades": 4,
+  "matched": 3,
+  "match_rate_pct": 75.0,
+  "mean_abs_R_diff": 0.04,
+  "max_abs_R_diff": 0.16
  }
 }

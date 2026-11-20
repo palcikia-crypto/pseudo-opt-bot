@@ -68,33 +68,32 @@
   "ML AUC 0.61 — исследовать длинные горизонты (час+), где комиссии прощают слабый сигнал"
  ],
  "evo": {
-  "gen": 32,
+  "gen": 62,
   "pop": 40,
   "best": "APTUSDT mr_rsi5 tf_trail | train +62.7R/n=307 | val +10.3R/n=19 | opt-no",
   "shadow": {
-   "trades": 0,
-   "matched": 0,
-   "mean_abs_R_diff": null
+   "trades": 4,
+   "matched": 3,
+   "match_rate_pct": 75.0,
+   "mean_abs_R_diff": 0.04,
+   "max_abs_R_diff": 0.16
   },
-  "slippage": {
-   "XRPUSDT": 1.04,
-   "SOLUSDT": 1.37,
-   "BTCUSDT": 0.02,
-   "BNBUSDT": 0.17
-  }
+  "slippage": {}
  },
  "opt": {
-  "gen": 33,
+  "gen": 58,
   "pop": 30,
-  "best": "APTUSDT 15m mr_rsi5 exp60m | train -17772bp/n=378 | val -714bp/n=23 | нет подтверждения",
+  "best": "APTUSDT 15m mr_rsi5 exp60m | train -17772bp/n=378 | val -834bp/n=23 | нет подтверждения",
   "shadow": {
-   "trades": 0,
-   "matched": 0,
-   "mean_abs_R_diff": null
+   "trades": 4,
+   "matched": 3,
+   "match_rate_pct": 75.0,
+   "mean_abs_R_diff": 0.04,
+   "max_abs_R_diff": 0.16
   }
  },
  "optpaper": {
-  "updated": "2026-11-20T16:49:30Z",
+  "updated": "2026-11-20T16:56:59Z",
   "equity": 1000.0,
   "mode": "виртуальный бинарный опцион (paper): payout +85%/-100%, экспирация фикс; премия модельная k·σ√E; НЕ биржевой опцион",
   "data": "цены Bybit USDT-perp 1m (fetchOHLCV), TF-агрегация 1-в-1 с бэком",

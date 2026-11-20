@@ -1,6 +1,6 @@
 {
- "measured": "2026-11-20T10:45:22.710178+00:00",
- "gen": 32,
+ "measured": "2026-11-20T16:53:52.094972+00:00",
+ "gen": 62,
  "pop": 40,
  "hall": [
   {
@@ -181,15 +181,15 @@
     "months_pos": 7
    },
    "val": {
-    "n": 11,
-    "sum_R": 5.84,
-    "wr": 72.7,
+    "n": 10,
+    "sum_R": 8.99,
+    "wr": 80.0,
     "months_pos": 1
    },
    "option": {
-    "premium_bp": 948.2,
-    "move_bp": 227.3,
-    "edge_bp": -721.0,
+    "premium_bp": 920.7,
+    "move_bp": 279.7,
+    "edge_bp": -641.0,
     "verdict": "no-for-options"
    }
   },
@@ -219,49 +219,26 @@
     "months_pos": 7
    },
    "val": {
-    "n": 13,
-    "sum_R": 6.86,
-    "wr": 69.2,
+    "n": 12,
+    "sum_R": 9.96,
+    "wr": 75.0,
     "months_pos": 1
    },
    "option": {
-    "premium_bp": 902.4,
-    "move_bp": 221.1,
-    "edge_bp": -681.3,
+    "premium_bp": 887.6,
+    "move_bp": 265.2,
+    "edge_bp": -622.4,
     "verdict": "no-for-options"
    }
   }
  ],
- "slippage": {
-  "XRPUSDT": {
-   "median_spread_bps": 1.04,
-   "p90_spread_bps": 1.05,
-   "mean_imb25": 0.011,
-   "n": 1737
-  },
-  "SOLUSDT": {
-   "median_spread_bps": 1.37,
-   "p90_spread_bps": 1.38,
-   "mean_imb25": 0.011,
-   "n": 1737
-  },
-  "BTCUSDT": {
-   "median_spread_bps": 0.02,
-   "p90_spread_bps": 0.02,
-   "mean_imb25": 0.038,
-   "n": 1737
-  },
-  "BNBUSDT": {
-   "median_spread_bps": 0.17,
-   "p90_spread_bps": 0.17,
-   "mean_imb25": 0.05,
-   "n": 1737
-  }
- },
+ "slippage": {},
  "shadow": {
-  "trades": 0,
-  "matched": 0,
-  "mean_abs_R_diff": null
+  "trades": 4,
+  "matched": 3,
+  "match_rate_pct": 75.0,
+  "mean_abs_R_diff": 0.04,
+  "max_abs_R_diff": 0.16
  },
  "evals": 1200
 }
