@@ -51,6 +51,10 @@ CANDIDATES = [
          idea='impulse+pullback',
          exit=deep.DEEP_EXITS['tf_wide'],
          is_sum_R=4.16, oos_sum_R=6.80),
+    dict(key='SEI_doji_exhaust', symbol='SEIUSDT', tf_minutes=15,
+         idea='micro2:doji_exhaust',
+         exit=deep.DEEP_EXITS['m1_trail'],
+         is_sum_R=15.7, oos_sum_R=10.3),
 ]
 
 
@@ -244,12 +248,18 @@ def process_candidate(c, bars, ts_now, st):
         return
     ld = build_lab(c['symbol'], bars, minutes)
     M = lab.masks(ld, MASK_CFG)
+    idea_name = c['idea']
+    if c['idea'].startswith('micro2:'):
+        from research.micro2 import micro2_families
+        M.update(micro2_families(ld, MASK_CFG))
+        idea_name = c['idea'].split(':', 1)[1]
+
     if '+' in c['idea']:
         a_name, b_name = c['idea'].split('+')
         la = np.logical_or(M[a_name][0], M[b_name][0])
         sa = np.logical_or(M[a_name][1], M[b_name][1])
     else:
-        la, sa = M[c['idea']]
+        la, sa = M[idea_name]
     i_close = closed_index(ld, minutes, ts_now)
     if i_close < 0:
         return

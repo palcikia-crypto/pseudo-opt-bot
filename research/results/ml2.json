@@ -1,0 +1,48 @@
+{
+ "measured": "2026-11-20T10:22:25.674830+00:00",
+ "features": [
+  "ret1",
+  "ret5",
+  "ret15",
+  "ret60",
+  "atr_pct",
+  "vol_ratio",
+  "squeeze",
+  "vw_dist",
+  "ema_dist",
+  "up_wick",
+  "low_wick",
+  "body_ratio",
+  "rsi5",
+  "sin_h",
+  "cos_h",
+  "btc_ret1",
+  "btc_atr",
+  "ret1440",
+  "dir_sign",
+  "vol_x_dir"
+ ],
+ "quality": {
+  "long": {
+   "auc": 0.6098,
+   "n_train": 513360,
+   "n_oos": 258480,
+   "tp_rate_oos": 0.095,
+   "prob_threshold": 0.1222
+  },
+  "short": {
+   "auc": 0.5981,
+   "n_train": 513360,
+   "n_oos": 258480,
+   "tp_rate_oos": 0.1102,
+   "prob_threshold": 0.134
+  }
+ },
+ "policy": {
+  "n": 41462,
+  "sum_R": -7604.67,
+  "wr": 21.3,
+  "margin_R": -0.1834,
+  "net_full_R": -7604.66
+ }
+}

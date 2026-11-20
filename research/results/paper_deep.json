@@ -2,21 +2,101 @@
  "trades": [],
  "cand": {
   "APT_mr_rsi5": {
-   "last_bar_ts": 1795142340000,
-   "last_sig_ts": 1795140900000
+   "last_bar_ts": 1795170180000,
+   "last_sig_ts": 1795153500000,
+   "pending": null,
+   "pos": {
+    "side": "short",
+    "entry": 0.40642189,
+    "sl_d": 0.01071156,
+    "sl": 0.41713345,
+    "tp": 0.37964299,
+    "atr1": 0.003570519119719067,
+    "entry_ts": 1795154460000,
+    "signal_ts": 1795153500000,
+    "tf_open_ts": 1795154400000,
+    "tf_bucket": 1795169700000,
+    "tf_h": 0.4086,
+    "tf_l": 0.4066,
+    "tf_last_close": 0.4068,
+    "tf_last_ts": 1795170180000,
+    "tf_done": 17,
+    "trail": null
+   }
   },
   "XRP_mr_vwap": {
-   "last_bar_ts": 1795142340000,
-   "last_sig_ts": 1795136400000
+   "last_bar_ts": 1795170180000,
+   "last_sig_ts": 1795140000000,
+   "pending": null,
+   "pos": {
+    "side": "short",
+    "entry": 0.95958779,
+    "sl_d": 0.019186,
+    "sl": 0.97877379,
+    "tp": 0.91162279,
+    "atr1": 0.011725763209826875,
+    "entry_ts": 1795143660000,
+    "signal_ts": 1795140000000,
+    "tf_open_ts": 1795143600000,
+    "tf_bucket": 1795168800000,
+    "tf_h": 0.9611,
+    "tf_l": 0.9553,
+    "tf_last_close": 0.9588,
+    "tf_last_ts": 1795170180000,
+    "tf_done": 7,
+    "trail": null
+   }
   },
   "SOL_mr_vwap": {
-   "last_bar_ts": 1795142340000,
-   "last_sig_ts": 1795136400000
+   "last_bar_ts": 1795170180000,
+   "last_sig_ts": 1795140000000,
+   "pending": null,
+   "pos": {
+    "side": "short",
+    "entry": 72.961882,
+    "sl_d": 1.4588,
+    "sl": 74.420682,
+    "tp": 69.314882,
+    "atr1": 0.9847046088457623,
+    "entry_ts": 1795143660000,
+    "signal_ts": 1795140000000,
+    "tf_open_ts": 1795143600000,
+    "tf_bucket": 1795168800000,
+    "tf_h": 72.21,
+    "tf_l": 71.78,
+    "tf_last_close": 71.87,
+    "tf_last_ts": 1795170180000,
+    "tf_done": 7,
+    "trail": null
+   }
   },
   "BTC_impulse+pullback": {
-   "last_bar_ts": 1795142340000,
-   "last_sig_ts": 1795140900000
+   "last_bar_ts": 1795170180000,
+   "last_sig_ts": 1795153500000,
+   "pending": null,
+   "pos": {
+    "side": "short",
+    "entry": 61901.96502,
+    "sl_d": 1345.01148513,
+    "sl": 63246.97650513,
+    "tp": 56521.91907948,
+    "atr1": 336.25287128318405,
+    "entry_ts": 1795154460000,
+    "signal_ts": 1795153500000,
+    "tf_open_ts": 1795154400000,
+    "tf_bucket": 1795169700000,
+    "tf_h": 61783.0,
+    "tf_l": 61628.3,
+    "tf_last_close": 61709.2,
+    "tf_last_ts": 1795170180000,
+    "tf_done": 17,
+    "trail": null
+   }
+  },
+  "SEI_doji_exhaust": {
+   "last_bar_ts": 1795170180000,
+   "last_sig_ts": 1795168800000
   }
  },
- "updated_utc": "2026-11-20T02:39:09.273730+00:00"
+ "updated_utc": "2026-11-20T10:23:47.004323+00:00"
 }
