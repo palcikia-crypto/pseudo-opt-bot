@@ -2,7 +2,7 @@
  "trades": [],
  "cand": {
   "APT_mr_rsi5": {
-   "last_bar_ts": 1795170180000,
+   "last_bar_ts": 1795171740000,
    "last_sig_ts": 1795153500000,
    "pending": null,
    "pos": {
@@ -15,17 +15,17 @@
     "entry_ts": 1795154460000,
     "signal_ts": 1795153500000,
     "tf_open_ts": 1795154400000,
-    "tf_bucket": 1795169700000,
-    "tf_h": 0.4086,
-    "tf_l": 0.4066,
-    "tf_last_close": 0.4068,
-    "tf_last_ts": 1795170180000,
-    "tf_done": 17,
+    "tf_bucket": 1795171500000,
+    "tf_h": 0.4111,
+    "tf_l": 0.4096,
+    "tf_last_close": 0.4097,
+    "tf_last_ts": 1795171740000,
+    "tf_done": 19,
     "trail": null
    }
   },
   "XRP_mr_vwap": {
-   "last_bar_ts": 1795170180000,
+   "last_bar_ts": 1795171740000,
    "last_sig_ts": 1795140000000,
    "pending": null,
    "pos": {
@@ -39,16 +39,16 @@
     "signal_ts": 1795140000000,
     "tf_open_ts": 1795143600000,
     "tf_bucket": 1795168800000,
-    "tf_h": 0.9611,
+    "tf_h": 0.968,
     "tf_l": 0.9553,
-    "tf_last_close": 0.9588,
-    "tf_last_ts": 1795170180000,
+    "tf_last_close": 0.9633,
+    "tf_last_ts": 1795171740000,
     "tf_done": 7,
     "trail": null
    }
   },
   "SOL_mr_vwap": {
-   "last_bar_ts": 1795170180000,
+   "last_bar_ts": 1795171740000,
    "last_sig_ts": 1795140000000,
    "pending": null,
    "pos": {
@@ -62,16 +62,16 @@
     "signal_ts": 1795140000000,
     "tf_open_ts": 1795143600000,
     "tf_bucket": 1795168800000,
-    "tf_h": 72.21,
+    "tf_h": 72.72,
     "tf_l": 71.78,
-    "tf_last_close": 71.87,
-    "tf_last_ts": 1795170180000,
+    "tf_last_close": 72.41,
+    "tf_last_ts": 1795171740000,
     "tf_done": 7,
     "trail": null
    }
   },
   "BTC_impulse+pullback": {
-   "last_bar_ts": 1795170180000,
+   "last_bar_ts": 1795171740000,
    "last_sig_ts": 1795153500000,
    "pending": null,
    "pos": {
@@ -84,19 +84,19 @@
     "entry_ts": 1795154460000,
     "signal_ts": 1795153500000,
     "tf_open_ts": 1795154400000,
-    "tf_bucket": 1795169700000,
-    "tf_h": 61783.0,
-    "tf_l": 61628.3,
-    "tf_last_close": 61709.2,
-    "tf_last_ts": 1795170180000,
-    "tf_done": 17,
+    "tf_bucket": 1795171500000,
+    "tf_h": 62264.2,
+    "tf_l": 62027.0,
+    "tf_last_close": 62043.2,
+    "tf_last_ts": 1795171740000,
+    "tf_done": 19,
     "trail": null
    }
   },
   "SEI_doji_exhaust": {
-   "last_bar_ts": 1795170180000,
-   "last_sig_ts": 1795168800000
+   "last_bar_ts": 1795171740000,
+   "last_sig_ts": 1795170600000
   }
  },
- "updated_utc": "2026-11-20T10:23:47.004323+00:00"
+ "updated_utc": "2026-11-20T10:49:59.481131+00:00"
 }

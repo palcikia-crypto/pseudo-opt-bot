@@ -1,0 +1,261 @@
+{
+ "gen": 32,
+ "hall": [
+  {
+   "fitness": 62.68,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.016,
+     "vol_mult": 0.9,
+     "exit": {
+      "sl_atr_mult": 3.3,
+      "trail_atr": 3.92,
+      "exit": "trail",
+      "sl_max_pct": 0.008,
+      "time_stop_min": 1240.0
+     }
+    }
+   },
+   "train": {
+    "n": 307,
+    "sum_R": 62.68,
+    "win_rate": 40.1,
+    "expectancy_R": 0.2042,
+    "profit_factor": 1.282,
+    "net_pnl": 779.23,
+    "months": 7,
+    "months_pos": 7,
+    "fitness": 62.68
+   },
+   "gen": 23
+  },
+  {
+   "fitness": 61.37,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.022,
+     "vol_mult": 1.14,
+     "exit": {
+      "sl_atr_mult": 2.78,
+      "trail_atr": 3.73,
+      "exit": "trail",
+      "sl_max_pct": 0.008,
+      "time_stop_min": 781.0
+     }
+    }
+   },
+   "train": {
+    "n": 309,
+    "sum_R": 61.37,
+    "win_rate": 39.8,
+    "expectancy_R": 0.1986,
+    "profit_factor": 1.275,
+    "net_pnl": 756.04,
+    "months": 7,
+    "months_pos": 7,
+    "fitness": 61.37
+   },
+   "gen": 21
+  },
+  {
+   "fitness": 59.98,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.019,
+     "vol_mult": 1.14,
+     "exit": {
+      "sl_atr_mult": 3.39,
+      "trail_atr": 3.73,
+      "exit": "trail",
+      "sl_max_pct": 0.008,
+      "time_stop_min": 781.0
+     }
+    }
+   },
+   "train": {
+    "n": 309,
+    "sum_R": 59.98,
+    "win_rate": 39.8,
+    "expectancy_R": 0.1941,
+    "profit_factor": 1.268,
+    "net_pnl": 732.17,
+    "months": 7,
+    "months_pos": 7,
+    "fitness": 59.98
+   },
+   "gen": 16
+  },
+  {
+   "fitness": 42.05,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.023,
+     "vol_mult": 0.94,
+     "exit": {
+      "sl_atr_mult": 2.84,
+      "trail_atr": 3.04,
+      "exit": "trail",
+      "sl_max_pct": 0.008,
+      "time_stop_min": 781.0
+     }
+    }
+   },
+   "train": {
+    "n": 319,
+    "sum_R": 42.05,
+    "win_rate": 38.9,
+    "expectancy_R": 0.1318,
+    "profit_factor": 1.192,
+    "net_pnl": 456.16,
+    "months": 7,
+    "months_pos": 7,
+    "fitness": 42.05
+   },
+   "gen": 15
+  },
+  {
+   "fitness": 38.93,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.03,
+     "vol_mult": 1.0,
+     "exit": {
+      "sl_atr_mult": 3.39,
+      "trail_atr": 2.87,
+      "exit": "trail",
+      "sl_max_pct": 0.032,
+      "time_stop_min": 480
+     }
+    }
+   },
+   "train": {
+    "n": 217,
+    "sum_R": 38.93,
+    "win_rate": 62.2,
+    "expectancy_R": 0.1794,
+    "profit_factor": 1.463,
+    "net_pnl": 455.67,
+    "months": 7,
+    "months_pos": 7,
+    "fitness": 38.93
+   },
+   "gen": 14
+  },
+  {
+   "fitness": 38.91,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.028,
+     "vol_mult": 0.97,
+     "exit": {
+      "sl_atr_mult": 3.39,
+      "trail_atr": 2.79,
+      "exit": "trail",
+      "sl_max_pct": 0.03,
+      "time_stop_min": 480
+     }
+    }
+   },
+   "train": {
+    "n": 221,
+    "sum_R": 38.91,
+    "win_rate": 61.5,
+    "expectancy_R": 0.1761,
+    "profit_factor": 1.456,
+    "net_pnl": 455.11,
+    "months": 7,
+    "months_pos": 7,
+    "fitness": 38.91
+   },
+   "gen": 10
+  },
+  {
+   "fitness": 36.48,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.025,
+     "vol_mult": 1.07,
+     "exit": {
+      "sl_atr_mult": 2.6,
+      "trail_atr": 2.23,
+      "exit": "trail",
+      "sl_max_pct": 0.045,
+      "time_stop_min": 1278.0
+     }
+    }
+   },
+   "train": {
+    "n": 258,
+    "sum_R": 42.56,
+    "win_rate": 59.7,
+    "expectancy_R": 0.165,
+    "profit_factor": 1.393,
+    "net_pnl": 504.09,
+    "months": 7,
+    "months_pos": 6,
+    "fitness": 36.48
+   },
+   "gen": 9
+  },
+  {
+   "fitness": 34.44857142857143,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.03,
+     "vol_mult": 1.22,
+     "exit": {
+      "sl_atr_mult": 2.67,
+      "trail_atr": 2.37,
+      "exit": "trail",
+      "sl_max_pct": 0.03,
+      "time_stop_min": 480
+     }
+    }
+   },
+   "train": {
+    "n": 256,
+    "sum_R": 40.19,
+    "win_rate": 59.4,
+    "expectancy_R": 0.157,
+    "profit_factor": 1.372,
+    "net_pnl": 468.25,
+    "months": 7,
+    "months_pos": 6,
+    "fitness": 34.44857142857143
+   },
+   "gen": 8
+  }
+ ]
+}

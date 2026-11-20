@@ -66,5 +66,21 @@
   "микро-бэктесты loblog (2 нед накопления)",
   "+2 нед 1m данных — пере-проверка",
   "ML AUC 0.61 — исследовать длинные горизонты (час+), где комиссии прощают слабый сигнал"
- ]
+ ],
+ "evo": {
+  "gen": 32,
+  "pop": 40,
+  "best": "APTUSDT mr_rsi5 tf_trail | train +62.7R/n=307 | val +10.3R/n=19 | opt-no",
+  "shadow": {
+   "trades": 0,
+   "matched": 0,
+   "mean_abs_R_diff": null
+  },
+  "slippage": {
+   "XRPUSDT": 1.04,
+   "SOLUSDT": 1.37,
+   "BTCUSDT": 0.02,
+   "BNBUSDT": 0.17
+  }
+ }
 }

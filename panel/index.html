@@ -433,6 +433,21 @@ function renderResearch(R) {
     if (lv.updated) h += `<div class="meta-rows"><span>демон: обновлено ${String(lv.updated).slice(0, 16).replace('T', ' ')} UTC</span></div>`;
     h += lh;
   }
+  if (R.evo) {
+    const ev = R.evo;
+    h += `<h2 class="sec" style="margin-top:22px">\ud83e\uddac Эволюционный бэк-тестер · автономный режим</h2><div class="live-grid"><div class="live-card on">
+      <div class="t"><span class="badge ok" style="padding:3px 9px"><span class="led"></span>поколение <b>${ev.gen}</b> · популяция <b>${ev.pop}</b></span></div>
+      <div class="st"><b>${ev.best || '—'}</b></div>
+    </div></div>`;
+    const erows = [];
+    if (ev.slippage) {
+      const parts = Object.entries(ev.slippage).filter(([k, v]) => v != null)
+        .map(([k, v]) => k.replace('USDT', '') + ': ' + v + ' bps');
+      if (parts.length) erows.push('<b>Спред (live-стаканы):</b> ' + parts.join(' · '));
+    }
+    if (ev.shadow && ev.shadow.trades) erows.push('<b>Валидация live 1-в-1:</b> ' + ev.shadow.trades + ' сд · совп. выходов ' + ev.shadow.matched + ' (' + (ev.shadow.match_rate_pct ?? '—') + '%) · ср. |ΔR| ' + ev.shadow.mean_abs_R_diff);
+    if (erows.length) h += '<div class="meta-rows">' + erows.map(r => '<div>' + r + '</div>').join('') + '</div>';
+  }
   const rows = [];
   if (R.leadlag) rows.push('<b>Гонка за битком:</b> ' + R.leadlag);
   if (R.collecting) rows.push('<b>Собираем:</b> ' + R.collecting);

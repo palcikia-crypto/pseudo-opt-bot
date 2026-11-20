@@ -1,0 +1,267 @@
+{
+ "measured": "2026-11-20T10:45:22.710178+00:00",
+ "gen": 32,
+ "pop": 40,
+ "hall": [
+  {
+   "fitness": 62.68,
+   "gen": 23,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.016,
+     "vol_mult": 0.9,
+     "exit": {
+      "sl_atr_mult": 3.3,
+      "trail_atr": 3.92,
+      "exit": "trail",
+      "sl_max_pct": 0.008,
+      "time_stop_min": 1240.0
+     }
+    }
+   },
+   "train": {
+    "n": 307,
+    "sum_R": 62.68,
+    "months_pos": 7
+   },
+   "val": {
+    "n": 19,
+    "sum_R": 10.33,
+    "wr": 52.6,
+    "months_pos": 1
+   },
+   "option": {
+    "premium_bp": 286.1,
+    "move_bp": 162.8,
+    "edge_bp": -123.3,
+    "verdict": "no-for-options"
+   }
+  },
+  {
+   "fitness": 61.37,
+   "gen": 21,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.022,
+     "vol_mult": 1.14,
+     "exit": {
+      "sl_atr_mult": 2.78,
+      "trail_atr": 3.73,
+      "exit": "trail",
+      "sl_max_pct": 0.008,
+      "time_stop_min": 781.0
+     }
+    }
+   },
+   "train": {
+    "n": 309,
+    "sum_R": 61.37,
+    "months_pos": 7
+   },
+   "val": {
+    "n": 19,
+    "sum_R": 11.02,
+    "wr": 52.6,
+    "months_pos": 1
+   },
+   "option": {
+    "premium_bp": 286.1,
+    "move_bp": 159.9,
+    "edge_bp": -126.2,
+    "verdict": "no-for-options"
+   }
+  },
+  {
+   "fitness": 59.98,
+   "gen": 16,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.019,
+     "vol_mult": 1.14,
+     "exit": {
+      "sl_atr_mult": 3.39,
+      "trail_atr": 3.73,
+      "exit": "trail",
+      "sl_max_pct": 0.008,
+      "time_stop_min": 781.0
+     }
+    }
+   },
+   "train": {
+    "n": 309,
+    "sum_R": 59.98,
+    "months_pos": 7
+   },
+   "val": {
+    "n": 19,
+    "sum_R": 11.02,
+    "wr": 52.6,
+    "months_pos": 1
+   },
+   "option": {
+    "premium_bp": 286.1,
+    "move_bp": 159.9,
+    "edge_bp": -126.2,
+    "verdict": "no-for-options"
+   }
+  },
+  {
+   "fitness": 42.05,
+   "gen": 15,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.023,
+     "vol_mult": 0.94,
+     "exit": {
+      "sl_atr_mult": 2.84,
+      "trail_atr": 3.04,
+      "exit": "trail",
+      "sl_max_pct": 0.008,
+      "time_stop_min": 781.0
+     }
+    }
+   },
+   "train": {
+    "n": 319,
+    "sum_R": 42.05,
+    "months_pos": 7
+   },
+   "val": {
+    "n": 20,
+    "sum_R": 12.3,
+    "wr": 50.0,
+    "months_pos": 1
+   },
+   "option": {
+    "premium_bp": 286.1,
+    "move_bp": 146.8,
+    "edge_bp": -139.3,
+    "verdict": "no-for-options"
+   }
+  },
+  {
+   "fitness": 38.93,
+   "gen": 14,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.03,
+     "vol_mult": 1.0,
+     "exit": {
+      "sl_atr_mult": 3.39,
+      "trail_atr": 2.87,
+      "exit": "trail",
+      "sl_max_pct": 0.032,
+      "time_stop_min": 480
+     }
+    }
+   },
+   "train": {
+    "n": 217,
+    "sum_R": 38.93,
+    "months_pos": 7
+   },
+   "val": {
+    "n": 11,
+    "sum_R": 5.84,
+    "wr": 72.7,
+    "months_pos": 1
+   },
+   "option": {
+    "premium_bp": 948.2,
+    "move_bp": 227.3,
+    "edge_bp": -721.0,
+    "verdict": "no-for-options"
+   }
+  },
+  {
+   "fitness": 38.91,
+   "gen": 10,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "tf_trail",
+    "params": {
+     "atr_min_pct": 0.028,
+     "vol_mult": 0.97,
+     "exit": {
+      "sl_atr_mult": 3.39,
+      "trail_atr": 2.79,
+      "exit": "trail",
+      "sl_max_pct": 0.03,
+      "time_stop_min": 480
+     }
+    }
+   },
+   "train": {
+    "n": 221,
+    "sum_R": 38.91,
+    "months_pos": 7
+   },
+   "val": {
+    "n": 13,
+    "sum_R": 6.86,
+    "wr": 69.2,
+    "months_pos": 1
+   },
+   "option": {
+    "premium_bp": 902.4,
+    "move_bp": 221.1,
+    "edge_bp": -681.3,
+    "verdict": "no-for-options"
+   }
+  }
+ ],
+ "slippage": {
+  "XRPUSDT": {
+   "median_spread_bps": 1.04,
+   "p90_spread_bps": 1.05,
+   "mean_imb25": 0.011,
+   "n": 1737
+  },
+  "SOLUSDT": {
+   "median_spread_bps": 1.37,
+   "p90_spread_bps": 1.38,
+   "mean_imb25": 0.011,
+   "n": 1737
+  },
+  "BTCUSDT": {
+   "median_spread_bps": 0.02,
+   "p90_spread_bps": 0.02,
+   "mean_imb25": 0.038,
+   "n": 1737
+  },
+  "BNBUSDT": {
+   "median_spread_bps": 0.17,
+   "p90_spread_bps": 0.17,
+   "mean_imb25": 0.05,
+   "n": 1737
+  }
+ },
+ "shadow": {
+  "trades": 0,
+  "matched": 0,
+  "mean_abs_R_diff": null
+ },
+ "evals": 1200
+}
