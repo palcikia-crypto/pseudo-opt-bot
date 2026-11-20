@@ -28,7 +28,7 @@
    "oos": "+13.4R / 27 сд",
    "months": "2/3",
    "fees": "выживает при maker-maker",
-   "status": "наблюдение"
+   "status": "LIVE paper-обкатка (research/paper_deep.py, раунд 7)"
   },
   {
    "symbol": "BTCUSDT",
@@ -37,7 +37,7 @@
    "oos": "+6.8R / 24 сд",
    "months": "2/3",
    "fees": "mm4+",
-   "status": "наблюдение"
+   "status": "LIVE paper-обкатка (research/paper_deep.py, раунд 7)"
   },
   {
    "symbol": "ВСЕ 15",

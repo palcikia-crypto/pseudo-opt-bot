@@ -2,13 +2,21 @@
  "trades": [],
  "cand": {
   "APT_mr_rsi5": {
-   "last_bar_ts": 1795137960000,
-   "last_sig_ts": 1795136400000
+   "last_bar_ts": 1795142340000,
+   "last_sig_ts": 1795140900000
   },
   "XRP_mr_vwap": {
-   "last_bar_ts": 1795137960000,
-   "last_sig_ts": 1795132800000
+   "last_bar_ts": 1795142340000,
+   "last_sig_ts": 1795136400000
+  },
+  "SOL_mr_vwap": {
+   "last_bar_ts": 1795142340000,
+   "last_sig_ts": 1795136400000
+  },
+  "BTC_impulse+pullback": {
+   "last_bar_ts": 1795142340000,
+   "last_sig_ts": 1795140900000
   }
  },
- "updated_utc": "2026-11-20T01:26:27.402040+00:00"
+ "updated_utc": "2026-11-20T02:39:09.273730+00:00"
 }

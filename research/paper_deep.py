@@ -44,6 +44,13 @@ CANDIDATES = [
     dict(key='XRP_mr_vwap', symbol='XRPUSDT', tf_minutes=60, idea='mr_vwap',
          exit=deep.DEEP_EXITS['m1_trail'],
          is_sum_R=11.44, oos_sum_R=16.39),
+    dict(key='SOL_mr_vwap', symbol='SOLUSDT', tf_minutes=60, idea='mr_vwap',
+         exit=deep.DEEP_EXITS['m1_trail'],
+         is_sum_R=5.02, oos_sum_R=13.36),
+    dict(key='BTC_impulse+pullback', symbol='BTCUSDT', tf_minutes=15,
+         idea='impulse+pullback',
+         exit=deep.DEEP_EXITS['tf_wide'],
+         is_sum_R=4.16, oos_sum_R=6.80),
 ]
 
 
@@ -237,7 +244,12 @@ def process_candidate(c, bars, ts_now, st):
         return
     ld = build_lab(c['symbol'], bars, minutes)
     M = lab.masks(ld, MASK_CFG)
-    la, sa = M[c['idea']]
+    if '+' in c['idea']:
+        a_name, b_name = c['idea'].split('+')
+        la = np.logical_or(M[a_name][0], M[b_name][0])
+        sa = np.logical_or(M[a_name][1], M[b_name][1])
+    else:
+        la, sa = M[c['idea']]
     i_close = closed_index(ld, minutes, ts_now)
     if i_close < 0:
         return
