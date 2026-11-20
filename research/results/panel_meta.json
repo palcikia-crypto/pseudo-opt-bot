@@ -92,5 +92,48 @@
    "matched": 0,
    "mean_abs_R_diff": null
   }
+ },
+ "optpaper": {
+  "updated": "2026-11-20T16:49:30Z",
+  "equity": 1000.0,
+  "mode": "виртуальный бинарный опцион (paper): payout +85%/-100%, экспирация фикс; премия модельная k·σ√E; НЕ биржевой опцион",
+  "data": "цены Bybit USDT-perp 1m (fetchOHLCV), TF-агрегация 1-в-1 с бэком",
+  "cands": {
+   "APT_digital": {
+    "n": 0,
+    "wr": null,
+    "pnl": 0.0,
+    "open_pos": false,
+    "status": "VAL-подтверждён (optevo: wr_dig 65.2%)"
+   },
+   "XRP_digital": {
+    "n": 0,
+    "wr": null,
+    "pnl": 0.0,
+    "open_pos": false,
+    "status": "исследование (optevo seed)"
+   },
+   "SOL_digital": {
+    "n": 0,
+    "wr": null,
+    "pnl": 0.0,
+    "open_pos": false,
+    "status": "исследование (optevo seed)"
+   },
+   "SEI_digital": {
+    "n": 0,
+    "wr": null,
+    "pnl": 0.0,
+    "open_pos": false,
+    "status": "исследование (optevo seed)"
+   },
+   "BTC_digital": {
+    "n": 0,
+    "wr": null,
+    "pnl": 0.0,
+    "open_pos": false,
+    "status": "исследование (optevo seed)"
+   }
+  }
  }
 }

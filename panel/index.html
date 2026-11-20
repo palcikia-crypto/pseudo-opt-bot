@@ -435,7 +435,8 @@ function renderResearch(R) {
   }
   if (R.evo) {
     const ev = R.evo;
-    h += `<h2 class="sec" style="margin-top:22px">\ud83e\uddac Эволюционный бэк-тестер · автономный режим</h2><div class="live-grid"><div class="live-card on">
+    h += `<h2 class="sec" style="margin-top:22px">\ud83e\uddac Эволюционный бэк-тестер · автономный режим</h2>
+      <div class="meta-rows"><span>бэктест по кэшу Bybit 190д (1m→TF), TRAIN/VAL жёстко разделены; ищет перпы со стопами/тейками</span></div><div class="live-grid"><div class="live-card on">
       <div class="t"><span class="badge ok" style="padding:3px 9px"><span class="led"></span>поколение <b>${ev.gen}</b> · популяция <b>${ev.pop}</b></span></div>
       <div class="st"><b>${ev.best || '—'}</b></div>
     </div></div>`;
@@ -454,6 +455,28 @@ function renderResearch(R) {
       <div class="t"><span class="badge ok" style="padding:3px 9px"><span class="led"></span>поколение <b>${op.gen}</b> · популяция <b>${op.pop}</b></span></div>
       <div class="st"><b>${op.best || '—'}</b></div>
     </div></div>`;
+  }
+  if (R.opt) {
+    const op = R.opt;
+    h += `<h2 class="sec" style="margin-top:22px">\ud83c\udfaf Опцион-режим · эволюция под выйгрыш</h2>
+      <div class="meta-rows"><span>бэктест ВИРТУАЛЬНОГО опциона по кэшу Bybit: премия модельная k·σ√E, экспирация фикс; НЕ биржевой опцион</span></div><div class="live-grid"><div class="live-card on">
+      <div class="t"><span class="badge ok" style="padding:3px 9px"><span class="led"></span>поколение <b>${op.gen}</b> · популяция <b>${op.pop}</b></span></div>
+      <div class="st"><b>${op.best || '—'}</b></div>
+    </div></div>`;
+  }
+  if (R.optpaper) {
+    const opq = R.optpaper;
+    h += `<h2 class="sec" style="margin-top:22px">\u26a1 Опцион-бум · live-paper (отдельный демон)</h2>
+      <div class="meta-rows"><span>${opq.mode || ''}</span><span>данные: ${opq.data || ''}</span></div>
+      <div class="live-grid">`;
+    for (const [k, v] of Object.entries(opq.cands || {})) {
+      const on = !!v.open_pos;
+      h += `<div class="live-card${on ? ' on' : ''}">
+        <div class="t"><span class="badge ${on ? 'ok' : 'warn'}" style="padding:3px 9px"><span class="led"></span>${k}</span></div>
+        <div class="st">${v.n ? `<b>${v.n}</b> контрактов · wr <b>${v.wr}%</b> · <b class="${v.pnl >= 0 ? 'up' : 'dn'}">${v.pnl >= 0 ? '+' : ''}${v.pnl}$</b>` : 'сделок пока нет — ждём сигнал'}${v.status ? `<br><span class="dim">${v.status}</span>` : ''}</div>
+      </div>`;
+    }
+    h += `</div><div class="meta-rows"><span>equity опцион-счёта: <b>$${opq.equity}</b> (старт $1000, ставка 1%) · обновлено ${String(opq.updated).slice(0, 16).replace('T', ' ')} UTC</span></div>`;
   }
   const rows = [];
   if (R.leadlag) rows.push('<b>Гонка за битком:</b> ' + R.leadlag);

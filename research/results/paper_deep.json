@@ -1,102 +1,179 @@
 {
- "trades": [],
+ "trades": [
+  {
+   "key": "APT_mr_rsi5",
+   "symbol": "APTUSDT",
+   "side": "short",
+   "signal_ts": 1795153500000,
+   "entry_ts": 1795154460000,
+   "exit_ts": 1795189320000,
+   "entry": 0.40642189,
+   "exit": 0.37964299,
+   "exit_reason": "tp",
+   "sl_pct": 0.026356,
+   "R": 2.4853,
+   "fees_R": 0.015,
+   "shadow": {
+    "R": 2.4853,
+    "exit_reason": "tp",
+    "entry": 0.40642189,
+    "ts_exit": 1795188600000
+   }
+  },
+  {
+   "key": "XRP_mr_vwap",
+   "symbol": "XRPUSDT",
+   "side": "short",
+   "signal_ts": 1795140000000,
+   "entry_ts": 1795143660000,
+   "exit_ts": 1795188060000,
+   "entry": 0.95958779,
+   "exit": 0.91162279,
+   "exit_reason": "tp",
+   "sl_pct": 0.019994,
+   "R": 2.4805,
+   "fees_R": 0.02,
+   "shadow": {
+    "R": 2.4805,
+    "exit_reason": "tp",
+    "entry": 0.95958779,
+    "ts_exit": 1795186800000
+   }
+  },
+  {
+   "key": "SOL_mr_vwap",
+   "symbol": "SOLUSDT",
+   "side": "short",
+   "signal_ts": 1795140000000,
+   "entry_ts": 1795143660000,
+   "exit_ts": 1795187760000,
+   "entry": 72.961882,
+   "exit": 69.314882,
+   "exit_reason": "tp",
+   "sl_pct": 0.019994,
+   "R": 2.4805,
+   "fees_R": 0.02,
+   "shadow": {
+    "R": 2.4805,
+    "exit_reason": "tp",
+    "entry": 72.961882,
+    "ts_exit": 1795186800000
+   }
+  },
+  {
+   "key": "BTC_impulse+pullback",
+   "symbol": "BTCUSDT",
+   "side": "short",
+   "signal_ts": 1795153500000,
+   "entry_ts": 1795154460000,
+   "exit_ts": 1795191360000,
+   "entry": 61901.96502,
+   "exit": 59634.5,
+   "exit_reason": "trail",
+   "sl_pct": 0.021728,
+   "R": 1.6522,
+   "fees_R": 0.034,
+   "shadow": {
+    "R": 1.8119,
+    "exit_reason": "cap",
+    "entry": 61901.96502,
+    "ts_exit": 1795191300000
+   }
+  }
+ ],
  "cand": {
   "APT_mr_rsi5": {
-   "last_bar_ts": 1795171740000,
-   "last_sig_ts": 1795153500000,
+   "last_bar_ts": 1795193340000,
+   "last_sig_ts": 1795192200000,
    "pending": null,
-   "pos": {
-    "side": "short",
-    "entry": 0.40642189,
-    "sl_d": 0.01071156,
-    "sl": 0.41713345,
-    "tp": 0.37964299,
-    "atr1": 0.003570519119719067,
-    "entry_ts": 1795154460000,
-    "signal_ts": 1795153500000,
-    "tf_open_ts": 1795154400000,
-    "tf_bucket": 1795171500000,
-    "tf_h": 0.4111,
-    "tf_l": 0.4096,
-    "tf_last_close": 0.4097,
-    "tf_last_ts": 1795171740000,
-    "tf_done": 19,
-    "trail": null
+   "pos": null,
+   "agg": {
+    "n": 1,
+    "sum_R": 2.4853,
+    "wins": 1,
+    "sum_R_shadow": 2.4853,
+    "n_shadow": 1
+   },
+   "summary": {
+    "n": 1,
+    "sum_R": 2.4853,
+    "win_rate": 100.0,
+    "sum_R_shadow": 2.4853,
+    "n_shadow": 1,
+    "open": false,
+    "pending": false
    }
   },
   "XRP_mr_vwap": {
-   "last_bar_ts": 1795171740000,
-   "last_sig_ts": 1795140000000,
+   "last_bar_ts": 1795193340000,
+   "last_sig_ts": 1795186800000,
    "pending": null,
-   "pos": {
-    "side": "short",
-    "entry": 0.95958779,
-    "sl_d": 0.019186,
-    "sl": 0.97877379,
-    "tp": 0.91162279,
-    "atr1": 0.011725763209826875,
-    "entry_ts": 1795143660000,
-    "signal_ts": 1795140000000,
-    "tf_open_ts": 1795143600000,
-    "tf_bucket": 1795168800000,
-    "tf_h": 0.968,
-    "tf_l": 0.9553,
-    "tf_last_close": 0.9633,
-    "tf_last_ts": 1795171740000,
-    "tf_done": 7,
-    "trail": null
+   "pos": null,
+   "agg": {
+    "n": 1,
+    "sum_R": 2.4805,
+    "wins": 1,
+    "sum_R_shadow": 2.4805,
+    "n_shadow": 1
+   },
+   "summary": {
+    "n": 1,
+    "sum_R": 2.4805,
+    "win_rate": 100.0,
+    "sum_R_shadow": 2.4805,
+    "n_shadow": 1,
+    "open": false,
+    "pending": false
    }
   },
   "SOL_mr_vwap": {
-   "last_bar_ts": 1795171740000,
-   "last_sig_ts": 1795140000000,
+   "last_bar_ts": 1795193340000,
+   "last_sig_ts": 1795186800000,
    "pending": null,
-   "pos": {
-    "side": "short",
-    "entry": 72.961882,
-    "sl_d": 1.4588,
-    "sl": 74.420682,
-    "tp": 69.314882,
-    "atr1": 0.9847046088457623,
-    "entry_ts": 1795143660000,
-    "signal_ts": 1795140000000,
-    "tf_open_ts": 1795143600000,
-    "tf_bucket": 1795168800000,
-    "tf_h": 72.72,
-    "tf_l": 71.78,
-    "tf_last_close": 72.41,
-    "tf_last_ts": 1795171740000,
-    "tf_done": 7,
-    "trail": null
+   "pos": null,
+   "agg": {
+    "n": 1,
+    "sum_R": 2.4805,
+    "wins": 1,
+    "sum_R_shadow": 2.4805,
+    "n_shadow": 1
+   },
+   "summary": {
+    "n": 1,
+    "sum_R": 2.4805,
+    "win_rate": 100.0,
+    "sum_R_shadow": 2.4805,
+    "n_shadow": 1,
+    "open": false,
+    "pending": false
    }
   },
   "BTC_impulse+pullback": {
-   "last_bar_ts": 1795171740000,
-   "last_sig_ts": 1795153500000,
+   "last_bar_ts": 1795193340000,
+   "last_sig_ts": 1795192200000,
    "pending": null,
-   "pos": {
-    "side": "short",
-    "entry": 61901.96502,
-    "sl_d": 1345.01148513,
-    "sl": 63246.97650513,
-    "tp": 56521.91907948,
-    "atr1": 336.25287128318405,
-    "entry_ts": 1795154460000,
-    "signal_ts": 1795153500000,
-    "tf_open_ts": 1795154400000,
-    "tf_bucket": 1795171500000,
-    "tf_h": 62264.2,
-    "tf_l": 62027.0,
-    "tf_last_close": 62043.2,
-    "tf_last_ts": 1795171740000,
-    "tf_done": 19,
-    "trail": null
+   "pos": null,
+   "agg": {
+    "n": 1,
+    "sum_R": 1.6522,
+    "wins": 1,
+    "sum_R_shadow": 1.8119,
+    "n_shadow": 1
+   },
+   "summary": {
+    "n": 1,
+    "sum_R": 1.6522,
+    "win_rate": 100.0,
+    "sum_R_shadow": 1.8119,
+    "n_shadow": 1,
+    "open": false,
+    "pending": false
    }
   },
   "SEI_doji_exhaust": {
-   "last_bar_ts": 1795171740000,
-   "last_sig_ts": 1795170600000
+   "last_bar_ts": 1795193340000,
+   "last_sig_ts": 1795192200000
   }
  },
- "updated_utc": "2026-11-20T10:49:59.481131+00:00"
+ "updated_utc": "2026-11-20T16:49:33.762841+00:00"
 }
