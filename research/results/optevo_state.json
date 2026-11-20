@@ -1,0 +1,33 @@
+{
+ "gen": 33,
+ "hall": [
+  {
+   "fitness": 20.714285714285715,
+   "genome": {
+    "symbol": "APTUSDT",
+    "tf": 15,
+    "idea": "mr_rsi5",
+    "exit_name": "OPT",
+    "params": {
+     "expiry_min": 60,
+     "prem_k": 0.85,
+     "atr_min_pct": 0.03,
+     "vol_mult": 1.3
+    }
+   },
+   "train": {
+    "n": 378,
+    "sum_bp": -17772.5,
+    "sum_R_prem": 29.0,
+    "prem_bp": 85.45,
+    "wr_vanilla": 15.6,
+    "wr_digital": 58.2,
+    "expectancy_bp": -47.02,
+    "months": 7,
+    "months_pos": 5,
+    "fitness": 20.714285714285715
+   },
+   "gen": 1
+  }
+ ]
+}

@@ -448,6 +448,13 @@ function renderResearch(R) {
     if (ev.shadow && ev.shadow.trades) erows.push('<b>Валидация live 1-в-1:</b> ' + ev.shadow.trades + ' сд · совп. выходов ' + ev.shadow.matched + ' (' + (ev.shadow.match_rate_pct ?? '—') + '%) · ср. |ΔR| ' + ev.shadow.mean_abs_R_diff);
     if (erows.length) h += '<div class="meta-rows">' + erows.map(r => '<div>' + r + '</div>').join('') + '</div>';
   }
+  if (R.opt) {
+    const op = R.opt;
+    h += `<h2 class="sec" style="margin-top:22px">\ud83c\udfaf Опцион-режим · эволюция под выйгрыш</h2><div class="live-grid"><div class="live-card on">
+      <div class="t"><span class="badge ok" style="padding:3px 9px"><span class="led"></span>поколение <b>${op.gen}</b> · популяция <b>${op.pop}</b></span></div>
+      <div class="st"><b>${op.best || '—'}</b></div>
+    </div></div>`;
+  }
   const rows = [];
   if (R.leadlag) rows.push('<b>Гонка за битком:</b> ' + R.leadlag);
   if (R.collecting) rows.push('<b>Собираем:</b> ' + R.collecting);

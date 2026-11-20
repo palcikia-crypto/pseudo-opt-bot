@@ -82,5 +82,15 @@
    "BTCUSDT": 0.02,
    "BNBUSDT": 0.17
   }
+ },
+ "opt": {
+  "gen": 33,
+  "pop": 30,
+  "best": "APTUSDT 15m mr_rsi5 exp60m | train -17772bp/n=378 | val -714bp/n=23 | нет подтверждения",
+  "shadow": {
+   "trades": 0,
+   "matched": 0,
+   "mean_abs_R_diff": null
+  }
  }
 }
