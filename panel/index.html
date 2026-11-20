@@ -452,13 +452,6 @@ function renderResearch(R) {
   }
   if (R.opt) {
     const op = R.opt;
-    h += `<h2 class="sec" style="margin-top:22px">\ud83c\udfaf Опцион-режим · эволюция под выйгрыш</h2><div class="live-grid"><div class="live-card on">
-      <div class="t"><span class="badge ok" style="padding:3px 9px"><span class="led"></span>поколение <b>${op.gen}</b> · популяция <b>${op.pop}</b></span></div>
-      <div class="st"><b>${op.best || '—'}</b></div>
-    </div></div>`;
-  }
-  if (R.opt) {
-    const op = R.opt;
     h += `<h2 class="sec" style="margin-top:22px">\ud83c\udfaf Опцион-режим · эволюция под выйгрыш</h2>
       <div class="meta-rows"><span>бэктест ВИРТУАЛЬНОГО опциона по кэшу Bybit: премия модельная k·σ√E, экспирация фикс; НЕ биржевой опцион</span></div><div class="live-grid"><div class="live-card on">
       <div class="t"><span class="badge ok" style="padding:3px 9px"><span class="led"></span>поколение <b>${op.gen}</b> · популяция <b>${op.pop}</b></span></div>
@@ -467,17 +460,20 @@ function renderResearch(R) {
   }
   if (R.optpaper) {
     const opq = R.optpaper;
+    const regimeTxt = {expanded: 'РАСШИРЕННЫЙ — ядро + эксперименты', core: 'БАЗОВЫЙ — расширение выключено (авто-откат)', paused: 'ПАУЗА — новые входы остановлены'}[opq.regime] || opq.regime || '';
     h += `<h2 class="sec" style="margin-top:22px">\u26a1 Опцион-бум · live-paper (отдельный демон)</h2>
       <div class="meta-rows"><span>${opq.mode || ''}</span><span>данные: ${opq.data || ''}</span></div>
+      <div class="meta-rows"><span><b>Режим: ${regimeTxt}</b> — правило: лестница авто-отката (exp-касса −8% от пика → «как раньше»/только ядро, exp −15% → пауза, ядро −15% → пауза); открытые контракты при откате дорабатывают до экспирации</span></div>
+      ${(opq.notices || []).map(n => '<div class="meta-rows"><span class="dim">⚠️ ' + (n.ts || '') + ' — ' + (n.msg || '') + '</span></div>').join('')}
       <div class="live-grid">`;
     for (const [k, v] of Object.entries(opq.cands || {})) {
       const on = !!v.open_pos;
       h += `<div class="live-card${on ? ' on' : ''}">
-        <div class="t"><span class="badge ${on ? 'ok' : 'warn'}" style="padding:3px 9px"><span class="led"></span>${k}</span></div>
+        <div class="t"><span class="badge ${on ? 'ok' : 'warn'}" style="padding:3px 9px"><span class="led"></span>${k}${v.grp === 'exp' ? " <span class='dim'>· расширение</span>" : " <span class='dim'>· ядро</span>"}</span></div>
         <div class="st">${v.open_pos ? '🔴 <b class="up">контракт ОТКРЫТ сейчас — ждём экспирацию</b><br>' : ''}${v.n ? `<b>${v.n}</b> контрактов · wr <b>${v.wr}%</b>${v.n < 20 ? ` <span class="dim">⚠️ мало (${v.n})</span>` : ''} · <b class="${v.pnl >= 0 ? 'up' : 'dn'}">${v.pnl >= 0 ? '+' : ''}${v.pnl}$</b>` : (v.open_pos ? '' : 'контрактов нет — демон днем ждёт сигнал, откроет на ближайшем')}${v.status ? `<br><span class="dim">${v.status}</span>` : ''}</div>
       </div>`;
     }
-    h += `</div><div class="meta-rows"><span>equity опцион-счёта: <b>$${opq.equity}</b> (старт $1000, ставка 1%) · обновлено ${String(opq.updated).slice(0, 16).replace('T', ' ')} UTC</span></div>`;
+    h += `</div><div class="meta-rows"><span>касса <b>ядро</b>: <b>$${opq.equity_core ?? '—'}</b> · касса <b>расширение</b>: <b>$${opq.equity_exp ?? '—'}</b> (изолированы, старт по $1000, ставка 1% от своей кассы) · всего $${opq.equity} · обновлено ${String(opq.updated).slice(0, 16).replace('T', ' ')} UTC</span></div>`;
   }
   const rows = [];
   if (R.leadlag) rows.push('<b>Гонка за битком:</b> ' + R.leadlag);

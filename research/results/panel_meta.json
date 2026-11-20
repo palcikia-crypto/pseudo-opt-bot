@@ -68,9 +68,9 @@
   "ML AUC 0.61 — исследовать длинные горизонты (час+), где комиссии прощают слабый сигнал"
  ],
  "evo": {
-  "gen": 62,
+  "gen": 122,
   "pop": 40,
-  "best": "APTUSDT mr_rsi5 tf_trail | train +62.7R/n=307 | val +10.3R/n=19 | opt-no",
+  "best": "APTUSDT mr_rsi5 tf_trail | train +73.2R/n=313 | val +10.3R/n=19 | opt-no",
   "shadow": {
    "trades": 4,
    "matched": 3,
@@ -81,7 +81,7 @@
   "slippage": {}
  },
  "opt": {
-  "gen": 58,
+  "gen": 133,
   "pop": 30,
   "best": "APTUSDT 15m mr_rsi5 exp60m | train -17772bp/n=378 | val -834bp/n=23 | нет подтверждения",
   "shadow": {
@@ -93,9 +93,13 @@
   }
  },
  "optpaper": {
-  "updated": "2026-11-20T16:56:59Z",
-  "equity": 1000.0,
+  "updated": "2026-11-20T18:29:45Z",
+  "equity": 2000.0,
+  "equity_core": 1000.0,
+  "equity_exp": 1000.0,
+  "regime": "expanded",
   "mode": "виртуальный бинарный опцион (paper): payout +85%/-100%, экспирация фикс; премия модельная k·σ√E; НЕ биржевой опцион",
+  "notices": [],
   "data": "цены Bybit USDT-perp 1m (fetchOHLCV), TF-агрегация 1-в-1 с бэком",
   "cands": {
    "APT_digital": {
@@ -103,6 +107,7 @@
     "wr": null,
     "pnl": 0.0,
     "open_pos": false,
+    "grp": "core",
     "status": "VAL-подтверждён (optevo: wr_dig 65.2%)"
    },
    "XRP_digital": {
@@ -110,6 +115,7 @@
     "wr": null,
     "pnl": 0.0,
     "open_pos": false,
+    "grp": "core",
     "status": "исследование (optevo seed)"
    },
    "SOL_digital": {
@@ -117,6 +123,7 @@
     "wr": null,
     "pnl": 0.0,
     "open_pos": false,
+    "grp": "core",
     "status": "исследование (optevo seed)"
    },
    "SEI_digital": {
@@ -124,6 +131,7 @@
     "wr": null,
     "pnl": 0.0,
     "open_pos": false,
+    "grp": "core",
     "status": "исследование (optevo seed)"
    },
    "BTC_digital": {
@@ -131,7 +139,48 @@
     "wr": null,
     "pnl": 0.0,
     "open_pos": false,
+    "grp": "core",
     "status": "исследование (optevo seed)"
+   },
+   "APT_fast": {
+    "n": 0,
+    "wr": null,
+    "pnl": 0.0,
+    "open_pos": false,
+    "grp": "exp",
+    "status": "расширение: APT mr_rsi5, фильтр слабее (частота выше)"
+   },
+   "XRP_fast": {
+    "n": 0,
+    "wr": null,
+    "pnl": 0.0,
+    "open_pos": false,
+    "grp": "exp",
+    "status": "расширение: XRP mr_vwap exp60 (короче/чаще)"
+   },
+   "SOL_fast": {
+    "n": 0,
+    "wr": null,
+    "pnl": 0.0,
+    "open_pos": false,
+    "grp": "exp",
+    "status": "расширение: SOL mr_vwap exp60"
+   },
+   "BTC_fast": {
+    "n": 0,
+    "wr": null,
+    "pnl": 0.0,
+    "open_pos": false,
+    "grp": "exp",
+    "status": "расширение: BTC impulse, фильтр слабее"
+   },
+   "SEI_fast": {
+    "n": 0,
+    "wr": null,
+    "pnl": 0.0,
+    "open_pos": false,
+    "grp": "exp",
+    "status": "расширение: SEI doji_exhaust exp30"
    }
   }
  }

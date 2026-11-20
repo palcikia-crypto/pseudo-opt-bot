@@ -1,7 +1,7 @@
 {
- "mode": "виртуальный бинарный опцион (paper): payout +85%/-100%, экспирация фикс; премия модельная k·σ√E; НЕ биржевой опцион",
+ "mode": "expanded",
  "data": "цены Bybit USDT-perp 1m (fetchOHLCV), TF-агрегация 1-в-1 с бэком",
- "equity": 1000.0,
+ "equity": 2000.0,
  "trades": [],
  "cand": {
   "APT_digital": {
@@ -28,7 +28,39 @@
    "n": 0,
    "wins": 0,
    "pnl": 0.0
+  },
+  "APT_fast": {
+   "n": 0,
+   "wins": 0,
+   "pnl": 0.0
+  },
+  "XRP_fast": {
+   "n": 0,
+   "wins": 0,
+   "pnl": 0.0
+  },
+  "SOL_fast": {
+   "n": 0,
+   "wins": 0,
+   "pnl": 0.0
+  },
+  "BTC_fast": {
+   "n": 0,
+   "wins": 0,
+   "pnl": 0.0
+  },
+  "SEI_fast": {
+   "n": 0,
+   "wins": 0,
+   "pnl": 0.0
   }
  },
- "updated": "2026-11-20T16:56:59Z"
+ "updated": "2026-11-20T18:29:45Z",
+ "mode_label": "виртуальный бинарный опцион (paper): payout +85%/-100%, экспирация фикс; премия модельная k·σ√E; НЕ биржевой опцион",
+ "notices": [],
+ "_paused_log_ts": 0,
+ "equity_core": 1000.0,
+ "equity_exp": 1000.0,
+ "hwm_core": 1000.0,
+ "hwm_exp": 1000.0
 }
