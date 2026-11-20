@@ -232,6 +232,9 @@ def main():
     ap.add_argument('--pop', type=int, default=40)
     ap.add_argument('--daemon', action='store_true')
     ap.add_argument('--cycle-sec', type=int, default=1800)
+    ap.add_argument('--symbols', type=str, default='',
+                    help='список через запятую (по умолчанию все из config); '
+                         'резать RAM, если рядом живёт optevo')
     args = ap.parse_args()
 
     state_path = os.path.join(RES, 'evo_state.json')
@@ -248,7 +251,11 @@ def main():
                     print('[refresh %s] fail: %s' % (sym, str(e)[:80]), flush=True)
             t_start_data = time.time()
             print('[data] загрузка 190д...', flush=True)
-            bt.full, raw, views = bt.load_views()
+            syms = [s.strip().upper() for s in args.symbols.split(',') if s.strip()]
+            bt.full, raw, views = bt.load_views(
+                symbols=[s.replace('USDT', '/USDT:USDT') + '' if '/' in s or ':' in s
+                         else (s[:-4] + '/USDT:USDT' if s.endswith('USDT') else s)
+                         for s in syms] or None)
             t0 = int(min(l.ts[0] for l in views[15].values()))
             t1 = int(max(l.ts[-1] for l in views[15].values()))
             t_train_end = t1 - 14 * bt.DAY
