@@ -71,6 +71,8 @@ class PaperBot:
             self._save()
 
     def _day_loss_hit(self):
+        if DAY_LOSS_PCT <= 0:
+            return False
         if self.day_start_eq <= 0:
             return False
         loss = (self.equity - self.day_start_eq) / self.day_start_eq * 100.0

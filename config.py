@@ -40,7 +40,7 @@ RR = float(os.getenv('RR', '2.5'))
 RISK_PER_TRADE_PCT = float(os.getenv('RISK_PER_TRADE_PCT', '1.0')) / 100.0
 LEVERAGE = int(os.getenv('LEVERAGE', '10'))
 MAX_POSITIONS = int(os.getenv('MAX_POSITIONS', '4'))
-DAY_LOSS_PCT = float(os.getenv('DAY_LOSS_PCT', '4.0')) / 100.0
+DAY_LOSS_PCT = float(os.getenv('DAY_LOSS_PCT', '0')) / 100.0
 
 ENTRY_TIMEOUT_S = float(os.getenv('ENTRY_TIMEOUT_S', '8'))
 BE_TRIGGER = float(os.getenv('BE_TRIGGER', '1.2'))
