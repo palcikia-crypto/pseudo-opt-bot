@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>⚡ Pseudo-Opt Bot — trading panel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#06070b;
+  --card:rgba(255,255,255,.035);
+  --card-2:rgba(255,255,255,.055);
+  --line:rgba(255,255,255,.08);
+  --text:#e9edf5;
+  --muted:#8a93a6;
+  --muted-2:#5c6577;
+  --up:#34d399;
+  --dn:#fb7185;
+  --warn:#f5b12e;
+  --acc1:#6366f1;
+  --acc2:#22d3ee;
+  --font:'Inter',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font);background:var(--bg);color:var(--text);
+  min-height:100vh;letter-spacing:-.01em;
+  background-image:
+    radial-gradient(1200px 500px at 15% -10%,rgba(99,102,241,.16),transparent 60%),
+    radial-gradient(1000px 420px at 85% -5%,rgba(34,211,238,.10),transparent 60%),
+    radial-gradient(700px 400px at 50% 110%,rgba(99,102,241,.07),transparent 60%);
+  background-attachment:fixed;
+}
+a{color:var(--acc2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px 60px}
+/* ── header ─────────────────────────────── */
+header{
+  position:sticky;top:0;z-index:50;backdrop-filter:blur(18px);
+  background:rgba(6,7,11,.72);border-bottom:1px solid var(--line);
+}
+.hbar{max-width:1240px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:11px;font-weight:800;font-size:1.02rem;letter-spacing:.02em}
+.logo .dot{
+  width:34px;height:34px;border-radius:11px;display:grid;place-items:center;font-size:17px;
+  background:linear-gradient(135deg,var(--acc1),var(--acc2));
+  box-shadow:0 4px 18px rgba(99,102,241,.45);
+}
+.logo small{display:block;font-size:.66rem;font-weight:500;color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
+.spacer{flex:1}
+.badge{
+  display:inline-flex;align-items:center;gap:7px;padding:6px 13px;border-radius:99px;
+  font-size:.76rem;font-weight:600;border:1px solid var(--line);background:var(--card);
+  white-space:nowrap;
+}
+.badge .led{width:7px;height:7px;border-radius:50%;background:var(--muted-2)}
+.badge.ok{color:var(--up);border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.08)}
+.badge.ok .led{background:var(--up);box-shadow:0 0 0 0 rgba(52,211,153,.55);animation:pulse 1.8s infinite}
+.badge.stop{color:var(--dn);border-color:rgba(251,113,133,.35);background:rgba(251,113,133,.08)}
+.badge.stop .led{background:var(--dn);animation:pulse 1s infinite}
+.badge.warn{color:var(--warn);border-color:rgba(245,177,46,.35);background:rgba(245,177,46,.08)}
+.badge.warn .led{background:var(--warn)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,211,153,.45)}70%{box-shadow:0 0 0 8px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+.clock{font-family:var(--mono);font-size:.8rem;color:var(--muted)}
+/* ── sections ─────────────────────────── */
+h2.sec{
+  display:flex;align-items:center;gap:10px;margin:34px 0 14px;
+  font-size:.82rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+}
+h2.sec::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+/* ── hero ─────────────────────────────── */
+.hero{display:grid;grid-template-columns:1.25fr .9fr;gap:18px;margin-top:26px}
+.panel{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:22px 24px;backdrop-filter:blur(10px);
+}
+.panel.glow{position:relative;overflow:hidden}
+.panel.glow::before{
+  content:'';position:absolute;inset:-1px;border-radius:var(--r);padding:1px;pointer-events:none;
+  background:linear-gradient(135deg,rgba(99,102,241,.5),transparent 38%,transparent 62%,rgba(34,211,238,.4));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;
+}
+.eq-label{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.eq-value{font-family:var(--mono);font-size:2.9rem;font-weight:700;line-height:1.05;margin:10px 0 6px;font-variant-numeric:tabular-nums}
+.sub{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.chip{
+  display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:10px;
+  font-family:var(--mono);font-size:.8rem;font-weight:600;background:var(--card-2);border:1px solid var(--line);
+}
+.chip b{font-weight:700}
+.up{color:var(--up)} .dn{color:var(--dn)} .warn{color:var(--warn)} .mut{color:var(--muted)}
+canvas.spark{width:100%;height:118px;display:block}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.kpi{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;
+  transition:transform .18s ease,border-color .18s ease;
+}
+.kpi:hover{transform:translateY(-2px);border-color:rgba(99,102,241,.4)}
+.kpi .v{font-family:var(--mono);font-size:1.3rem;font-weight:700;font-variant-numeric:tabular-nums}
+.kpi .l{font-size:.7rem;color:var(--muted);margin-top:3px;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+/* ── tickers ──────────────────────────── */
+#tickers{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:10px}
+.tk{
+  background:var(--card);border:1px solid var(--line);border-radius:13px;padding:10px 12px;
+  transition:transform .15s ease,border-color .15s ease;
+}
+.tk:hover{transform:translateY(-2px);border-color:rgba(34,211,238,.4)}
+.tk .sym{font-weight:700;font-size:.82rem;display:flex;justify-content:space-between;align-items:center}
+.tk .sym i{font-style:normal;font-size:.68rem;font-family:var(--mono)}
+.tk .px{font-family:var(--mono);font-size:.95rem;margin-top:4px;font-weight:600;font-variant-numeric:tabular-nums}
+.tk .chg{font-family:var(--mono);font-size:.74rem;margin-top:2px}
+/* ── tables ───────────────────────────── */
+.twrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:.84rem;min-width:640px}
+thead th{
+  text-align:right;padding:11px 14px;color:var(--muted);font-weight:600;font-size:.7rem;
+  letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid var(--line);white-space:nowrap;
+  background:rgba(255,255,255,.02);
+}
+thead th:first-child,tbody td:first-child{text-align:left}
+td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.04);text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tbody tr{transition:background .15s}
+tbody tr:hover{background:rgba(255,255,255,.03)}
+tbody tr.opn{background:rgba(99,102,241,.07)}
+.sbadge{display:inline-block;padding:2.5px 9px;border-radius:7px;font-size:.68rem;font-weight:700;letter-spacing:.06em;font-family:var(--font)}
+.sbadge.long{color:var(--up);background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.3)}
+.sbadge.short{color:var(--dn);background:rgba(251,113,133,.12);border:1px solid rgba(251,113,133,.3)}
+.rchip{font-family:var(--font);font-size:.7rem;color:var(--muted);background:var(--card-2);padding:2.5px 9px;border-radius:7px;border:1px solid var(--line)}
+.empty{padding:26px;text-align:center;color:var(--muted-2);font-size:.85rem}
+/* ── research ─────────────────────────── */
+.verdict{
+  border:1px solid rgba(245,177,46,.3);background:rgba(245,177,46,.07);color:var(--warn);
+  border-radius:14px;padding:14px 18px;font-size:.9rem;font-weight:600;margin-bottom:16px;
+}
+.live-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:14px}
+.live-card{
+  background:var(--card-2);border:1px solid var(--line);border-radius:14px;padding:14px 16px;
+  display:flex;flex-direction:column;gap:7px;
+}
+.live-card .t{display:flex;align-items:center;gap:8px;font-weight:700;font-size:.85rem}
+.live-card .st{font-family:var(--mono);font-size:.82rem;color:var(--muted)}
+.live-card .st b{color:var(--text)}
+.live-card.on{border-color:rgba(52,211,153,.4);background:rgba(52,211,153,.05)}
+.meta-rows{margin-top:14px;display:flex;flex-direction:column;gap:6px;font-size:.8rem;color:var(--muted)}
+.meta-rows b{color:var(--text);font-weight:600}
+/* ── footer ───────────────────────────── */
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between;color:var(--muted-2);font-size:.75rem}
+/* ── skeleton ─────────────────────────── */
+.skel{
+  border-radius:12px;height:120px;margin-top:26px;position:relative;overflow:hidden;
+  background:linear-gradient(100deg,rgba(255,255,255,.03) 30%,rgba(255,255,255,.07) 50%,rgba(255,255,255,.03) 70%);
+  background-size:200% 100%;animation:shimmer 1.4s infinite;
+}
+@keyframes shimmer{to{background-position:-200% 0}}
+.fade{animation:fadein .45s ease}
+@keyframes fadein{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+/* ── responsive ───────────────────────── */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .eq-value{font-size:2.2rem}
+}
+@media (max-width:520px){
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .hbar{padding:12px 14px}
+  .clock{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hbar">
+    <div class="logo">
+      <div class="dot">⚡</div>
+      <div>PSEUDO-OPT BOT<small>scalper · bybit perps · paper</small></div>
+    </div>
+    <div class="spacer"></div>
+    <span id="badge" class="badge"><span class="led"></span>загрузка…</span>
+    <span class="clock" id="clock">--:--:-- UTC</span>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="skeleton">
+    <div class="skel" style="height:150px"></div>
+    <div class="skel" style="height:90px"></div>
+  </div>
+
+  <div id="app" hidden>
+    <div class="hero">
+      <div class="panel glow fade">
+        <div class="eq-label">Equity · USDT</div>
+        <div class="eq-value" id="equity">—</div>
+        <div class="sub" id="pnl-chips"></div>
+      </div>
+      <div class="panel fade">
+        <div class="eq-label" style="margin-bottom:10px">Кривая капитала</div>
+        <canvas class="spark" id="spark"></canvas>
+      </div>
+    </div>
+
+    <div class="kpis" id="kpis"></div>
+
+    <h2 class="sec">Рынок · Bybit USDT-Perps, live</h2>
+    <div id="tickers"><div class="empty" style="width:100%">загрузка тикеров…</div></div>
+
+    <h2 class="sec">Открытые позиции</h2>
+    <div class="twrap"><table>
+      <thead><tr><th>Символ</th><th>Side</th><th>Вход</th><th>Mark</th><th>SL</th><th>TP</th><th>BE</th><th>Unrealized</th><th>Мин</th></tr></thead>
+      <tbody id="open"></tbody>
+    </table></div>
+
+    <h2 class="sec">Закрытые сделки · последние 40</h2>
+    <div class="twrap"><table>
+      <thead><tr><th>#</th><th>Символ</th><th>Side</th><th>Вход</th><th>Выход</th><th>PnL</th><th>Причина</th><th>Мин</th></tr></thead>
+      <tbody id="hist"></tbody>
+    </table></div>
+
+    <h2 class="sec">🔬 Research · поиск эджа</h2>
+    <div id="research"></div>
+
+    <footer>
+      <span>snapshot: <span id="snap">—</span></span>
+      <span>цены — браузер → публичный Bybit v5 • данные — ветка panel-site • <a href="https://github.com/palcikia-crypto/pseudo-opt-bot">репозиторий</a></span>
+      <span>автообновление 15с</span>
+    </footer>
+  </div>
+</div>
+
+<script>
+const STATE_URL = new URLSearchParams(location.search).get('data') ||
+  'https://raw.githubusercontent.com/palcikia-crypto/pseudo-opt-bot/panel-site/state.json';
+const fmt = (x, d=6) => (x == null || x === '' ? '—' : (+x).toFixed(d));
+const nfmt = (x, d=2) => (x == null ? '—' : (+x).toFixed(d));
+const MARKS = {};
+const TK = {};
+let SYMS_TV = null;
+let FIRST_RENDER = true;
+
+function aggStats(trades) {
+  const closed = trades.filter(t => !(t.open === true || t.open === 1));
+  const wins = closed.filter(t => t.pnl > 0);
+  const losses = closed.filter(t => (t.pnl || 0) <= 0);
+  const gp = wins.reduce((a, t) => a + t.pnl, 0);
+  const gl = Math.abs(losses.reduce((a, t) => a + t.pnl, 0));
+  const pf = gl > 0 ? +(gp / gl).toFixed(2) : (gp > 0 ? 99 : 0);
+  return {closed: closed.length, wins: wins.length,
+          wr: closed.length ? +(100 * wins.length / closed.length).toFixed(1) : 0, pf};
+}
+
+async function loadState() {
+  const r = await fetch(STATE_URL + '?ts=' + Date.now(), {cache: 'no-store'});
+  if (!r.ok) throw new Error('state.json HTTP ' + r.status);
+  return r.json();
+}
+
+async function fetchTickers(rawList) {
+  const r = await fetch('https://api.bybit.com/v5/market/tickers?category=linear',
+                        {cache: 'no-store'});
+  const list = ((await r.json()).result || {}).list || [];
+  for (const row of list) {
+    MARKS[row.symbol] = {mark: +row.markPrice, last: +row.lastPrice,
+                         chg: +row.price24hPcnt * 100};
+    if (SYMS_TV && SYMS_TV.raw.includes(row.symbol)) TK[row.symbol] = MARKS[row.symbol];
+  }
+}
+
+function renderTickers() {
+  const el = document.getElementById('tickers');
+  if (!SYMS_TV) return;
+  el.innerHTML = SYMS_TV.labels.map((lbl, i) => {
+    const t = TK[SYMS_TV.raw[i]] || {last: 0, chg: 0};
+    const cls = t.chg >= 0 ? 'up' : 'dn';
+    const arr = t.chg >= 0 ? '▲' : '▼';
+    return `<div class="tk"><div class="sym">${lbl}</div>
+      <div class="px">${nfmt(t.last, t.last >= 100 ? 2 : (t.last >= 10 ? 3 : 5))}</div>
+      <div class="chg ${cls}">${arr} ${Math.abs(t.chg).toFixed(2)}%</div></div>`;
+  }).join('');
+}
+
+function drawSpark(trades) {
+  const cv = document.getElementById('spark');
+  const dpr = window.devicePixelRatio || 1;
+  const W = cv.clientWidth || 300, H = 118;
+  cv.width = W * dpr; cv.height = H * dpr;
+  const ctx = cv.getContext('2d');
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, W, H);
+  const closed = trades.filter(t => !(t.open === true || t.open === 1));
+  const pts = [0];
+  let acc = 0;
+  for (const t of closed) { acc += t.pnl || 0; pts.push(acc); }
+  const mn = Math.min(...pts, 0), mx = Math.max(...pts, 0);
+  const pad = 10;
+  const X = i => pad + i * (W - 2 * pad) / Math.max(pts.length - 1, 1);
+  const Y = v => (mx - mn) === 0 ? H / 2
+    : pad + (mx - v) * (H - 2 * pad) / (mx - mn);
+  const zero = Y(0);
+  ctx.strokeStyle = 'rgba(255,255,255,.12)';
+  ctx.setLineDash([4, 5]);
+  ctx.beginPath(); ctx.moveTo(pad, zero); ctx.lineTo(W - pad, zero); ctx.stroke();
+  ctx.setLineDash([]);
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  const last = pts[pts.length - 1];
+  const cUp = last >= 0;
+  const line = cUp ? '#34d399' : '#fb7185';
+  grad.addColorStop(0, cUp ? 'rgba(52,211,153,.28)' : 'rgba(251,113,133,.28)');
+  grad.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.beginPath();
+  pts.forEach((v, i) => i ? ctx.lineTo(X(i), Y(v)) : ctx.moveTo(X(0), Y(v)));
+  ctx.strokeStyle = line; ctx.lineWidth = 2; ctx.lineJoin = 'round'; ctx.stroke();
+  ctx.lineTo(X(pts.length - 1), zero); ctx.lineTo(X(0), zero); ctx.closePath();
+  ctx.fillStyle = grad; ctx.fill();
+  const lx = X(pts.length - 1), ly = Y(last);
+  ctx.beginPath(); ctx.arc(lx, ly, 3.5, 0, 7); ctx.fillStyle = line; ctx.fill();
+}
+
+function ledBadge(s) {
+  const b = document.getElementById('badge');
+  if (s.halted) { b.innerHTML = '<span class="led"></span>СТОП-АУТ'; b.className = 'badge stop'; }
+  else if (s.day_paused) { b.innerHTML = '<span class="led"></span>ПАУЗА ДО 00:00 UTC'; b.className = 'badge stop'; }
+  else if (s.age_minutes != null && s.age_minutes < 20) {
+    b.innerHTML = '<span class="led"></span>ЖИВОЙ'; b.className = 'badge ok';
+  } else {
+    b.innerHTML = '<span class="led"></span>снапшот ' + (s.age_minutes != null ? Math.round(s.age_minutes) + ' мин' : '');
+    b.className = 'badge warn';
+  }
+}
+
+function render(s) {
+  if (FIRST_RENDER) {
+    document.getElementById('skeleton').remove();
+    document.getElementById('app').hidden = false;
+    FIRST_RENDER = false;
+  }
+  const st = s.stats || aggStats(s.trades || []);
+  const dayStart = s.day_start_equity ?? s.equity;
+  const dayPnl = +((s.equity || 0) - dayStart).toFixed(2);
+  const openList = (s.trades || []).filter(t => t.open === true || t.open === 1);
+
+  document.getElementById('equity').textContent = nfmt(s.equity);
+  document.getElementById('equity').style.color =
+    (s.equity || 0) >= (s.start_equity ?? 1000) ? 'var(--up)' : 'var(--dn)';
+  const tot = s.pnl_total ?? 0;
+  document.getElementById('pnl-chips').innerHTML = [
+    `<span class="chip ${tot >= 0 ? 'up' : 'dn'}">PnL всего <b>${tot >= 0 ? '+' : ''}${nfmt(tot)}</b></span>`,
+    `<span class="chip ${dayPnl >= 0 ? 'up' : 'dn'}">сегодня <b>${dayPnl >= 0 ? '+' : ''}${nfmt(dayPnl)}</b></span>`,
+    `<span class="chip mut">старт <b>${nfmt(s.start_equity ?? 1000, 0)}</b></span>`,
+  ].join('');
+
+  document.getElementById('kpis').innerHTML = [
+    ['Win-rate', st.wr + '%', ''],
+    ['Profit factor', st.pf, st.pf >= 1 ? 'up' : 'dn'],
+    ['Сделок закрыто', st.closed, ''],
+    ['Открыто сейчас', openList.length + ' / ' + (s.max_positions ?? 4), ''],
+    ['Риск / сделка', (s.risk_per_trade_pct ?? 1) + '%', ''],
+    ['Стоп дня', '−' + (s.day_loss_limit_pct ?? 4) + '%', 'warn'],
+    ['Сделок прибыльных', st.wins + ' / ' + st.closed, ''],
+    ['Режим', (s.mode || 'paper').toUpperCase(), 'mut'],
+  ].map(([l, v, c]) =>
+    `<div class="kpi"><div class="v ${c}">${v}</div><div class="l">${l}</div></div>`).join('');
+
+  ledBadge(s);
+  document.getElementById('snap').textContent =
+    (s.updated_utc || '—') + (s.age_minutes != null ? ' · ' + Math.round(s.age_minutes) + ' мин назад' : '');
+
+  document.getElementById('open').innerHTML = openList.map(t => {
+    const m = MARKS[t.symbol.split('/')[0] + 'USDT'];
+    const mark = m ? m.mark : null;
+    const dir = t.side === 'long' ? 1 : -1;
+    const u = mark ? +((mark - t.entry) * t.qty * dir).toFixed(4) : null;
+    const mins = Math.round((Date.now() - t.entry_ms) / 60000);
+    return `<tr class="opn"><td>${t.symbol}</td><td><span class="sbadge ${t.side}">${t.side.toUpperCase()}</span></td>
+      <td>${t.entry}</td><td>${fmt(mark)}</td><td class="dn">${fmt(t.sl)}</td><td class="up">${fmt(t.tp)}</td>
+      <td>${t.be ? '✓' : '—'}</td>
+      <td class="${u >= 0 ? 'up' : 'dn'}">${u == null ? '—' : (u >= 0 ? '+' : '') + u}</td>
+      <td>${mins}</td></tr>`;
+  }).join('') || '<tr><td colspan="9" class="empty">нет открытых позиций</td></tr>';
+
+  const closedAll = (s.trades || []).filter(t => !(t.open === true || t.open === 1));
+  document.getElementById('hist').innerHTML = closedAll.slice(-40).reverse().map((t, i) => {
+    const mins = Math.round((t.exit_ms - t.entry_ms) / 60000);
+    return `<tr><td>${closedAll.length - i}</td><td>${t.symbol}</td>
+      <td><span class="sbadge ${t.side}">${t.side.toUpperCase()}</span></td>
+      <td>${t.entry}</td><td>${t.exit}</td>
+      <td class="${t.pnl >= 0 ? 'up' : 'dn'}">${(t.pnl >= 0 ? '+' : '')}${t.pnl}</td>
+      <td><span class="rchip">${t.reason || '—'}</span></td><td>${mins}</td></tr>`;
+  }).join('') || '<tr><td colspan="8" class="empty">пока нет закрытых сделок</td></tr>';
+
+  drawSpark(s.trades || []);
+  renderResearch(s.research);
+}
+
+function renderResearch(R) {
+  const rel = document.getElementById('research');
+  if (!R) { rel.innerHTML = '<div class="verdict">research-метаданные отсутствуют в снапшоте</div>'; return; }
+  let h = '';
+  if (R.verdict) h += `<div class="verdict">⚖️ ${R.verdict}</div>`;
+  if (R.candidates && R.candidates.length) {
+    h += '<div class="twrap"><table style="min-width:720px"><thead><tr><th>Монета</th><th>Идея</th><th>IS</th><th>OOS</th><th>Месяцы</th><th>Комиссии</th><th>Статус</th></tr></thead><tbody>';
+    for (const c of R.candidates)
+      h += `<tr><td><b>${c.symbol}</b></td><td>${c.idea}</td><td class="up">${c.is}</td>
+        <td class="up">${c.oos}</td><td>${c.months || '—'}</td><td>${c.fees || '—'}</td>
+        <td><span class="rchip">${c.status || '—'}</span></td></tr>`;
+    h += '</tbody></table></div>';
+  }
+  if (R.live) {
+    const lv = R.live;
+    let lh = `<h2 class="sec" style="margin-top:22px">🟢 Live-обкатка · paper_deep</h2>
+      <div class="meta-rows"><span>perp-сделки Bybit: биржевые SL/TP; открытая позиция видна здесь пока не закроется — закрытая навсегда уходит в счётчики сделок</span></div><div class="live-grid">`;
+    for (const cd of Object.keys(lv.cand || {})) {
+      const s2 = (lv.cand[cd] || {}).summary;
+      const on = s2 && (s2.open || s2.pending);
+      lh += `<div class="live-card${on ? ' on' : ''}">
+        <div class="t"><span class="badge ${on ? 'ok' : 'warn'}" style="padding:3px 9px"><span class="led"></span>${cd}</span></div>
+        <div class="st">${s2
+          ? `<b>${s2.n}</b> сд · <b class="${s2.sum_R >= 0 ? 'up' : 'dn'}">${s2.sum_R >= 0 ? '+' : ''}${s2.sum_R}R</b> · wr <b>${s2.win_rate}%</b>${s2.n < 20 ? ` <span class="dim">⚠️ мало сделок (${s2.n}) — wr не статистичен</span>` : ''}`
+            + (s2.n_shadow ? `<br>бэктест-тень 1-в-1: <b>${s2.sum_R_shadow >= 0 ? '+' : ''}${s2.sum_R_shadow}R</b> / ${s2.n_shadow}` : '')
+          : 'сделок пока нет — ждём сигнал'}</div>
+        <div class="st">${s2 && s2.open ? '📈 <b class="up">открыта позиция сейчас</b>' : (s2 && s2.pending ? '⏳ ждём вход' : (s2 && s2.n ? '✔Ҵ открытых нет — последняя закрылась, ждём новый сигнал' : ''))}</div>
+      </div>`;
+    }
+    lh += '</div>';
+    if (lv.updated) h += `<div class="meta-rows"><span>демон: обновлено ${String(lv.updated).slice(0, 16).replace('T', ' ')} UTC</span></div>`;
+    h += lh;
+  }
+  if (R.evo) {
+    const ev = R.evo;
+    h += `<h2 class="sec" style="margin-top:22px">\ud83e\uddac Эволюционный бэк-тестер · автономный режим</h2>
+      <div class="meta-rows"><span>бэктест по кэшу Bybit 190д (1m→TF), TRAIN/VAL жёстко разделены; ищет перпы со стопами/тейками</span></div><div class="live-grid"><div class="live-card on">
+      <div class="t"><span class="badge ok" style="padding:3px 9px"><span class="led"></span>поколение <b>${ev.gen}</b> · популяция <b>${ev.pop}</b></span></div>
+      <div class="st"><b>${ev.best || '—'}</b></div>
+    </div></div>`;
+    const erows = [];
+    if (ev.slippage) {
+      const parts = Object.entries(ev.slippage).filter(([k, v]) => v != null)
+        .map(([k, v]) => k.replace('USDT', '') + ': ' + v + ' bps');
+      if (parts.length) erows.push('<b>Спред (live-стаканы):</b> ' + parts.join(' · '));
+    }
+    if (ev.shadow && ev.shadow.trades) erows.push('<b>Валидация live 1-в-1:</b> ' + ev.shadow.trades + ' сд · совп. выходов ' + ev.shadow.matched + ' (' + (ev.shadow.match_rate_pct ?? '—') + '%) · ср. |ΔR| ' + ev.shadow.mean_abs_R_diff);
+    if (erows.length) h += '<div class="meta-rows">' + erows.map(r => '<div>' + r + '</div>').join('') + '</div>';
+  }
+  if (R.opt) {
+    const op = R.opt;
+    h += `<h2 class="sec" style="margin-top:22px">\ud83c\udfaf Опцион-режим · эволюция под выйгрыш</h2>
+      <div class="meta-rows"><span>бэктест ВИРТУАЛЬНОГО опциона по кэшу Bybit: премия модельная k·σ√E, экспирация фикс; НЕ биржевой опцион</span></div><div class="live-grid"><div class="live-card on">
+      <div class="t"><span class="badge ok" style="padding:3px 9px"><span class="led"></span>поколение <b>${op.gen}</b> · популяция <b>${op.pop}</b></span></div>
+      <div class="st"><b>${op.best || '—'}</b></div>
+    </div></div>`;
+  }
+  if (R.optpaper) {
+    const opq = R.optpaper;
+    const regimeTxt = {expanded: 'РАСШИРЕННЫЙ — ядро + эксперименты', core: 'БАЗОВЫЙ — расширение выключено (авто-откат)', paused: 'ПАУЗА — новые входы остановлены'}[opq.regime] || opq.regime || '';
+    h += `<h2 class="sec" style="margin-top:22px">\u26a1 Опцион-бум · live-paper (отдельный демон)</h2>
+      <div class="meta-rows"><span>${opq.mode || ''}</span><span>данные: ${opq.data || ''}</span></div>
+      <div class="meta-rows"><span><b>Режим: ${regimeTxt}</b> — правило: лестница авто-отката (exp-касса −8% от пика → «как раньше»/только ядро, exp −15% → пауза, ядро −15% → пауза); открытые контракты при откате дорабатывают до экспирации</span></div>
+      ${(opq.notices || []).map(n => '<div class="meta-rows"><span class="dim">⚠️ ' + (n.ts || '') + ' — ' + (n.msg || '') + '</span></div>').join('')}
+      <div class="live-grid">`;
+    for (const [k, v] of Object.entries(opq.cands || {})) {
+      const on = !!v.open_pos;
+      h += `<div class="live-card${on ? ' on' : ''}">
+        <div class="t"><span class="badge ${on ? 'ok' : 'warn'}" style="padding:3px 9px"><span class="led"></span>${k}${v.grp === 'exp' ? " <span class='dim'>· расширение</span>" : " <span class='dim'>· ядро</span>"}</span></div>
+        <div class="st">${v.open_pos ? '🔴 <b class="up">контракт ОТКРЫТ сейчас — ждём экспирацию</b><br>' : ''}${v.n ? `<b>${v.n}</b> контрактов · wr <b>${v.wr}%</b>${v.n < 20 ? ` <span class="dim">⚠️ мало (${v.n})</span>` : ''} · <b class="${v.pnl >= 0 ? 'up' : 'dn'}">${v.pnl >= 0 ? '+' : ''}${v.pnl}$</b>` : (v.open_pos ? '' : 'контрактов нет — демон днем ждёт сигнал, откроет на ближайшем')}${v.status ? `<br><span class="dim">${v.status}</span>` : ''}</div>
+      </div>`;
+    }
+    h += `</div><div class="meta-rows"><span>касса <b>ядро</b>: <b>$${opq.equity_core ?? '—'}</b> · касса <b>расширение</b>: <b>$${opq.equity_exp ?? '—'}</b> (изолированы, старт по $1000, ставка 1% от своей кассы) · всего $${opq.equity} · обновлено ${String(opq.updated).slice(0, 16).replace('T', ' ')} UTC</span></div>`;
+  }
+  const rows = [];
+  if (R.leadlag) rows.push('<b>Гонка за битком:</b> ' + R.leadlag);
+  if (R.collecting) rows.push('<b>Собираем:</b> ' + R.collecting);
+  if (R.checked) rows.push('<b>Проверено:</b> ' + R.checked);
+  if (R.next && R.next.length) rows.push('<b>Дальше:</b> ' + R.next.join(' • '));
+  if (rows.length) h += '<div class="meta-rows">' + rows.map(r => '<div>' + r + '</div>').join('') + '</div>';
+  if (R.updated) h += `<div class="meta-rows"><span>research: ${R.updated} • <a href="https://github.com/palcikia-crypto/pseudo-opt-bot/blob/main/research/LOG.md">журнал LOG.md</a></span></div>`;
+  rel.innerHTML = h;
+}
+
+setInterval(() => {
+  document.getElementById('clock').textContent =
+    new Date().toISOString().slice(11, 19) + ' UTC';
+}, 1000);
+
+async function tick() {
+  try {
+    const s = await loadState();
+    if (s.symbols_raw) SYMS_TV = s.symbols_raw;
+    await fetchTickers(SYMS_TV ? SYMS_TV.raw : []);
+    render(s);
+    renderTickers();
+  } catch (e) {
+    const b = document.getElementById('badge');
+    b.innerHTML = '<span class="led"></span>ошибка загрузки'; b.className = 'badge stop';
+    console.error(e);
+  }
+}
+
+async function tickerLoop() {
+  try {
+    if (!SYMS_TV) return;
+    await fetchTickers(SYMS_TV.raw);
+    renderTickers();
+  } catch (e) { console.warn('tickers', e); }
+}
+
+tick(); setInterval(tick, 15000); tickerLoop(); setInterval(tickerLoop, 10000);
+</script>
+</body>
+</html>
